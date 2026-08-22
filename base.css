@@ -1,0 +1,62 @@
+/* base.css - a minimal reset.
+ *
+ * This is the one stylesheet here that is NOT generated from Figma: a Figma file has no
+ * concept of a user-agent default, so margins, box-sizing and the default text colour have
+ * to come from somewhere. Everything it sets is either a browser normalisation or a token
+ * that already exists in tokens.css - no new design values are introduced.
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-body-medium-size);
+  line-height: var(--font-body-medium-line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr {
+  border: 0;
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
