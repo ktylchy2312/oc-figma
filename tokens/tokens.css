@@ -1,0 +1,313 @@
+/* OC-Kontrol - design tokens
+ * Generated from the Figma file "OC-Kontrol" through the Figma Plugin API. Do not hand-edit.
+ * Regenerate instead: see README.md.
+ *
+ * Naming: Figma variable names are preserved verbatim. The CSS name is the category prefix
+ * plus the Figma path, lowercased, "/" replaced by "-".
+ *   Color -> Surface/Default    =>  --color-surface-default
+ *   Spacing -> space-4          =>  --space-4
+ *   Radius -> md                =>  --radius-md
+ * Every declaration carries its original Figma name in a trailing comment.
+ *
+ * Theme: the source file is dark-first. The Figma collection "Color" has exactly one mode,
+ * "Dark". Light lives in a separate collection, "Color (Light)", because the file is on a
+ * plan capped at one mode per collection. :root therefore carries dark; light is an override.
+ */
+
+:root {
+  /* ===== Primitives (Figma collection: Primitives) =====
+   * Raw ramps. Hidden from publishing in Figma - components bind to the semantic layer below,
+   * never to these directly. */
+  /* Neutral */
+  --color-neutral-50: #f6f4f1; /* Neutral/50 */
+  --color-neutral-100: #f0eeeb; /* Neutral/100 */
+  --color-neutral-200: #c9c7c4; /* Neutral/200 */
+  --color-neutral-300: #8a8987; /* Neutral/300 */
+  --color-neutral-400: #6d6c6a; /* Neutral/400 */
+  --color-neutral-500: #4a4b54; /* Neutral/500 */
+  --color-neutral-550: #30313a; /* Neutral/550 */
+  --color-neutral-600: #262935; /* Neutral/600 */
+  --color-neutral-700: #181a22; /* Neutral/700 */
+  --color-neutral-750: #15171f; /* Neutral/750 */
+  --color-neutral-800: #1a1c26; /* Neutral/800 */
+  --color-neutral-850: #0e1016; /* Neutral/850 */
+  --color-neutral-900: #0b0e16; /* Neutral/900 */
+  --color-neutral-950: #070910; /* Neutral/950 */
+  --color-neutral-white: #ffffff; /* Neutral/White */
+  /* Brand */
+  --color-brand-50: #fff2e8; /* Brand/50 */
+  --color-brand-100: #ffdcc2; /* Brand/100 */
+  --color-brand-200: #ffc199; /* Brand/200 */
+  --color-brand-300: #ff9d5c; /* Brand/300 */
+  --color-brand-400: #ff8038; /* Brand/400 */
+  --color-brand-500: #fe6d20; /* Brand/500 */
+  --color-brand-600: #e0530f; /* Brand/600 */
+  --color-brand-700: #b8410b; /* Brand/700 */
+  --color-brand-800: #7a2c08; /* Brand/800 */
+  --color-brand-900: #3d1804; /* Brand/900 */
+  --color-brand-950: #1a1204; /* Brand/950 */
+  /* Success */
+  --color-success-50: #eafaf0; /* Success/50 */
+  --color-success-100: #c9f0d8; /* Success/100 */
+  --color-success-200: #a3e4bd; /* Success/200 */
+  --color-success-300: #7bd8a1; /* Success/300 */
+  --color-success-400: #5fd08a; /* Success/400 */
+  --color-success-500: #43b972; /* Success/500 */
+  --color-success-600: #2f8f57; /* Success/600 */
+  --color-success-700: #1f5136; /* Success/700 */
+  --color-success-800: #163a27; /* Success/800 */
+  --color-success-900: #12291a; /* Success/900 */
+  /* Warning */
+  --color-warning-50: #fbf4e3; /* Warning/50 */
+  --color-warning-100: #f3e3bb; /* Warning/100 */
+  --color-warning-200: #ecd196; /* Warning/200 */
+  --color-warning-300: #e6c07a; /* Warning/300 */
+  --color-warning-400: #d9a94f; /* Warning/400 */
+  --color-warning-500: #b98a34; /* Warning/500 */
+  --color-warning-600: #8a6626; /* Warning/600 */
+  --color-warning-700: #5a4a1f; /* Warning/700 */
+  --color-warning-800: #3f3316; /* Warning/800 */
+  --color-warning-900: #2a2211; /* Warning/900 */
+  /* Error */
+  --color-error-50: #ffece8; /* Error/50 */
+  --color-error-100: #ffcabf; /* Error/100 */
+  --color-error-200: #ffa695; /* Error/200 */
+  --color-error-300: #ff8571; /* Error/300 */
+  --color-error-400: #ff6b57; /* Error/400 */
+  --color-error-500: #f0472f; /* Error/500 */
+  --color-error-600: #c0341d; /* Error/600 */
+  --color-error-700: #6e2a1f; /* Error/700 */
+  --color-error-800: #45170f; /* Error/800 */
+  --color-error-900: #2a1512; /* Error/900 */
+
+  /* ===== Semantic color (Figma collection: Color, mode: Dark) ===== */
+  /* Surface */
+  --color-surface-background: var(--color-neutral-900); /* Surface/Background -> Neutral/900 */
+  --color-surface-column: var(--color-neutral-750); /* Surface/Column -> Neutral/750 */
+  --color-surface-default: var(--color-neutral-850); /* Surface/Default -> Neutral/850 */
+  --color-surface-raised: var(--color-neutral-700); /* Surface/Raised -> Neutral/700 */
+  --color-surface-raised-hover: var(--color-neutral-600); /* Surface/Raised-Hover -> Neutral/600 */
+  --color-surface-raised-pressed: var(--color-neutral-550); /* Surface/Raised-Pressed -> Neutral/550 */
+  --color-surface-row: var(--color-neutral-800); /* Surface/Row -> Neutral/800 */
+  --color-surface-sunken: var(--color-neutral-950); /* Surface/Sunken -> Neutral/950 */
+  /* Border */
+  --color-border-default: var(--color-neutral-550); /* Border/Default -> Neutral/550 */
+  --color-border-strong: var(--color-neutral-500); /* Border/Strong -> Neutral/500 */
+  --color-border-subtle: var(--color-neutral-600); /* Border/Subtle -> Neutral/600 */
+  /* Text */
+  --color-text-disabled: var(--color-neutral-400); /* Text/Disabled -> Neutral/400 */
+  --color-text-inverse: var(--color-neutral-900); /* Text/Inverse -> Neutral/900 */
+  --color-text-on-accent: var(--color-brand-950); /* Text/On-Accent -> Brand/950 */
+  --color-text-primary: var(--color-neutral-50); /* Text/Primary -> Neutral/50 */
+  --color-text-secondary: var(--color-neutral-200); /* Text/Secondary -> Neutral/200 */
+  --color-text-tertiary: var(--color-neutral-300); /* Text/Tertiary -> Neutral/300 */
+  /* Accent */
+  --color-accent-default: var(--color-brand-500); /* Accent/Default -> Brand/500 */
+  --color-accent-disabled: var(--color-neutral-550); /* Accent/Disabled -> Neutral/550 */
+  --color-accent-hover: var(--color-brand-400); /* Accent/Hover -> Brand/400 */
+  --color-accent-pressed: var(--color-brand-600); /* Accent/Pressed -> Brand/600 */
+  --color-accent-tint: var(--color-brand-950); /* Accent/Tint -> Brand/950 */
+  /* Status */
+  --color-status-error-bg: var(--color-error-900); /* Status/Error/Bg -> Error/900 */
+  --color-status-error-bg-hover: var(--color-error-800); /* Status/Error/Bg-Hover -> Error/800 */
+  --color-status-error-border: var(--color-error-700); /* Status/Error/Border -> Error/700 */
+  --color-status-error-text: var(--color-error-400); /* Status/Error/Text -> Error/400 */
+  --color-status-success-bg: var(--color-success-900); /* Status/Success/Bg -> Success/900 */
+  --color-status-success-border: var(--color-success-700); /* Status/Success/Border -> Success/700 */
+  --color-status-success-text: var(--color-success-400); /* Status/Success/Text -> Success/400 */
+  --color-status-warning-bg: var(--color-warning-900); /* Status/Warning/Bg -> Warning/900 */
+  --color-status-warning-bg-hover: var(--color-warning-800); /* Status/Warning/Bg-Hover -> Warning/800 */
+  --color-status-warning-border: var(--color-warning-700); /* Status/Warning/Border -> Warning/700 */
+  --color-status-warning-text: var(--color-warning-300); /* Status/Warning/Text -> Warning/300 */
+
+  /* ===== Radius (Figma collection: Radius) ===== */
+  --radius-full: 9999px; /* full */
+  --radius-lg: 12px; /* lg */
+  --radius-md: 8px; /* md */
+  --radius-none: 0; /* none */
+  --radius-sm: 4px; /* sm */
+  --radius-xl: 16px; /* xl */
+
+  /* ===== Spacing (Figma collection: Spacing) ===== */
+  --space-gap-board: 16px; /* gap-board */
+  --space-gap-board-compact: 12px; /* gap-board-compact */
+  --space-0: 0; /* space-0 */
+  --space-0-5: 2px; /* space-0-5 */
+  --space-1: 4px; /* space-1 */
+  --space-2: 8px; /* space-2 */
+  --space-3: 12px; /* space-3 */
+  --space-4: 16px; /* space-4 */
+  --space-5: 20px; /* space-5 */
+  --space-6: 24px; /* space-6 */
+  --space-8: 32px; /* space-8 */
+  --space-10: 40px; /* space-10 */
+  --space-12: 48px; /* space-12 */
+
+  /* ===== Typography (Figma text styles) ===== */
+  --font-family: "Roboto", system-ui, sans-serif;
+  /* Type/Display - Roboto Bold */
+  --font-display-weight: 700;
+  --font-display-size: 40px;
+  --font-display-line-height: normal;
+  --font-display-letter-spacing: -0.2px;
+  /* Type/Heading 1 - Roboto Bold */
+  --font-heading-1-weight: 700;
+  --font-heading-1-size: 32px;
+  --font-heading-1-line-height: normal;
+  --font-heading-1-letter-spacing: -0.2px;
+  /* Type/Heading 2 - Roboto Bold */
+  --font-heading-2-weight: 700;
+  --font-heading-2-size: 24px;
+  --font-heading-2-line-height: normal;
+  --font-heading-2-letter-spacing: 0;
+  /* Type/Heading 3 - Roboto ExtraBold */
+  --font-heading-3-weight: 800;
+  --font-heading-3-size: 20px;
+  --font-heading-3-line-height: normal;
+  --font-heading-3-letter-spacing: 0;
+  /* Type/Heading 4 - Roboto ExtraBold */
+  --font-heading-4-weight: 800;
+  --font-heading-4-size: 17px;
+  --font-heading-4-line-height: normal;
+  --font-heading-4-letter-spacing: 0;
+  /* Type/Body Large - Roboto Regular */
+  --font-body-large-weight: 400;
+  --font-body-large-size: 17px;
+  --font-body-large-line-height: normal;
+  --font-body-large-letter-spacing: 0;
+  /* Type/Body Medium - Roboto Regular */
+  --font-body-medium-weight: 400;
+  --font-body-medium-size: 15px;
+  --font-body-medium-line-height: normal;
+  --font-body-medium-letter-spacing: 0;
+  /* Type/Body Medium Alter - Roboto Bold */
+  --font-body-medium-alter-weight: 700;
+  --font-body-medium-alter-size: 15px;
+  --font-body-medium-alter-line-height: normal;
+  --font-body-medium-alter-letter-spacing: 0;
+  /* Type/Body Small - Roboto Regular */
+  --font-body-small-weight: 400;
+  --font-body-small-size: 13px;
+  --font-body-small-line-height: normal;
+  --font-body-small-letter-spacing: 0;
+  /* Type/Body Small Alter - Roboto Bold */
+  --font-body-small-alter-weight: 700;
+  --font-body-small-alter-size: 13px;
+  --font-body-small-alter-line-height: normal;
+  --font-body-small-alter-letter-spacing: 0;
+  /* Type/Caption - Roboto Regular */
+  --font-caption-weight: 400;
+  --font-caption-size: 12px;
+  --font-caption-line-height: normal;
+  --font-caption-letter-spacing: 0;
+  /* Type/Label - Roboto Bold */
+  --font-label-weight: 700;
+  --font-label-size: 12px;
+  --font-label-line-height: normal;
+  --font-label-letter-spacing: 0.6px;
+  --font-label-text-transform: uppercase;
+
+  /* ===== Shadows (Figma effect styles) ===== */
+  --shadow-accent: 0px 4px 14px 0px #fe6d204d; /* Elevation/Accent */
+  --shadow-card: 0px 4px 12px 0px #00000073; /* Elevation/Card */
+  --shadow-dialog: 0px 24px 60px 0px #00000099; /* Elevation/Dialog */
+
+  /* ===== Borders ===== */
+  /* TODO: the Figma file defines no border-width and no border-style variables.
+   * Border colors are exposed above as --color-border-*. Stroke weights are per-node values
+   * in Figma rather than tokens, so each component CSS carries its own width. */
+}
+
+/* ===== Light theme (Figma collection: Color (Light), mode: Light) ===== */
+/* An explicit data-theme wins over the OS preference, in both directions. */
+:root[data-theme="light"] {
+  /* Surface */
+  --color-surface-background: var(--color-neutral-50); /* Surface/Background -> Neutral/50 */
+  --color-surface-column: #eef0f4; /* Surface/Column */
+  --color-surface-default: var(--color-neutral-white); /* Surface/Default -> Neutral/White */
+  --color-surface-raised: var(--color-neutral-white); /* Surface/Raised -> Neutral/White */
+  --color-surface-row: #f2f3f6; /* Surface/Row */
+  --color-surface-sunken: #eceef2; /* Surface/Sunken */
+  /* Border */
+  --color-border-default: #d3d7de; /* Border/Default */
+  --color-border-strong: #b7bcc7; /* Border/Strong */
+  --color-border-subtle: #e2e4ea; /* Border/Subtle */
+  /* Text */
+  --color-text-disabled: #9aa0aa; /* Text/Disabled */
+  --color-text-inverse: var(--color-neutral-50); /* Text/Inverse -> Neutral/50 */
+  --color-text-on-accent: #1a1204; /* Text/On-Accent */
+  --color-text-primary: var(--color-neutral-900); /* Text/Primary -> Neutral/900 */
+  --color-text-secondary: #a8a7a3; /* Text/Secondary */
+  --color-text-tertiary: #6d6c6a; /* Text/Tertiary */
+  /* Accent */
+  --color-accent-default: var(--color-brand-600); /* Accent/Default -> Brand/600 */
+  --color-accent-disabled: #d3d7de; /* Accent/Disabled */
+  --color-accent-hover: var(--color-brand-500); /* Accent/Hover -> Brand/500 */
+  --color-accent-pressed: var(--color-brand-700); /* Accent/Pressed -> Brand/700 */
+  --color-accent-tint: #fff2e8; /* Accent/Tint */
+  /* Status */
+  --color-status-error-bg: var(--color-error-50); /* Status/Error/Bg -> Error/50 */
+  --color-status-error-border: var(--color-error-200); /* Status/Error/Border -> Error/200 */
+  --color-status-error-text: var(--color-error-700); /* Status/Error/Text -> Error/700 */
+  --color-status-success-bg: var(--color-success-50); /* Status/Success/Bg -> Success/50 */
+  --color-status-success-border: var(--color-success-200); /* Status/Success/Border -> Success/200 */
+  --color-status-success-text: var(--color-success-700); /* Status/Success/Text -> Success/700 */
+  --color-status-warning-bg: var(--color-warning-50); /* Status/Warning/Bg -> Warning/50 */
+  --color-status-warning-border: var(--color-warning-200); /* Status/Warning/Border -> Warning/200 */
+  --color-status-warning-text: var(--color-warning-700); /* Status/Warning/Text -> Warning/700 */
+  /* TODO: the following exist in the Figma "Color" (Dark) collection but have no
+   * counterpart in "Color (Light)". They keep their dark value under the light theme.
+   * Fix in Figma by adding the variables, then regenerate - do not invent values here.
+   *   Status/Error/Bg-Hover  (--color-status-error-bg-hover)
+   *   Status/Warning/Bg-Hover  (--color-status-warning-bg-hover)
+   *   Surface/Raised-Hover  (--color-surface-raised-hover)
+   *   Surface/Raised-Pressed  (--color-surface-raised-pressed)
+   */
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    /* Surface */
+    --color-surface-background: var(--color-neutral-50); /* Surface/Background -> Neutral/50 */
+    --color-surface-column: #eef0f4; /* Surface/Column */
+    --color-surface-default: var(--color-neutral-white); /* Surface/Default -> Neutral/White */
+    --color-surface-raised: var(--color-neutral-white); /* Surface/Raised -> Neutral/White */
+    --color-surface-row: #f2f3f6; /* Surface/Row */
+    --color-surface-sunken: #eceef2; /* Surface/Sunken */
+    /* Border */
+    --color-border-default: #d3d7de; /* Border/Default */
+    --color-border-strong: #b7bcc7; /* Border/Strong */
+    --color-border-subtle: #e2e4ea; /* Border/Subtle */
+    /* Text */
+    --color-text-disabled: #9aa0aa; /* Text/Disabled */
+    --color-text-inverse: var(--color-neutral-50); /* Text/Inverse -> Neutral/50 */
+    --color-text-on-accent: #1a1204; /* Text/On-Accent */
+    --color-text-primary: var(--color-neutral-900); /* Text/Primary -> Neutral/900 */
+    --color-text-secondary: #a8a7a3; /* Text/Secondary */
+    --color-text-tertiary: #6d6c6a; /* Text/Tertiary */
+    /* Accent */
+    --color-accent-default: var(--color-brand-600); /* Accent/Default -> Brand/600 */
+    --color-accent-disabled: #d3d7de; /* Accent/Disabled */
+    --color-accent-hover: var(--color-brand-500); /* Accent/Hover -> Brand/500 */
+    --color-accent-pressed: var(--color-brand-700); /* Accent/Pressed -> Brand/700 */
+    --color-accent-tint: #fff2e8; /* Accent/Tint */
+    /* Status */
+    --color-status-error-bg: var(--color-error-50); /* Status/Error/Bg -> Error/50 */
+    --color-status-error-border: var(--color-error-200); /* Status/Error/Border -> Error/200 */
+    --color-status-error-text: var(--color-error-700); /* Status/Error/Text -> Error/700 */
+    --color-status-success-bg: var(--color-success-50); /* Status/Success/Bg -> Success/50 */
+    --color-status-success-border: var(--color-success-200); /* Status/Success/Border -> Success/200 */
+    --color-status-success-text: var(--color-success-700); /* Status/Success/Text -> Success/700 */
+    --color-status-warning-bg: var(--color-warning-50); /* Status/Warning/Bg -> Warning/50 */
+    --color-status-warning-border: var(--color-warning-200); /* Status/Warning/Border -> Warning/200 */
+    --color-status-warning-text: var(--color-warning-700); /* Status/Warning/Text -> Warning/700 */
+    /* TODO: the following exist in the Figma "Color" (Dark) collection but have no
+     * counterpart in "Color (Light)". They keep their dark value under the light theme.
+     * Fix in Figma by adding the variables, then regenerate - do not invent values here.
+     *   Status/Error/Bg-Hover  (--color-status-error-bg-hover)
+     *   Status/Warning/Bg-Hover  (--color-status-warning-bg-hover)
+     *   Surface/Raised-Hover  (--color-surface-raised-hover)
+     *   Surface/Raised-Pressed  (--color-surface-raised-pressed)
+     */
+  }
+}
