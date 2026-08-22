@@ -1,0 +1,47 @@
+/* InsertStageButton - generated from the Figma component set "InsertStageButton".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-insertstagebutton {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+}
+
+.oc-insertstagebutton__icon {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+}
+
+/* ---- variants ---- */
+/* State=Default */
+.oc-insertstagebutton.oc-insertstagebutton--state-default {
+  background: var(--color-accent-default);
+}
+
+/* State=Hover */
+.oc-insertstagebutton.oc-insertstagebutton--state-hover,
+.oc-insertstagebutton:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-accent-hover);
+}
+
+/* State=Pressed */
+.oc-insertstagebutton.oc-insertstagebutton--state-pressed,
+.oc-insertstagebutton:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-accent-pressed);
+}
+
+/* State=Disabled */
+.oc-insertstagebutton.oc-insertstagebutton--state-disabled,
+.oc-insertstagebutton:disabled {
+  background: var(--color-accent-disabled);
+  opacity: 0.45;
+}
+

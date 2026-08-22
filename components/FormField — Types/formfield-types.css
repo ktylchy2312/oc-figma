@@ -1,0 +1,87 @@
+/* FormField — Types - generated from the Figma component set "FormField — Types".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-formfield-types {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  width: 280px;
+}
+
+.oc-formfield-types__frame {
+  flex: 1 1 auto;
+  height: 8px;
+  overflow: hidden;
+}
+
+.oc-formfield-types__icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.oc-formfield-types__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 48px;
+  background: var(--color-surface-background);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-default);
+  overflow: hidden;
+}
+
+.oc-formfield-types__label {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 13px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+.oc-formfield-types__label-2 {
+  font-family: var(--font-family);
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+
+.oc-formfield-types__textarea {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-4);
+  flex: 1 1 auto;
+  height: 96px;
+  background: var(--color-surface-background);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-default);
+  overflow: hidden;
+}
+
+/* ---- variants ---- */
+/* Variant=Text */
+.oc-formfield-types.oc-formfield-types--variant-text .oc-formfield-types__input {
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+}
+.oc-formfield-types.oc-formfield-types--variant-text .oc-formfield-types__label-2 {
+  color: var(--color-text-primary);
+}
+
+/* Variant=Select */
+.oc-formfield-types.oc-formfield-types--variant-select .oc-formfield-types__input {
+  padding: var(--space-0) 14px var(--space-0) var(--space-4); /* TODO: spacing not bound to a Figma variable */
+}
+.oc-formfield-types.oc-formfield-types--variant-select .oc-formfield-types__label-2 {
+  flex: 1 1 auto;
+  color: var(--color-border-strong);
+}
+
+/* Variant=Textarea */
+.oc-formfield-types.oc-formfield-types--variant-textarea .oc-formfield-types__label-2 {
+  color: var(--color-border-strong);
+}
+

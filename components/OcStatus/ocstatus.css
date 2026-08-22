@@ -1,0 +1,48 @@
+/* OcStatus - generated from the Figma component set "OcStatus".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-ocstatus {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  align-items: center;
+}
+
+.oc-ocstatus__icon {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+}
+
+.oc-ocstatus__label {
+  font-family: var(--font-family);
+  font-size: var(--font-body-medium-alter-size);
+  font-weight: var(--font-body-medium-alter-weight);
+  line-height: var(--font-body-medium-alter-line-height);
+  letter-spacing: var(--font-body-medium-alter-letter-spacing);
+}
+
+/* ---- variants ---- */
+/* State=Active */
+.oc-ocstatus.oc-ocstatus--state-active .oc-ocstatus__label {
+  color: var(--color-status-success-text);
+}
+
+/* State=Soon */
+.oc-ocstatus.oc-ocstatus--state-soon .oc-ocstatus__label {
+  color: var(--color-status-warning-text);
+}
+
+/* State=Expired */
+.oc-ocstatus.oc-ocstatus--state-expired .oc-ocstatus__label {
+  color: var(--color-status-error-text);
+}
+
+/* State=None */
+.oc-ocstatus.oc-ocstatus--state-none .oc-ocstatus__label {
+  color: var(--color-text-tertiary);
+}
+

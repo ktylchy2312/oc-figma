@@ -1,0 +1,156 @@
+/* Button - generated from the Figma component set "Button".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-button {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-5) var(--space-0) var(--space-5);
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-radius: var(--radius-md);
+}
+
+.oc-button__icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.oc-button__label {
+  font-family: var(--font-family);
+  font-size: var(--font-body-medium-alter-size);
+  font-weight: var(--font-body-medium-alter-weight);
+  line-height: var(--font-body-medium-alter-line-height);
+  letter-spacing: var(--font-body-medium-alter-letter-spacing);
+}
+
+/* ---- variants ---- */
+/* Variant=Primary, State=Default */
+.oc-button.oc-button--variant-primary.oc-button--state-default {
+  background: var(--color-accent-default);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-default .oc-button__label {
+  color: var(--color-text-on-accent);
+}
+
+/* Variant=Primary, State=Hover */
+.oc-button.oc-button--variant-primary.oc-button--state-hover,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-accent-hover);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-hover .oc-button__label,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):hover .oc-button__label {
+  color: var(--color-text-on-accent);
+}
+
+/* Variant=Primary, State=Pressed */
+.oc-button.oc-button--variant-primary.oc-button--state-pressed,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-accent-pressed);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-pressed .oc-button__label,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):active .oc-button__label {
+  color: var(--color-text-on-accent);
+}
+
+/* Variant=Primary, State=Disabled */
+.oc-button.oc-button--variant-primary.oc-button--state-disabled,
+.oc-button.oc-button--variant-primary:disabled {
+  background: var(--color-accent-disabled);
+  opacity: 0.45;
+}
+.oc-button.oc-button--variant-primary.oc-button--state-disabled .oc-button__label,
+.oc-button.oc-button--variant-primary:disabled .oc-button__label {
+  color: var(--color-text-on-accent);
+}
+
+/* Variant=Secondary, State=Default */
+.oc-button.oc-button--variant-secondary.oc-button--state-default {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-strong);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-default .oc-button__label {
+  color: var(--color-text-secondary);
+}
+
+/* Variant=Secondary, State=Hover */
+.oc-button.oc-button--variant-secondary.oc-button--state-hover,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-surface-raised-hover);
+  border: 1px solid var(--color-text-tertiary);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-hover .oc-button__label,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):hover .oc-button__label {
+  color: var(--color-text-secondary);
+}
+
+/* Variant=Secondary, State=Pressed */
+.oc-button.oc-button--variant-secondary.oc-button--state-pressed,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-surface-raised-pressed);
+  border: 1px solid var(--color-text-tertiary);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-pressed .oc-button__label,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):active .oc-button__label {
+  color: var(--color-text-secondary);
+}
+
+/* Variant=Secondary, State=Disabled */
+.oc-button.oc-button--variant-secondary.oc-button--state-disabled,
+.oc-button.oc-button--variant-secondary:disabled {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+  opacity: 0.45;
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-disabled .oc-button__label,
+.oc-button.oc-button--variant-secondary:disabled .oc-button__label {
+  color: var(--color-text-secondary);
+}
+
+/* Variant=Danger, State=Default */
+.oc-button.oc-button--variant-danger.oc-button--state-default {
+  background: var(--color-status-error-bg);
+  border: 1px solid var(--color-status-error-border);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-default .oc-button__label {
+  color: var(--color-status-error-text);
+}
+
+/* Variant=Danger, State=Hover */
+.oc-button.oc-button--variant-danger.oc-button--state-hover,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-status-error-bg-hover);
+  border: 1px solid var(--color-status-error-border);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-hover .oc-button__label,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-button__label {
+  color: var(--color-status-error-text);
+}
+
+/* Variant=Danger, State=Pressed */
+.oc-button.oc-button--variant-danger.oc-button--state-pressed,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-status-error-border);
+  border: 1px solid var(--color-status-error-border);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-pressed .oc-button__label,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):active .oc-button__label {
+  color: var(--color-status-error-text);
+}
+
+/* Variant=Danger, State=Disabled */
+.oc-button.oc-button--variant-danger.oc-button--state-disabled,
+.oc-button.oc-button--variant-danger:disabled {
+  background: var(--color-status-error-bg);
+  border: 1px solid var(--color-status-error-border);
+  opacity: 0.45;
+}
+.oc-button.oc-button--variant-danger.oc-button--state-disabled .oc-button__label,
+.oc-button.oc-button--variant-danger:disabled .oc-button__label {
+  color: var(--color-status-error-text);
+}
+

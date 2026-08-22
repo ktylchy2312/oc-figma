@@ -1,0 +1,68 @@
+/* ActionItem - generated from the Figma component  "ActionItem".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-actionitem {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  width: 300px;
+  background: var(--color-surface-background);
+  border-radius: var(--radius-md);
+}
+
+.oc-actionitem__icon {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.oc-actionitem__icon-2 {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.oc-actionitem__icon-3 {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.oc-actionitem__iconbutton {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.oc-actionitem__iconbutton-2 {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.oc-actionitem__label {
+  flex: 1 1 auto;
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+

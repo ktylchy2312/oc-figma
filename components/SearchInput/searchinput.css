@@ -1,0 +1,86 @@
+/* SearchInput - generated from the Figma component set "SearchInput".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-searchinput {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  align-items: center;
+  width: 330px;
+  height: 40px;
+  border-radius: var(--radius-md);
+}
+
+.oc-searchinput__caret {
+  width: 1.5px;
+  height: 20px;
+  background: var(--color-accent-default);
+}
+
+.oc-searchinput__icon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.oc-searchinput__label {
+  font-family: var(--font-family);
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+
+.oc-searchinput__value {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0-5);
+  align-items: center;
+  overflow: hidden;
+}
+
+/* ---- variants ---- */
+/* State=Default */
+.oc-searchinput.oc-searchinput--state-default {
+  background: var(--color-surface-column);
+  border: 1px solid var(--color-border-default);
+}
+.oc-searchinput.oc-searchinput--state-default .oc-searchinput__label {
+  color: var(--color-text-tertiary);
+}
+
+/* State=Filled */
+.oc-searchinput.oc-searchinput--state-filled {
+  background: var(--color-surface-column);
+  border: 1px solid var(--color-border-default);
+}
+.oc-searchinput.oc-searchinput--state-filled .oc-searchinput__label {
+  color: var(--color-text-primary);
+}
+
+/* State=Focus */
+.oc-searchinput.oc-searchinput--state-focus,
+.oc-searchinput:not(:disabled):not([aria-disabled="true"]):focus-visible {
+  background: var(--color-surface-column);
+  border: 1px solid var(--color-accent-default);
+}
+.oc-searchinput.oc-searchinput--state-focus .oc-searchinput__label,
+.oc-searchinput:not(:disabled):not([aria-disabled="true"]):focus-visible .oc-searchinput__label {
+  color: var(--color-text-primary);
+}
+
+/* State=Disabled */
+.oc-searchinput.oc-searchinput--state-disabled,
+.oc-searchinput:disabled {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+  opacity: 0.5;
+}
+.oc-searchinput.oc-searchinput--state-disabled .oc-searchinput__label,
+.oc-searchinput:disabled .oc-searchinput__label {
+  color: var(--color-text-tertiary);
+}
+

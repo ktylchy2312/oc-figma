@@ -1,0 +1,69 @@
+/* EmptyArt - generated from the Figma component  "EmptyArt".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-emptyart {
+  width: 64px;
+  height: 56px;
+}
+
+.oc-emptyart__cursor {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+}
+
+.oc-emptyart__doc1 {
+  width: 36px;
+  height: 28px;
+  background: var(--color-surface-default);
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border-strong);
+  overflow: hidden;
+}
+
+.oc-emptyart__doc2 {
+  width: 36px;
+  height: 28px;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-md);
+  border: 1.5px dashed var(--color-text-disabled);
+  overflow: hidden;
+}
+
+.oc-emptyart__vector {
+  width: 16px;
+  height: 26px;
+  background: var(--color-surface-default);
+  border: 1.7px solid var(--color-text-secondary);
+  box-sizing: border-box;
+}
+
+.oc-emptyart__vector-2 {
+  width: 16px;
+  height: 0px;
+  border: 1.7px solid var(--color-text-secondary);
+  box-sizing: border-box;
+}
+
+.oc-emptyart__vector-3 {
+  width: 0px;
+  height: 9px;
+  border: 1.7px solid var(--color-text-secondary);
+  box-sizing: border-box;
+}
+
+.oc-emptyart__vector-4 {
+  width: 7.6px;
+  height: 10px;
+  background: var(--color-accent-default);
+}
+
+.oc-emptyart__vector-5 {
+  width: 8px;
+  height: 11px;
+  border: 1.7px solid var(--color-accent-default);
+  box-sizing: border-box;
+}
+

@@ -1,0 +1,55 @@
+/* Dashboard - generated from the Figma component  "Dashboard".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-dashboard {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-dashboard__dashboardstat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  flex: 1 1 auto;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-lg) var(--radius-none) var(--radius-none) var(--radius-lg);
+}
+
+.oc-dashboard__dashboardstat-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  flex: 1 1 auto;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-none);
+  border-left: 1px solid var(--color-border-default);
+}
+
+.oc-dashboard__dashboardstat-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  flex: 1 1 auto;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-none);
+  border-left: 1px solid var(--color-border-default);
+}
+
+.oc-dashboard__dashboardstat-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  flex: 1 1 auto;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-none) var(--radius-lg) var(--radius-lg) var(--radius-none);
+  border-left: 1px solid var(--color-border-default);
+}
+

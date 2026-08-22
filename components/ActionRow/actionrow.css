@@ -1,0 +1,62 @@
+/* ActionRow - generated from the Figma component set "ActionRow".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-actionrow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  width: 280px;
+  border-radius: var(--radius-md);
+}
+
+.oc-actionrow__icon {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+}
+
+.oc-actionrow__label {
+  flex: 1 1 auto;
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+
+.oc-actionrow__statuscheck {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+}
+
+/* ---- variants ---- */
+/* State=Default */
+.oc-actionrow.oc-actionrow--state-default {
+  background: var(--color-surface-row);
+}
+
+/* State=Hover */
+.oc-actionrow.oc-actionrow--state-hover,
+.oc-actionrow:hover {
+  background: var(--color-surface-raised);
+}
+
+/* State=Pressed */
+.oc-actionrow.oc-actionrow--state-pressed,
+.oc-actionrow:active {
+  background: var(--color-surface-sunken);
+}
+
+/* State=Focus */
+.oc-actionrow.oc-actionrow--state-focus,
+.oc-actionrow:focus-visible {
+  background: var(--color-surface-row);
+  border: 1px solid var(--color-accent-default);
+}
+

@@ -1,0 +1,21 @@
+/* Icons - generated from the Figma component set "Icons" (52 variants: 26 icons x 2 styles).
+ * The exported SVGs have their stroke and fill rewritten to `currentColor`, matching the
+ * Figma rule that an icon takes the colour of the text next to it. Set `color` on the icon
+ * or on any ancestor to recolour it. Requires ../../tokens/tokens.css. */
+
+.oc-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.oc-icon--accent {
+  color: var(--color-text-primary);
+}
+
+.oc-icon--regular {
+  color: var(--color-text-primary);
+}
+

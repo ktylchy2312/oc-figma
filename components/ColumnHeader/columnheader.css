@@ -1,0 +1,81 @@
+/* ColumnHeader - generated from the Figma component set "ColumnHeader".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-columnheader {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  align-items: center;
+  width: 300px;
+  background: var(--color-surface-background);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-default);
+}
+
+.oc-columnheader__icon {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.oc-columnheader__icon-2 {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.oc-columnheader__iconbutton {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.oc-columnheader__iconbutton-2 {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.oc-columnheader__input {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) 10px var(--space-0) 10px; /* TODO: spacing not bound to a Figma variable */
+  align-items: center;
+  flex: 1 1 auto;
+  height: 32px;
+  background: var(--color-surface-default);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-accent-default);
+  overflow: hidden;
+}
+
+.oc-columnheader__label {
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 15px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+  letter-spacing: 0.3px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+/* ---- variants ---- */
+/* State=Default */
+.oc-columnheader.oc-columnheader--state-default .oc-columnheader__label {
+  flex: 1 1 auto;
+}
+

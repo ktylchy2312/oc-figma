@@ -1,0 +1,121 @@
+/* AlertButton - generated from the Figma component set "AlertButton".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-alertbutton {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+  height: 44px;
+  border-radius: var(--radius-lg);
+}
+
+.oc-alertbutton__alertbell {
+  width: 34px;
+  height: 34px;
+}
+
+.oc-alertbutton__label {
+  font-family: var(--font-family);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 13px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+/* ---- variants ---- */
+/* Tone=Danger, State=Default */
+.oc-alertbutton.oc-alertbutton--tone-danger.oc-alertbutton--state-default {
+  background: var(--color-status-error-bg);
+  border: 1px solid var(--color-status-error-border);
+}
+.oc-alertbutton.oc-alertbutton--tone-danger.oc-alertbutton--state-default .oc-alertbutton__label {
+  color: var(--color-status-error-text);
+}
+
+/* Tone=Danger, State=Hover */
+.oc-alertbutton.oc-alertbutton--tone-danger.oc-alertbutton--state-hover,
+.oc-alertbutton.oc-alertbutton--tone-danger:hover {
+  background: var(--color-status-error-bg-hover);
+  border: 1px solid var(--color-status-error-border);
+}
+.oc-alertbutton.oc-alertbutton--tone-danger.oc-alertbutton--state-hover .oc-alertbutton__label,
+.oc-alertbutton.oc-alertbutton--tone-danger:hover .oc-alertbutton__label {
+  color: var(--color-status-error-text);
+}
+
+/* Tone=Danger, State=Pressed */
+.oc-alertbutton.oc-alertbutton--tone-danger.oc-alertbutton--state-pressed,
+.oc-alertbutton.oc-alertbutton--tone-danger:active {
+  background: var(--color-status-error-border);
+  border: 1px solid var(--color-status-error-border);
+}
+.oc-alertbutton.oc-alertbutton--tone-danger.oc-alertbutton--state-pressed .oc-alertbutton__label,
+.oc-alertbutton.oc-alertbutton--tone-danger:active .oc-alertbutton__label {
+  color: var(--color-status-error-text);
+}
+
+/* Tone=Warning, State=Default */
+.oc-alertbutton.oc-alertbutton--tone-warning.oc-alertbutton--state-default {
+  background: var(--color-status-warning-bg);
+  border: 1px solid var(--color-status-warning-border);
+}
+.oc-alertbutton.oc-alertbutton--tone-warning.oc-alertbutton--state-default .oc-alertbutton__label {
+  color: var(--color-status-warning-text);
+}
+
+/* Tone=Warning, State=Hover */
+.oc-alertbutton.oc-alertbutton--tone-warning.oc-alertbutton--state-hover,
+.oc-alertbutton.oc-alertbutton--tone-warning:hover {
+  background: var(--color-status-warning-bg-hover);
+  border: 1px solid var(--color-status-warning-border);
+}
+.oc-alertbutton.oc-alertbutton--tone-warning.oc-alertbutton--state-hover .oc-alertbutton__label,
+.oc-alertbutton.oc-alertbutton--tone-warning:hover .oc-alertbutton__label {
+  color: var(--color-status-warning-text);
+}
+
+/* Tone=Warning, State=Pressed */
+.oc-alertbutton.oc-alertbutton--tone-warning.oc-alertbutton--state-pressed,
+.oc-alertbutton.oc-alertbutton--tone-warning:active {
+  background: var(--color-status-warning-border);
+  border: 1px solid var(--color-status-warning-border);
+}
+.oc-alertbutton.oc-alertbutton--tone-warning.oc-alertbutton--state-pressed .oc-alertbutton__label,
+.oc-alertbutton.oc-alertbutton--tone-warning:active .oc-alertbutton__label {
+  color: var(--color-status-warning-text);
+}
+
+/* Tone=Neutral, State=Default */
+.oc-alertbutton.oc-alertbutton--tone-neutral.oc-alertbutton--state-default {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+}
+.oc-alertbutton.oc-alertbutton--tone-neutral.oc-alertbutton--state-default .oc-alertbutton__label {
+  color: var(--color-text-tertiary);
+}
+
+/* Tone=Neutral, State=Hover */
+.oc-alertbutton.oc-alertbutton--tone-neutral.oc-alertbutton--state-hover,
+.oc-alertbutton.oc-alertbutton--tone-neutral:hover {
+  background: var(--color-surface-raised-hover);
+  border: 1px solid var(--color-border-strong);
+}
+.oc-alertbutton.oc-alertbutton--tone-neutral.oc-alertbutton--state-hover .oc-alertbutton__label,
+.oc-alertbutton.oc-alertbutton--tone-neutral:hover .oc-alertbutton__label {
+  color: var(--color-text-tertiary);
+}
+
+/* Tone=Neutral, State=Pressed */
+.oc-alertbutton.oc-alertbutton--tone-neutral.oc-alertbutton--state-pressed,
+.oc-alertbutton.oc-alertbutton--tone-neutral:active {
+  background: var(--color-surface-raised-pressed);
+  border: 1px solid var(--color-border-default);
+}
+.oc-alertbutton.oc-alertbutton--tone-neutral.oc-alertbutton--state-pressed .oc-alertbutton__label,
+.oc-alertbutton.oc-alertbutton--tone-neutral:active .oc-alertbutton__label {
+  color: var(--color-text-tertiary);
+}
+

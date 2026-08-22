@@ -1,0 +1,46 @@
+/* TabBar - generated from the Figma component  "TabBar".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-tabbar {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-6);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  align-items: center;
+  border-bottom: 2px solid var(--color-text-disabled);
+}
+
+.oc-tabbar__tab {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  align-items: center;
+  height: 40px;
+}
+
+.oc-tabbar__tab-2 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  align-items: center;
+  height: 40px;
+}
+
+.oc-tabbar__tab-3 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  align-items: center;
+  height: 40px;
+}
+
+.oc-tabbar__tab-4 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  align-items: center;
+  height: 40px;
+}
+

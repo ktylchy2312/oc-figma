@@ -1,0 +1,52 @@
+/* PageNumber - generated from the Figma component set "PageNumber".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-pagenumber {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-2) var(--space-0) var(--space-2);
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  border-radius: var(--radius-md);
+}
+
+.oc-pagenumber__label {
+  font-family: var(--font-family);
+  font-size: var(--font-body-medium-alter-size);
+  font-weight: var(--font-body-medium-alter-weight);
+  line-height: var(--font-body-medium-alter-line-height);
+  letter-spacing: var(--font-body-medium-alter-letter-spacing);
+}
+
+/* ---- variants ---- */
+/* State=Default */
+.oc-pagenumber.oc-pagenumber--state-default {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+}
+.oc-pagenumber.oc-pagenumber--state-default .oc-pagenumber__label {
+  color: var(--color-text-secondary);
+}
+
+/* State=Hover */
+.oc-pagenumber.oc-pagenumber--state-hover,
+.oc-pagenumber:hover {
+  background: var(--color-surface-raised-hover);
+  border: 1px solid var(--color-border-default);
+}
+.oc-pagenumber.oc-pagenumber--state-hover .oc-pagenumber__label,
+.oc-pagenumber:hover .oc-pagenumber__label {
+  color: var(--color-text-secondary);
+}
+
+/* State=Active */
+.oc-pagenumber.oc-pagenumber--state-active {
+  background: var(--color-accent-default);
+}
+.oc-pagenumber.oc-pagenumber--state-active .oc-pagenumber__label {
+  color: var(--color-text-on-accent);
+}
+

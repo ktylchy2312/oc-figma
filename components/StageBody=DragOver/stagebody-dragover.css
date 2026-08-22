@@ -1,0 +1,28 @@
+/* StageBody=DragOver - generated from the Figma component  "StageBody=DragOver".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-stagebody-dragover {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 5px 5px; /* TODO: spacing not bound to a Figma variable */
+  width: 403px;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-md);
+  border: 1.5px dashed var(--color-border-default);
+}
+
+.oc-stagebody-dragover__emptystate {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6) var(--space-6) var(--space-6) var(--space-6);
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  height: 327px;
+  background: var(--color-accent-default);
+  border-radius: var(--radius-md);
+}
+

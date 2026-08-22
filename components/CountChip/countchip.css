@@ -1,0 +1,31 @@
+/* CountChip - generated from the Figma component  "CountChip".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-countchip {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  align-items: center;
+  height: 24px;
+  background: var(--color-surface-raised-hover);
+  border-radius: var(--radius-md);
+}
+
+.oc-countchip__icon {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+}
+
+.oc-countchip__label {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-size: var(--font-body-small-alter-size);
+  font-weight: var(--font-body-small-alter-weight);
+  line-height: var(--font-body-small-alter-line-height);
+  letter-spacing: var(--font-body-small-alter-letter-spacing);
+}
+

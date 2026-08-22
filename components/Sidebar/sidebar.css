@@ -1,0 +1,121 @@
+/* Sidebar - generated from the Figma component  "Sidebar".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-4) var(--space-0);
+  width: 212px;
+  background: var(--color-surface-sunken);
+}
+
+.oc-sidebar__brandmark {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: var(--color-accent-default);
+  border-radius: var(--radius-md);
+}
+
+.oc-sidebar__brandrow {
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-5) var(--space-3) var(--space-4) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  border-bottom: 1px solid var(--color-border-default);
+  overflow: hidden;
+}
+
+.oc-sidebar__frame-2 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  flex: 1 1 auto;
+}
+
+.oc-sidebar__frame-3 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-sidebar__label {
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 18px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+  letter-spacing: 0.4px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+.oc-sidebar__navitem {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  background: var(--color-accent-tint);
+  border-radius: var(--radius-md);
+}
+
+.oc-sidebar__navitem-2 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  border-radius: var(--radius-md);
+}
+
+.oc-sidebar__navitem-3 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  border-radius: var(--radius-md);
+}
+
+.oc-sidebar__navitem-4 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  border-radius: var(--radius-md);
+}
+
+.oc-sidebar__navitem-5 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  border-radius: var(--radius-md);
+}
+
+.oc-sidebar__sidebarfooter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-0) 12px 12px 12px; /* TODO: spacing not bound to a Figma variable */
+  flex: 1 1 auto;
+}
+

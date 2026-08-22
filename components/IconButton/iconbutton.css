@@ -1,0 +1,79 @@
+/* IconButton - generated from the Figma component set "IconButton".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-iconbutton {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+}
+
+.oc-iconbutton__icon {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+}
+
+/* ---- variants ---- */
+/* Tone=Neutral, State=Default */
+.oc-iconbutton.oc-iconbutton--tone-neutral.oc-iconbutton--state-default {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+}
+
+/* Tone=Neutral, State=Hover */
+.oc-iconbutton.oc-iconbutton--tone-neutral.oc-iconbutton--state-hover,
+.oc-iconbutton.oc-iconbutton--tone-neutral:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-surface-raised-hover);
+  border: 1px solid var(--color-border-default);
+}
+
+/* Tone=Neutral, State=Pressed */
+.oc-iconbutton.oc-iconbutton--tone-neutral.oc-iconbutton--state-pressed,
+.oc-iconbutton.oc-iconbutton--tone-neutral:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-surface-raised-pressed);
+  border: 1px solid var(--color-border-default);
+}
+
+/* Tone=Neutral, State=Disabled */
+.oc-iconbutton.oc-iconbutton--tone-neutral.oc-iconbutton--state-disabled,
+.oc-iconbutton.oc-iconbutton--tone-neutral:disabled {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+  opacity: 0.45;
+}
+
+/* Tone=Danger, State=Default */
+.oc-iconbutton.oc-iconbutton--tone-danger.oc-iconbutton--state-default {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+}
+
+/* Tone=Danger, State=Hover */
+.oc-iconbutton.oc-iconbutton--tone-danger.oc-iconbutton--state-hover,
+.oc-iconbutton.oc-iconbutton--tone-danger:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-status-error-bg);
+  border: 1px solid var(--color-status-error-border);
+}
+
+/* Tone=Danger, State=Pressed */
+.oc-iconbutton.oc-iconbutton--tone-danger.oc-iconbutton--state-pressed,
+.oc-iconbutton.oc-iconbutton--tone-danger:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-status-error-bg-hover);
+  border: 1px solid var(--color-status-error-border);
+}
+
+/* Tone=Danger, State=Disabled */
+.oc-iconbutton.oc-iconbutton--tone-danger.oc-iconbutton--state-disabled,
+.oc-iconbutton.oc-iconbutton--tone-danger:disabled {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-default);
+  opacity: 0.45;
+}
+

@@ -1,0 +1,19 @@
+/* NavLabel - generated from the Figma component  "NavLabel".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-navlabel {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+}
+
+.oc-navlabel__label {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-weight: 500; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 15px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+

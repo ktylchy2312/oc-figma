@@ -1,0 +1,104 @@
+/* PageArrow - generated from the Figma component set "PageArrow".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-pagearrow {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-default);
+}
+
+.oc-pagearrow__label {
+  font-family: var(--font-family);
+  font-size: var(--font-body-large-size);
+  font-weight: var(--font-body-large-weight);
+  line-height: var(--font-body-large-line-height);
+  letter-spacing: var(--font-body-large-letter-spacing);
+}
+
+/* ---- variants ---- */
+/* Direction=Prev, State=Default */
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-default {
+  background: var(--color-surface-raised);
+}
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-default .oc-pagearrow__label {
+  color: var(--color-text-secondary);
+}
+
+/* Direction=Prev, State=Hover */
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-hover,
+.oc-pagearrow.oc-pagearrow--direction-prev:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-surface-raised-hover);
+}
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-hover .oc-pagearrow__label,
+.oc-pagearrow.oc-pagearrow--direction-prev:not(:disabled):not([aria-disabled="true"]):hover .oc-pagearrow__label {
+  color: var(--color-text-secondary);
+}
+
+/* Direction=Prev, State=Pressed */
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-pressed,
+.oc-pagearrow.oc-pagearrow--direction-prev:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-surface-raised-pressed);
+}
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-pressed .oc-pagearrow__label,
+.oc-pagearrow.oc-pagearrow--direction-prev:not(:disabled):not([aria-disabled="true"]):active .oc-pagearrow__label {
+  color: var(--color-text-secondary);
+}
+
+/* Direction=Prev, State=Disabled */
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-disabled,
+.oc-pagearrow.oc-pagearrow--direction-prev:disabled {
+  background: var(--color-surface-raised);
+  opacity: 0.45;
+}
+.oc-pagearrow.oc-pagearrow--direction-prev.oc-pagearrow--state-disabled .oc-pagearrow__label,
+.oc-pagearrow.oc-pagearrow--direction-prev:disabled .oc-pagearrow__label {
+  color: var(--color-border-strong);
+}
+
+/* Direction=Next, State=Default */
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-default {
+  background: var(--color-surface-raised);
+}
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-default .oc-pagearrow__label {
+  color: var(--color-text-secondary);
+}
+
+/* Direction=Next, State=Hover */
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-hover,
+.oc-pagearrow.oc-pagearrow--direction-next:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--color-surface-raised-hover);
+}
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-hover .oc-pagearrow__label,
+.oc-pagearrow.oc-pagearrow--direction-next:not(:disabled):not([aria-disabled="true"]):hover .oc-pagearrow__label {
+  color: var(--color-text-secondary);
+}
+
+/* Direction=Next, State=Pressed */
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-pressed,
+.oc-pagearrow.oc-pagearrow--direction-next:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--color-surface-raised-pressed);
+}
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-pressed .oc-pagearrow__label,
+.oc-pagearrow.oc-pagearrow--direction-next:not(:disabled):not([aria-disabled="true"]):active .oc-pagearrow__label {
+  color: var(--color-text-secondary);
+}
+
+/* Direction=Next, State=Disabled */
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-disabled,
+.oc-pagearrow.oc-pagearrow--direction-next:disabled {
+  background: var(--color-surface-raised);
+  opacity: 0.45;
+}
+.oc-pagearrow.oc-pagearrow--direction-next.oc-pagearrow--state-disabled .oc-pagearrow__label,
+.oc-pagearrow.oc-pagearrow--direction-next:disabled .oc-pagearrow__label {
+  color: var(--color-border-strong);
+}
+

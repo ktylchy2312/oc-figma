@@ -1,0 +1,111 @@
+/* Tab - generated from the Figma component set "Tab".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-tab {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  align-items: center;
+  height: 40px;
+}
+
+.oc-tab__icon {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.oc-tab__inner {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);
+  align-items: center;
+  overflow: hidden;
+}
+
+.oc-tab__label {
+  font-family: var(--font-family);
+  font-size: 14px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+.oc-tab__spacer {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.oc-tab__underline {
+  flex: 1 1 auto;
+  height: 2px;
+  overflow: hidden;
+}
+
+/* ---- variants ---- */
+/* Active=Idle, State=Default */
+.oc-tab.oc-tab--active-idle.oc-tab--state-default .oc-tab__label {
+  color: var(--color-text-secondary);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+.oc-tab.oc-tab--active-idle.oc-tab--state-default .oc-tab__underline {
+  background: var(--color-text-tertiary);
+  opacity: 0;
+}
+
+/* Active=Idle, State=Hover */
+.oc-tab.oc-tab--active-idle.oc-tab--state-hover .oc-tab__label,
+.oc-tab.oc-tab--active-idle:hover .oc-tab__label {
+  color: var(--color-accent-hover);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+.oc-tab.oc-tab--active-idle.oc-tab--state-hover .oc-tab__underline,
+.oc-tab.oc-tab--active-idle:hover .oc-tab__underline {
+  background: var(--color-text-tertiary);
+  opacity: 0;
+}
+
+/* Active=Idle, State=Pressed */
+.oc-tab.oc-tab--active-idle.oc-tab--state-pressed .oc-tab__label,
+.oc-tab.oc-tab--active-idle:active .oc-tab__label {
+  color: var(--color-text-disabled);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+.oc-tab.oc-tab--active-idle.oc-tab--state-pressed .oc-tab__underline,
+.oc-tab.oc-tab--active-idle:active .oc-tab__underline {
+  background: var(--color-accent-default);
+  opacity: 0;
+}
+
+/* Active=Active, State=Default */
+.oc-tab.oc-tab--active-active.oc-tab--state-default .oc-tab__label {
+  color: var(--color-accent-default);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+.oc-tab.oc-tab--active-active.oc-tab--state-default .oc-tab__underline {
+  background: var(--color-accent-default);
+}
+
+/* Active=Active, State=Hover */
+.oc-tab.oc-tab--active-active.oc-tab--state-hover .oc-tab__label,
+.oc-tab.oc-tab--active-active:hover .oc-tab__label {
+  color: var(--color-accent-hover);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+.oc-tab.oc-tab--active-active.oc-tab--state-hover .oc-tab__underline,
+.oc-tab.oc-tab--active-active:hover .oc-tab__underline {
+  background: var(--color-accent-hover);
+}
+
+/* Active=Active, State=Pressed */
+.oc-tab.oc-tab--active-active.oc-tab--state-pressed .oc-tab__label,
+.oc-tab.oc-tab--active-active:active .oc-tab__label {
+  color: var(--color-accent-pressed);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+.oc-tab.oc-tab--active-active.oc-tab--state-pressed .oc-tab__underline,
+.oc-tab.oc-tab--active-active:active .oc-tab__underline {
+  background: var(--color-accent-pressed);
+}
+

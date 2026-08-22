@@ -1,0 +1,48 @@
+/* FilterButton - generated from the Figma component set "FilterButton".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-filterbutton {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+  height: 40px;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.oc-filterbutton__icon {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.oc-filterbutton__icon-2 {
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+}
+
+.oc-filterbutton__label {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 14px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+/* ---- variants ---- */
+/* State=Default */
+.oc-filterbutton.oc-filterbutton--state-default {
+  border: 1px solid var(--color-border-default);
+}
+
+/* State=Active */
+.oc-filterbutton.oc-filterbutton--state-active {
+  border: 1px solid var(--color-accent-default);
+}
+

@@ -1,0 +1,46 @@
+/* AlertBell - generated from the Figma component set "AlertBell".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-alertbell {
+  width: 34px;
+  height: 34px;
+}
+
+.oc-alertbell__badge {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) 5px var(--space-0) 5px; /* TODO: spacing not bound to a Figma variable */
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  border-radius: 9999px; /* TODO: corner radius not bound to a Figma variable */
+  overflow: hidden;
+}
+
+.oc-alertbell__icon {
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.oc-alertbell__label {
+  color: #ffffff; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  font-family: var(--font-family);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 11px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+/* ---- variants ---- */
+/* Tone=Danger */
+.oc-alertbell.oc-alertbell--tone-danger .oc-alertbell__badge {
+  background: var(--color-status-error-text);
+}
+
+/* Tone=Warning */
+.oc-alertbell.oc-alertbell--tone-warning .oc-alertbell__badge {
+  background: var(--color-status-warning-text);
+}
+

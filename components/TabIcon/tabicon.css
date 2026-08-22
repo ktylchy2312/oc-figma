@@ -1,0 +1,17 @@
+/* TabIcon - generated from the Figma component  "TabIcon".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-tabicon {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+}
+
+.oc-tabicon__icon {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+}
+

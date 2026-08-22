@@ -1,0 +1,43 @@
+/* DashboardStat - generated from the Figma component set "DashboardStat".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-dashboardstat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* TODO: spacing not bound to a Figma variable */
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  width: 240px;
+  background: var(--color-surface-column);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border-default);
+}
+
+.oc-dashboardstat__label {
+  flex: 1 1 auto;
+  color: var(--color-text-tertiary);
+  font-family: var(--font-family);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 17px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+.oc-dashboardstat__label-2 {
+  font-family: var(--font-family);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 32px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+/* ---- variants ---- */
+/* Variant=Neutral */
+.oc-dashboardstat.oc-dashboardstat--variant-neutral .oc-dashboardstat__label-2 {
+  color: var(--color-text-primary);
+}
+
+/* Variant=Alert */
+.oc-dashboardstat.oc-dashboardstat--variant-alert .oc-dashboardstat__label-2 {
+  color: var(--color-status-error-text);
+}
+

@@ -1,0 +1,148 @@
+/* NavItem - generated from the Figma component set "NavItem".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-navitem {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.oc-navitem__icon {
+  overflow: hidden;
+}
+
+.oc-navitem__label {
+  flex: 1 1 auto;
+  font-family: var(--font-family);
+  font-size: 15px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+/* ---- variants ---- */
+/* State=Default, Collapsed=False */
+.oc-navitem.oc-navitem--state-default.oc-navitem--collapsed-false {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 200px;
+  border-radius: var(--radius-md);
+}
+.oc-navitem.oc-navitem--state-default.oc-navitem--collapsed-false .oc-navitem__icon {
+  width: 19px;
+  height: 19px;
+}
+.oc-navitem.oc-navitem--state-default.oc-navitem--collapsed-false .oc-navitem__label {
+  color: var(--color-text-secondary);
+  font-weight: 500; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+/* State=Hover, Collapsed=False */
+.oc-navitem.oc-navitem--state-hover.oc-navitem--collapsed-false,
+.oc-navitem.oc-navitem--collapsed-false:hover {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 200px;
+  background: var(--color-surface-raised);
+  border-radius: var(--radius-md);
+}
+.oc-navitem.oc-navitem--state-hover.oc-navitem--collapsed-false .oc-navitem__icon,
+.oc-navitem.oc-navitem--collapsed-false:hover .oc-navitem__icon {
+  width: 19px;
+  height: 19px;
+}
+.oc-navitem.oc-navitem--state-hover.oc-navitem--collapsed-false .oc-navitem__label,
+.oc-navitem.oc-navitem--collapsed-false:hover .oc-navitem__label {
+  color: var(--color-text-primary);
+  font-weight: 500; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+/* State=Pressed, Collapsed=False */
+.oc-navitem.oc-navitem--state-pressed.oc-navitem--collapsed-false,
+.oc-navitem.oc-navitem--collapsed-false:active {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 200px;
+  background: var(--color-surface-raised-hover);
+  border-radius: var(--radius-md);
+}
+.oc-navitem.oc-navitem--state-pressed.oc-navitem--collapsed-false .oc-navitem__icon,
+.oc-navitem.oc-navitem--collapsed-false:active .oc-navitem__icon {
+  width: 19px;
+  height: 19px;
+}
+.oc-navitem.oc-navitem--state-pressed.oc-navitem--collapsed-false .oc-navitem__label,
+.oc-navitem.oc-navitem--collapsed-false:active .oc-navitem__label {
+  color: var(--color-text-primary);
+  font-weight: 500; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+/* State=Active, Collapsed=False */
+.oc-navitem.oc-navitem--state-active.oc-navitem--collapsed-false {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 200px;
+  background: var(--color-accent-tint);
+  border-radius: var(--radius-md);
+}
+.oc-navitem.oc-navitem--state-active.oc-navitem--collapsed-false .oc-navitem__icon {
+  width: 19px;
+  height: 19px;
+}
+.oc-navitem.oc-navitem--state-active.oc-navitem--collapsed-false .oc-navitem__label {
+  color: var(--color-accent-default);
+  font-weight: 600; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+/* State=Default, Collapsed=True */
+.oc-navitem.oc-navitem--state-default.oc-navitem--collapsed-true {
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+  width: 60px;
+  border-radius: var(--radius-lg);
+}
+.oc-navitem.oc-navitem--state-default.oc-navitem--collapsed-true .oc-navitem__icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* State=Hover, Collapsed=True */
+.oc-navitem.oc-navitem--state-hover.oc-navitem--collapsed-true,
+.oc-navitem.oc-navitem--collapsed-true:hover {
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+  width: 60px;
+  background: var(--color-surface-raised);
+  border-radius: var(--radius-lg);
+}
+.oc-navitem.oc-navitem--state-hover.oc-navitem--collapsed-true .oc-navitem__icon,
+.oc-navitem.oc-navitem--collapsed-true:hover .oc-navitem__icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* State=Pressed, Collapsed=True */
+.oc-navitem.oc-navitem--state-pressed.oc-navitem--collapsed-true,
+.oc-navitem.oc-navitem--collapsed-true:active {
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+  width: 60px;
+  background: var(--color-surface-raised-hover);
+  border-radius: var(--radius-lg);
+}
+.oc-navitem.oc-navitem--state-pressed.oc-navitem--collapsed-true .oc-navitem__icon,
+.oc-navitem.oc-navitem--collapsed-true:active .oc-navitem__icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* State=Active, Collapsed=True */
+.oc-navitem.oc-navitem--state-active.oc-navitem--collapsed-true {
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+  width: 60px;
+  background: var(--color-accent-tint);
+  border-radius: var(--radius-lg);
+}
+.oc-navitem.oc-navitem--state-active.oc-navitem--collapsed-true .oc-navitem__icon {
+  width: 26px;
+  height: 26px;
+}
+

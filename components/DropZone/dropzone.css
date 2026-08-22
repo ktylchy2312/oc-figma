@@ -1,0 +1,12 @@
+/* DropZone - generated from the Figma component  "DropZone".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-dropzone {
+  width: 220px;
+  height: 120px;
+  border-radius: var(--radius-md);
+  border: 1.5px dashed var(--color-border-default);
+}
+

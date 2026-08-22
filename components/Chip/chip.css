@@ -1,0 +1,25 @@
+/* Chip - generated from the Figma component set "Chip".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-chip {
+  display: flex;
+  flex-direction: row;
+  padding: var(--space-1) 10px var(--space-1) 10px; /* TODO: spacing not bound to a Figma variable */
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  background: #262936; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  border-radius: var(--radius-full);
+}
+
+.oc-chip__label {
+  color: var(--color-text-tertiary);
+  font-family: var(--font-family);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 12px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+/* ---- variants ---- */

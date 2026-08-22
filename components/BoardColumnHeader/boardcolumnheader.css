@@ -1,0 +1,57 @@
+/* BoardColumnHeader - generated from the Figma component  "BoardColumnHeader".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-boardcolumnheader {
+  width: 403px;
+  height: 48px;
+}
+
+.oc-boardcolumnheader__arrowshape {
+  width: 403px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.oc-boardcolumnheader__countchip {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: space-between;
+  align-items: center;
+  width: 54px;
+  height: 24px;
+  background: var(--color-surface-raised-hover);
+  border-radius: var(--radius-md);
+}
+
+.oc-boardcolumnheader__label {
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-weight: 700; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 15px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+  letter-spacing: 0.3px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+}
+
+.oc-boardcolumnheader__row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-0) 36px var(--space-0) var(--space-4); /* TODO: spacing not bound to a Figma variable */
+  justify-content: space-between;
+  align-items: center;
+  width: 403px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.oc-boardcolumnheader__vector {
+  width: 403px;
+  height: 48px;
+  background: #12141c; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  border-radius: 8px; /* TODO: corner radius not bound to a Figma variable */
+}
+

@@ -1,0 +1,57 @@
+/* SidebarFooter - generated from the Figma component  "SidebarFooter".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-sidebarfooter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-0) 12px 12px 12px; /* TODO: spacing not bound to a Figma variable */
+}
+
+.oc-sidebarfooter__divider {
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--color-border-default);
+  overflow: hidden;
+}
+
+.oc-sidebarfooter__frame-165 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+}
+
+.oc-sidebarfooter__frame-166 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+}
+
+.oc-sidebarfooter__label {
+  color: #a8a6a3; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  font-family: var(--font-family);
+  font-weight: 500; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 12px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+.oc-sidebarfooter__label-2 {
+  color: #6e6b6b; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  font-family: var(--font-family);
+  font-weight: 400; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 10.5px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+
+.oc-sidebarfooter__label-3 {
+  color: #6e6b6b; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  font-family: var(--font-family);
+  font-weight: 400; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  font-size: 10.5px; /* TODO: no Figma text style on this layer and no exact match among the 12 defined styles */
+  line-height: normal;
+}
+

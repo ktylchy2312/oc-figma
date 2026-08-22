@@ -1,0 +1,690 @@
+/* CarCard - generated from the Figma component set "CarCard".
+ * Every value below is read from Figma. Where a value is not bound to a Figma variable
+ * or style, it is emitted literally and flagged with a TODO instead of being guessed.
+ * Requires ../../tokens/tokens.css. Do not hand-edit - regenerate instead. */
+
+.oc-carcard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.oc-carcard__actionrow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  border-radius: var(--radius-md);
+}
+
+.oc-carcard__content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.oc-carcard__divider {
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--color-border-default);
+  overflow: hidden;
+}
+
+.oc-carcard__doclist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.oc-carcard__docrow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  height: 36px;
+  background: var(--color-surface-row);
+  border-radius: var(--radius-md);
+}
+
+.oc-carcard__docrow-2 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  height: 36px;
+  background: var(--color-surface-row);
+  border-radius: var(--radius-md);
+}
+
+.oc-carcard__docrow-3 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  height: 36px;
+  background: var(--color-surface-row);
+  border-radius: var(--radius-md);
+}
+
+.oc-carcard__docrow-4 {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  height: 36px;
+  background: var(--color-surface-row);
+  border-radius: var(--radius-md);
+}
+
+.oc-carcard__docsheader {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  align-items: center;
+  flex: 1 1 auto;
+  background: var(--color-surface-row);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-default);
+}
+
+.oc-carcard__frame-142 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-144 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-145 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-146 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-147 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-151 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-152 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-153 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-154 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-155 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-156 {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__frame-5 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__headerrow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.oc-carcard__label {
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+}
+
+.oc-carcard__label-2 {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+}
+
+.oc-carcard__label-3 {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family);
+}
+
+.oc-carcard__label-4 {
+  flex: 1 1 auto;
+  font-family: var(--font-family);
+}
+
+.oc-carcard__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+.oc-carcard__metarow {
+  display: flex;
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.oc-carcard__ocstatus {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  align-items: center;
+}
+
+.oc-carcard__rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  flex: 1 1 auto;
+}
+
+/* ---- variants ---- */
+/* Size=Full, State=Default */
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default {
+  width: 403px;
+  background: var(--color-surface-default);
+  border: 1px solid var(--color-border-default);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__actionrow {
+  background: #1a1c26; /* TODO: unbound colour in Figma - no variable attached to this paint */
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__content {
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  flex: 1 1 auto;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__docsheader {
+  height: 36px;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__label {
+  font-size: var(--font-heading-3-size);
+  font-weight: var(--font-heading-3-weight);
+  line-height: var(--font-heading-3-line-height);
+  letter-spacing: var(--font-heading-3-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__label-2 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__label-3 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-default .oc-carcard__metarow {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Size=Full, State=Hover */
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover,
+.oc-carcard.oc-carcard--size-full:hover {
+  width: 403px;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-strong);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__actionrow,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__actionrow {
+  background: #1a1c26; /* TODO: unbound colour in Figma - no variable attached to this paint */
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__content,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__content {
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  flex: 1 1 auto;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__docsheader,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__docsheader {
+  height: 36px;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__label,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__label {
+  font-size: var(--font-heading-3-size);
+  font-weight: var(--font-heading-3-weight);
+  line-height: var(--font-heading-3-line-height);
+  letter-spacing: var(--font-heading-3-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__label-2,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__label-2 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__label-3,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__label-3 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__label-4,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-hover .oc-carcard__metarow,
+.oc-carcard.oc-carcard--size-full:hover .oc-carcard__metarow {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Size=Full, State=Pressed */
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed,
+.oc-carcard.oc-carcard--size-full:active {
+  width: 403px;
+  background: var(--color-surface-sunken);
+  border: 1px solid var(--color-accent-default);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__actionrow,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__actionrow {
+  background: #1a1c26; /* TODO: unbound colour in Figma - no variable attached to this paint */
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__content,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__content {
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  flex: 1 1 auto;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__docsheader,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__docsheader {
+  height: 36px;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__label,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__label {
+  font-size: var(--font-heading-3-size);
+  font-weight: var(--font-heading-3-weight);
+  line-height: var(--font-heading-3-line-height);
+  letter-spacing: var(--font-heading-3-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__label-2,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__label-2 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__label-3,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__label-3 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__label-4,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-pressed .oc-carcard__metarow,
+.oc-carcard.oc-carcard--size-full:active .oc-carcard__metarow {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Size=Full, State=Focus */
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus,
+.oc-carcard.oc-carcard--size-full:focus-visible {
+  width: 403px;
+  background: var(--color-surface-default);
+  border: 1px solid var(--color-accent-default);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__actionrow,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__actionrow {
+  background: #1a1c26; /* TODO: unbound colour in Figma - no variable attached to this paint */
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__content,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__content {
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  flex: 1 1 auto;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__docsheader,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__docsheader {
+  height: 36px;
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__label,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__label {
+  font-size: var(--font-heading-3-size);
+  font-weight: var(--font-heading-3-weight);
+  line-height: var(--font-heading-3-line-height);
+  letter-spacing: var(--font-heading-3-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__label-2,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__label-2 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__label-3,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__label-3 {
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__label-4,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-medium-size);
+  font-weight: var(--font-body-medium-weight);
+  line-height: var(--font-body-medium-line-height);
+  letter-spacing: var(--font-body-medium-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-full.oc-carcard--state-focus .oc-carcard__metarow,
+.oc-carcard.oc-carcard--size-full:focus-visible .oc-carcard__metarow {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Size=Compact, State=Default */
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default {
+  background: var(--color-surface-default);
+  border: 1px solid var(--color-border-default);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__actionrow {
+  background: var(--color-surface-row);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__content {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 250px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__docsheader {
+  height: 40px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__label {
+  font-size: var(--font-heading-4-size);
+  font-weight: var(--font-heading-4-weight);
+  line-height: var(--font-heading-4-line-height);
+  letter-spacing: var(--font-heading-4-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__label-2 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__label-3 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__label-4 {
+  color: #8a8a87; /* TODO: unbound colour in Figma - no variable attached to this paint */
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-default .oc-carcard__metarow {
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* Size=Compact, State=Hover */
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover,
+.oc-carcard.oc-carcard--size-compact:hover {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border-strong);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__actionrow,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__actionrow {
+  background: var(--color-surface-row);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__content,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__content {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 250px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__docsheader,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__docsheader {
+  height: 40px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__label,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__label {
+  font-size: var(--font-heading-4-size);
+  font-weight: var(--font-heading-4-weight);
+  line-height: var(--font-heading-4-line-height);
+  letter-spacing: var(--font-heading-4-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__label-2,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__label-2 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__label-3,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__label-3 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__label-4,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-hover .oc-carcard__metarow,
+.oc-carcard.oc-carcard--size-compact:hover .oc-carcard__metarow {
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* Size=Compact, State=Pressed */
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed,
+.oc-carcard.oc-carcard--size-compact:active {
+  background: var(--color-surface-sunken);
+  border: 1px solid var(--color-accent-default);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__actionrow,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__actionrow {
+  background: var(--color-surface-row);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__content,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__content {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 250px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__docsheader,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__docsheader {
+  height: 40px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__frame-156,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__frame-156 {
+  flex-direction: row;
+  align-items: center;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__label,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__label {
+  font-size: var(--font-heading-4-size);
+  font-weight: var(--font-heading-4-weight);
+  line-height: var(--font-heading-4-line-height);
+  letter-spacing: var(--font-heading-4-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__label-2,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__label-2 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__label-3,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__label-3 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__label-4,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-pressed .oc-carcard__metarow,
+.oc-carcard.oc-carcard--size-compact:active .oc-carcard__metarow {
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+/* Size=Compact, State=Focus */
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus,
+.oc-carcard.oc-carcard--size-compact:focus-visible {
+  background: var(--color-surface-default);
+  border: 1px solid var(--color-accent-default);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__actionrow,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__actionrow {
+  background: var(--color-surface-row);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__content,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__content {
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  width: 250px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__docsheader,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__docsheader {
+  height: 40px;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__frame-156,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__frame-156 {
+  flex-direction: column;
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__label,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__label {
+  font-size: var(--font-heading-4-size);
+  font-weight: var(--font-heading-4-weight);
+  line-height: var(--font-heading-4-line-height);
+  letter-spacing: var(--font-heading-4-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__label-2,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__label-2 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__label-3,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__label-3 {
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__label-4,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__label-4 {
+  color: var(--color-text-tertiary);
+  font-size: var(--font-body-small-size);
+  font-weight: var(--font-body-small-weight);
+  line-height: var(--font-body-small-line-height);
+  letter-spacing: var(--font-body-small-letter-spacing);
+}
+.oc-carcard.oc-carcard--size-compact.oc-carcard--state-focus .oc-carcard__metarow,
+.oc-carcard.oc-carcard--size-compact:focus-visible .oc-carcard__metarow {
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
