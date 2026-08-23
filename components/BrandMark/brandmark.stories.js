@@ -1,0 +1,32 @@
+// Generated from the Figma component "BrandMark". Do not hand-edit.
+
+const VARIANTS = {
+  "": "<div class=\"oc-brandmark\">\n  <svg class=\"oc-brandmark__icon oc-icon\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19 17H21C21.6 17 22 16.6 22 16V13C22 12.1 21.3 11.3 20.5 11.1C18.7 10.6 16 10 16 10C16 10 14.7 8.6 13.8 7.7C13.3 7.3 12.7 7 12 7H5C4.4 7 3.9 7.4 3.6 7.9L2.2 10.8C2.06758 11.1862 2 11.5917 2 12V16C2 16.6 2.4 17 3 17H5\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M7 19C8.10457 19 9 18.1046 9 17C9 15.8954 8.10457 15 7 15C5.89543 15 5 15.8954 5 17C5 18.1046 5.89543 19 7 19Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M9 17H15\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M17 19C18.1046 19 19 18.1046 19 17C19 15.8954 18.1046 15 17 15C15.8954 15 15 15.8954 15 17C15 18.1046 15.8954 19 17 19Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n</div>"
+};
+
+const CAPTIONS = [
+  "BrandMark"
+];
+
+export default {
+  title: "Navigation/BrandMark",
+  tags: ['autodocs'],
+  parameters: {
+    docs: { description: { component: "Generated from the Figma component  `BrandMark` (page: Page 2).\n\nRoot element `<div>`, base class `.oc-brandmark`.\n1 variant.\n\nValues come from the Figma bindings; nothing here is hand-tuned. Full property table in the\ncomponent's [README](../../components/BrandMark/README.md)." } },
+  },
+};
+
+export const AllVariants = {
+  name: "BrandMark",
+  parameters: { controls: { disable: true } },
+  render: () => {
+    const keys = Object.keys(VARIANTS);
+    return `<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start">${keys
+      .map(
+        (k, i) =>
+          `<figure style="margin:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start">${VARIANTS[k]}<figcaption style="font:12px ui-monospace,monospace;color:var(--color-text-tertiary)">${CAPTIONS[i]}</figcaption></figure>`
+      )
+      .join('')}</div>`;
+  },
+};
+

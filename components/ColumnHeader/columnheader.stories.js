@@ -1,0 +1,56 @@
+// Generated from the Figma component set "ColumnHeader". Do not hand-edit.
+
+const VARIANTS = {
+  "Default": "<div class=\"oc-columnheader oc-columnheader--state-default\">\n  <input class=\"oc-columnheader__label\" type=\"text\" value=\"KUPIONA\">\n  <div class=\"oc-columnheader__iconbutton\">\n    <svg class=\"oc-columnheader__icon oc-icon\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M21.174 6.81201C21.7027 6.28344 21.9998 5.56648 21.9999 4.81887C22 4.07125 21.7031 3.35422 21.1745 2.82551C20.6459 2.29681 19.929 1.99973 19.1813 1.99963C18.4337 1.99954 17.7167 2.29644 17.188 2.82501L3.842 16.174C3.60981 16.4055 3.43811 16.6905 3.342 17.004L2.021 21.356C1.99515 21.4425 1.9932 21.5344 2.01535 21.6219C2.03749 21.7094 2.08292 21.7892 2.14679 21.853C2.21067 21.9168 2.29062 21.9621 2.37815 21.9841C2.46569 22.0061 2.55755 22.004 2.644 21.978L6.997 20.658C7.31017 20.5628 7.59517 20.3921 7.827 20.161L21.174 6.81201Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </div>\n  <div class=\"oc-columnheader__iconbutton-2\">\n    <svg class=\"oc-columnheader__icon-2 oc-icon\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 11V17\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M14 11V17\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M3 6H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </div>\n</div>",
+  "Edit": "<div class=\"oc-columnheader oc-columnheader--state-edit\">\n  <div class=\"oc-columnheader__input\">\n    <span class=\"oc-columnheader__label\">KUPIONA</span>\n  </div>\n  <div class=\"oc-columnheader__iconbutton\">\n    <svg class=\"oc-columnheader__icon oc-icon\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10 11V17\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M14 11V17\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M3 6H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>\n  </div>\n</div>"
+};
+
+const CAPTIONS = [
+  "ColumnHeader / State: Default",
+  "ColumnHeader / State: Edit"
+];
+
+export default {
+  title: "Forms/ColumnHeader",
+  tags: ['autodocs'],
+  parameters: {
+    docs: { description: { component: "Generated from the Figma component set `ColumnHeader` (page: Page 2).\n\nRoot element `<div>`, base class `.oc-columnheader`.\n2 variants, axes: State.\n\nValues come from the Figma bindings; nothing here is hand-tuned. Full property table in the\ncomponent's [README](../../components/ColumnHeader/README.md)." } },
+  },
+  argTypes: {
+    "State": {
+      description: "Figma variant property \"State\"",
+      control: { type: 'inline-radio' },
+      options: ["Default","Edit"],
+    },
+  },
+  args: {
+    "State": "Default",
+  },
+};
+
+// Each combination is a real Figma variant, so the control picks markup rather than
+// toggling a class - a variant can differ in structure, not just in styling.
+export const Playground = {
+  render: (args) => {
+    const key = ["State"].map((a) => args[a]).join('|');
+    return (
+      VARIANTS[key] ||
+      '<p style="color: var(--color-text-tertiary)">This combination does not exist in Figma.</p>'
+    );
+  },
+};
+
+export const AllVariants = {
+  name: "All variants",
+  parameters: { controls: { disable: true } },
+  render: () => {
+    const keys = Object.keys(VARIANTS);
+    return `<div style="display:flex;flex-wrap:wrap;gap:20px;align-items:flex-start">${keys
+      .map(
+        (k, i) =>
+          `<figure style="margin:0;display:flex;flex-direction:column;gap:8px;align-items:flex-start">${VARIANTS[k]}<figcaption style="font:12px ui-monospace,monospace;color:var(--color-text-tertiary)">${CAPTIONS[i]}</figcaption></figure>`
+      )
+      .join('')}</div>`;
+  },
+};
+

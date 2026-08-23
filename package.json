@@ -1,0 +1,17 @@
+{
+  "name": "oc-kontrol-design-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OC-Kontrol design system, extracted from Figma as plain HTML + CSS",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build -o storybook-static"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.5.10",
+    "@storybook/html-vite": "^10.5.10",
+    "storybook": "^10.5.10",
+    "vite": "^8.2.2"
+  }
+}

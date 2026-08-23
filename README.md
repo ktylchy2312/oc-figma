@@ -1,10 +1,12 @@
 # OC-Kontrol design system — HTML + CSS
 
 The OC-Kontrol design system, extracted from Figma and written out as plain HTML and CSS.
-No build step, no framework, no dependencies: open `index.html` in a browser.
+The components themselves have no build step, no framework and no dependencies: open
+`index.html` in a browser and they work.
 
 - **[index.html](index.html)** — every component, in every variant it has in Figma
 - **[tokens/preview.html](tokens/preview.html)** — the palette, type scale, spacing and radius scales, shadows
+- **Storybook** — the same components with per-variant controls: `npm install && npm run storybook`
 
 53 components · 209 variants · 108 variables · 12 text styles · 3 effect styles
 
@@ -28,6 +30,31 @@ repo — the fix is to bind the value in Figma and regenerate.
 Two files are the exception, and both say so at the top: `base.css` (a reset — a Figma file has
 no notion of a user-agent default) and the layout CSS embedded in the two preview pages.
 
+## Storybook
+
+```
+npm install
+npm run storybook        # http://localhost:6006
+npm run build-storybook  # static build into storybook-static/
+```
+
+Storybook is the only part of this repo that needs Node. It is a viewer laid over the same
+files — the stories import nothing but the generated markup and `components/**/*.css`, so what
+you see in Storybook and what you get from a plain `<link>` tag cannot drift apart.
+
+Each component gets two stories:
+
+- **Playground** — one control per Figma variant axis. The controls swap *markup*, not just a
+  class: a Figma variant can differ in structure, not only in styling, so `State: Hover` shows
+  the actual Hover variant rather than a guess at what hovering would do. Combinations that
+  don't exist in Figma say so instead of rendering something invented.
+- **All variants** — the full matrix at once, each labelled with its Figma variant name.
+
+The toolbar has a Dark / Light / System switch wired to the same `data-theme` attribute the
+components use, so light-theme gaps are visible here too.
+
+Stories are generated alongside everything else; `<name>.stories.js` is not hand-written.
+
 ## Structure
 
 ```
@@ -37,12 +64,14 @@ tokens/
   preview.html      visual palette, type scale, spacing scale
 components/
   <Name>/
-    <name>.html     every variant, each preceded by a comment naming it
-    <name>.css      styles, referencing tokens.css only
-    README.md       property table: property | possible values | default
-  manifest.json     index of all components, generated
-base.css            minimal reset (the one non-Figma stylesheet)
-index.html          showcase
+    <name>.html        every variant, each preceded by a comment naming it
+    <name>.css         styles, referencing tokens.css only
+    <name>.stories.js  Storybook stories, generated
+    README.md          property table: property | possible values | default
+  manifest.json        index of all components, generated
+base.css               minimal reset (the one non-Figma stylesheet)
+index.html             showcase
+.storybook/            Storybook config
 ```
 
 ## Using the tokens
