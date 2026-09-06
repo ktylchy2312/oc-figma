@@ -1,0 +1,54 @@
+<!-- @dsCard group="Feedback" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>EmptyArt — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">EmptyArt</h1>
+  <p class="ds-meta">Feedback · atom · 1 вариант · Figma 32:1532 · страница Core · Токенов задействовано: 7 · без токена: 10</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="EmptyArt">
+    <div style="width:64px;height:56px;position:relative" data-part="root">
+      <div style="position:absolute;left:0px;top:2px;width:36px;height:28px;background:var(--surface-default);border:1.5px solid var(--border-strong);border-radius:var(--radius-md);overflow:hidden" data-part="doc1"></div>
+      <div style="position:absolute;left:12px;top:13px;width:36px;height:28px;background:var(--surface-column);border:1.5px solid var(--text-disabled);border-style:dashed;border-radius:var(--radius-md);overflow:hidden" data-part="doc2"></div>
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true" style="position:absolute;left:34px;top:26px;width:32px;height:32px;overflow:visible;flex:none" data-part="cursor"><path d="M24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11V21C8 25.4183 11.5817 29 16 29C20.4183 29 24 25.4183 24 21V11Z" style="fill:var(--surface-default);stroke:var(--text-secondary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H24" style="stroke:var(--text-secondary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 3V12" style="stroke:var(--text-secondary)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.40002 11.4V9.00002C8.40002 6.98438 9.20074 5.05129 10.626 3.62601C12.0513 2.20074 13.9844 1.40002 16 1.40002" style="fill:var(--accent-default)"/>
+<path d="M8 12V9C8 6.87827 8.84285 4.84344 10.3431 3.34315C11.8434 1.84285 13.8783 1 16 1" style="stroke:var(--accent-default)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">EmptyArt</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --border-strong, --radius-md, --surface-column, --surface-default, --text-disabled, --text-secondary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 64px, height = 56px, doc1.width = 36px, doc1.height = 28px, doc1.borderWidth = 1.5px, doc2.width = 36px, doc2.height = 28px, doc2.borderWidth = 1.5px, cursor.width = 32px, cursor.height = 32px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

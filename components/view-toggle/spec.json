@@ -1,0 +1,480 @@
+{
+  "name": "ViewToggle",
+  "slug": "view-toggle",
+  "group": "Navigation",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "401:7851",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Переключатель вида: список или доска. Обойма 40 с гранью и радиусом md, внутри два SegmentOption. Отступ обоймы 2, не 3: при 3 сегмент вылезал на грань по пикселю сверху и снизу (1+2+34+2+1 = 40). Начертание подписи одно на оба состояния — разная жирность меняет ширину подписи, и обойма дёргалась бы при переключении.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Value",
+      "type": "variant",
+      "figmaKey": "Value",
+      "values": [
+        "List",
+        "Board"
+      ],
+      "default": "List"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "ViewToggle",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "lista",
+      "name": "Lista",
+      "element": "div",
+      "component": "SegmentOption",
+      "slug": "segment-option"
+    },
+    {
+      "part": "lista/icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "lista/label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "etapy",
+      "name": "Etapy",
+      "element": "div",
+      "component": "SegmentOption",
+      "slug": "segment-option"
+    },
+    {
+      "part": "etapy/icon-board",
+      "name": "Icon",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Board",
+      "slug": "icons"
+    },
+    {
+      "part": "etapy/label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-raised)",
+    "borderColor": "var(--border-strong)",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "etapy.align": "CENTER",
+    "etapy.direction": "HORIZONTAL",
+    "etapy.gap": "var(--space-2)",
+    "etapy.height": "34px",
+    "etapy.justify": "CENTER",
+    "etapy.padding": "0 var(--space-4) 0 var(--space-4)",
+    "etapy.radius": "var(--radius-sm)",
+    "etapy.width": "80px",
+    "etapy/label.font": "Type/Body Small Alter 13/20px 700",
+    "gap": "var(--space-1)",
+    "height": "40px",
+    "justify": "MIN",
+    "lista.align": "CENTER",
+    "lista.direction": "HORIZONTAL",
+    "lista.gap": "var(--space-2)",
+    "lista.height": "34px",
+    "lista.justify": "CENTER",
+    "lista.padding": "0 var(--space-4) 0 var(--space-4)",
+    "lista.radius": "var(--radius-sm)",
+    "lista.width": "80px",
+    "lista/icon-list.height": "16px",
+    "lista/icon-list.icon": "List",
+    "lista/icon-list.iconColor": "var(--text-primary)",
+    "lista/icon-list.width": "16px",
+    "lista/label.font": "Type/Body Small Alter 13/20px 700",
+    "padding": "var(--space-0-5) var(--space-0-5) var(--space-0-5) var(--space-0-5)",
+    "radius": "var(--radius-md)"
+  },
+  "variants": [
+    {
+      "key": "Value=List",
+      "match": {
+        "Value": "List"
+      },
+      "nodeId": "401:7783",
+      "figmaSize": {
+        "w": 170,
+        "h": 40
+      },
+      "tokens": {
+        "etapy/icon-board.height": "16px",
+        "etapy/icon-board.icon": "Board",
+        "etapy/icon-board.iconColor": "var(--text-primary)",
+        "etapy/icon-board.width": "16px",
+        "etapy/label.color": "var(--text-tertiary)",
+        "lista.background": "var(--surface-raised-hover)",
+        "lista/label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "Value=List",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-strong)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-1)",
+          "padding": "var(--space-0-5) var(--space-0-5) var(--space-0-5) var(--space-0-5)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Lista",
+            "path": "lista",
+            "tag": "div",
+            "style": {
+              "width": "80px",
+              "height": "34px",
+              "background": "var(--surface-raised-hover)",
+              "border-radius": "var(--radius-sm)",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "0 var(--space-4) 0 var(--space-4)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "lista/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#401:9"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Label",
+                "path": "lista/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Label#401:0"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Etapy",
+            "path": "etapy",
+            "tag": "div",
+            "style": {
+              "width": "80px",
+              "height": "34px",
+              "border-radius": "var(--radius-sm)",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "0 var(--space-4) 0 var(--space-4)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icon",
+                "path": "etapy/icon-board",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#401:9"
+                },
+                "icon": "Board",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9.77778 2H2V9.77778H9.77778V2Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M22 2H14.2222V9.77778H22V2Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9.77778 14.2222H2V22H9.77778V14.2222Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M22 14.2222H14.2222V22H22V14.2222Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Label",
+                "path": "etapy/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#401:0"
+                },
+                "text": "Etapy",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "Value=Board",
+      "match": {
+        "Value": "Board"
+      },
+      "nodeId": "401:7817",
+      "figmaSize": {
+        "w": 170,
+        "h": 40
+      },
+      "tokens": {
+        "etapy.background": "var(--surface-raised-hover)",
+        "etapy/icon-grid.height": "16px",
+        "etapy/icon-grid.icon": "Grid",
+        "etapy/icon-grid.iconColor": "var(--text-primary)",
+        "etapy/icon-grid.width": "16px",
+        "etapy/label.color": "var(--text-primary)",
+        "lista/label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Value=Board",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-strong)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-1)",
+          "padding": "var(--space-0-5) var(--space-0-5) var(--space-0-5) var(--space-0-5)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Lista",
+            "path": "lista",
+            "tag": "div",
+            "style": {
+              "width": "80px",
+              "height": "34px",
+              "border-radius": "var(--radius-sm)",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "0 var(--space-4) 0 var(--space-4)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "lista/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#401:9"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Label",
+                "path": "lista/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#401:0"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Etapy",
+            "path": "etapy",
+            "tag": "div",
+            "style": {
+              "width": "80px",
+              "height": "34px",
+              "background": "var(--surface-raised-hover)",
+              "border-radius": "var(--radius-sm)",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "0 var(--space-4) 0 var(--space-4)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icon",
+                "path": "etapy/icon-grid",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#401:9"
+                },
+                "icon": "Grid",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Label",
+                "path": "etapy/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Label#401:0"
+                },
+                "text": "Etapy",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Переключатель вида: список или доска.",
+    "Обойма 40 с гранью и радиусом md, внутри два SegmentOption.",
+    "Отступ обоймы 2, не 3: при 3 сегмент вылезал на грань по пикселю сверху и снизу (1+2+34+2+1 = 40).",
+    "Начертание подписи одно на оба состояния — разная жирность меняет ширину подписи, и обойма дёргалась бы при переключении."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

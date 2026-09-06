@@ -1,0 +1,499 @@
+{
+  "name": "SearchInput",
+  "slug": "search-input",
+  "group": "Forms",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "62:10460",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#62:18",
+      "default": "VIN, numer, sprzedawca..."
+    },
+    {
+      "name": "Label2",
+      "type": "text",
+      "figmaKey": "Label2#62:19",
+      "default": "VIN, numer, sprzedawca..."
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Filled",
+        "Focus",
+        "Disabled"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "SearchInput",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "icon-search",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Search",
+      "slug": "icons"
+    },
+    {
+      "part": "label2",
+      "name": "VIN, numer, sprzedawca...",
+      "element": "span",
+      "textProp": "Label2"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-background)",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "height": "40px",
+    "icon-search.height": "16px",
+    "icon-search.icon": "Search",
+    "icon-search.width": "16px",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+    "radius": "var(--radius-md)",
+    "width": "330px"
+  },
+  "variants": [
+    {
+      "key": "State=Default",
+      "match": {
+        "State": "Default"
+      },
+      "nodeId": "41:1767",
+      "figmaSize": {
+        "w": 330,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "icon-search.iconColor": "var(--text-tertiary)",
+        "label2.color": "var(--text-tertiary)",
+        "label2.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "330px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-search",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-tertiary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Search",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.9999 20.9999L16.6599 16.6599\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "VIN, numer, sprzedawca...",
+            "path": "label2",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label2#62:19"
+            },
+            "text": "VIN, numer, sprzedawca...",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Filled",
+      "match": {
+        "State": "Filled"
+      },
+      "nodeId": "62:10445",
+      "figmaSize": {
+        "w": 330,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "icon-search.iconColor": "var(--text-primary)",
+        "label2.color": "var(--text-primary)",
+        "label2.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "State=Filled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "330px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-search",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Search",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.9999 20.9999L16.6599 16.6599\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "VIN, numer, sprzedawca...",
+            "path": "label2",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label2#62:19"
+            },
+            "text": "VIN, numer, sprzedawca...",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Focus",
+      "match": {
+        "State": "Focus"
+      },
+      "nodeId": "62:10450",
+      "figmaSize": {
+        "w": 330,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--accent-default)",
+        "icon-search.iconColor": "var(--text-primary)",
+        "value.align": "CENTER",
+        "value.direction": "HORIZONTAL",
+        "value.gap": "var(--space-0-5)",
+        "value.justify": "MIN",
+        "value/caret.background": "var(--accent-default)",
+        "value/caret.height": "20px",
+        "value/caret.width": "1.5px",
+        "value/label2.color": "var(--text-primary)",
+        "value/label2.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "330px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--accent-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-search",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Search",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.9999 20.9999L16.6599 16.6599\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Value",
+            "path": "value",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0-5)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "VIN, numer, sprzedawca...",
+                "path": "value/label2",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Label2#62:19"
+                },
+                "text": "VIN, numer, sprzedawca...",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Caret",
+                "path": "value/caret",
+                "tag": "div",
+                "style": {
+                  "width": "1.5px",
+                  "height": "20px",
+                  "background": "var(--accent-default)"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Disabled",
+      "match": {
+        "State": "Disabled"
+      },
+      "nodeId": "62:10455",
+      "figmaSize": {
+        "w": 330,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "icon-search.iconColor": "var(--text-tertiary)",
+        "label2.color": "var(--text-tertiary)",
+        "label2.font": "Type/Body Medium 15/24px 400",
+        "opacity": "0.5"
+      },
+      "render": {
+        "part": "State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "330px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "0.5",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-search",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-tertiary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Search",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.9999 20.9999L16.6599 16.6599\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "VIN, numer, sprzedawca...",
+            "path": "label2",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label2#62:19"
+            },
+            "text": "VIN, numer, sprzedawca...",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "330px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-search.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-search"
+      ]
+    },
+    {
+      "prop": "value/caret.width",
+      "value": "1.5px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "value/caret"
+      ]
+    },
+    {
+      "prop": "value/caret.height",
+      "value": "20px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "value/caret"
+      ]
+    },
+    {
+      "prop": "opacity",
+      "value": "0.5",
+      "reason": "непрозрачность без токена",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

@@ -1,0 +1,221 @@
+{
+  "name": "PageHeader",
+  "slug": "page-header",
+  "group": "Navigation",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "333:3760",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Шапка экрана: заголовок, необязательный подзаголовок, слот действий справа. Есть на всех четырёх экранах и до сих пор рисовался заново на каждом.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Title",
+      "type": "text",
+      "figmaKey": "Title#333:114",
+      "default": "Etapy"
+    },
+    {
+      "name": "Subtitle",
+      "type": "text",
+      "figmaKey": "Subtitle#333:115",
+      "default": "12 pojazdów w toku"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "PageHeader",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "titles",
+      "name": "Titles",
+      "element": "div"
+    },
+    {
+      "part": "titles/title",
+      "name": "Title",
+      "element": "span",
+      "textProp": "Title"
+    },
+    {
+      "part": "titles/subtitle",
+      "name": "Subtitle",
+      "element": "span",
+      "textProp": "Subtitle"
+    },
+    {
+      "part": "actions",
+      "name": "Actions",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "actions.align": "MIN",
+    "actions.direction": "HORIZONTAL",
+    "actions.gap": "var(--space-2)",
+    "actions.justify": "MIN",
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-4)",
+    "justify": "SPACE_BETWEEN",
+    "titles.align": "MIN",
+    "titles.direction": "VERTICAL",
+    "titles.gap": "var(--space-1)",
+    "titles.justify": "MIN",
+    "titles/subtitle.color": "var(--text-tertiary)",
+    "titles/subtitle.font": "Type/Body Medium 15/24px 400",
+    "titles/title.color": "var(--text-primary)",
+    "titles/title.font": "Type/Heading 1 32/40px 700",
+    "width": "900px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "333:3760",
+      "figmaSize": {
+        "w": 900,
+        "h": 100
+      },
+      "tokens": {},
+      "render": {
+        "part": "PageHeader",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "900px",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "justify-content": "space-between",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Titles",
+            "path": "titles",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Title",
+                "path": "titles/title",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "32px",
+                  "font-weight": "700",
+                  "line-height": "40px",
+                  "letter-spacing": "-0.2px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Title#333:114"
+                },
+                "text": "Etapy",
+                "font": {
+                  "style": "Type/Heading 1",
+                  "size": 32,
+                  "weight": 700,
+                  "lineHeight": "40px",
+                  "letterSpacing": "-0.2px"
+                }
+              },
+              {
+                "part": "Subtitle",
+                "path": "titles/subtitle",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Subtitle#333:115"
+                },
+                "text": "12 pojazdów w toku",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Actions",
+            "path": "actions",
+            "tag": "div",
+            "style": {
+              "width": "100px",
+              "height": "100px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Шапка экрана: заголовок, необязательный подзаголовок, слот действий справа.",
+    "Есть на всех четырёх экранах и до сих пор рисовался заново на каждом."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "900px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "actions.emptyHug",
+      "value": "100×100",
+      "reason": "пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом",
+      "at": [
+        "actions"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

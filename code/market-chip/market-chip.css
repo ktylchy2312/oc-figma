@@ -1,0 +1,50 @@
+/* MarketChip — сгенерировано из components/market-chip/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 22px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 22px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-market-chip {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-market-chip__letter {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* State=On */
+.oc-market-chip.oc-market-chip--state-on {
+  background: var(--status-success-bg);
+  border: 1px solid var(--status-success-border);
+}
+.oc-market-chip.oc-market-chip--state-on .oc-market-chip__letter {
+  color: var(--status-success-text);
+}
+
+/* State=Off */
+.oc-market-chip.oc-market-chip--state-off {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-subtle);
+}
+.oc-market-chip.oc-market-chip--state-off .oc-market-chip__letter {
+  color: var(--text-disabled);
+}

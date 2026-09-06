@@ -1,0 +1,249 @@
+{
+  "name": "DocItem",
+  "slug": "doc-item",
+  "group": "Cards",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "448:9905",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#452:20",
+      "default": "Dowód rejestracyjny"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "DocItem",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "icon-document",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Document",
+      "slug": "icons"
+    },
+    {
+      "part": "label",
+      "name": "Dowód rejestracyjny",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "icon-button",
+      "name": "IconButton",
+      "element": "div"
+    },
+    {
+      "part": "icon-button/icon-x",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "X",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-background)",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "icon-button.align": "CENTER",
+    "icon-button.direction": "HORIZONTAL",
+    "icon-button.gap": "var(--space-0)",
+    "icon-button.height": "24px",
+    "icon-button.justify": "CENTER",
+    "icon-button.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "icon-button.radius": "var(--radius-sm)",
+    "icon-button.width": "22px",
+    "icon-button/icon-x.height": "14px",
+    "icon-button/icon-x.icon": "X",
+    "icon-button/icon-x.iconColor": "var(--text-primary)",
+    "icon-button/icon-x.width": "14px",
+    "icon-document.height": "14px",
+    "icon-document.icon": "Document",
+    "icon-document.iconColor": "var(--text-primary)",
+    "icon-document.width": "14px",
+    "justify": "MIN",
+    "label.color": "var(--text-secondary)",
+    "label.font": "Type/Body Small 13/20px 400",
+    "label.width": "224px",
+    "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "radius": "var(--radius-md)",
+    "width": "300px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "448:9905",
+      "figmaSize": {
+        "w": 300,
+        "h": 40
+      },
+      "tokens": {},
+      "render": {
+        "part": "DocItem",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "300px",
+          "background": "var(--surface-background)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-document",
+            "tag": "svg",
+            "style": {
+              "width": "14px",
+              "height": "14px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Document",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M10 9H8\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 13H8\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 17H8\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dowód rejestracyjny",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "224px",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#452:20"
+            },
+            "text": "Dowód rejestracyjny",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "IconButton",
+            "path": "icon-button",
+            "tag": "div",
+            "style": {
+              "width": "22px",
+              "height": "24px",
+              "border-radius": "var(--radius-sm)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "icon-button/icon-x",
+                "tag": "svg",
+                "style": {
+                  "width": "14px",
+                  "height": "14px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "X",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "300px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-document.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-document"
+      ]
+    },
+    {
+      "prop": "icon-button.width",
+      "value": "22px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "icon-button"
+      ]
+    },
+    {
+      "prop": "icon-button.height",
+      "value": "24px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "icon-button"
+      ]
+    },
+    {
+      "prop": "icon-button/icon-x.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-button/icon-x"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

@@ -1,0 +1,172 @@
+{
+  "name": "SettingsCard",
+  "slug": "settings-card",
+  "group": "Cards",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "333:3765",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Панель с содержимым — она же общий контейнер приложения: инвентаризация звала его самым переиспользуемым и не находила в библиотеке. Заголовок необязателен.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Title",
+      "type": "text",
+      "figmaKey": "Title#333:116",
+      "default": "Synchronizacja"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "SettingsCard",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "title",
+      "name": "Title",
+      "element": "span",
+      "textProp": "Title"
+    },
+    {
+      "part": "content",
+      "name": "Content",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "background": "var(--surface-sunken)",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "1px",
+    "content.align": "MIN",
+    "content.direction": "VERTICAL",
+    "content.gap": "var(--space-3)",
+    "content.justify": "MIN",
+    "direction": "VERTICAL",
+    "gap": "var(--space-4)",
+    "justify": "MIN",
+    "padding": "var(--space-5) var(--space-6) var(--space-5) var(--space-6)",
+    "radius": "var(--radius-lg)",
+    "title.color": "var(--text-primary)",
+    "title.font": "Type/Heading 4 17/24px 700",
+    "width": "520px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "333:3765",
+      "figmaSize": {
+        "w": 520,
+        "h": 182
+      },
+      "tokens": {},
+      "render": {
+        "part": "SettingsCard",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "520px",
+          "background": "var(--surface-sunken)",
+          "border": "1px solid var(--border-subtle)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-5) var(--space-6) var(--space-5) var(--space-6)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Title",
+            "path": "title",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Title#333:116"
+            },
+            "text": "Synchronizacja",
+            "font": {
+              "style": "Type/Heading 4",
+              "size": 17,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Content",
+            "path": "content",
+            "tag": "div",
+            "style": {
+              "height": "100px",
+              "align-self": "stretch",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Панель с содержимым — она же общий контейнер приложения: инвентаризация звала его самым переиспользуемым и не находила в библиотеке.",
+    "Заголовок необязателен."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "520px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "content.emptyHug",
+      "value": "470×100",
+      "reason": "пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом",
+      "at": [
+        "content"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

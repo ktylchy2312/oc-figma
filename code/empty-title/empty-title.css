@@ -1,0 +1,28 @@
+/* EmptyTitle — сгенерировано из components/empty-title/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-empty-title {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-empty-title__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* ---- варианты ---- */

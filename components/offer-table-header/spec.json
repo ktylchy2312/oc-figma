@@ -1,0 +1,684 @@
+{
+  "name": "OfferTableHeader",
+  "slug": "offer-table-header",
+  "group": "Cards",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "194:2066",
+    "page": "MAG-KONTROL",
+    "kind": "ONE"
+  },
+  "description": "Column header for OfferTable. Its column track must stay identical to OfferRow — widths live on the table, never per row.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "OfferTableHeader",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "zdj-cie",
+      "name": "ZDJĘCIE",
+      "element": "div"
+    },
+    {
+      "part": "zdj-cie/zdj-cie",
+      "name": "ZDJĘCIE",
+      "element": "span"
+    },
+    {
+      "part": "sygnatura",
+      "name": "SYGNATURA",
+      "element": "div"
+    },
+    {
+      "part": "sygnatura/sygnatura",
+      "name": "SYGNATURA",
+      "element": "span"
+    },
+    {
+      "part": "nazwa",
+      "name": "NAZWA",
+      "element": "div"
+    },
+    {
+      "part": "nazwa/nazwa",
+      "name": "NAZWA",
+      "element": "span"
+    },
+    {
+      "part": "pojazd",
+      "name": "POJAZD",
+      "element": "div"
+    },
+    {
+      "part": "pojazd/pojazd",
+      "name": "POJAZD",
+      "element": "span"
+    },
+    {
+      "part": "kategoria",
+      "name": "KATEGORIA",
+      "element": "div"
+    },
+    {
+      "part": "kategoria/kategoria",
+      "name": "KATEGORIA",
+      "element": "span"
+    },
+    {
+      "part": "stan-mag",
+      "name": "STAN MAG.",
+      "element": "div"
+    },
+    {
+      "part": "stan-mag/stan-mag",
+      "name": "STAN MAG.",
+      "element": "span"
+    },
+    {
+      "part": "rynki",
+      "name": "RYNKI",
+      "element": "div"
+    },
+    {
+      "part": "rynki/rynki",
+      "name": "RYNKI",
+      "element": "span"
+    },
+    {
+      "part": "cena",
+      "name": "CENA",
+      "element": "div"
+    },
+    {
+      "part": "cena/cena",
+      "name": "CENA",
+      "element": "span"
+    },
+    {
+      "part": "status",
+      "name": "STATUS",
+      "element": "div"
+    },
+    {
+      "part": "status/status",
+      "name": "STATUS",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-raised)",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "bottom 1px",
+    "cena.align": "CENTER",
+    "cena.direction": "HORIZONTAL",
+    "cena.gap": "0",
+    "cena.justify": "MIN",
+    "cena.width": "84px",
+    "cena/cena.color": "var(--text-tertiary)",
+    "cena/cena.font": "Type/Label 12/16px 700",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-4)",
+    "justify": "MIN",
+    "kategoria.align": "CENTER",
+    "kategoria.direction": "HORIZONTAL",
+    "kategoria.gap": "0",
+    "kategoria.justify": "MIN",
+    "kategoria.width": "280px",
+    "kategoria/kategoria.color": "var(--text-tertiary)",
+    "kategoria/kategoria.font": "Type/Label 12/16px 700",
+    "nazwa.align": "CENTER",
+    "nazwa.direction": "HORIZONTAL",
+    "nazwa.gap": "0",
+    "nazwa.justify": "MIN",
+    "nazwa.width": "368px",
+    "nazwa/nazwa.color": "var(--text-tertiary)",
+    "nazwa/nazwa.font": "Type/Label 12/16px 700",
+    "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+    "pojazd.align": "CENTER",
+    "pojazd.direction": "HORIZONTAL",
+    "pojazd.gap": "0",
+    "pojazd.justify": "MIN",
+    "pojazd.width": "280px",
+    "pojazd/pojazd.color": "var(--text-tertiary)",
+    "pojazd/pojazd.font": "Type/Label 12/16px 700",
+    "rynki.align": "CENTER",
+    "rynki.direction": "HORIZONTAL",
+    "rynki.gap": "0",
+    "rynki.justify": "MIN",
+    "rynki.width": "108px",
+    "rynki/rynki.color": "var(--text-tertiary)",
+    "rynki/rynki.font": "Type/Label 12/16px 700",
+    "stan-mag.align": "CENTER",
+    "stan-mag.direction": "HORIZONTAL",
+    "stan-mag.gap": "0",
+    "stan-mag.justify": "MIN",
+    "stan-mag.width": "84px",
+    "stan-mag/stan-mag.color": "var(--text-tertiary)",
+    "stan-mag/stan-mag.font": "Type/Label 12/16px 700",
+    "status.align": "CENTER",
+    "status.direction": "HORIZONTAL",
+    "status.gap": "0",
+    "status.justify": "MIN",
+    "status.width": "132px",
+    "status/status.color": "var(--text-tertiary)",
+    "status/status.font": "Type/Label 12/16px 700",
+    "sygnatura.align": "CENTER",
+    "sygnatura.direction": "HORIZONTAL",
+    "sygnatura.gap": "0",
+    "sygnatura.justify": "MIN",
+    "sygnatura.width": "112px",
+    "sygnatura/sygnatura.color": "var(--text-tertiary)",
+    "sygnatura/sygnatura.font": "Type/Label 12/16px 700",
+    "width": "1660px",
+    "zdj-cie.align": "CENTER",
+    "zdj-cie.direction": "HORIZONTAL",
+    "zdj-cie.gap": "0",
+    "zdj-cie.justify": "MIN",
+    "zdj-cie.width": "52px",
+    "zdj-cie/zdj-cie.color": "var(--text-tertiary)",
+    "zdj-cie/zdj-cie.font": "Type/Label 12/16px 700"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "194:2066",
+      "figmaSize": {
+        "w": 1660,
+        "h": 41
+      },
+      "tokens": {},
+      "render": {
+        "part": "OfferTableHeader",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1660px",
+          "background": "var(--surface-raised)",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "ZDJĘCIE",
+            "path": "zdj-cie",
+            "tag": "div",
+            "style": {
+              "width": "52px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "ZDJĘCIE",
+                "path": "zdj-cie/zdj-cie",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "ZDJĘCIE",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "SYGNATURA",
+            "path": "sygnatura",
+            "tag": "div",
+            "style": {
+              "width": "112px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "SYGNATURA",
+                "path": "sygnatura/sygnatura",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "SYGNATURA",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "NAZWA",
+            "path": "nazwa",
+            "tag": "div",
+            "style": {
+              "width": "368px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "NAZWA",
+                "path": "nazwa/nazwa",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "NAZWA",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "POJAZD",
+            "path": "pojazd",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "POJAZD",
+                "path": "pojazd/pojazd",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "POJAZD",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "KATEGORIA",
+            "path": "kategoria",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "KATEGORIA",
+                "path": "kategoria/kategoria",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "KATEGORIA",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "STAN MAG.",
+            "path": "stan-mag",
+            "tag": "div",
+            "style": {
+              "width": "84px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "STAN MAG.",
+                "path": "stan-mag/stan-mag",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "STAN MAG.",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "RYNKI",
+            "path": "rynki",
+            "tag": "div",
+            "style": {
+              "width": "108px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "RYNKI",
+                "path": "rynki/rynki",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "RYNKI",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "CENA",
+            "path": "cena",
+            "tag": "div",
+            "style": {
+              "width": "84px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "CENA",
+                "path": "cena/cena",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "CENA",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "STATUS",
+            "path": "status",
+            "tag": "div",
+            "style": {
+              "width": "132px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "STATUS",
+                "path": "status/status",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "STATUS",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Column header for OfferTable.",
+    "Its column track must stay identical to OfferRow — widths live on the table, never per row.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "1660px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "zdj-cie.width",
+      "value": "52px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "zdj-cie"
+      ]
+    },
+    {
+      "prop": "sygnatura.width",
+      "value": "112px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "sygnatura"
+      ]
+    },
+    {
+      "prop": "nazwa.width",
+      "value": "368px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "nazwa"
+      ]
+    },
+    {
+      "prop": "pojazd.width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "pojazd"
+      ]
+    },
+    {
+      "prop": "kategoria.width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "kategoria"
+      ]
+    },
+    {
+      "prop": "stan-mag.width",
+      "value": "84px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "stan-mag"
+      ]
+    },
+    {
+      "prop": "rynki.width",
+      "value": "108px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "rynki"
+      ]
+    },
+    {
+      "prop": "cena.width",
+      "value": "84px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "cena"
+      ]
+    },
+    {
+      "prop": "status.width",
+      "value": "132px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "status"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

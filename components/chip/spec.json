@@ -1,0 +1,202 @@
+{
+  "name": "Chip",
+  "slug": "chip",
+  "group": "Forms",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "41:1750",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Neutral — обычная метка, круглая. Code — код или сигнатура, квадратная (Radius/sm).",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#41:114",
+      "default": "3/5"
+    },
+    {
+      "name": "Variant",
+      "type": "variant",
+      "figmaKey": "Variant",
+      "values": [
+        "Neutral",
+        "Code"
+      ],
+      "default": "Neutral"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Chip",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "label",
+      "name": "3/5",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-raised-hover)",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "justify": "CENTER",
+    "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "width": "35px"
+  },
+  "variants": [
+    {
+      "key": "Variant=Neutral",
+      "match": {
+        "Variant": "Neutral"
+      },
+      "nodeId": "41:1744",
+      "figmaSize": {
+        "w": 35,
+        "h": 24
+      },
+      "tokens": {
+        "label.color": "var(--text-tertiary)",
+        "label.font": "Type/Label 12/16px 700",
+        "radius": "var(--radius-full)"
+      },
+      "render": {
+        "part": "Variant=Neutral",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "35px",
+          "background": "var(--surface-raised-hover)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "3/5",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#41:114"
+            },
+            "text": "3/5",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Code",
+      "match": {
+        "Variant": "Code"
+      },
+      "nodeId": "322:3632",
+      "figmaSize": {
+        "w": 35,
+        "h": 24
+      },
+      "tokens": {
+        "3-5.color": "var(--text-tertiary)",
+        "3-5.font": "Type/Label 12/16px 700",
+        "radius": "var(--radius-sm)"
+      },
+      "render": {
+        "part": "Variant=Code",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "35px",
+          "background": "var(--surface-raised-hover)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "3/5",
+            "path": "3-5",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "text": "3/5",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Neutral — обычная метка, круглая.",
+    "Code — код или сигнатура, квадратная (Radius/sm).",
+    "Входит в состав других компонентов (4 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "35px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

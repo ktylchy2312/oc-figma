@@ -1,0 +1,363 @@
+/* Sidebar — сгенерировано из components/sidebar/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 84px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 574px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — width = 212px — нет шкалы размеров: ширина задана числом */
+.oc-sidebar {
+  height: 574px;
+  background: var(--surface-sunken);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-4) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-sidebar__frame-3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — frame-3/brand-row.borderWidth = 1px — нет токена под толщину обводки */
+.oc-sidebar__brand-row {
+  align-self: stretch;
+  border-bottom: 1px solid var(--border-default);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-3) var(--space-4) var(--space-3);
+  align-items: center;
+}
+
+.oc-sidebar__brand-mark {
+  width: 32px;
+  height: 32px;
+  background: var(--accent-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-sidebar__icon-car {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--border-subtle);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-sidebar__frame-2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — frame-3/frame-2/nav-item.emptyHug = 60×58 — пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом */
+.oc-sidebar__nav-item {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* TODO: unbound — frame-3/frame-2/nav-item-2.emptyHug = 60×58 — пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом */
+.oc-sidebar__nav-item-2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* TODO: unbound — frame-3/frame-2/nav-item-3.emptyHug = 60×58 — пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом */
+.oc-sidebar__nav-item-3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* TODO: unbound — frame-3/frame-2/nav-item-4.emptyHug = 60×58 — пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом */
+.oc-sidebar__nav-item-4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* TODO: unbound — frame-3/frame-2/nav-item-5.emptyHug = 60×58 — пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом */
+.oc-sidebar__nav-item-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* ---- варианты ---- */
+
+/* Collapsed=True */
+.oc-sidebar.oc-sidebar--collapsed-true {
+  width: 84px;
+}
+.oc-sidebar.oc-sidebar--collapsed-true .oc-sidebar__brand-row {
+  justify-content: center;
+}
+.oc-sidebar.oc-sidebar--collapsed-true .oc-sidebar__nav-item {
+  height: 58px;
+  background: var(--accent-tint);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+}
+.oc-sidebar.oc-sidebar--collapsed-true .oc-sidebar__nav-item-2 {
+  height: 58px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+}
+.oc-sidebar.oc-sidebar--collapsed-true .oc-sidebar__nav-item-3 {
+  height: 58px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+}
+.oc-sidebar.oc-sidebar--collapsed-true .oc-sidebar__nav-item-4 {
+  height: 58px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+}
+.oc-sidebar.oc-sidebar--collapsed-true .oc-sidebar__nav-item-5 {
+  height: 58px;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-3) var(--space-4) var(--space-3);
+  justify-content: center;
+}
+
+/* Collapsed=False */
+.oc-sidebar.oc-sidebar--collapsed-false {
+  width: 212px;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__brand-row {
+  justify-content: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item {
+  background-image: linear-gradient(283deg, var(--gradient-nav-active-stops));
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-2 {
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  justify-content: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-3 {
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  justify-content: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-4 {
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  justify-content: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-5 {
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+  justify-content: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__brand-row-oc-kontrol {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__icon-grid {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 133px;
+  color: var(--text-primary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__icon-document {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 133px;
+  color: var(--text-secondary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__icon-shield {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 133px;
+  color: var(--text-secondary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__icon-archive {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 133px;
+  color: var(--text-secondary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__icon-settings {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__nav-item-5-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 133px;
+  color: var(--text-secondary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__sidebar-footer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-0) var(--space-tight) var(--space-tight) var(--space-tight);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__frame-166 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__frame-166-oc-kontrol {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__frame-165 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__wersja-1-4-2-build-2026-08 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+.oc-sidebar.oc-sidebar--collapsed-false .oc-sidebar__2026-oc-kontrol {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}

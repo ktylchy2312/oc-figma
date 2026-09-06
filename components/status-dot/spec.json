@@ -1,0 +1,177 @@
+{
+  "name": "StatusDot",
+  "slug": "status-dot",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "323:3670",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Точка статуса 8×8. Живёт внутри пилюли статуса и в строках таблиц. Цвет означает состояние, поэтому статус никогда не передаётся только ей — рядом всегда есть текст.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Tone",
+      "type": "variant",
+      "figmaKey": "Tone",
+      "values": [
+        "Success",
+        "Warning",
+        "Error",
+        "Neutral"
+      ],
+      "default": "Success"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "StatusDot",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    }
+  ],
+  "base": {
+    "height": "8px",
+    "radius": "var(--radius-full)",
+    "width": "8px"
+  },
+  "variants": [
+    {
+      "key": "Tone=Success",
+      "match": {
+        "Tone": "Success"
+      },
+      "nodeId": "323:3666",
+      "figmaSize": {
+        "w": 8,
+        "h": 8
+      },
+      "tokens": {
+        "background": "var(--status-success-text)"
+      },
+      "render": {
+        "part": "Tone=Success",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "8px",
+          "height": "8px",
+          "background": "var(--status-success-text)",
+          "border-radius": "var(--radius-full)"
+        }
+      }
+    },
+    {
+      "key": "Tone=Warning",
+      "match": {
+        "Tone": "Warning"
+      },
+      "nodeId": "323:3667",
+      "figmaSize": {
+        "w": 8,
+        "h": 8
+      },
+      "tokens": {
+        "background": "var(--status-warning-text)"
+      },
+      "render": {
+        "part": "Tone=Warning",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "8px",
+          "height": "8px",
+          "background": "var(--status-warning-text)",
+          "border-radius": "var(--radius-full)"
+        }
+      }
+    },
+    {
+      "key": "Tone=Error",
+      "match": {
+        "Tone": "Error"
+      },
+      "nodeId": "323:3668",
+      "figmaSize": {
+        "w": 8,
+        "h": 8
+      },
+      "tokens": {
+        "background": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Tone=Error",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "8px",
+          "height": "8px",
+          "background": "var(--status-error-text)",
+          "border-radius": "var(--radius-full)"
+        }
+      }
+    },
+    {
+      "key": "Tone=Neutral",
+      "match": {
+        "Tone": "Neutral"
+      },
+      "nodeId": "323:3669",
+      "figmaSize": {
+        "w": 8,
+        "h": 8
+      },
+      "tokens": {
+        "background": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Tone=Neutral",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "8px",
+          "height": "8px",
+          "background": "var(--text-tertiary)",
+          "border-radius": "var(--radius-full)"
+        }
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Точка статуса 8×8.",
+    "Живёт внутри пилюли статуса и в строках таблиц.",
+    "Цвет означает состояние, поэтому статус никогда не передаётся только ей — рядом всегда есть текст."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "8px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "8px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

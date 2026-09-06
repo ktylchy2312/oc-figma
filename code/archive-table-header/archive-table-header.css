@@ -1,0 +1,182 @@
+/* ArchiveTableHeader — сгенерировано из components/archive-table-header/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-archive-table-header {
+  width: 1658px;
+  align-self: stretch;
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — sygnatura.width = 112px — нет шкалы размеров: ширина задана числом */
+.oc-archive-table-header__sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__sygnatura-sygnatura {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — pojazd.width = 284px — нет шкалы размеров: ширина задана числом */
+.oc-archive-table-header__pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__pojazd-pojazd {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — vin.width = 280px — нет шкалы размеров: ширина задана числом */
+.oc-archive-table-header__vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__vin-vin {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-table-header__kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-table-header__utylizowana {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__utylizowana-utylizowana {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-table-header__dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__dokumenty-dokumenty {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-table-header__status {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-table-header__status-status {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* ---- варианты ---- */

@@ -1,0 +1,119 @@
+{
+  "name": "TabIcon",
+  "slug": "tab-icon",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "32:1495",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Icon",
+      "type": "instance-swap",
+      "figmaKey": "Icon#32:101",
+      "default": "32:1372",
+      "preferredValues": []
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "TabIcon",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "icon-list.height": "16px",
+    "icon-list.icon": "List",
+    "icon-list.iconColor": "var(--text-primary)",
+    "icon-list.width": "16px",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "32:1495",
+      "figmaSize": {
+        "w": 16,
+        "h": 16
+      },
+      "tokens": {},
+      "render": {
+        "part": "TabIcon",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:101"
+            },
+            "icon": "List",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "icon-list.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-list"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

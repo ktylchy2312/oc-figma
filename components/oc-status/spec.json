@@ -1,0 +1,402 @@
+{
+  "name": "OcStatus",
+  "slug": "oc-status",
+  "group": "Feedback",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:3297",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#23:0",
+      "default": "OC: 55 dni"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Active",
+        "Soon",
+        "Expired",
+        "None"
+      ],
+      "default": "Active"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "OcStatus",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "icon-clock",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Clock",
+      "slug": "icons"
+    },
+    {
+      "part": "label",
+      "name": "OC: 55 dni",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "justify": "MIN",
+    "label.font": "Type/Body Medium Alter 15/24px 700",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)"
+  },
+  "variants": [
+    {
+      "key": "State=Active",
+      "match": {
+        "State": "Active"
+      },
+      "nodeId": "395:3298",
+      "figmaSize": {
+        "w": 98,
+        "h": 24
+      },
+      "tokens": {
+        "icon-clock.height": "20px",
+        "icon-clock.icon": "Clock",
+        "icon-clock.iconColor": "var(--status-success-text)",
+        "icon-clock.width": "20px",
+        "label.color": "var(--status-success-text)"
+      },
+      "render": {
+        "part": "State=Active",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-clock",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--status-success-text)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "Clock",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 6V12L16 14\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "OC: 55 dni",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-success-text)"
+            },
+            "propRef": {
+              "characters": "Label#23:0"
+            },
+            "text": "OC: 55 dni",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Soon",
+      "match": {
+        "State": "Soon"
+      },
+      "nodeId": "395:3301",
+      "figmaSize": {
+        "w": 98,
+        "h": 24
+      },
+      "tokens": {
+        "icon-clock.height": "20px",
+        "icon-clock.icon": "Clock",
+        "icon-clock.iconColor": "var(--status-warning-text)",
+        "icon-clock.width": "20px",
+        "label.color": "var(--status-warning-text)"
+      },
+      "render": {
+        "part": "State=Soon",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-clock",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--status-warning-text)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "Clock",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 6V12L16 14\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "OC: 55 dni",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-warning-text)"
+            },
+            "propRef": {
+              "characters": "Label#23:0"
+            },
+            "text": "OC: 55 dni",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Expired",
+      "match": {
+        "State": "Expired"
+      },
+      "nodeId": "395:3304",
+      "figmaSize": {
+        "w": 98,
+        "h": 24
+      },
+      "tokens": {
+        "icon-clock.height": "20px",
+        "icon-clock.icon": "Clock",
+        "icon-clock.iconColor": "var(--status-error-text)",
+        "icon-clock.width": "20px",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "State=Expired",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-clock",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--status-error-text)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "Clock",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 6V12L16 14\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "OC: 55 dni",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#23:0"
+            },
+            "text": "OC: 55 dni",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=None",
+      "match": {
+        "State": "None"
+      },
+      "nodeId": "395:3307",
+      "figmaSize": {
+        "w": 98,
+        "h": 24
+      },
+      "tokens": {
+        "icon-circle.height": "20px",
+        "icon-circle.icon": "Circle",
+        "icon-circle.iconColor": "var(--text-tertiary)",
+        "icon-circle.width": "20px",
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "State=None",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-circle",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--text-tertiary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "Circle",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "OC: 55 dni",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#23:0"
+            },
+            "text": "OC: 55 dni",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "icon-clock.iconStrokeWidth",
+      "value": "1.5",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-clock"
+      ]
+    },
+    {
+      "prop": "icon-circle.iconStrokeWidth",
+      "value": "1.5",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-circle"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

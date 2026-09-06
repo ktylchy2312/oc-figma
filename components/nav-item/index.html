@@ -1,0 +1,118 @@
+<!-- @dsCard group="Navigation" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>NavItem — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">NavItem</h1>
+  <p class="ds-meta">Navigation · molecule · 8 вариантов · Figma 32:1311 · страница Core · Токенов задействовано: 12 · без токена: 3</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Default, Collapsed=False">
+    <div style="width:200px;border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-3) var(--space-3) var(--space-3) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:19px;height:19px;overflow:hidden;color:var(--text-secondary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;width:145px;color:var(--text-secondary)" data-part="label">Etapy</span>
+    </div>
+    <code class="ds-cell-label">State=Default, Collapsed=False</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Hover, Collapsed=False">
+    <div style="width:200px;background:var(--surface-raised);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:19px;height:19px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;width:145px;color:var(--text-primary)" data-part="label">Etapy</span>
+    </div>
+    <code class="ds-cell-label">State=Hover, Collapsed=False</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Pressed, Collapsed=False">
+    <div style="width:200px;background:var(--surface-raised-hover);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:19px;height:19px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;width:145px;color:var(--text-primary)" data-part="label">Etapy</span>
+    </div>
+    <code class="ds-cell-label">State=Pressed, Collapsed=False</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Active, Collapsed=False">
+    <div style="width:200px;background-image:linear-gradient(282deg, var(--gradient-nav-active-stops));border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:19px;height:19px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;width:145px;color:var(--text-primary)" data-part="label">Etapy</span>
+    </div>
+    <code class="ds-cell-label">State=Active, Collapsed=False</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Default, Collapsed=True">
+    <div style="width:60px;border-radius:var(--radius-lg);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-4) var(--space-3) var(--space-4) var(--space-3);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:26px;height:26px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Default, Collapsed=True</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Hover, Collapsed=True">
+    <div style="width:60px;background:var(--surface-raised);border-radius:var(--radius-lg);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-4) var(--space-3) var(--space-4) var(--space-3);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:26px;height:26px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Hover, Collapsed=True</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Pressed, Collapsed=True">
+    <div style="width:60px;background:var(--surface-raised-hover);border-radius:var(--radius-lg);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-4) var(--space-3) var(--space-4) var(--space-3);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:26px;height:26px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Pressed, Collapsed=True</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Active, Collapsed=True">
+    <div style="width:60px;background:var(--accent-tint);border-radius:var(--radius-lg);display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-4) var(--space-3) var(--space-4) var(--space-3);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:26px;height:26px;overflow:hidden;color:var(--accent-default);stroke-width:1.5;flex:none" data-part="icon-grid"><path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Active, Collapsed=True</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --accent-tint, --gradient-nav-active-stops, --radius-lg, --radius-md, --space-2, --space-3, --space-4, --surface-raised, --surface-raised-hover, --text-primary, --text-secondary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 200px, icon-grid.iconStrokeWidth = 1.5, width = 60px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

@@ -1,0 +1,86 @@
+<!-- @dsCard group="Actions" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>ActionRow — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">ActionRow</h1>
+  <p class="ds-meta">Actions · organism · 4 вариантов · Figma 25:97 · страница Core · Токенов задействовано: 10 · без токена: 3</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Default">
+    <div style="width:280px;background:var(--surface-row);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:17px;height:17px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-bolt"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:203px;color:var(--text-primary)" data-part="label">Wycena pojazdu</span>
+      <div style="display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="status-check">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-success-text);stroke-width:1;flex:none" data-part="status-check/icon-circle-check"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <code class="ds-cell-label">State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Hover">
+    <div style="width:280px;background:var(--surface-raised);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:17px;height:17px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-bolt"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:203px;color:var(--text-primary)" data-part="label">Wycena pojazdu</span>
+      <div style="display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="status-check">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-success-text);stroke-width:1;flex:none" data-part="status-check/icon-circle-check"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <code class="ds-cell-label">State=Hover</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Pressed">
+    <div style="width:280px;background:var(--surface-sunken);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:17px;height:17px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-bolt"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:203px;color:var(--text-primary)" data-part="label">Wycena pojazdu</span>
+      <div style="display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="status-check">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-success-text);stroke-width:1;flex:none" data-part="status-check/icon-circle-check"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <code class="ds-cell-label">State=Pressed</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Focus">
+    <div style="width:280px;background:var(--surface-row);border:1px solid var(--accent-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:17px;height:17px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-bolt"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:201px;color:var(--text-primary)" data-part="label">Wycena pojazdu</span>
+      <div style="display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="status-check">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-success-text);stroke-width:1;flex:none" data-part="status-check/icon-circle-check"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <code class="ds-cell-label">State=Focus</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --radius-md, --space-0, --space-2, --space-3, --status-success-text, --surface-raised, --surface-row, --surface-sunken, --text-primary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 280px, icon-bolt.iconStrokeWidth = 1, borderWidth = 1px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

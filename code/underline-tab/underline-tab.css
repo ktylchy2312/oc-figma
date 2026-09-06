@@ -1,0 +1,85 @@
+/* UnderlineTab — сгенерировано из components/underline-tab/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-underline-tab {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-underline-tab__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* TODO: unbound — underline.height = 2px — нет шкалы размеров: высота задана числом */
+.oc-underline-tab__underline {
+  align-self: stretch;
+  height: 2px;
+  overflow: hidden;
+}
+
+/* ---- варианты ---- */
+
+/* Active=Idle, State=Default */
+.oc-underline-tab.oc-underline-tab--active-idle.oc-underline-tab--state-default .oc-underline-tab__label {
+  color: var(--text-tertiary);
+}
+
+/* Active=Idle, State=Hover */
+.oc-underline-tab.oc-underline-tab--active-idle.oc-underline-tab--state-hover .oc-underline-tab__label,
+.oc-underline-tab.oc-underline-tab--active-idle:not(:disabled):not([aria-disabled="true"]):hover .oc-underline-tab__label {
+  color: var(--text-secondary);
+}
+.oc-underline-tab.oc-underline-tab--active-idle.oc-underline-tab--state-hover .oc-underline-tab__underline,
+.oc-underline-tab.oc-underline-tab--active-idle:not(:disabled):not([aria-disabled="true"]):hover .oc-underline-tab__underline {
+  background: var(--border-strong);
+}
+
+/* Active=Idle, State=Pressed */
+.oc-underline-tab.oc-underline-tab--active-idle.oc-underline-tab--state-pressed .oc-underline-tab__label,
+.oc-underline-tab.oc-underline-tab--active-idle:not(:disabled):not([aria-disabled="true"]):active .oc-underline-tab__label {
+  color: var(--text-primary);
+}
+.oc-underline-tab.oc-underline-tab--active-idle.oc-underline-tab--state-pressed .oc-underline-tab__underline,
+.oc-underline-tab.oc-underline-tab--active-idle:not(:disabled):not([aria-disabled="true"]):active .oc-underline-tab__underline {
+  background: var(--border-strong);
+}
+
+/* Active=Active, State=Default */
+.oc-underline-tab.oc-underline-tab--active-active.oc-underline-tab--state-default .oc-underline-tab__label {
+  color: var(--text-primary);
+}
+.oc-underline-tab.oc-underline-tab--active-active.oc-underline-tab--state-default .oc-underline-tab__underline {
+  background: var(--accent-default);
+}
+
+/* Active=Active, State=Hover */
+.oc-underline-tab.oc-underline-tab--active-active.oc-underline-tab--state-hover .oc-underline-tab__label,
+.oc-underline-tab.oc-underline-tab--active-active:not(:disabled):not([aria-disabled="true"]):hover .oc-underline-tab__label {
+  color: var(--text-primary);
+}
+.oc-underline-tab.oc-underline-tab--active-active.oc-underline-tab--state-hover .oc-underline-tab__underline,
+.oc-underline-tab.oc-underline-tab--active-active:not(:disabled):not([aria-disabled="true"]):hover .oc-underline-tab__underline {
+  background: var(--accent-hover);
+}
+
+/* Active=Active, State=Pressed */
+.oc-underline-tab.oc-underline-tab--active-active.oc-underline-tab--state-pressed .oc-underline-tab__label,
+.oc-underline-tab.oc-underline-tab--active-active:not(:disabled):not([aria-disabled="true"]):active .oc-underline-tab__label {
+  color: var(--text-primary);
+}
+.oc-underline-tab.oc-underline-tab--active-active.oc-underline-tab--state-pressed .oc-underline-tab__underline,
+.oc-underline-tab.oc-underline-tab--active-active:not(:disabled):not([aria-disabled="true"]):active .oc-underline-tab__underline {
+  background: var(--accent-pressed);
+}

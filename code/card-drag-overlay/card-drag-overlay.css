@@ -1,0 +1,622 @@
+/* CardDragOverlay — сгенерировано из components/card-drag-overlay/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 403px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 758px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1.5px — нет токена под толщину обводки */
+.oc-card-drag-overlay {
+  width: 403px;
+  height: 758px;
+  background: var(--surface-column);
+  border: 1.5px solid var(--border-default);
+  border-style: dashed;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+}
+
+/* TODO: unbound — frame-164.width = 387px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — frame-164.height = 458px — нет шкалы размеров: высота задана числом */
+.oc-card-drag-overlay__frame-164 {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 387px;
+  height: 458px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — frame-164/car-card.borderWidth = 1px — нет токена под толщину обводки */
+.oc-card-drag-overlay__car-card {
+  align-self: stretch;
+  background: var(--surface-default);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row-po-1145-x {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-meta-row-fiat-punto-ii-2003-r {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-secondary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-meta-row-kupiona-03-08-2026 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-frame-5-vin-zfa1880000451256 {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 353px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 276px;
+  color: var(--text-primary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-list {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-list-docs-header {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-list-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 234px;
+  color: var(--text-primary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-list-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-list-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-card-drag-overlay__car-card-content-frame-142-rows-list-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* TODO: unbound — frame-164/car-card-2.borderWidth = 1px — нет токена под толщину обводки */
+.oc-card-drag-overlay__car-card-2 {
+  align-self: stretch;
+  background: var(--surface-default);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row-po-1145-x {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-error-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-error-text);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-meta-row-fiat-punto-ii-2003-r {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-secondary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-meta-row-kupiona-03-08-2026 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-vin-zfa1880000451256 {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 353px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 276px;
+  color: var(--text-primary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-list {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-list-docs-header {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__icon-document {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-list-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 234px;
+  color: var(--text-primary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-list-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-list-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-card-drag-overlay__car-card-2-content-frame-142-rows-list-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */

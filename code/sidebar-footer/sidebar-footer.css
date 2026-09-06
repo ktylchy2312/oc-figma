@@ -1,0 +1,74 @@
+/* SidebarFooter — сгенерировано из components/sidebar-footer/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-sidebar-footer {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-0) var(--space-tight) var(--space-tight) var(--space-tight);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-sidebar-footer__divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+
+.oc-sidebar-footer__frame-166 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-sidebar-footer__oc-kontrol {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-sidebar-footer__frame-165 {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-sidebar-footer__wersja-1-4-2-build-2026-08 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+
+.oc-sidebar-footer__2026-oc-kontrol {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+
+/* ---- варианты ---- */

@@ -1,0 +1,321 @@
+<!-- @dsCard group="Cards" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>OfferTable — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1780px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">OfferTable</h1>
+  <p class="ds-meta">Cards · organism · 1 вариант · Figma 194:3141 · страница MAG-KONTROL · Токенов задействовано: 21 · без токена: 8</p>
+  <p class="ds-desc">Towary → Tabela: the warehouse list of offers. Owns the container fill, border, radius and the column widths; OfferRow and OfferTableHeader read the same track and must never be resized independently.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="OfferTable">
+    <div style="width:1660px;background:var(--surface-sunken);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);overflow:hidden;display:flex;flex-direction:column;gap:0;justify-content:flex-start;align-items:flex-start" data-part="root">
+      <div style="align-self:stretch;background:var(--surface-raised);border-bottom:1px solid var(--border-subtle);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-3) var(--space-4) var(--space-3) var(--space-4);justify-content:flex-start;align-items:center" data-part="offer-table-header">
+        <div style="width:52px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/zdj-cie">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/zdj-cie/zdj-cie">ZDJĘCIE</span>
+        </div>
+        <div style="width:112px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/sygnatura">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/sygnatura/sygnatura">SYGNATURA</span>
+        </div>
+        <div style="width:368px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/nazwa">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/nazwa/nazwa">NAZWA</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/pojazd">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/pojazd/pojazd">POJAZD</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/kategoria">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/kategoria/kategoria">KATEGORIA</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/stan-mag">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/stan-mag/stan-mag">STAN MAG.</span>
+        </div>
+        <div style="width:108px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/rynki">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/rynki/rynki">RYNKI</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/cena">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/cena/cena">CENA</span>
+        </div>
+        <div style="width:132px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="offer-table-header/status">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="offer-table-header/status/status">STATUS</span>
+        </div>
+      </div>
+      <div style="align-self:stretch;height:64px;border-bottom:1px solid var(--border-subtle);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="sk00147">
+        <div style="width:52px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/zdj-cie">
+          <div style="width:38px;height:38px;background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="sk00147/zdj-cie/thumb">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:visible;position:relative;flex:none" data-part="sk00147/zdj-cie/thumb/glyph"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div style="width:112px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/sygnatura">
+          <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-sm);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="sk00147/sygnatura/pill">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="sk00147/sygnatura/pill/3-5">3/5</span>
+          </div>
+        </div>
+        <div style="width:368px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/nazwa">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;width:368px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)" data-part="sk00147/nazwa/nazwa">Drzwi tylne prawe</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-0-5);justify-content:flex-start;align-items:flex-start" data-part="sk00147/pojazd">
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-secondary)" data-part="sk00147/pojazd/marka">Skoda</span>
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="sk00147/pojazd/model">Superb I 2003–2008</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/kategoria">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="sk00147/kategoria/kategoria">Drzwi</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/stan">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="sk00147/stan/stan">1 szt.</span>
+        </div>
+        <div style="width:108px;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-1);justify-content:flex-start;align-items:center" data-part="sk00147/rynki">
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="sk00147/rynki/market-a">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="sk00147/rynki/market-a/letter">A</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="sk00147/rynki/market-x">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="sk00147/rynki/market-x/letter">X</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="sk00147/rynki/market-e">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="sk00147/rynki/market-e/letter">E</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="sk00147/rynki/market-o">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="sk00147/rynki/market-o/letter">O</span>
+          </div>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/cena">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="sk00147/cena/cena">480 zł</span>
+        </div>
+        <div style="width:132px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="sk00147/status">
+          <div style="background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:flex-start;align-items:center" data-part="sk00147/status/status-pill">
+            <div style="width:7px;height:7px;background:var(--text-tertiary);border-radius:50%" data-part="sk00147/status/status-pill/dot"></div>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="sk00147/status/status-pill/robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div style="align-self:stretch;height:64px;border-bottom:1px solid var(--border-subtle);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="vw00312">
+        <div style="width:52px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/zdj-cie">
+          <div style="width:38px;height:38px;background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="vw00312/zdj-cie/thumb">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:visible;position:relative;flex:none" data-part="vw00312/zdj-cie/thumb/glyph"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div style="width:112px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/sygnatura">
+          <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-sm);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="vw00312/sygnatura/pill">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="vw00312/sygnatura/pill/3-5">3/5</span>
+          </div>
+        </div>
+        <div style="width:368px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/nazwa">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;width:368px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)" data-part="vw00312/nazwa/nazwa">Klamka zewnętrzna przednia lewa</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-0-5);justify-content:flex-start;align-items:flex-start" data-part="vw00312/pojazd">
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-secondary)" data-part="vw00312/pojazd/marka">Volkswagen</span>
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="vw00312/pojazd/model">T4 1996–2003</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/kategoria">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="vw00312/kategoria/kategoria">Klamki zewnętrzne</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/stan">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="vw00312/stan/stan">2 szt.</span>
+        </div>
+        <div style="width:108px;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-1);justify-content:flex-start;align-items:center" data-part="vw00312/rynki">
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="vw00312/rynki/market-a">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="vw00312/rynki/market-a/letter">A</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="vw00312/rynki/market-x">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="vw00312/rynki/market-x/letter">X</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="vw00312/rynki/market-e">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="vw00312/rynki/market-e/letter">E</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="vw00312/rynki/market-o">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="vw00312/rynki/market-o/letter">O</span>
+          </div>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/cena">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="vw00312/cena/cena">95 zł</span>
+        </div>
+        <div style="width:132px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="vw00312/status">
+          <div style="background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:flex-start;align-items:center" data-part="vw00312/status/status-pill">
+            <div style="width:7px;height:7px;background:var(--text-tertiary);border-radius:50%" data-part="vw00312/status/status-pill/dot"></div>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="vw00312/status/status-pill/robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div style="align-self:stretch;height:64px;border-bottom:1px solid var(--border-subtle);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="rn00889">
+        <div style="width:52px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/zdj-cie">
+          <div style="width:38px;height:38px;background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="rn00889/zdj-cie/thumb">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:visible;position:relative;flex:none" data-part="rn00889/zdj-cie/thumb/glyph"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div style="width:112px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/sygnatura">
+          <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-sm);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="rn00889/sygnatura/pill">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="rn00889/sygnatura/pill/3-5">3/5</span>
+          </div>
+        </div>
+        <div style="width:368px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/nazwa">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;width:368px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)" data-part="rn00889/nazwa/nazwa">Alternator 90A Bosch</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-0-5);justify-content:flex-start;align-items:flex-start" data-part="rn00889/pojazd">
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-secondary)" data-part="rn00889/pojazd/marka">Renault</span>
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="rn00889/pojazd/model">Clio II 1.4 16V</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/kategoria">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="rn00889/kategoria/kategoria">Alternatory kompletne</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/stan">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="rn00889/stan/stan">3 szt.</span>
+        </div>
+        <div style="width:108px;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-1);justify-content:flex-start;align-items:center" data-part="rn00889/rynki">
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="rn00889/rynki/market-a">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="rn00889/rynki/market-a/letter">A</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="rn00889/rynki/market-x">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="rn00889/rynki/market-x/letter">X</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="rn00889/rynki/market-e">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="rn00889/rynki/market-e/letter">E</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="rn00889/rynki/market-o">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="rn00889/rynki/market-o/letter">O</span>
+          </div>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/cena">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="rn00889/cena/cena">320 zł</span>
+        </div>
+        <div style="width:132px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="rn00889/status">
+          <div style="background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:flex-start;align-items:center" data-part="rn00889/status/status-pill">
+            <div style="width:7px;height:7px;background:var(--text-tertiary);border-radius:50%" data-part="rn00889/status/status-pill/dot"></div>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="rn00889/status/status-pill/robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div style="align-self:stretch;height:64px;border-bottom:1px solid var(--border-subtle);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="bm00234">
+        <div style="width:52px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/zdj-cie">
+          <div style="width:38px;height:38px;background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="bm00234/zdj-cie/thumb">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:visible;position:relative;flex:none" data-part="bm00234/zdj-cie/thumb/glyph"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div style="width:112px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/sygnatura">
+          <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-sm);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="bm00234/sygnatura/pill">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="bm00234/sygnatura/pill/3-5">3/5</span>
+          </div>
+        </div>
+        <div style="width:368px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/nazwa">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;width:368px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)" data-part="bm00234/nazwa/nazwa">Reflektor przedni prawy</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-0-5);justify-content:flex-start;align-items:flex-start" data-part="bm00234/pojazd">
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-secondary)" data-part="bm00234/pojazd/marka">BMW</span>
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="bm00234/pojazd/model">E90 2005–2008</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/kategoria">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="bm00234/kategoria/kategoria">Lampy przednie</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/stan">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="bm00234/stan/stan">1 szt.</span>
+        </div>
+        <div style="width:108px;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-1);justify-content:flex-start;align-items:center" data-part="bm00234/rynki">
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="bm00234/rynki/market-a">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="bm00234/rynki/market-a/letter">A</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="bm00234/rynki/market-x">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="bm00234/rynki/market-x/letter">X</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="bm00234/rynki/market-e">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="bm00234/rynki/market-e/letter">E</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="bm00234/rynki/market-o">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="bm00234/rynki/market-o/letter">O</span>
+          </div>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/cena">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="bm00234/cena/cena">560 zł</span>
+        </div>
+        <div style="width:132px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="bm00234/status">
+          <div style="background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:flex-start;align-items:center" data-part="bm00234/status/status-pill">
+            <div style="width:7px;height:7px;background:var(--text-tertiary);border-radius:50%" data-part="bm00234/status/status-pill/dot"></div>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="bm00234/status/status-pill/robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div style="align-self:stretch;height:64px;border-bottom:1px solid var(--border-subtle);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="ft00056">
+        <div style="width:52px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/zdj-cie">
+          <div style="width:38px;height:38px;background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="ft00056/zdj-cie/thumb">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:visible;position:relative;flex:none" data-part="ft00056/zdj-cie/thumb/glyph"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div style="width:112px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/sygnatura">
+          <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-sm);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="ft00056/sygnatura/pill">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="ft00056/sygnatura/pill/3-5">3/5</span>
+          </div>
+        </div>
+        <div style="width:368px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/nazwa">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;width:368px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-primary)" data-part="ft00056/nazwa/nazwa">Felgi stalowe R14 kpl. 4szt.</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-0-5);justify-content:flex-start;align-items:flex-start" data-part="ft00056/pojazd">
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-secondary)" data-part="ft00056/pojazd/marka">Fiat</span>
+          <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;flex:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="ft00056/pojazd/model">Seicento 1998–2010</span>
+        </div>
+        <div style="width:280px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/kategoria">
+          <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-tertiary)" data-part="ft00056/kategoria/kategoria">Felgi stalowe R14</span>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/stan">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="ft00056/stan/stan">1 kpl.</span>
+        </div>
+        <div style="width:108px;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-1);justify-content:flex-start;align-items:center" data-part="ft00056/rynki">
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="ft00056/rynki/market-a">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="ft00056/rynki/market-a/letter">A</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--status-success-bg);border:1px solid var(--status-success-border);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="ft00056/rynki/market-x">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--status-success-text)" data-part="ft00056/rynki/market-x/letter">X</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="ft00056/rynki/market-e">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="ft00056/rynki/market-e/letter">E</span>
+          </div>
+          <div style="width:22px;height:22px;background:var(--surface-raised);border:1px solid var(--border-subtle);border-radius:var(--radius-sm);overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:center;align-items:center" data-part="ft00056/rynki/market-o">
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-disabled)" data-part="ft00056/rynki/market-o/letter">O</span>
+          </div>
+        </div>
+        <div style="width:84px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/cena">
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="ft00056/cena/cena">240 zł</span>
+        </div>
+        <div style="width:132px;overflow:hidden;display:flex;flex-direction:row;gap:0;justify-content:flex-start;align-items:center" data-part="ft00056/status">
+          <div style="background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:flex-start;align-items:center" data-part="ft00056/status/status-pill">
+            <div style="width:7px;height:7px;background:var(--text-tertiary);border-radius:50%" data-part="ft00056/status/status-pill/dot"></div>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="ft00056/status/status-pill/robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <code class="ds-cell-label">OfferTable</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --border-default, --border-subtle, --radius-lg, --radius-md, --radius-sm, --space-0, --space-0-5, --space-1, --space-2, --space-3, --space-4, --status-success-bg, --status-success-border, --status-success-text, --surface-raised, --surface-raised-hover, --surface-sunken, --text-disabled, --text-primary, --text-secondary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 1660px, borderWidth = 1px, offer-table-header.borderWidth = 1px, sk00147.borderWidth = 1px, vw00312.borderWidth = 1px, rn00889.borderWidth = 1px, bm00234.borderWidth = 1px, ft00056.borderWidth = 1px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

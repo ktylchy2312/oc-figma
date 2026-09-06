@@ -1,0 +1,713 @@
+{
+  "name": "NavItem",
+  "slug": "nav-item",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "32:1311",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#32:68",
+      "default": "Etapy"
+    },
+    {
+      "name": "Icon",
+      "type": "instance-swap",
+      "figmaKey": "Icon#32:77",
+      "default": "56:2261",
+      "preferredValues": []
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Active"
+      ],
+      "default": "Default"
+    },
+    {
+      "name": "Collapsed",
+      "type": "variant",
+      "figmaKey": "Collapsed",
+      "values": [
+        "False",
+        "True"
+      ],
+      "default": "False"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "NavItem",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "icon-grid",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Grid",
+      "slug": "icons"
+    },
+    {
+      "part": "label",
+      "name": "Etapy",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-3)",
+    "icon-grid.icon": "Grid"
+  },
+  "variants": [
+    {
+      "key": "State=Default, Collapsed=False",
+      "match": {
+        "State": "Default",
+        "Collapsed": "False"
+      },
+      "nodeId": "32:1259",
+      "figmaSize": {
+        "w": 200,
+        "h": 48
+      },
+      "tokens": {
+        "icon-grid.height": "19px",
+        "icon-grid.iconColor": "var(--text-secondary)",
+        "icon-grid.width": "19px",
+        "justify": "MIN",
+        "label.color": "var(--text-secondary)",
+        "label.font": "Type/Body Medium Alter 15/24px 700",
+        "label.width": "145px",
+        "padding": "var(--space-3) var(--space-3) var(--space-3) var(--space-3)",
+        "radius": "var(--radius-md)",
+        "width": "200px"
+      },
+      "render": {
+        "part": "State=Default, Collapsed=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-3) var(--space-3) var(--space-3) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "19px",
+              "height": "19px",
+              "overflow": "hidden",
+              "color": "var(--text-secondary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Etapy",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "145px",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#32:68"
+            },
+            "text": "Etapy",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Hover, Collapsed=False",
+      "match": {
+        "State": "Hover",
+        "Collapsed": "False"
+      },
+      "nodeId": "32:1266",
+      "figmaSize": {
+        "w": 200,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "icon-grid.height": "19px",
+        "icon-grid.iconColor": "var(--text-primary)",
+        "icon-grid.width": "19px",
+        "justify": "MIN",
+        "label.color": "var(--text-primary)",
+        "label.font": "Type/Body Medium Alter 15/24px 700",
+        "label.width": "145px",
+        "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+        "radius": "var(--radius-md)",
+        "width": "200px"
+      },
+      "render": {
+        "part": "State=Hover, Collapsed=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "background": "var(--surface-raised)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "19px",
+              "height": "19px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Etapy",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "145px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#32:68"
+            },
+            "text": "Etapy",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Pressed, Collapsed=False",
+      "match": {
+        "State": "Pressed",
+        "Collapsed": "False"
+      },
+      "nodeId": "32:1273",
+      "figmaSize": {
+        "w": 200,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "icon-grid.height": "19px",
+        "icon-grid.iconColor": "var(--text-primary)",
+        "icon-grid.width": "19px",
+        "justify": "MIN",
+        "label.color": "var(--text-primary)",
+        "label.font": "Type/Body Medium Alter 15/24px 700",
+        "label.width": "145px",
+        "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+        "radius": "var(--radius-md)",
+        "width": "200px"
+      },
+      "render": {
+        "part": "State=Pressed, Collapsed=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "background": "var(--surface-raised-hover)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "19px",
+              "height": "19px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Etapy",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "145px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#32:68"
+            },
+            "text": "Etapy",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Active, Collapsed=False",
+      "match": {
+        "State": "Active",
+        "Collapsed": "False"
+      },
+      "nodeId": "32:1280",
+      "figmaSize": {
+        "w": 200,
+        "h": 40
+      },
+      "tokens": {
+        "background": "linear-gradient(282deg, var(--gradient-nav-active-stops))",
+        "icon-grid.height": "19px",
+        "icon-grid.iconColor": "var(--text-primary)",
+        "icon-grid.width": "19px",
+        "justify": "MIN",
+        "label.color": "var(--text-primary)",
+        "label.font": "Type/Body Medium Alter 15/24px 700",
+        "label.width": "145px",
+        "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+        "radius": "var(--radius-md)",
+        "width": "200px"
+      },
+      "render": {
+        "part": "State=Active, Collapsed=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "background-image": "linear-gradient(282deg, var(--gradient-nav-active-stops))",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "19px",
+              "height": "19px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Etapy",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "145px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#32:68"
+            },
+            "text": "Etapy",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Default, Collapsed=True",
+      "match": {
+        "State": "Default",
+        "Collapsed": "True"
+      },
+      "nodeId": "32:1287",
+      "figmaSize": {
+        "w": 60,
+        "h": 58
+      },
+      "tokens": {
+        "icon-grid.height": "26px",
+        "icon-grid.iconColor": "var(--text-primary)",
+        "icon-grid.width": "26px",
+        "justify": "CENTER",
+        "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+        "radius": "var(--radius-lg)",
+        "width": "60px"
+      },
+      "render": {
+        "part": "State=Default, Collapsed=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "60px",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "26px",
+              "height": "26px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Hover, Collapsed=True",
+      "match": {
+        "State": "Hover",
+        "Collapsed": "True"
+      },
+      "nodeId": "32:1293",
+      "figmaSize": {
+        "w": 60,
+        "h": 58
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "icon-grid.height": "26px",
+        "icon-grid.iconColor": "var(--text-primary)",
+        "icon-grid.width": "26px",
+        "justify": "CENTER",
+        "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+        "radius": "var(--radius-lg)",
+        "width": "60px"
+      },
+      "render": {
+        "part": "State=Hover, Collapsed=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "60px",
+          "background": "var(--surface-raised)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "26px",
+              "height": "26px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Pressed, Collapsed=True",
+      "match": {
+        "State": "Pressed",
+        "Collapsed": "True"
+      },
+      "nodeId": "32:1299",
+      "figmaSize": {
+        "w": 60,
+        "h": 58
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "icon-grid.height": "26px",
+        "icon-grid.iconColor": "var(--text-primary)",
+        "icon-grid.width": "26px",
+        "justify": "CENTER",
+        "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+        "radius": "var(--radius-lg)",
+        "width": "60px"
+      },
+      "render": {
+        "part": "State=Pressed, Collapsed=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "60px",
+          "background": "var(--surface-raised-hover)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "26px",
+              "height": "26px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Active, Collapsed=True",
+      "match": {
+        "State": "Active",
+        "Collapsed": "True"
+      },
+      "nodeId": "32:1305",
+      "figmaSize": {
+        "w": 60,
+        "h": 58
+      },
+      "tokens": {
+        "background": "var(--accent-tint)",
+        "icon-grid.height": "26px",
+        "icon-grid.iconColor": "var(--accent-default)",
+        "icon-grid.width": "26px",
+        "justify": "CENTER",
+        "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+        "radius": "var(--radius-lg)",
+        "width": "60px"
+      },
+      "render": {
+        "part": "State=Active, Collapsed=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "60px",
+          "background": "var(--accent-tint)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-4) var(--space-3) var(--space-4) var(--space-3)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-grid",
+            "tag": "svg",
+            "style": {
+              "width": "26px",
+              "height": "26px",
+              "overflow": "hidden",
+              "color": "var(--accent-default)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#32:77"
+            },
+            "icon": "Grid",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "200px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-grid.iconStrokeWidth",
+      "value": "1.5",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-grid"
+      ]
+    },
+    {
+      "prop": "width",
+      "value": "60px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

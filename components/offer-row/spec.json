@@ -1,0 +1,1946 @@
+{
+  "name": "OfferRow",
+  "slug": "offer-row",
+  "group": "Cards",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "194:2953",
+    "page": "MAG-KONTROL",
+    "kind": "SET"
+  },
+  "description": "One offer inside OfferTable. Never used standalone — the table owns the container fill, border, radius and the column widths. Hover is the only affordance the source gives a row; there is no pressed or selected state.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Nazwa",
+      "type": "text",
+      "figmaKey": "Nazwa#194:6",
+      "default": "Drzwi tylne prawe"
+    },
+    {
+      "name": "Marka",
+      "type": "text",
+      "figmaKey": "Marka#194:9",
+      "default": "Skoda"
+    },
+    {
+      "name": "Model",
+      "type": "text",
+      "figmaKey": "Model#194:12",
+      "default": "Superb I 2003–2008"
+    },
+    {
+      "name": "Kategoria",
+      "type": "text",
+      "figmaKey": "Kategoria#194:15",
+      "default": "Drzwi"
+    },
+    {
+      "name": "Stan",
+      "type": "text",
+      "figmaKey": "Stan#194:18",
+      "default": "1 szt."
+    },
+    {
+      "name": "Cena",
+      "type": "text",
+      "figmaKey": "Cena#194:21",
+      "default": "480 zł"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "OfferRow",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "zdj-cie",
+      "name": "Zdjęcie",
+      "element": "div"
+    },
+    {
+      "part": "zdj-cie/thumb",
+      "name": "Thumb",
+      "element": "div"
+    },
+    {
+      "part": "zdj-cie/thumb/glyph",
+      "name": "glyph",
+      "element": "div"
+    },
+    {
+      "part": "sygnatura",
+      "name": "Sygnatura",
+      "element": "div"
+    },
+    {
+      "part": "sygnatura/pill",
+      "name": "Pill",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "sygnatura/pill/3-5",
+      "name": "3/5",
+      "element": "span"
+    },
+    {
+      "part": "nazwa",
+      "name": "Nazwa",
+      "element": "div"
+    },
+    {
+      "part": "nazwa/nazwa",
+      "name": "Nazwa",
+      "element": "span",
+      "textProp": "Nazwa"
+    },
+    {
+      "part": "pojazd",
+      "name": "Pojazd",
+      "element": "div"
+    },
+    {
+      "part": "pojazd/marka",
+      "name": "Marka",
+      "element": "span",
+      "textProp": "Marka"
+    },
+    {
+      "part": "pojazd/model",
+      "name": "Model",
+      "element": "span",
+      "textProp": "Model"
+    },
+    {
+      "part": "kategoria",
+      "name": "Kategoria",
+      "element": "div"
+    },
+    {
+      "part": "kategoria/kategoria",
+      "name": "Kategoria",
+      "element": "span",
+      "textProp": "Kategoria"
+    },
+    {
+      "part": "stan",
+      "name": "Stan",
+      "element": "div"
+    },
+    {
+      "part": "stan/stan",
+      "name": "Stan",
+      "element": "span",
+      "textProp": "Stan"
+    },
+    {
+      "part": "rynki",
+      "name": "Rynki",
+      "element": "div"
+    },
+    {
+      "part": "rynki/market-a",
+      "name": "Market A",
+      "element": "div",
+      "component": "MarketChip",
+      "slug": "market-chip"
+    },
+    {
+      "part": "rynki/market-a/letter",
+      "name": "Letter",
+      "element": "span",
+      "textProp": "Letter"
+    },
+    {
+      "part": "rynki/market-x",
+      "name": "Market X",
+      "element": "div",
+      "component": "MarketChip",
+      "slug": "market-chip"
+    },
+    {
+      "part": "rynki/market-x/letter",
+      "name": "Letter",
+      "element": "span",
+      "textProp": "Letter"
+    },
+    {
+      "part": "rynki/market-e",
+      "name": "Market E",
+      "element": "div",
+      "component": "MarketChip",
+      "slug": "market-chip"
+    },
+    {
+      "part": "rynki/market-e/letter",
+      "name": "Letter",
+      "element": "span",
+      "textProp": "Letter"
+    },
+    {
+      "part": "rynki/market-o",
+      "name": "Market O",
+      "element": "div",
+      "component": "MarketChip",
+      "slug": "market-chip"
+    },
+    {
+      "part": "rynki/market-o/letter",
+      "name": "Letter",
+      "element": "span",
+      "textProp": "Letter"
+    },
+    {
+      "part": "cena",
+      "name": "Cena",
+      "element": "div"
+    },
+    {
+      "part": "cena/cena",
+      "name": "Cena",
+      "element": "span",
+      "textProp": "Cena"
+    },
+    {
+      "part": "status",
+      "name": "Status",
+      "element": "div"
+    },
+    {
+      "part": "status/status-pill",
+      "name": "StatusPill",
+      "element": "div",
+      "component": "StatusPill",
+      "slug": "status-pill"
+    },
+    {
+      "part": "status/status-pill/dot",
+      "name": "Dot",
+      "element": "div"
+    },
+    {
+      "part": "status/status-pill/robocza",
+      "name": "Robocza",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "bottom 1px",
+    "cena.align": "CENTER",
+    "cena.direction": "HORIZONTAL",
+    "cena.gap": "0",
+    "cena.justify": "MIN",
+    "cena.width": "84px",
+    "cena/cena.color": "var(--text-primary)",
+    "cena/cena.font": "Type/Body Small Alter 13/20px 700",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-4)",
+    "height": "64px",
+    "justify": "MIN",
+    "kategoria.align": "CENTER",
+    "kategoria.direction": "HORIZONTAL",
+    "kategoria.gap": "0",
+    "kategoria.justify": "MIN",
+    "kategoria.width": "280px",
+    "kategoria/kategoria.color": "var(--text-tertiary)",
+    "kategoria/kategoria.font": "Type/Body Small 13/20px 400",
+    "kategoria/kategoria.width": "280px",
+    "nazwa.align": "CENTER",
+    "nazwa.direction": "HORIZONTAL",
+    "nazwa.gap": "0",
+    "nazwa.justify": "MIN",
+    "nazwa.width": "368px",
+    "nazwa/nazwa.color": "var(--text-primary)",
+    "nazwa/nazwa.font": "Type/Body Small Alter 13/20px 700",
+    "nazwa/nazwa.width": "368px",
+    "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "pojazd.align": "MIN",
+    "pojazd.direction": "VERTICAL",
+    "pojazd.gap": "var(--space-0-5)",
+    "pojazd.justify": "MIN",
+    "pojazd.width": "280px",
+    "pojazd/marka.color": "var(--text-secondary)",
+    "pojazd/marka.font": "Type/Body Small 13/20px 400",
+    "pojazd/marka.width": "280px",
+    "pojazd/model.color": "var(--text-tertiary)",
+    "pojazd/model.font": "Type/Body Small 13/20px 400",
+    "pojazd/model.width": "280px",
+    "rynki.align": "CENTER",
+    "rynki.direction": "HORIZONTAL",
+    "rynki.gap": "var(--space-1)",
+    "rynki.justify": "MIN",
+    "rynki.width": "108px",
+    "rynki/market-a.align": "CENTER",
+    "rynki/market-a.background": "var(--status-success-bg)",
+    "rynki/market-a.borderColor": "var(--status-success-border)",
+    "rynki/market-a.borderWidth": "1px",
+    "rynki/market-a.direction": "HORIZONTAL",
+    "rynki/market-a.gap": "0",
+    "rynki/market-a.height": "22px",
+    "rynki/market-a.justify": "CENTER",
+    "rynki/market-a.radius": "var(--radius-sm)",
+    "rynki/market-a.width": "22px",
+    "rynki/market-a/letter.color": "var(--status-success-text)",
+    "rynki/market-a/letter.font": "Type/Label 12/16px 700",
+    "rynki/market-e.align": "CENTER",
+    "rynki/market-e.background": "var(--surface-raised)",
+    "rynki/market-e.borderColor": "var(--border-subtle)",
+    "rynki/market-e.borderWidth": "1px",
+    "rynki/market-e.direction": "HORIZONTAL",
+    "rynki/market-e.gap": "0",
+    "rynki/market-e.height": "22px",
+    "rynki/market-e.justify": "CENTER",
+    "rynki/market-e.radius": "var(--radius-sm)",
+    "rynki/market-e.width": "22px",
+    "rynki/market-e/letter.color": "var(--text-disabled)",
+    "rynki/market-e/letter.font": "Type/Label 12/16px 700",
+    "rynki/market-o.align": "CENTER",
+    "rynki/market-o.background": "var(--surface-raised)",
+    "rynki/market-o.borderColor": "var(--border-subtle)",
+    "rynki/market-o.borderWidth": "1px",
+    "rynki/market-o.direction": "HORIZONTAL",
+    "rynki/market-o.gap": "0",
+    "rynki/market-o.height": "22px",
+    "rynki/market-o.justify": "CENTER",
+    "rynki/market-o.radius": "var(--radius-sm)",
+    "rynki/market-o.width": "22px",
+    "rynki/market-o/letter.color": "var(--text-disabled)",
+    "rynki/market-o/letter.font": "Type/Label 12/16px 700",
+    "rynki/market-x.align": "CENTER",
+    "rynki/market-x.background": "var(--surface-raised)",
+    "rynki/market-x.borderColor": "var(--border-subtle)",
+    "rynki/market-x.borderWidth": "1px",
+    "rynki/market-x.direction": "HORIZONTAL",
+    "rynki/market-x.gap": "0",
+    "rynki/market-x.height": "22px",
+    "rynki/market-x.justify": "CENTER",
+    "rynki/market-x.radius": "var(--radius-sm)",
+    "rynki/market-x.width": "22px",
+    "rynki/market-x/letter.color": "var(--text-disabled)",
+    "rynki/market-x/letter.font": "Type/Label 12/16px 700",
+    "stan.align": "CENTER",
+    "stan.direction": "HORIZONTAL",
+    "stan.gap": "0",
+    "stan.justify": "MIN",
+    "stan.width": "84px",
+    "stan/stan.color": "var(--text-tertiary)",
+    "stan/stan.font": "Type/Body Small 13/20px 400",
+    "status.align": "CENTER",
+    "status.direction": "HORIZONTAL",
+    "status.gap": "0",
+    "status.justify": "MIN",
+    "status.width": "132px",
+    "status/status-pill.align": "CENTER",
+    "status/status-pill.background": "var(--surface-raised)",
+    "status/status-pill.borderColor": "var(--border-default)",
+    "status/status-pill.borderWidth": "1px",
+    "status/status-pill.direction": "HORIZONTAL",
+    "status/status-pill.gap": "var(--space-2)",
+    "status/status-pill.justify": "MIN",
+    "status/status-pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "status/status-pill.radius": "var(--radius-md)",
+    "status/status-pill/dot.background": "var(--text-tertiary)",
+    "status/status-pill/dot.height": "7px",
+    "status/status-pill/dot.width": "7px",
+    "status/status-pill/robocza.color": "var(--text-secondary)",
+    "status/status-pill/robocza.font": "Type/Body Small Alter 13/20px 700",
+    "sygnatura.align": "CENTER",
+    "sygnatura.direction": "HORIZONTAL",
+    "sygnatura.gap": "0",
+    "sygnatura.justify": "MIN",
+    "sygnatura.width": "112px",
+    "sygnatura/pill.align": "CENTER",
+    "sygnatura/pill.background": "var(--surface-raised-hover)",
+    "sygnatura/pill.direction": "HORIZONTAL",
+    "sygnatura/pill.gap": "var(--space-0)",
+    "sygnatura/pill.justify": "CENTER",
+    "sygnatura/pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "sygnatura/pill.radius": "var(--radius-sm)",
+    "sygnatura/pill.width": "35px",
+    "sygnatura/pill/3-5.color": "var(--text-tertiary)",
+    "sygnatura/pill/3-5.font": "Type/Label 12/16px 700",
+    "width": "1660px",
+    "zdj-cie.align": "CENTER",
+    "zdj-cie.direction": "HORIZONTAL",
+    "zdj-cie.gap": "0",
+    "zdj-cie.justify": "MIN",
+    "zdj-cie.width": "52px",
+    "zdj-cie/thumb.align": "CENTER",
+    "zdj-cie/thumb.background": "var(--surface-raised)",
+    "zdj-cie/thumb.borderColor": "var(--border-default)",
+    "zdj-cie/thumb.borderWidth": "1px",
+    "zdj-cie/thumb.direction": "HORIZONTAL",
+    "zdj-cie/thumb.gap": "0",
+    "zdj-cie/thumb.height": "38px",
+    "zdj-cie/thumb.justify": "CENTER",
+    "zdj-cie/thumb.radius": "var(--radius-sm)",
+    "zdj-cie/thumb.width": "38px",
+    "zdj-cie/thumb/glyph.height": "16px",
+    "zdj-cie/thumb/glyph.vectorToken:--text-tertiary": "var(--text-tertiary)",
+    "zdj-cie/thumb/glyph.width": "16px"
+  },
+  "variants": [
+    {
+      "key": "State=Default",
+      "match": {
+        "State": "Default"
+      },
+      "nodeId": "194:2918",
+      "figmaSize": {
+        "w": 1660,
+        "h": 64
+      },
+      "tokens": {},
+      "render": {
+        "part": "State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1660px",
+          "height": "64px",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Zdjęcie",
+            "path": "zdj-cie",
+            "tag": "div",
+            "style": {
+              "width": "52px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Thumb",
+                "path": "zdj-cie/thumb",
+                "tag": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "glyph",
+                    "path": "zdj-cie/thumb/glyph",
+                    "tag": "svg",
+                    "style": {
+                      "width": "16px",
+                      "height": "16px",
+                      "overflow": "visible",
+                      "position": "relative",
+                      "flex": "none"
+                    },
+                    "vector": true,
+                    "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z\" style=\"stroke:var(--text-tertiary)\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<path d=\"M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333\" style=\"stroke:var(--text-tertiary)\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n</svg>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Sygnatura",
+            "path": "sygnatura",
+            "tag": "div",
+            "style": {
+              "width": "112px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Pill",
+                "path": "sygnatura/pill",
+                "tag": "div",
+                "style": {
+                  "width": "35px",
+                  "background": "var(--surface-raised-hover)",
+                  "border-radius": "var(--radius-sm)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3/5",
+                    "path": "sygnatura/pill/3-5",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "3/5",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Nazwa",
+            "path": "nazwa",
+            "tag": "div",
+            "style": {
+              "width": "368px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Nazwa",
+                "path": "nazwa/nazwa",
+                "tag": "span",
+                "style": {
+                  "flex": "none",
+                  "flex-grow": "1",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "368px",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Nazwa#194:6"
+                },
+                "text": "Drzwi tylne prawe",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Pojazd",
+            "path": "pojazd",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0-5)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Marka",
+                "path": "pojazd/marka",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "propRef": {
+                  "characters": "Marka#194:9"
+                },
+                "text": "Skoda",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Model",
+                "path": "pojazd/model",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Model#194:12"
+                },
+                "text": "Superb I 2003–2008",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Kategoria",
+            "path": "kategoria",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Kategoria",
+                "path": "kategoria/kategoria",
+                "tag": "span",
+                "style": {
+                  "flex": "none",
+                  "flex-grow": "1",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Kategoria#194:15"
+                },
+                "text": "Drzwi",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Stan",
+            "path": "stan",
+            "tag": "div",
+            "style": {
+              "width": "84px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Stan",
+                "path": "stan/stan",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Stan#194:18"
+                },
+                "text": "1 szt.",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Rynki",
+            "path": "rynki",
+            "tag": "div",
+            "style": {
+              "width": "108px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Market A",
+                "path": "rynki/market-a",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--status-success-bg)",
+                  "border": "1px solid var(--status-success-border)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-a/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--status-success-text)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "A",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Market X",
+                "path": "rynki/market-x",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-subtle)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-x/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-disabled)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "X",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Market E",
+                "path": "rynki/market-e",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-subtle)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-e/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-disabled)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "E",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Market O",
+                "path": "rynki/market-o",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-subtle)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-o/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-disabled)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "O",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Cena",
+            "path": "cena",
+            "tag": "div",
+            "style": {
+              "width": "84px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Cena",
+                "path": "cena/cena",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Cena#194:21"
+                },
+                "text": "480 zł",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Status",
+            "path": "status",
+            "tag": "div",
+            "style": {
+              "width": "132px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "StatusPill",
+                "path": "status/status-pill",
+                "tag": "div",
+                "style": {
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Dot",
+                    "path": "status/status-pill/dot",
+                    "tag": "div",
+                    "style": {
+                      "width": "7px",
+                      "height": "7px",
+                      "background": "var(--text-tertiary)",
+                      "border-radius": "50%"
+                    }
+                  },
+                  {
+                    "part": "Robocza",
+                    "path": "status/status-pill/robocza",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "text": "Robocza",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Hover",
+      "match": {
+        "State": "Hover"
+      },
+      "nodeId": "194:2952",
+      "figmaSize": {
+        "w": 1660,
+        "h": 64
+      },
+      "tokens": {
+        "background": "var(--surface-raised)"
+      },
+      "render": {
+        "part": "State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1660px",
+          "height": "64px",
+          "background": "var(--surface-raised)",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Zdjęcie",
+            "path": "zdj-cie",
+            "tag": "div",
+            "style": {
+              "width": "52px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Thumb",
+                "path": "zdj-cie/thumb",
+                "tag": "div",
+                "style": {
+                  "width": "38px",
+                  "height": "38px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "glyph",
+                    "path": "zdj-cie/thumb/glyph",
+                    "tag": "svg",
+                    "style": {
+                      "width": "16px",
+                      "height": "16px",
+                      "overflow": "visible",
+                      "position": "relative",
+                      "flex": "none"
+                    },
+                    "vector": true,
+                    "geometryFrom": "194:2888",
+                    "svg": "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z\" style=\"stroke:var(--text-tertiary)\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n<path d=\"M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333\" style=\"stroke:var(--text-tertiary)\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n</svg>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Sygnatura",
+            "path": "sygnatura",
+            "tag": "div",
+            "style": {
+              "width": "112px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Pill",
+                "path": "sygnatura/pill",
+                "tag": "div",
+                "style": {
+                  "width": "35px",
+                  "background": "var(--surface-raised-hover)",
+                  "border-radius": "var(--radius-sm)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3/5",
+                    "path": "sygnatura/pill/3-5",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "3/5",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Nazwa",
+            "path": "nazwa",
+            "tag": "div",
+            "style": {
+              "width": "368px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Nazwa",
+                "path": "nazwa/nazwa",
+                "tag": "span",
+                "style": {
+                  "flex": "none",
+                  "flex-grow": "1",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "368px",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Nazwa#194:6"
+                },
+                "text": "Drzwi tylne prawe",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Pojazd",
+            "path": "pojazd",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0-5)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Marka",
+                "path": "pojazd/marka",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "propRef": {
+                  "characters": "Marka#194:9"
+                },
+                "text": "Skoda",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Model",
+                "path": "pojazd/model",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Model#194:12"
+                },
+                "text": "Superb I 2003–2008",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Kategoria",
+            "path": "kategoria",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Kategoria",
+                "path": "kategoria/kategoria",
+                "tag": "span",
+                "style": {
+                  "flex": "none",
+                  "flex-grow": "1",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Kategoria#194:15"
+                },
+                "text": "Drzwi",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Stan",
+            "path": "stan",
+            "tag": "div",
+            "style": {
+              "width": "84px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Stan",
+                "path": "stan/stan",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Stan#194:18"
+                },
+                "text": "1 szt.",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Rynki",
+            "path": "rynki",
+            "tag": "div",
+            "style": {
+              "width": "108px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Market A",
+                "path": "rynki/market-a",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--status-success-bg)",
+                  "border": "1px solid var(--status-success-border)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-a/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--status-success-text)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "A",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Market X",
+                "path": "rynki/market-x",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-subtle)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-x/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-disabled)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "X",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Market E",
+                "path": "rynki/market-e",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-subtle)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-e/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-disabled)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "E",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Market O",
+                "path": "rynki/market-o",
+                "tag": "div",
+                "style": {
+                  "width": "22px",
+                  "height": "22px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-subtle)",
+                  "border-radius": "var(--radius-sm)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Letter",
+                    "path": "rynki/market-o/letter",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-disabled)"
+                    },
+                    "propRef": {
+                      "characters": "Letter#194:0"
+                    },
+                    "text": "O",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Cena",
+            "path": "cena",
+            "tag": "div",
+            "style": {
+              "width": "84px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Cena",
+                "path": "cena/cena",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Cena#194:21"
+                },
+                "text": "480 zł",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Status",
+            "path": "status",
+            "tag": "div",
+            "style": {
+              "width": "132px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "StatusPill",
+                "path": "status/status-pill",
+                "tag": "div",
+                "style": {
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Dot",
+                    "path": "status/status-pill/dot",
+                    "tag": "div",
+                    "style": {
+                      "width": "7px",
+                      "height": "7px",
+                      "background": "var(--text-tertiary)",
+                      "border-radius": "50%"
+                    }
+                  },
+                  {
+                    "part": "Robocza",
+                    "path": "status/status-pill/robocza",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "text": "Robocza",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "One offer inside OfferTable.",
+    "Hover is the only affordance the source gives a row; there is no pressed or selected state.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [
+    "Never used standalone — the table owns the container fill, border, radius and the column widths."
+  ],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "1660px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "64px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "zdj-cie.width",
+      "value": "52px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "zdj-cie"
+      ]
+    },
+    {
+      "prop": "zdj-cie/thumb.width",
+      "value": "38px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "zdj-cie/thumb"
+      ]
+    },
+    {
+      "prop": "zdj-cie/thumb.height",
+      "value": "38px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "zdj-cie/thumb"
+      ]
+    },
+    {
+      "prop": "zdj-cie/thumb.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "zdj-cie/thumb"
+      ]
+    },
+    {
+      "prop": "zdj-cie/thumb/glyph.width",
+      "value": "16px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "zdj-cie/thumb/glyph"
+      ]
+    },
+    {
+      "prop": "zdj-cie/thumb/glyph.height",
+      "value": "16px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "zdj-cie/thumb/glyph"
+      ]
+    },
+    {
+      "prop": "sygnatura.width",
+      "value": "112px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "sygnatura"
+      ]
+    },
+    {
+      "prop": "nazwa.width",
+      "value": "368px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "nazwa"
+      ]
+    },
+    {
+      "prop": "pojazd.width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "pojazd"
+      ]
+    },
+    {
+      "prop": "kategoria.width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "kategoria"
+      ]
+    },
+    {
+      "prop": "stan.width",
+      "value": "84px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "stan"
+      ]
+    },
+    {
+      "prop": "rynki.width",
+      "value": "108px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "rynki"
+      ]
+    },
+    {
+      "prop": "rynki/market-a.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "rynki/market-a"
+      ]
+    },
+    {
+      "prop": "rynki/market-x.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "rynki/market-x"
+      ]
+    },
+    {
+      "prop": "rynki/market-e.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "rynki/market-e"
+      ]
+    },
+    {
+      "prop": "rynki/market-o.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "rynki/market-o"
+      ]
+    },
+    {
+      "prop": "cena.width",
+      "value": "84px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "cena"
+      ]
+    },
+    {
+      "prop": "status.width",
+      "value": "132px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "status"
+      ]
+    },
+    {
+      "prop": "status/status-pill.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "status/status-pill"
+      ]
+    }
+  ],
+  "notes": [
+    {
+      "kind": "vector-twin",
+      "at": "zdj-cie/thumb/glyph",
+      "node": "194:2922",
+      "takenFrom": "194:2888",
+      "signature": "/Zdjęcie/Thumb|glyph|16x16",
+      "reason": "Figma отказалась экспортировать этот узел; геометрия взята у узла с совпадающими путём, именем и размером"
+    }
+  ],
+  "motionSource": "figma reactions: 0"
+}

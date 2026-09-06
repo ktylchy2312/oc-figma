@@ -1,0 +1,786 @@
+{
+  "name": "DocProgress",
+  "slug": "doc-progress",
+  "group": "Cards",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "299:2127",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Show Count",
+      "type": "boolean",
+      "figmaKey": "Show Count#299:3",
+      "default": true
+    },
+    {
+      "name": "Filled",
+      "type": "variant",
+      "figmaKey": "Filled",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "default": "0"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "DocProgress",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "bar",
+      "name": "Bar",
+      "element": "div"
+    },
+    {
+      "part": "bar/segment-1",
+      "name": "Segment 1",
+      "element": "div"
+    },
+    {
+      "part": "bar/segment-2",
+      "name": "Segment 2",
+      "element": "div"
+    },
+    {
+      "part": "bar/segment-3",
+      "name": "Segment 3",
+      "element": "div"
+    },
+    {
+      "part": "bar/segment-4",
+      "name": "Segment 4",
+      "element": "div"
+    },
+    {
+      "part": "count",
+      "name": "Count",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "Show Count"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "bar.align": "MIN",
+    "bar.direction": "HORIZONTAL",
+    "bar.gap": "var(--space-1)",
+    "bar.justify": "MIN",
+    "bar/segment-1.height": "7px",
+    "bar/segment-1.radius": "var(--radius-full)",
+    "bar/segment-1.width": "28px",
+    "bar/segment-2.height": "7px",
+    "bar/segment-2.radius": "var(--radius-full)",
+    "bar/segment-2.width": "28px",
+    "bar/segment-3.height": "7px",
+    "bar/segment-3.radius": "var(--radius-full)",
+    "bar/segment-3.width": "28px",
+    "bar/segment-4.height": "7px",
+    "bar/segment-4.radius": "var(--radius-full)",
+    "bar/segment-4.width": "28px",
+    "count.color": "var(--text-tertiary)",
+    "count.font": "Type/Caption 12/16px 400",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "justify": "MIN"
+  },
+  "variants": [
+    {
+      "key": "Filled=0",
+      "match": {
+        "Filled": "0"
+      },
+      "nodeId": "299:2092",
+      "figmaSize": {
+        "w": 151,
+        "h": 16
+      },
+      "tokens": {
+        "bar/segment-1.background": "var(--border-default)",
+        "bar/segment-2.background": "var(--border-default)",
+        "bar/segment-3.background": "var(--border-default)",
+        "bar/segment-4.background": "var(--border-default)"
+      },
+      "render": {
+        "part": "Filled=0",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Bar",
+            "path": "bar",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Segment 1",
+                "path": "bar/segment-1",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 2",
+                "path": "bar/segment-2",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 3",
+                "path": "bar/segment-3",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 4",
+                "path": "bar/segment-4",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Count",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "visible": "Show Count#299:3"
+            },
+            "text": "0/4",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Filled=1",
+      "match": {
+        "Filled": "1"
+      },
+      "nodeId": "299:2099",
+      "figmaSize": {
+        "w": 151,
+        "h": 16
+      },
+      "tokens": {
+        "bar/segment-1.background": "var(--status-success-text)",
+        "bar/segment-2.background": "var(--border-default)",
+        "bar/segment-3.background": "var(--border-default)",
+        "bar/segment-4.background": "var(--border-default)"
+      },
+      "render": {
+        "part": "Filled=1",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Bar",
+            "path": "bar",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Segment 1",
+                "path": "bar/segment-1",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 2",
+                "path": "bar/segment-2",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 3",
+                "path": "bar/segment-3",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 4",
+                "path": "bar/segment-4",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Count",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "visible": "Show Count#299:3"
+            },
+            "text": "1/4",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Filled=2",
+      "match": {
+        "Filled": "2"
+      },
+      "nodeId": "299:2106",
+      "figmaSize": {
+        "w": 151,
+        "h": 16
+      },
+      "tokens": {
+        "bar/segment-1.background": "var(--status-success-text)",
+        "bar/segment-2.background": "var(--status-success-text)",
+        "bar/segment-3.background": "var(--border-default)",
+        "bar/segment-4.background": "var(--border-default)"
+      },
+      "render": {
+        "part": "Filled=2",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Bar",
+            "path": "bar",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Segment 1",
+                "path": "bar/segment-1",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 2",
+                "path": "bar/segment-2",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 3",
+                "path": "bar/segment-3",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 4",
+                "path": "bar/segment-4",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Count",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "visible": "Show Count#299:3"
+            },
+            "text": "2/4",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Filled=3",
+      "match": {
+        "Filled": "3"
+      },
+      "nodeId": "299:2113",
+      "figmaSize": {
+        "w": 151,
+        "h": 16
+      },
+      "tokens": {
+        "bar/segment-1.background": "var(--status-success-text)",
+        "bar/segment-2.background": "var(--status-success-text)",
+        "bar/segment-3.background": "var(--status-success-text)",
+        "bar/segment-4.background": "var(--border-default)"
+      },
+      "render": {
+        "part": "Filled=3",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Bar",
+            "path": "bar",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Segment 1",
+                "path": "bar/segment-1",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 2",
+                "path": "bar/segment-2",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 3",
+                "path": "bar/segment-3",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 4",
+                "path": "bar/segment-4",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--border-default)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Count",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "visible": "Show Count#299:3"
+            },
+            "text": "3/4",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Filled=4",
+      "match": {
+        "Filled": "4"
+      },
+      "nodeId": "299:2120",
+      "figmaSize": {
+        "w": 151,
+        "h": 16
+      },
+      "tokens": {
+        "bar/segment-1.background": "var(--status-success-text)",
+        "bar/segment-2.background": "var(--status-success-text)",
+        "bar/segment-3.background": "var(--status-success-text)",
+        "bar/segment-4.background": "var(--status-success-text)"
+      },
+      "render": {
+        "part": "Filled=4",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Bar",
+            "path": "bar",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Segment 1",
+                "path": "bar/segment-1",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 2",
+                "path": "bar/segment-2",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 3",
+                "path": "bar/segment-3",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Segment 4",
+                "path": "bar/segment-4",
+                "tag": "div",
+                "style": {
+                  "width": "28px",
+                  "height": "7px",
+                  "background": "var(--status-success-text)",
+                  "border-radius": "var(--radius-full)",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Count",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "visible": "Show Count#299:3"
+            },
+            "text": "4/4",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (2 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "bar/segment-1.width",
+      "value": "28px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "bar/segment-1"
+      ]
+    },
+    {
+      "prop": "bar/segment-1.height",
+      "value": "7px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "bar/segment-1"
+      ]
+    },
+    {
+      "prop": "bar/segment-2.width",
+      "value": "28px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "bar/segment-2"
+      ]
+    },
+    {
+      "prop": "bar/segment-2.height",
+      "value": "7px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "bar/segment-2"
+      ]
+    },
+    {
+      "prop": "bar/segment-3.width",
+      "value": "28px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "bar/segment-3"
+      ]
+    },
+    {
+      "prop": "bar/segment-3.height",
+      "value": "7px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "bar/segment-3"
+      ]
+    },
+    {
+      "prop": "bar/segment-4.width",
+      "value": "28px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "bar/segment-4"
+      ]
+    },
+    {
+      "prop": "bar/segment-4.height",
+      "value": "7px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "bar/segment-4"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

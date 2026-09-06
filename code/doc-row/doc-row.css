@@ -1,0 +1,282 @@
+/* DocRow — сгенерировано из components/doc-row/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 280px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 36px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-doc-row {
+  width: 280px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-document.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-doc-row__icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-doc-row__label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: var(--text-primary);
+}
+
+.oc-doc-row__status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* ---- варианты ---- */
+
+/* Status=Done, State=Default */
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-default {
+  height: 36px;
+  background: var(--surface-row);
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-default .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-default .oc-doc-row__icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Done, State=Hover */
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-hover,
+.oc-doc-row.oc-doc-row--status-done:not(:disabled):not([aria-disabled="true"]):hover {
+  height: 36px;
+  background: var(--surface-raised);
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-hover .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-done:not(:disabled):not([aria-disabled="true"]):hover .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-hover .oc-doc-row__icon-circle-check,
+.oc-doc-row.oc-doc-row--status-done:not(:disabled):not([aria-disabled="true"]):hover .oc-doc-row__icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Done, State=Pressed */
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-pressed,
+.oc-doc-row.oc-doc-row--status-done:not(:disabled):not([aria-disabled="true"]):active {
+  height: 36px;
+  background: var(--surface-sunken);
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-pressed .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-done:not(:disabled):not([aria-disabled="true"]):active .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-pressed .oc-doc-row__icon-circle-check,
+.oc-doc-row.oc-doc-row--status-done:not(:disabled):not([aria-disabled="true"]):active .oc-doc-row__icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Done, State=Focus */
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-focus,
+.oc-doc-row.oc-doc-row--status-done:focus-visible {
+  background: var(--surface-row);
+  border: 1px solid var(--accent-default);
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-focus .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-done:focus-visible .oc-doc-row__label {
+  width: 201px;
+}
+.oc-doc-row.oc-doc-row--status-done.oc-doc-row--state-focus .oc-doc-row__icon-circle-check,
+.oc-doc-row.oc-doc-row--status-done:focus-visible .oc-doc-row__icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Warn, State=Default */
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-default {
+  height: 36px;
+  background: var(--surface-row);
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-default .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-default .oc-doc-row__icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Warn, State=Hover */
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-hover,
+.oc-doc-row.oc-doc-row--status-warn:not(:disabled):not([aria-disabled="true"]):hover {
+  height: 36px;
+  background: var(--surface-raised);
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-hover .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-warn:not(:disabled):not([aria-disabled="true"]):hover .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-hover .oc-doc-row__icon-warning,
+.oc-doc-row.oc-doc-row--status-warn:not(:disabled):not([aria-disabled="true"]):hover .oc-doc-row__icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Warn, State=Pressed */
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-pressed,
+.oc-doc-row.oc-doc-row--status-warn:not(:disabled):not([aria-disabled="true"]):active {
+  height: 36px;
+  background: var(--surface-sunken);
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-pressed .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-warn:not(:disabled):not([aria-disabled="true"]):active .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-pressed .oc-doc-row__icon-warning,
+.oc-doc-row.oc-doc-row--status-warn:not(:disabled):not([aria-disabled="true"]):active .oc-doc-row__icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Warn, State=Focus */
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-focus,
+.oc-doc-row.oc-doc-row--status-warn:focus-visible {
+  background: var(--surface-row);
+  border: 1px solid var(--accent-default);
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-focus .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-warn:focus-visible .oc-doc-row__label {
+  width: 201px;
+}
+.oc-doc-row.oc-doc-row--status-warn.oc-doc-row--state-focus .oc-doc-row__icon-warning,
+.oc-doc-row.oc-doc-row--status-warn:focus-visible .oc-doc-row__icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Pending, State=Default */
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-default {
+  height: 36px;
+  background: var(--surface-row);
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-default .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-default .oc-doc-row__icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Pending, State=Hover */
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-hover,
+.oc-doc-row.oc-doc-row--status-pending:not(:disabled):not([aria-disabled="true"]):hover {
+  height: 36px;
+  background: var(--surface-raised);
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-hover .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-pending:not(:disabled):not([aria-disabled="true"]):hover .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-hover .oc-doc-row__icon-circle,
+.oc-doc-row.oc-doc-row--status-pending:not(:disabled):not([aria-disabled="true"]):hover .oc-doc-row__icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Pending, State=Pressed */
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-pressed,
+.oc-doc-row.oc-doc-row--status-pending:not(:disabled):not([aria-disabled="true"]):active {
+  height: 36px;
+  background: var(--surface-sunken);
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-pressed .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-pending:not(:disabled):not([aria-disabled="true"]):active .oc-doc-row__label {
+  width: 203px;
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-pressed .oc-doc-row__icon-circle,
+.oc-doc-row.oc-doc-row--status-pending:not(:disabled):not([aria-disabled="true"]):active .oc-doc-row__icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Status=Pending, State=Focus */
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-focus,
+.oc-doc-row.oc-doc-row--status-pending:focus-visible {
+  background: var(--surface-row);
+  border: 1px solid var(--accent-default);
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-focus .oc-doc-row__label,
+.oc-doc-row.oc-doc-row--status-pending:focus-visible .oc-doc-row__label {
+  width: 201px;
+}
+.oc-doc-row.oc-doc-row--status-pending.oc-doc-row--state-focus .oc-doc-row__icon-circle,
+.oc-doc-row.oc-doc-row--status-pending:focus-visible .oc-doc-row__icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}

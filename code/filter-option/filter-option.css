@@ -1,0 +1,126 @@
+/* FilterOption — сгенерировано из components/filter-option/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 200px — нет шкалы размеров: ширина задана числом */
+.oc-filter-option {
+  width: 200px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — ellipse.width = 8px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — ellipse.height = 8px — нет шкалы размеров: высота задана числом */
+.oc-filter-option__ellipse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.oc-filter-option__label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+/* TODO: unbound — icon-check.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+
+/* ---- варианты ---- */
+
+/* Key=All, Selected=False */
+.oc-filter-option.oc-filter-option--key-all.oc-filter-option--selected-false .oc-filter-option__ellipse {
+  background: var(--text-tertiary);
+}
+.oc-filter-option.oc-filter-option--key-all.oc-filter-option--selected-false .oc-filter-option__label {
+  width: 156px;
+  color: var(--text-secondary);
+}
+
+/* Key=All, Selected=True */
+.oc-filter-option.oc-filter-option--key-all.oc-filter-option--selected-true {
+  background: var(--accent-tint);
+}
+.oc-filter-option.oc-filter-option--key-all.oc-filter-option--selected-true .oc-filter-option__ellipse {
+  background: var(--text-tertiary);
+}
+.oc-filter-option.oc-filter-option--key-all.oc-filter-option--selected-true .oc-filter-option__label {
+  width: 128px;
+  color: var(--accent-default);
+}
+.oc-filter-option.oc-filter-option--key-all.oc-filter-option--selected-true .oc-filter-option__icon-check {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--accent-default);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Key=Ryzyko, Selected=False */
+.oc-filter-option.oc-filter-option--key-ryzyko.oc-filter-option--selected-false .oc-filter-option__ellipse {
+  background: var(--status-warning-text);
+}
+.oc-filter-option.oc-filter-option--key-ryzyko.oc-filter-option--selected-false .oc-filter-option__label {
+  width: 156px;
+  color: var(--text-secondary);
+}
+
+/* Key=Ryzyko, Selected=True */
+.oc-filter-option.oc-filter-option--key-ryzyko.oc-filter-option--selected-true {
+  background: var(--accent-tint);
+}
+.oc-filter-option.oc-filter-option--key-ryzyko.oc-filter-option--selected-true .oc-filter-option__ellipse {
+  background: var(--status-warning-text);
+}
+.oc-filter-option.oc-filter-option--key-ryzyko.oc-filter-option--selected-true .oc-filter-option__label {
+  width: 128px;
+  color: var(--accent-default);
+}
+.oc-filter-option.oc-filter-option--key-ryzyko.oc-filter-option--selected-true .oc-filter-option__icon-check {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--accent-default);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Key=Wygaslo, Selected=False */
+.oc-filter-option.oc-filter-option--key-wygaslo.oc-filter-option--selected-false .oc-filter-option__ellipse {
+  background: var(--status-error-text);
+}
+.oc-filter-option.oc-filter-option--key-wygaslo.oc-filter-option--selected-false .oc-filter-option__label {
+  width: 156px;
+  color: var(--text-secondary);
+}
+
+/* Key=Wygaslo, Selected=True */
+.oc-filter-option.oc-filter-option--key-wygaslo.oc-filter-option--selected-true {
+  background: var(--accent-tint);
+}
+.oc-filter-option.oc-filter-option--key-wygaslo.oc-filter-option--selected-true .oc-filter-option__ellipse {
+  background: var(--status-error-text);
+}
+.oc-filter-option.oc-filter-option--key-wygaslo.oc-filter-option--selected-true .oc-filter-option__label {
+  width: 128px;
+  color: var(--accent-default);
+}
+.oc-filter-option.oc-filter-option--key-wygaslo.oc-filter-option--selected-true .oc-filter-option__icon-check {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--accent-default);
+  stroke-width: 1;
+  flex: none;
+}

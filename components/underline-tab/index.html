@@ -1,0 +1,84 @@
+<!-- @dsCard group="Navigation" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>UnderlineTab — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">UnderlineTab</h1>
+  <p class="ds-meta">Navigation · atom · 6 вариантов · Figma 335:3834 · страница Core · Токенов задействовано: 8 · без токена: 1</p>
+  <p class="ds-desc">Вкладка с нижней гранью — экран настроек. Отдельно от Tab: у сегментированной вкладки своя коробка с фоном и радиусом. Подчёркивание есть у всех состояний, у неактивных прозрачное, иначе строка дёргается на 2px при переключении.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="Active=Idle, State=Default">
+    <div style="width:fit-content;display:flex;flex-direction:column;gap:var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="label">Ogólne</span>
+      <div style="align-self:stretch;height:2px;overflow:hidden" data-part="underline"></div>
+    </div>
+    <code class="ds-cell-label">Active=Idle, State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="Active=Idle, State=Hover">
+    <div style="width:fit-content;display:flex;flex-direction:column;gap:var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="label">Ogólne</span>
+      <div style="align-self:stretch;height:2px;background:var(--border-strong);overflow:hidden" data-part="underline"></div>
+    </div>
+    <code class="ds-cell-label">Active=Idle, State=Hover</code>
+  </div>
+  <div class="ds-cell" data-variant="Active=Idle, State=Pressed">
+    <div style="width:fit-content;display:flex;flex-direction:column;gap:var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="label">Ogólne</span>
+      <div style="align-self:stretch;height:2px;background:var(--border-strong);overflow:hidden" data-part="underline"></div>
+    </div>
+    <code class="ds-cell-label">Active=Idle, State=Pressed</code>
+  </div>
+  <div class="ds-cell" data-variant="Active=Active, State=Default">
+    <div style="width:fit-content;display:flex;flex-direction:column;gap:var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="label">Ogólne</span>
+      <div style="align-self:stretch;height:2px;background:var(--accent-default);overflow:hidden" data-part="underline"></div>
+    </div>
+    <code class="ds-cell-label">Active=Active, State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="Active=Active, State=Hover">
+    <div style="width:fit-content;display:flex;flex-direction:column;gap:var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="label">Ogólne</span>
+      <div style="align-self:stretch;height:2px;background:var(--accent-hover);overflow:hidden" data-part="underline"></div>
+    </div>
+    <code class="ds-cell-label">Active=Active, State=Hover</code>
+  </div>
+  <div class="ds-cell" data-variant="Active=Active, State=Pressed">
+    <div style="width:fit-content;display:flex;flex-direction:column;gap:var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="label">Ogólne</span>
+      <div style="align-self:stretch;height:2px;background:var(--accent-pressed);overflow:hidden" data-part="underline"></div>
+    </div>
+    <code class="ds-cell-label">Active=Active, State=Pressed</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --accent-hover, --accent-pressed, --border-strong, --space-3, --text-primary, --text-secondary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> underline.height = 2px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

@@ -1,0 +1,238 @@
+/* TabBar — сгенерировано из components/tab-bar/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — borderWidth = 2px — нет токена под толщину обводки */
+.oc-tab-bar {
+  width: fit-content;
+  border-bottom: 2px solid var(--text-disabled);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-6);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-inner-icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-secondary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-tab-bar__tab-inner-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-tab-bar__tab-spacer {
+  align-self: stretch;
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-underline {
+  align-self: stretch;
+  height: 2px;
+  background: var(--text-tertiary);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-2 {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-2-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-2-inner-icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-secondary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-tab-bar__tab-2-inner-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-tab-bar__tab-2-spacer {
+  align-self: stretch;
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-2-underline {
+  align-self: stretch;
+  height: 2px;
+  background: var(--text-tertiary);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-3 {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-3-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-3-inner-icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-secondary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-tab-bar__tab-3-inner-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-tab-bar__tab-3-spacer {
+  align-self: stretch;
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-3-underline {
+  align-self: stretch;
+  height: 2px;
+  background: var(--text-tertiary);
+  opacity: 0;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-4 {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) 0 var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-4-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-tab-bar__tab-4-inner-icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-secondary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-tab-bar__tab-4-inner-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-tab-bar__tab-4-spacer {
+  align-self: stretch;
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.oc-tab-bar__tab-4-underline {
+  align-self: stretch;
+  height: 2px;
+  background: var(--text-tertiary);
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* ---- варианты ---- */

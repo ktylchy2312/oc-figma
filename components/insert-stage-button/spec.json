@@ -1,0 +1,296 @@
+{
+  "name": "InsertStageButton",
+  "slug": "insert-stage-button",
+  "group": "Actions",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:3234",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Disabled"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "InsertStageButton",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "height": "40px",
+    "icon-plus.height": "20px",
+    "icon-plus.icon": "Plus",
+    "icon-plus.iconColor": "var(--text-primary)",
+    "icon-plus.width": "20px",
+    "justify": "CENTER",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "radius": "var(--radius-full)",
+    "width": "40px"
+  },
+  "variants": [
+    {
+      "key": "State=Default",
+      "match": {
+        "State": "Default"
+      },
+      "nodeId": "395:3235",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--accent-default)"
+      },
+      "render": {
+        "part": "State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--accent-default)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Hover",
+      "match": {
+        "State": "Hover"
+      },
+      "nodeId": "395:3237",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--accent-hover)"
+      },
+      "render": {
+        "part": "State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--accent-hover)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Pressed",
+      "match": {
+        "State": "Pressed"
+      },
+      "nodeId": "395:3239",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--accent-pressed)"
+      },
+      "render": {
+        "part": "State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--accent-pressed)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Disabled",
+      "match": {
+        "State": "Disabled"
+      },
+      "nodeId": "395:3241",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--accent-disabled)",
+        "opacity": "var(--opacity-disabled)"
+      },
+      "render": {
+        "part": "State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--accent-disabled)",
+          "border-radius": "var(--radius-full)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "40px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-plus.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-plus"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

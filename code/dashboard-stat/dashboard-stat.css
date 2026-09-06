@@ -1,0 +1,70 @@
+/* DashboardStat — сгенерировано из components/dashboard-stat/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-dashboard-stat {
+  width: 240px;
+  align-self: stretch;
+  flex-grow: 1;
+  background: var(--surface-column);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* ---- варианты ---- */
+
+/* Variant=Neutral */
+.oc-dashboard-stat.oc-dashboard-stat--variant-neutral .oc-dashboard-stat__cznie-w-toku {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 190px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-dashboard-stat.oc-dashboard-stat--variant-neutral .oc-dashboard-stat__7 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* Variant=Alert */
+.oc-dashboard-stat.oc-dashboard-stat--variant-alert .oc-dashboard-stat__ryzyko-oc {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 190px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-dashboard-stat.oc-dashboard-stat--variant-alert .oc-dashboard-stat__6 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--status-error-text);
+}

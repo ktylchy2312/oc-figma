@@ -1,0 +1,83 @@
+/* OcStatus — сгенерировано из components/oc-status/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-oc-status {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-oc-status__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* TODO: unbound — icon-clock.iconStrokeWidth = 1.5 — нет токена под толщину линии иконки */
+/* TODO: unbound — icon-circle.iconStrokeWidth = 1.5 — нет токена под толщину линии иконки */
+
+/* ---- варианты ---- */
+
+/* State=Active */
+.oc-oc-status.oc-oc-status--state-active .oc-oc-status__icon-clock,
+.oc-oc-status:not(:disabled):not([aria-disabled="true"]):active .oc-oc-status__icon-clock {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-oc-status.oc-oc-status--state-active .oc-oc-status__label,
+.oc-oc-status:not(:disabled):not([aria-disabled="true"]):active .oc-oc-status__label {
+  color: var(--status-success-text);
+}
+
+/* State=Soon */
+.oc-oc-status.oc-oc-status--state-soon .oc-oc-status__icon-clock {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-oc-status.oc-oc-status--state-soon .oc-oc-status__label {
+  color: var(--status-warning-text);
+}
+
+/* State=Expired */
+.oc-oc-status.oc-oc-status--state-expired .oc-oc-status__icon-clock {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-error-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-oc-status.oc-oc-status--state-expired .oc-oc-status__label {
+  color: var(--status-error-text);
+}
+
+/* State=None */
+.oc-oc-status.oc-oc-status--state-none .oc-oc-status__label {
+  color: var(--text-tertiary);
+}
+.oc-oc-status.oc-oc-status--state-none .oc-oc-status__icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1.5;
+  flex: none;
+}

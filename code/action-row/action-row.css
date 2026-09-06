@@ -1,0 +1,98 @@
+/* ActionRow — сгенерировано из components/action-row/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 280px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-action-row {
+  width: 280px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-bolt.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-action-row__icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-action-row__label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: var(--text-primary);
+}
+
+.oc-action-row__status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-action-row__icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-action-row.oc-action-row--state-default {
+  background: var(--surface-row);
+}
+.oc-action-row.oc-action-row--state-default .oc-action-row__label {
+  width: 203px;
+}
+
+/* State=Hover */
+.oc-action-row.oc-action-row--state-hover,
+.oc-action-row:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised);
+}
+.oc-action-row.oc-action-row--state-hover .oc-action-row__label,
+.oc-action-row:not(:disabled):not([aria-disabled="true"]):hover .oc-action-row__label {
+  width: 203px;
+}
+
+/* State=Pressed */
+.oc-action-row.oc-action-row--state-pressed,
+.oc-action-row:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-sunken);
+}
+.oc-action-row.oc-action-row--state-pressed .oc-action-row__label,
+.oc-action-row:not(:disabled):not([aria-disabled="true"]):active .oc-action-row__label {
+  width: 203px;
+}
+
+/* State=Focus */
+.oc-action-row.oc-action-row--state-focus,
+.oc-action-row:focus-visible {
+  background: var(--surface-row);
+  border: 1px solid var(--accent-default);
+}
+.oc-action-row.oc-action-row--state-focus .oc-action-row__label,
+.oc-action-row:focus-visible .oc-action-row__label {
+  width: 201px;
+}

@@ -1,0 +1,26 @@
+/* TabIcon — сгенерировано из components/tab-icon/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-tab-icon {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — icon-list.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-tab-icon__icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */

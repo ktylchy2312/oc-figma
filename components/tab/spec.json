@@ -1,0 +1,863 @@
+{
+  "name": "Tab",
+  "slug": "tab",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "32:1415",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#32:87",
+      "default": "Lista"
+    },
+    {
+      "name": "Icon",
+      "type": "instance-swap",
+      "figmaKey": "Icon#32:94",
+      "default": "56:2271",
+      "preferredValues": []
+    },
+    {
+      "name": "Active",
+      "type": "variant",
+      "figmaKey": "Active",
+      "values": [
+        "Idle",
+        "Active"
+      ],
+      "default": "Idle"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Tab",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "inner",
+      "name": "Inner",
+      "element": "div"
+    },
+    {
+      "part": "inner/icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "inner/label",
+      "name": "Lista",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "spacer",
+      "name": "Spacer",
+      "element": "div"
+    },
+    {
+      "part": "underline",
+      "name": "Underline",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "VERTICAL",
+    "gap": "var(--space-0)",
+    "height": "40px",
+    "inner.align": "CENTER",
+    "inner.direction": "HORIZONTAL",
+    "inner.gap": "var(--space-2)",
+    "inner.justify": "MIN",
+    "inner.padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+    "inner/icon-list.height": "16px",
+    "inner/icon-list.icon": "List",
+    "inner/icon-list.width": "16px",
+    "inner/label.font": "Type/Body Small Alter 13/20px 700",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+    "underline.height": "2px"
+  },
+  "variants": [
+    {
+      "key": "Active=Idle, State=Default",
+      "match": {
+        "Active": "Idle",
+        "State": "Default"
+      },
+      "nodeId": "32:1373",
+      "figmaSize": {
+        "w": 55,
+        "h": 40
+      },
+      "tokens": {
+        "inner/icon-list.iconColor": "var(--text-secondary)",
+        "inner/label.color": "var(--text-secondary)",
+        "underline.background": "var(--text-tertiary)",
+        "underline.opacity": "0"
+      },
+      "render": {
+        "part": "Active=Idle, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Inner",
+            "path": "inner",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "inner/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-secondary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#32:94"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Lista",
+                "path": "inner/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "propRef": {
+                  "characters": "Label#32:87"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--text-tertiary)",
+              "opacity": "0",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Hover",
+      "match": {
+        "Active": "Idle",
+        "State": "Hover"
+      },
+      "nodeId": "32:1380",
+      "figmaSize": {
+        "w": 55,
+        "h": 40
+      },
+      "tokens": {
+        "inner/icon-list.iconColor": "var(--accent-hover)",
+        "inner/label.color": "var(--accent-hover)",
+        "underline.background": "var(--text-tertiary)",
+        "underline.opacity": "0"
+      },
+      "render": {
+        "part": "Active=Idle, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Inner",
+            "path": "inner",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "inner/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--accent-hover)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#32:94"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Lista",
+                "path": "inner/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--accent-hover)"
+                },
+                "propRef": {
+                  "characters": "Label#32:87"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--text-tertiary)",
+              "opacity": "0",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Pressed",
+      "match": {
+        "Active": "Idle",
+        "State": "Pressed"
+      },
+      "nodeId": "32:1387",
+      "figmaSize": {
+        "w": 55,
+        "h": 40
+      },
+      "tokens": {
+        "inner/icon-list.iconColor": "var(--text-disabled)",
+        "inner/label.color": "var(--text-disabled)",
+        "underline.background": "var(--accent-default)",
+        "underline.opacity": "0"
+      },
+      "render": {
+        "part": "Active=Idle, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Inner",
+            "path": "inner",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "inner/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-disabled)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#32:94"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Lista",
+                "path": "inner/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "propRef": {
+                  "characters": "Label#32:87"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-default)",
+              "opacity": "0",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Default",
+      "match": {
+        "Active": "Active",
+        "State": "Default"
+      },
+      "nodeId": "32:1394",
+      "figmaSize": {
+        "w": 55,
+        "h": 40
+      },
+      "tokens": {
+        "inner/icon-list.iconColor": "var(--accent-default)",
+        "inner/label.color": "var(--accent-default)",
+        "underline.background": "var(--accent-default)"
+      },
+      "render": {
+        "part": "Active=Active, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Inner",
+            "path": "inner",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "inner/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--accent-default)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#32:94"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Lista",
+                "path": "inner/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--accent-default)"
+                },
+                "propRef": {
+                  "characters": "Label#32:87"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-default)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Hover",
+      "match": {
+        "Active": "Active",
+        "State": "Hover"
+      },
+      "nodeId": "32:1401",
+      "figmaSize": {
+        "w": 55,
+        "h": 40
+      },
+      "tokens": {
+        "inner/icon-list.iconColor": "var(--accent-hover)",
+        "inner/label.color": "var(--accent-hover)",
+        "underline.background": "var(--accent-hover)"
+      },
+      "render": {
+        "part": "Active=Active, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Inner",
+            "path": "inner",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "inner/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--accent-hover)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#32:94"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Lista",
+                "path": "inner/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--accent-hover)"
+                },
+                "propRef": {
+                  "characters": "Label#32:87"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-hover)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Pressed",
+      "match": {
+        "Active": "Active",
+        "State": "Pressed"
+      },
+      "nodeId": "32:1408",
+      "figmaSize": {
+        "w": 55,
+        "h": 40
+      },
+      "tokens": {
+        "inner/icon-list.iconColor": "var(--accent-pressed)",
+        "inner/label.color": "var(--accent-pressed)",
+        "underline.background": "var(--accent-pressed)"
+      },
+      "render": {
+        "part": "Active=Active, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "40px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Inner",
+            "path": "inner",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "inner/icon-list",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--accent-pressed)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "mainComponent": "Icon#32:94"
+                },
+                "icon": "List",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Lista",
+                "path": "inner/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--accent-pressed)"
+                },
+                "propRef": {
+                  "characters": "Label#32:87"
+                },
+                "text": "Lista",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-pressed)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "inner/icon-list.iconStrokeWidth",
+      "value": "1.5",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "inner/icon-list"
+      ]
+    },
+    {
+      "prop": "underline.height",
+      "value": "2px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "underline"
+      ]
+    },
+    {
+      "prop": "underline.opacity",
+      "value": "0",
+      "reason": "непрозрачность без токена",
+      "at": [
+        "underline"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

@@ -1,0 +1,1476 @@
+/* EtapyTable — сгенерировано из components/etapy-table/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 1660px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-etapy-table {
+  width: 1660px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — etapy-table-header.borderWidth = 1px — нет токена под толщину обводки */
+.oc-etapy-table__etapy-table-header {
+  align-self: stretch;
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__etapy-table-header-sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sygnatura-sygnatura {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__pojazd-pojazd {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__etapy-table-header-vin-vin {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__etapy-table-header-kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-status-oc {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__etapy-table-header-status-oc-status-oc {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-oc-do {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__etapy-table-header-oc-do-oc-do {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__dokumenty-dokumenty {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__etapy-table-header-etapy {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__etapy-table-header-etapy-etapy {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — sk00147.borderWidth = 1px — нет токена под толщину обводки */
+.oc-etapy-table__sk00147 {
+  align-self: stretch;
+  height: 64px;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-sygnatura-pill {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-sygnatura-pill-3-5 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__sk00147-pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__sk00147-pojazd-marka {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-etapy-table__sk00147-pojazd-model {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__sk00147-vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-vin-vin {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__sk00147-kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__sk00147-status-oc {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-status-oc-status-oc {
+  background: var(--surface-raised);
+  border: 1px solid var(--status-success-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-status-oc-status-oc-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__sk00147-status-oc-status-oc-aktywna {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+.oc-etapy-table__sk00147-oc-do {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-oc-do-oc-do {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__sk00147-dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress-bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress-bar-segment-1 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress-bar-segment-2 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress-bar-segment-3 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress-bar-segment-4 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__sk00147-dokumenty-doc-progress-count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__sk00147-etapy {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-etapy-etapy {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__sk00147-etapy-etapy-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--text-tertiary);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__sk00147-etapy-etapy-robocza {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — vw00312.borderWidth = 1px — нет токена под толщину обводки */
+.oc-etapy-table__vw00312 {
+  align-self: stretch;
+  height: 64px;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-sygnatura-pill {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-sygnatura-pill-3-5 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__vw00312-pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__vw00312-pojazd-marka {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-etapy-table__vw00312-pojazd-model {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__vw00312-vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-vin-vin {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__vw00312-kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__vw00312-status-oc {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-status-oc-status-oc {
+  background: var(--surface-raised);
+  border: 1px solid var(--status-success-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-status-oc-status-oc-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__vw00312-status-oc-status-oc-aktywna {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+.oc-etapy-table__vw00312-oc-do {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-oc-do-oc-do {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__vw00312-dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress-bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress-bar-segment-1 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress-bar-segment-2 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress-bar-segment-3 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress-bar-segment-4 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__vw00312-dokumenty-doc-progress-count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__vw00312-etapy {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-etapy-etapy {
+  background: var(--surface-raised);
+  border: 1px solid var(--status-success-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__vw00312-etapy-etapy-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__etapy-aktywna {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+/* TODO: unbound — rn00889.borderWidth = 1px — нет токена под толщину обводки */
+.oc-etapy-table__rn00889 {
+  align-self: stretch;
+  height: 64px;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-sygnatura-pill {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-sygnatura-pill-3-5 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__rn00889-pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__rn00889-pojazd-marka {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-etapy-table__rn00889-pojazd-model {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__rn00889-vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-vin-vin {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__rn00889-kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__rn00889-status-oc {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-status-oc-status-oc {
+  background: var(--surface-raised);
+  border: 1px solid var(--status-warning-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-status-oc-status-oc-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--status-warning-text);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__zam-wiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-warning-text);
+}
+
+.oc-etapy-table__rn00889-oc-do {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-oc-do-oc-do {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__rn00889-dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress-bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress-bar-segment-1 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress-bar-segment-2 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress-bar-segment-3 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress-bar-segment-4 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__rn00889-dokumenty-doc-progress-count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__rn00889-etapy {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-etapy-etapy {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__rn00889-etapy-etapy-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--text-tertiary);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__rn00889-etapy-etapy-robocza {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — bm00234.borderWidth = 1px — нет токена под толщину обводки */
+.oc-etapy-table__bm00234 {
+  align-self: stretch;
+  height: 64px;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-sygnatura-pill {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-sygnatura-pill-3-5 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__bm00234-pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__bm00234-pojazd-marka {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-etapy-table__bm00234-pojazd-model {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__bm00234-vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-vin-vin {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__bm00234-kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__bm00234-status-oc {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-status-oc-status-oc {
+  background: var(--surface-raised);
+  border: 1px solid var(--status-error-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-status-oc-status-oc-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--status-error-text);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__b-d {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-error-text);
+}
+
+.oc-etapy-table__bm00234-oc-do {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-oc-do-oc-do {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__bm00234-dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress-bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress-bar-segment-1 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress-bar-segment-2 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress-bar-segment-3 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress-bar-segment-4 {
+  width: 28px;
+  height: 7px;
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-etapy-table__bm00234-dokumenty-doc-progress-count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-etapy-table__bm00234-etapy {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-etapy-etapy {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-etapy-table__bm00234-etapy-etapy-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--text-tertiary);
+  border-radius: 50%;
+}
+
+.oc-etapy-table__bm00234-etapy-etapy-robocza {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* ---- варианты ---- */

@@ -1,0 +1,107 @@
+/* SegmentOption — сгенерировано из components/segment-option/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 80px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 34px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-segment-option {
+  width: 80px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: 0 var(--space-4) 0 var(--space-4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-list.iconStrokeWidth = 1.5 — нет токена под толщину линии иконки */
+.oc-segment-option__icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-segment-option__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* Active=Idle, State=Default */
+.oc-segment-option.oc-segment-option--active-idle.oc-segment-option--state-default .oc-segment-option__label {
+  color: var(--text-tertiary);
+}
+
+/* Active=Idle, State=Hover */
+.oc-segment-option.oc-segment-option--active-idle.oc-segment-option--state-hover .oc-segment-option__label,
+.oc-segment-option.oc-segment-option--active-idle:not(:disabled):not([aria-disabled="true"]):hover .oc-segment-option__label {
+  color: var(--text-secondary);
+}
+
+/* Active=Idle, State=Pressed */
+.oc-segment-option.oc-segment-option--active-idle.oc-segment-option--state-pressed .oc-segment-option__label,
+.oc-segment-option.oc-segment-option--active-idle:not(:disabled):not([aria-disabled="true"]):active .oc-segment-option__label {
+  color: var(--text-primary);
+}
+
+/* Active=Idle, State=Focus */
+.oc-segment-option.oc-segment-option--active-idle.oc-segment-option--state-focus,
+.oc-segment-option.oc-segment-option--active-idle:focus-visible {
+  border: 1px solid var(--accent-default);
+}
+.oc-segment-option.oc-segment-option--active-idle.oc-segment-option--state-focus .oc-segment-option__label,
+.oc-segment-option.oc-segment-option--active-idle:focus-visible .oc-segment-option__label {
+  color: var(--text-tertiary);
+}
+
+/* Active=Active, State=Default */
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-default {
+  background: var(--surface-raised-hover);
+}
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-default .oc-segment-option__label {
+  color: var(--text-primary);
+}
+
+/* Active=Active, State=Hover */
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-hover,
+.oc-segment-option.oc-segment-option--active-active:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised-pressed);
+}
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-hover .oc-segment-option__label,
+.oc-segment-option.oc-segment-option--active-active:not(:disabled):not([aria-disabled="true"]):hover .oc-segment-option__label {
+  color: var(--text-primary);
+}
+
+/* Active=Active, State=Pressed */
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-pressed,
+.oc-segment-option.oc-segment-option--active-active:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-raised-hover);
+}
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-pressed .oc-segment-option__label,
+.oc-segment-option.oc-segment-option--active-active:not(:disabled):not([aria-disabled="true"]):active .oc-segment-option__label {
+  color: var(--text-primary);
+}
+
+/* Active=Active, State=Focus */
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-focus,
+.oc-segment-option.oc-segment-option--active-active:focus-visible {
+  background: var(--surface-raised-hover);
+  border: 1px solid var(--accent-default);
+}
+.oc-segment-option.oc-segment-option--active-active.oc-segment-option--state-focus .oc-segment-option__label,
+.oc-segment-option.oc-segment-option--active-active:focus-visible .oc-segment-option__label {
+  color: var(--text-primary);
+}

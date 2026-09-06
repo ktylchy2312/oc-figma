@@ -1,0 +1,452 @@
+{
+  "name": "Select",
+  "slug": "select",
+  "group": "Forms",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "333:3738",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Поле выбора. Геометрия общая с SearchInput и FilterButton — одна семья контролов высотой 40. Filled означает выбранное значение против подсказки и различается цветом текста, а не рамкой.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Value",
+      "type": "text",
+      "figmaKey": "Value#333:106",
+      "default": "Wybierz"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Filled",
+        "Focus",
+        "Disabled"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Select",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "value",
+      "name": "Value",
+      "element": "span",
+      "textProp": "Value"
+    },
+    {
+      "part": "icon-chevron-down",
+      "name": "Chevron",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "ChevronDown",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-background)",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "height": "40px",
+    "icon-chevron-down.height": "24px",
+    "icon-chevron-down.icon": "ChevronDown",
+    "icon-chevron-down.iconColor": "var(--text-primary)",
+    "icon-chevron-down.width": "24px",
+    "justify": "SPACE_BETWEEN",
+    "padding": "0 var(--space-3) 0 var(--space-3)",
+    "radius": "var(--radius-md)",
+    "value.font": "Type/Body Medium 15/24px 400",
+    "value.width": "190px",
+    "width": "240px"
+  },
+  "variants": [
+    {
+      "key": "State=Default",
+      "match": {
+        "State": "Default"
+      },
+      "nodeId": "333:3722",
+      "figmaSize": {
+        "w": 240,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "value.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "240px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-3) 0 var(--space-3)",
+          "justify-content": "space-between",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Value",
+            "path": "value",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "190px",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Value#333:106"
+            },
+            "text": "Wybierz",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Chevron",
+            "path": "icon-chevron-down",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "ChevronDown",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Filled",
+      "match": {
+        "State": "Filled"
+      },
+      "nodeId": "333:3726",
+      "figmaSize": {
+        "w": 240,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "value.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "State=Filled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "240px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-3) 0 var(--space-3)",
+          "justify-content": "space-between",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Value",
+            "path": "value",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "190px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Value#333:106"
+            },
+            "text": "Wybierz",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Chevron",
+            "path": "icon-chevron-down",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "ChevronDown",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Focus",
+      "match": {
+        "State": "Focus"
+      },
+      "nodeId": "333:3730",
+      "figmaSize": {
+        "w": 240,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--accent-default)",
+        "value.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "240px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--accent-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-3) 0 var(--space-3)",
+          "justify-content": "space-between",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Value",
+            "path": "value",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "190px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Value#333:106"
+            },
+            "text": "Wybierz",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Chevron",
+            "path": "icon-chevron-down",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "ChevronDown",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Disabled",
+      "match": {
+        "State": "Disabled"
+      },
+      "nodeId": "333:3734",
+      "figmaSize": {
+        "w": 240,
+        "h": 40
+      },
+      "tokens": {
+        "borderColor": "var(--border-subtle)",
+        "opacity": "0.6",
+        "value.color": "var(--text-disabled)"
+      },
+      "render": {
+        "part": "State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "240px",
+          "height": "40px",
+          "background": "var(--surface-background)",
+          "border": "1px solid var(--border-subtle)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "0.6",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-3) 0 var(--space-3)",
+          "justify-content": "space-between",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Value",
+            "path": "value",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "400",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "190px",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "characters": "Value#333:106"
+            },
+            "text": "Wybierz",
+            "font": {
+              "style": "Type/Body Medium",
+              "size": 15,
+              "weight": 400,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Chevron",
+            "path": "icon-chevron-down",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "icon": "ChevronDown",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Поле выбора.",
+    "Геометрия общая с SearchInput и FilterButton — одна семья контролов высотой 40.",
+    "Filled означает выбранное значение против подсказки и различается цветом текста, а не рамкой."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "240px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-chevron-down.iconStrokeWidth",
+      "value": "1.5",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-chevron-down"
+      ]
+    },
+    {
+      "prop": "opacity",
+      "value": "0.6",
+      "reason": "непрозрачность без токена",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

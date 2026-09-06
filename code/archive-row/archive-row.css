@@ -1,0 +1,285 @@
+/* ArchiveRow — сгенерировано из components/archive-row/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 1658px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 64px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-archive-row {
+  width: 1658px;
+  height: 64px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — sygnatura.width = 112px — нет шкалы размеров: ширина задана числом */
+.oc-archive-row__sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__pill {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-archive-row__3-5 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — pojazd.width = 284px — нет шкалы размеров: ширина задана числом */
+.oc-archive-row__pojazd {
+  width: 284px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0-5);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-archive-row__marka {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-archive-row__model {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 284px;
+  flex: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — vin.width = 280px — нет шкалы размеров: ширина задана числом */
+.oc-archive-row__vin {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__vin-vin {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-row__kupiona {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__kupiona-kupiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-row__utylizowana {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__utylizowana-utylizowana {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-row__dokumenty {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__doc-progress {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-archive-row__segment-1 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-archive-row__segment-2 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-archive-row__segment-3 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-archive-row__segment-4 {
+  width: 28px;
+  height: 7px;
+  background: var(--status-success-text);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-archive-row__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-archive-row__status {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — status/status.borderWidth = 1px — нет токена под толщину обводки */
+.oc-archive-row__status-status {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-archive-row__robocza {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* ---- варианты ---- */
+
+/* State=Hover */
+.oc-archive-row.oc-archive-row--state-hover,
+.oc-archive-row:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised);
+}

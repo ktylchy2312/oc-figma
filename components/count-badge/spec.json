@@ -1,0 +1,285 @@
+{
+  "name": "CountBadge",
+  "slug": "count-badge",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "327:3703",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Счётчик на углу иконки: требует внимания. Не путать с CountChip — тот стоит в заголовке колонки и считает содержимое. Вешается абсолютом, поэтому у родителя должна быть авторазметка.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Count",
+      "type": "text",
+      "figmaKey": "Count#327:102",
+      "default": "3"
+    },
+    {
+      "name": "Tone",
+      "type": "variant",
+      "figmaKey": "Tone",
+      "values": [
+        "Accent",
+        "Error",
+        "Warning"
+      ],
+      "default": "Accent"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "CountBadge",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "count",
+      "name": "3",
+      "element": "span",
+      "textProp": "Count"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "count.font": "Type/Label 12/16px 700",
+    "direction": "HORIZONTAL",
+    "gap": "0",
+    "height": "20px",
+    "justify": "CENTER",
+    "padding": "0 var(--space-2) 0 var(--space-2)",
+    "radius": "var(--radius-full)",
+    "width": "20px"
+  },
+  "variants": [
+    {
+      "key": "Tone=Accent",
+      "match": {
+        "Tone": "Accent"
+      },
+      "nodeId": "327:3697",
+      "figmaSize": {
+        "w": 20,
+        "h": 20
+      },
+      "tokens": {
+        "background": "var(--accent-default)",
+        "count.color": "var(--text-on-accent)"
+      },
+      "render": {
+        "part": "Tone=Accent",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "20px",
+          "height": "20px",
+          "min-width": "20px",
+          "background": "var(--accent-default)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "padding": "0 var(--space-2) 0 var(--space-2)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "3",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "text-align": "center",
+              "white-space": "nowrap",
+              "color": "var(--text-on-accent)"
+            },
+            "propRef": {
+              "characters": "Count#327:102"
+            },
+            "text": "3",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Error",
+      "match": {
+        "Tone": "Error"
+      },
+      "nodeId": "327:3699",
+      "figmaSize": {
+        "w": 20,
+        "h": 20
+      },
+      "tokens": {
+        "background": "var(--status-error-solid)",
+        "count.color": "var(--status-error-on-solid)"
+      },
+      "render": {
+        "part": "Tone=Error",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "20px",
+          "height": "20px",
+          "min-width": "20px",
+          "background": "var(--status-error-solid)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "padding": "0 var(--space-2) 0 var(--space-2)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "3",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "text-align": "center",
+              "white-space": "nowrap",
+              "color": "var(--status-error-on-solid)"
+            },
+            "propRef": {
+              "characters": "Count#327:102"
+            },
+            "text": "3",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Warning",
+      "match": {
+        "Tone": "Warning"
+      },
+      "nodeId": "327:3701",
+      "figmaSize": {
+        "w": 20,
+        "h": 20
+      },
+      "tokens": {
+        "background": "var(--status-warning-solid)",
+        "count.color": "var(--status-warning-on-solid)"
+      },
+      "render": {
+        "part": "Tone=Warning",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "20px",
+          "height": "20px",
+          "min-width": "20px",
+          "background": "var(--status-warning-solid)",
+          "border-radius": "var(--radius-full)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "padding": "0 var(--space-2) 0 var(--space-2)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "3",
+            "path": "count",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "text-align": "center",
+              "white-space": "nowrap",
+              "color": "var(--status-warning-on-solid)"
+            },
+            "propRef": {
+              "characters": "Count#327:102"
+            },
+            "text": "3",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Счётчик на углу иконки: требует внимания.",
+    "Вешается абсолютом, поэтому у родителя должна быть авторазметка.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [
+    "Не путать с CountChip — тот стоит в заголовке колонки и считает содержимое."
+  ],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "20px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "20px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

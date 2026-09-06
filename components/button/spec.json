@@ -1,0 +1,1126 @@
+{
+  "name": "Button",
+  "slug": "button",
+  "group": "Actions",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "27:1078",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#27:28",
+      "default": "Dodaj samochód"
+    },
+    {
+      "name": "Show Icon",
+      "type": "boolean",
+      "figmaKey": "Show Icon#27:41",
+      "default": true
+    },
+    {
+      "name": "Variant",
+      "type": "variant",
+      "figmaKey": "Variant",
+      "values": [
+        "Primary",
+        "Secondary",
+        "Danger"
+      ],
+      "default": "Primary"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Disabled"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Button",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons",
+      "optional": true,
+      "controlledBy": "Show Icon"
+    },
+    {
+      "part": "label",
+      "name": "Dodaj samochód",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "height": "44px",
+    "icon-plus.height": "16px",
+    "icon-plus.icon": "Plus",
+    "icon-plus.width": "16px",
+    "justify": "CENTER",
+    "label.font": "Type/Body Medium Alter 15/24px 700",
+    "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+    "radius": "var(--radius-md)"
+  },
+  "variants": [
+    {
+      "key": "Variant=Primary, State=Default",
+      "match": {
+        "Variant": "Primary",
+        "State": "Default"
+      },
+      "nodeId": "27:1030",
+      "figmaSize": {
+        "w": 177,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--accent-default)",
+        "icon-plus.iconColor": "var(--text-on-accent)",
+        "label.color": "var(--text-on-accent)"
+      },
+      "render": {
+        "part": "Variant=Primary, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--accent-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-on-accent)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-on-accent)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Primary, State=Hover",
+      "match": {
+        "Variant": "Primary",
+        "State": "Hover"
+      },
+      "nodeId": "27:1034",
+      "figmaSize": {
+        "w": 177,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--accent-hover)",
+        "icon-plus.iconColor": "var(--text-on-accent)",
+        "label.color": "var(--text-on-accent)"
+      },
+      "render": {
+        "part": "Variant=Primary, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--accent-hover)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-on-accent)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-on-accent)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Primary, State=Pressed",
+      "match": {
+        "Variant": "Primary",
+        "State": "Pressed"
+      },
+      "nodeId": "27:1038",
+      "figmaSize": {
+        "w": 177,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--accent-pressed)",
+        "icon-plus.iconColor": "var(--text-on-accent)",
+        "label.color": "var(--text-on-accent)"
+      },
+      "render": {
+        "part": "Variant=Primary, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--accent-pressed)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-on-accent)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-on-accent)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Primary, State=Disabled",
+      "match": {
+        "Variant": "Primary",
+        "State": "Disabled"
+      },
+      "nodeId": "27:1042",
+      "figmaSize": {
+        "w": 177,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--accent-disabled)",
+        "icon-plus.iconColor": "var(--text-disabled)",
+        "label.color": "var(--text-disabled)"
+      },
+      "render": {
+        "part": "Variant=Primary, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--accent-disabled)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-disabled)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Secondary, State=Default",
+      "match": {
+        "Variant": "Secondary",
+        "State": "Default"
+      },
+      "nodeId": "27:1046",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-strong)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--text-primary)",
+        "label.color": "var(--text-secondary)"
+      },
+      "render": {
+        "part": "Variant=Secondary, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-strong)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Secondary, State=Hover",
+      "match": {
+        "Variant": "Secondary",
+        "State": "Hover"
+      },
+      "nodeId": "27:1050",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "borderColor": "var(--border-emphasis)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--text-primary)",
+        "label.color": "var(--text-secondary)"
+      },
+      "render": {
+        "part": "Variant=Secondary, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--border-emphasis)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Secondary, State=Pressed",
+      "match": {
+        "Variant": "Secondary",
+        "State": "Pressed"
+      },
+      "nodeId": "27:1054",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--surface-raised-pressed)",
+        "borderColor": "var(--border-emphasis)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--text-primary)",
+        "label.color": "var(--text-secondary)"
+      },
+      "render": {
+        "part": "Variant=Secondary, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--surface-raised-pressed)",
+          "border": "1px solid var(--border-emphasis)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Secondary, State=Disabled",
+      "match": {
+        "Variant": "Secondary",
+        "State": "Disabled"
+      },
+      "nodeId": "27:1058",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--accent-disabled)",
+        "borderColor": "var(--text-disabled)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--text-disabled)",
+        "label.color": "var(--text-disabled)"
+      },
+      "render": {
+        "part": "Variant=Secondary, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--accent-disabled)",
+          "border": "1px solid var(--text-disabled)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-disabled)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Danger, State=Default",
+      "match": {
+        "Variant": "Danger",
+        "State": "Default"
+      },
+      "nodeId": "27:1062",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--status-error-bg)",
+        "borderColor": "var(--status-error-border)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--status-error-text)",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Variant=Danger, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-error-bg)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--status-error-text)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Danger, State=Hover",
+      "match": {
+        "Variant": "Danger",
+        "State": "Hover"
+      },
+      "nodeId": "27:1066",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--status-error-bg-hover)",
+        "borderColor": "var(--status-error-border)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--status-error-text)",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Variant=Danger, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-error-bg-hover)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--status-error-text)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Danger, State=Pressed",
+      "match": {
+        "Variant": "Danger",
+        "State": "Pressed"
+      },
+      "nodeId": "27:1070",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--status-error-bg-pressed)",
+        "borderColor": "var(--status-error-border)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--status-error-text)",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Variant=Danger, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-error-bg-pressed)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--status-error-text)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Danger, State=Disabled",
+      "match": {
+        "Variant": "Danger",
+        "State": "Disabled"
+      },
+      "nodeId": "27:1074",
+      "figmaSize": {
+        "w": 179,
+        "h": 44
+      },
+      "tokens": {
+        "background": "var(--accent-disabled)",
+        "borderColor": "var(--text-disabled)",
+        "borderWidth": "1px",
+        "icon-plus.iconColor": "var(--text-disabled)",
+        "label.color": "var(--text-disabled)"
+      },
+      "render": {
+        "part": "Variant=Danger, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--accent-disabled)",
+          "border": "1px solid var(--text-disabled)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-plus",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-disabled)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "visible": "Show Icon#27:41"
+            },
+            "icon": "Plus",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Dodaj samochód",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "characters": "Label#27:28"
+            },
+            "text": "Dodaj samochód",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "height",
+      "value": "44px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-plus.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-plus"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

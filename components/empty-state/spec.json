@@ -1,0 +1,903 @@
+{
+  "name": "EmptyState",
+  "slug": "empty-state",
+  "group": "Feedback",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "33:1607",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "DragOver"
+      ],
+      "default": "Default"
+    },
+    {
+      "name": "Density",
+      "type": "variant",
+      "figmaKey": "Density",
+      "values": [
+        "Default",
+        "Compact"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "EmptyState",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "empty-art",
+      "name": "EmptyArt",
+      "element": "div",
+      "component": "EmptyArt",
+      "slug": "empty-art"
+    },
+    {
+      "part": "empty-art/doc1",
+      "name": "doc1",
+      "element": "div"
+    },
+    {
+      "part": "empty-art/doc2",
+      "name": "doc2",
+      "element": "div"
+    },
+    {
+      "part": "empty-art/cursor",
+      "name": "cursor",
+      "element": "div"
+    },
+    {
+      "part": "empty-title",
+      "name": "EmptyTitle",
+      "element": "div",
+      "component": "EmptyTitle",
+      "slug": "empty-title"
+    },
+    {
+      "part": "empty-title/label",
+      "name": "Brak pojazdów na tym etapie",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "empty-sub",
+      "name": "EmptySub",
+      "element": "div",
+      "component": "EmptySub",
+      "slug": "empty-sub"
+    },
+    {
+      "part": "empty-sub/label",
+      "name": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "VERTICAL",
+    "empty-art/cursor.height": "32px",
+    "empty-art/cursor.vectorToken:--accent-default": "var(--accent-default)",
+    "empty-art/cursor.vectorToken:--surface-default": "var(--surface-default)",
+    "empty-art/cursor.vectorToken:--text-secondary": "var(--text-secondary)",
+    "empty-art/cursor.width": "32px",
+    "empty-art/doc1.background": "var(--surface-default)",
+    "empty-art/doc1.borderColor": "var(--border-strong)",
+    "empty-art/doc1.borderWidth": "1.5px",
+    "empty-art/doc1.height": "28px",
+    "empty-art/doc1.radius": "var(--radius-md)",
+    "empty-art/doc1.width": "36px",
+    "empty-art/doc2.background": "var(--surface-column)",
+    "empty-art/doc2.borderColor": "var(--text-disabled)",
+    "empty-art/doc2.borderWidth": "1.5px",
+    "empty-art/doc2.height": "28px",
+    "empty-art/doc2.radius": "var(--radius-md)",
+    "empty-art/doc2.width": "36px",
+    "empty-sub.align": "MIN",
+    "empty-sub.direction": "HORIZONTAL",
+    "empty-sub.gap": "var(--space-0)",
+    "empty-sub.justify": "MIN",
+    "empty-sub.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "empty-sub/label.color": "var(--text-disabled)",
+    "empty-sub/label.font": "Type/Caption 12/16px 400",
+    "empty-sub/label.width": "180px",
+    "empty-title.align": "MIN",
+    "empty-title.direction": "HORIZONTAL",
+    "empty-title.gap": "var(--space-0)",
+    "empty-title.justify": "MIN",
+    "empty-title.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "justify": "CENTER",
+    "radius": "var(--radius-md)",
+    "width": "280px"
+  },
+  "variants": [
+    {
+      "key": "State=Default, Density=Default",
+      "match": {
+        "State": "Default",
+        "Density": "Default"
+      },
+      "nodeId": "33:1551",
+      "figmaSize": {
+        "w": 280,
+        "h": 204
+      },
+      "tokens": {
+        "empty-art.height": "56px",
+        "empty-art.width": "64px",
+        "empty-title/label.color": "var(--text-tertiary)",
+        "empty-title/label.font": "Type/Body Small Alter 13/20px 700",
+        "gap": "var(--space-4)",
+        "opacity": "0.7",
+        "padding": "var(--space-6) var(--space-6) var(--space-6) var(--space-6)"
+      },
+      "render": {
+        "part": "State=Default, Density=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "border-radius": "var(--radius-md)",
+          "opacity": "0.7",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-6) var(--space-6) var(--space-6) var(--space-6)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "EmptyArt",
+            "path": "empty-art",
+            "tag": "div",
+            "style": {
+              "width": "64px",
+              "height": "56px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "doc1",
+                "path": "empty-art/doc1",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "0px",
+                  "top": "2px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-default)",
+                  "border": "1.5px solid var(--border-strong)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "doc2",
+                "path": "empty-art/doc2",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "13px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-column)",
+                  "border": "1.5px solid var(--text-disabled)",
+                  "border-style": "dashed",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "cursor",
+                "path": "empty-art/cursor",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "34px",
+                  "top": "26px",
+                  "width": "32px",
+                  "height": "32px",
+                  "overflow": "visible",
+                  "flex": "none"
+                },
+                "vector": true,
+                "svg": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11V21C8 25.4183 11.5817 29 16 29C20.4183 29 24 25.4183 24 21V11Z\" style=\"fill:var(--surface-default);stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H24\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 3V12\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.40002 11.4V9.00002C8.40002 6.98438 9.20074 5.05129 10.626 3.62601C12.0513 2.20074 13.9844 1.40002 16 1.40002\" style=\"fill:var(--accent-default)\"/>\n<path d=\"M8 12V9C8 6.87827 8.84285 4.84344 10.3431 3.34315C11.8434 1.84285 13.8783 1 16 1\" style=\"stroke:var(--accent-default)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "EmptyTitle",
+            "path": "empty-title",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Brak pojazdów na tym etapie",
+                "path": "empty-title/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#33:103"
+                },
+                "text": "Brak pojazdów na tym etapie",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "EmptySub",
+            "path": "empty-sub",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+                "path": "empty-sub/label",
+                "tag": "span",
+                "style": {
+                  "width": "180px",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "400",
+                  "line-height": "16px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "flex": "none",
+                  "color": "var(--text-disabled)"
+                },
+                "propRef": {
+                  "characters": "Label#33:104"
+                },
+                "text": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+                "font": {
+                  "style": "Type/Caption",
+                  "size": 12,
+                  "weight": 400,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=DragOver, Density=Default",
+      "match": {
+        "State": "DragOver",
+        "Density": "Default"
+      },
+      "nodeId": "33:1565",
+      "figmaSize": {
+        "w": 280,
+        "h": 204
+      },
+      "tokens": {
+        "background": "var(--accent-default)",
+        "empty-art.height": "56px",
+        "empty-art.width": "64px",
+        "empty-title/label.color": "var(--accent-default)",
+        "empty-title/label.font": "Type/Body Small Alter 13/20px 700",
+        "gap": "var(--space-4)",
+        "padding": "var(--space-6) var(--space-6) var(--space-6) var(--space-6)"
+      },
+      "render": {
+        "part": "State=DragOver, Density=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "background": "var(--accent-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-6) var(--space-6) var(--space-6) var(--space-6)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "EmptyArt",
+            "path": "empty-art",
+            "tag": "div",
+            "style": {
+              "width": "64px",
+              "height": "56px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "doc1",
+                "path": "empty-art/doc1",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "0px",
+                  "top": "2px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-default)",
+                  "border": "1.5px solid var(--border-strong)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "doc2",
+                "path": "empty-art/doc2",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "13px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-column)",
+                  "border": "1.5px solid var(--text-disabled)",
+                  "border-style": "dashed",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "cursor",
+                "path": "empty-art/cursor",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "34px",
+                  "top": "26px",
+                  "width": "32px",
+                  "height": "32px",
+                  "overflow": "visible",
+                  "flex": "none"
+                },
+                "vector": true,
+                "svg": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11V21C8 25.4183 11.5817 29 16 29C20.4183 29 24 25.4183 24 21V11Z\" style=\"fill:var(--surface-default);stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H24\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 3V12\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.3999 11.4V9.00002C8.3999 6.98438 9.20061 5.05129 10.6259 3.62601C12.0512 2.20074 13.9843 1.40002 15.9999 1.40002\" style=\"fill:var(--accent-default)\"/>\n<path d=\"M8 12V9C8 6.87827 8.84285 4.84344 10.3431 3.34315C11.8434 1.84285 13.8783 1 16 1\" style=\"stroke:var(--accent-default)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "EmptyTitle",
+            "path": "empty-title",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Brak pojazdów na tym etapie",
+                "path": "empty-title/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "white-space": "nowrap",
+                  "color": "var(--accent-default)"
+                },
+                "propRef": {
+                  "characters": "Label#33:103"
+                },
+                "text": "Brak pojazdów na tym etapie",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "EmptySub",
+            "path": "empty-sub",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+                "path": "empty-sub/label",
+                "tag": "span",
+                "style": {
+                  "width": "180px",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "400",
+                  "line-height": "16px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "flex": "none",
+                  "color": "var(--text-disabled)"
+                },
+                "propRef": {
+                  "characters": "Label#33:104"
+                },
+                "text": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+                "font": {
+                  "style": "Type/Caption",
+                  "size": 12,
+                  "weight": 400,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Default, Density=Compact",
+      "match": {
+        "State": "Default",
+        "Density": "Compact"
+      },
+      "nodeId": "33:1579",
+      "figmaSize": {
+        "w": 280,
+        "h": 124.8
+      },
+      "tokens": {
+        "empty-art.height": "44.8px",
+        "empty-art.width": "51.2px",
+        "empty-title/label.color": "var(--text-tertiary)",
+        "empty-title/label.font": "Type/Caption 12/16px 400",
+        "gap": "var(--space-2)",
+        "opacity": "0.7",
+        "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)"
+      },
+      "render": {
+        "part": "State=Default, Density=Compact",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "border-radius": "var(--radius-md)",
+          "opacity": "0.7",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "EmptyArt",
+            "path": "empty-art",
+            "tag": "div",
+            "style": {
+              "width": "51.2px",
+              "height": "44.8px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "doc1",
+                "path": "empty-art/doc1",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "0px",
+                  "top": "2px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-default)",
+                  "border": "1.5px solid var(--border-strong)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "doc2",
+                "path": "empty-art/doc2",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "13px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-column)",
+                  "border": "1.5px solid var(--text-disabled)",
+                  "border-style": "dashed",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "cursor",
+                "path": "empty-art/cursor",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "34px",
+                  "top": "26px",
+                  "width": "32px",
+                  "height": "32px",
+                  "overflow": "visible",
+                  "flex": "none"
+                },
+                "vector": true,
+                "svg": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11V21C8 25.4183 11.5817 29 16 29C20.4183 29 24 25.4183 24 21V11Z\" style=\"fill:var(--surface-default);stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H24\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 3V12\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.40002 11.4V9.00002C8.40002 6.98438 9.20074 5.05129 10.626 3.62601C12.0513 2.20074 13.9844 1.40002 16 1.40002\" style=\"fill:var(--accent-default)\"/>\n<path d=\"M8 12V9C8 6.87827 8.84285 4.84344 10.3431 3.34315C11.8434 1.84285 13.8783 1 16 1\" style=\"stroke:var(--accent-default)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "EmptyTitle",
+            "path": "empty-title",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Brak pojazdów na tym etapie",
+                "path": "empty-title/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "400",
+                  "line-height": "16px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#33:103"
+                },
+                "text": "Brak pojazdów",
+                "font": {
+                  "style": "Type/Caption",
+                  "size": 12,
+                  "weight": 400,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "EmptySub",
+            "path": "empty-sub",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+                "path": "empty-sub/label",
+                "tag": "span",
+                "style": {
+                  "width": "180px",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "400",
+                  "line-height": "16px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "flex": "none",
+                  "color": "var(--text-disabled)"
+                },
+                "propRef": {
+                  "characters": "Label#33:104"
+                },
+                "text": "Upuść kartę tutaj.",
+                "font": {
+                  "style": "Type/Caption",
+                  "size": 12,
+                  "weight": 400,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=DragOver, Density=Compact",
+      "match": {
+        "State": "DragOver",
+        "Density": "Compact"
+      },
+      "nodeId": "33:1593",
+      "figmaSize": {
+        "w": 280,
+        "h": 124.8
+      },
+      "tokens": {
+        "background": "var(--accent-default)",
+        "empty-art.height": "44.8px",
+        "empty-art.width": "51.2px",
+        "empty-title/label.color": "var(--accent-default)",
+        "empty-title/label.font": "Type/Caption 12/16px 400",
+        "gap": "var(--space-2)",
+        "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)"
+      },
+      "render": {
+        "part": "State=DragOver, Density=Compact",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "background": "var(--accent-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "EmptyArt",
+            "path": "empty-art",
+            "tag": "div",
+            "style": {
+              "width": "51.2px",
+              "height": "44.8px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "doc1",
+                "path": "empty-art/doc1",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "0px",
+                  "top": "2px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-default)",
+                  "border": "1.5px solid var(--border-strong)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "doc2",
+                "path": "empty-art/doc2",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "13px",
+                  "width": "36px",
+                  "height": "28px",
+                  "background": "var(--surface-column)",
+                  "border": "1.5px solid var(--text-disabled)",
+                  "border-style": "dashed",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "cursor",
+                "path": "empty-art/cursor",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "34px",
+                  "top": "26px",
+                  "width": "32px",
+                  "height": "32px",
+                  "overflow": "visible",
+                  "flex": "none"
+                },
+                "vector": true,
+                "svg": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11V21C8 25.4183 11.5817 29 16 29C20.4183 29 24 25.4183 24 21V11Z\" style=\"fill:var(--surface-default);stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H24\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 3V12\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.3999 11.4V9.00002C8.3999 6.98438 9.20061 5.05129 10.6259 3.62601C12.0512 2.20074 13.9843 1.40002 15.9999 1.40002\" style=\"fill:var(--accent-default)\"/>\n<path d=\"M8 12V9C8 6.87827 8.84285 4.84344 10.3431 3.34315C11.8434 1.84285 13.8783 1 16 1\" style=\"stroke:var(--accent-default)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "EmptyTitle",
+            "path": "empty-title",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Brak pojazdów na tym etapie",
+                "path": "empty-title/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "400",
+                  "line-height": "16px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "white-space": "nowrap",
+                  "color": "var(--accent-default)"
+                },
+                "propRef": {
+                  "characters": "Label#33:103"
+                },
+                "text": "Brak pojazdów",
+                "font": {
+                  "style": "Type/Caption",
+                  "size": 12,
+                  "weight": 400,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "EmptySub",
+            "path": "empty-sub",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+                "path": "empty-sub/label",
+                "tag": "span",
+                "style": {
+                  "width": "180px",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "400",
+                  "line-height": "16px",
+                  "letter-spacing": "0px",
+                  "text-align": "center",
+                  "flex": "none",
+                  "color": "var(--text-disabled)"
+                },
+                "propRef": {
+                  "characters": "Label#33:104"
+                },
+                "text": "Upuść kartę tutaj.",
+                "font": {
+                  "style": "Type/Caption",
+                  "size": 12,
+                  "weight": 400,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "opacity",
+      "value": "0.7",
+      "reason": "непрозрачность без токена",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

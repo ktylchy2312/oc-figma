@@ -1,0 +1,141 @@
+/* DocProgress — сгенерировано из components/doc-progress/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-doc-progress {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-doc-progress__bar {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — bar/segment-1.width = 28px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — bar/segment-1.height = 7px — нет шкалы размеров: высота задана числом */
+.oc-doc-progress__segment-1 {
+  width: 28px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+/* TODO: unbound — bar/segment-2.width = 28px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — bar/segment-2.height = 7px — нет шкалы размеров: высота задана числом */
+.oc-doc-progress__segment-2 {
+  width: 28px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+/* TODO: unbound — bar/segment-3.width = 28px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — bar/segment-3.height = 7px — нет шкалы размеров: высота задана числом */
+.oc-doc-progress__segment-3 {
+  width: 28px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+/* TODO: unbound — bar/segment-4.width = 28px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — bar/segment-4.height = 7px — нет шкалы размеров: высота задана числом */
+.oc-doc-progress__segment-4 {
+  width: 28px;
+  height: 7px;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.oc-doc-progress__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* ---- варианты ---- */
+
+/* Filled=0 */
+.oc-doc-progress.oc-doc-progress--filled-0 .oc-doc-progress__segment-1 {
+  background: var(--border-default);
+}
+.oc-doc-progress.oc-doc-progress--filled-0 .oc-doc-progress__segment-2 {
+  background: var(--border-default);
+}
+.oc-doc-progress.oc-doc-progress--filled-0 .oc-doc-progress__segment-3 {
+  background: var(--border-default);
+}
+.oc-doc-progress.oc-doc-progress--filled-0 .oc-doc-progress__segment-4 {
+  background: var(--border-default);
+}
+
+/* Filled=1 */
+.oc-doc-progress.oc-doc-progress--filled-1 .oc-doc-progress__segment-1 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-1 .oc-doc-progress__segment-2 {
+  background: var(--border-default);
+}
+.oc-doc-progress.oc-doc-progress--filled-1 .oc-doc-progress__segment-3 {
+  background: var(--border-default);
+}
+.oc-doc-progress.oc-doc-progress--filled-1 .oc-doc-progress__segment-4 {
+  background: var(--border-default);
+}
+
+/* Filled=2 */
+.oc-doc-progress.oc-doc-progress--filled-2 .oc-doc-progress__segment-1 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-2 .oc-doc-progress__segment-2 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-2 .oc-doc-progress__segment-3 {
+  background: var(--border-default);
+}
+.oc-doc-progress.oc-doc-progress--filled-2 .oc-doc-progress__segment-4 {
+  background: var(--border-default);
+}
+
+/* Filled=3 */
+.oc-doc-progress.oc-doc-progress--filled-3 .oc-doc-progress__segment-1 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-3 .oc-doc-progress__segment-2 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-3 .oc-doc-progress__segment-3 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-3 .oc-doc-progress__segment-4 {
+  background: var(--border-default);
+}
+
+/* Filled=4 */
+.oc-doc-progress.oc-doc-progress--filled-4 .oc-doc-progress__segment-1 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-4 .oc-doc-progress__segment-2 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-4 .oc-doc-progress__segment-3 {
+  background: var(--status-success-text);
+}
+.oc-doc-progress.oc-doc-progress--filled-4 .oc-doc-progress__segment-4 {
+  background: var(--status-success-text);
+}

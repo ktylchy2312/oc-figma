@@ -1,0 +1,387 @@
+{
+  "name": "StatusPill",
+  "slug": "status-pill",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "194:2046",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Listing status of one offer. The pill is the status, so its label is baked per variant rather than exposed as a text slot. Colour is never the only carrier — the label always reads.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Status",
+      "type": "variant",
+      "figmaKey": "Status",
+      "values": [
+        "Aktywna",
+        "Robocza",
+        "Zamówiona",
+        "Błąd"
+      ],
+      "default": "Aktywna"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "StatusPill",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "dot",
+      "name": "Dot",
+      "element": "div"
+    },
+    {
+      "part": "aktywna",
+      "name": "Aktywna",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-raised)",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "dot.height": "7px",
+    "dot.width": "7px",
+    "gap": "var(--space-2)",
+    "justify": "MIN",
+    "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "radius": "var(--radius-md)"
+  },
+  "variants": [
+    {
+      "key": "Status=Aktywna",
+      "match": {
+        "Status": "Aktywna"
+      },
+      "nodeId": "194:2033",
+      "figmaSize": {
+        "w": 92,
+        "h": 30
+      },
+      "tokens": {
+        "aktywna.color": "var(--status-success-text)",
+        "aktywna.font": "Type/Body Small Alter 13/20px 700",
+        "borderColor": "var(--status-success-border)",
+        "dot.background": "var(--status-success-text)"
+      },
+      "render": {
+        "part": "Status=Aktywna",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--status-success-border)",
+          "border-radius": "var(--radius-md)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Dot",
+            "path": "dot",
+            "tag": "div",
+            "style": {
+              "width": "7px",
+              "height": "7px",
+              "background": "var(--status-success-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Aktywna",
+            "path": "aktywna",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-success-text)"
+            },
+            "text": "Aktywna",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Status=Robocza",
+      "match": {
+        "Status": "Robocza"
+      },
+      "nodeId": "194:2037",
+      "figmaSize": {
+        "w": 92,
+        "h": 30
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "dot.background": "var(--text-tertiary)",
+        "robocza.color": "var(--text-secondary)",
+        "robocza.font": "Type/Body Small Alter 13/20px 700"
+      },
+      "render": {
+        "part": "Status=Robocza",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Dot",
+            "path": "dot",
+            "tag": "div",
+            "style": {
+              "width": "7px",
+              "height": "7px",
+              "background": "var(--text-tertiary)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Robocza",
+            "path": "robocza",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-secondary)"
+            },
+            "text": "Robocza",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Status=Zamówiona",
+      "match": {
+        "Status": "Zamówiona"
+      },
+      "nodeId": "194:2041",
+      "figmaSize": {
+        "w": 110,
+        "h": 30
+      },
+      "tokens": {
+        "borderColor": "var(--status-warning-border)",
+        "dot.background": "var(--status-warning-text)",
+        "zam-wiona.color": "var(--status-warning-text)",
+        "zam-wiona.font": "Type/Body Small Alter 13/20px 700"
+      },
+      "render": {
+        "part": "Status=Zamówiona",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--status-warning-border)",
+          "border-radius": "var(--radius-md)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Dot",
+            "path": "dot",
+            "tag": "div",
+            "style": {
+              "width": "7px",
+              "height": "7px",
+              "background": "var(--status-warning-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Zamówiona",
+            "path": "zam-wiona",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-warning-text)"
+            },
+            "text": "Zamówiona",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Status=Błąd",
+      "match": {
+        "Status": "Błąd"
+      },
+      "nodeId": "194:2045",
+      "figmaSize": {
+        "w": 68,
+        "h": 30
+      },
+      "tokens": {
+        "b-d.color": "var(--status-error-text)",
+        "b-d.font": "Type/Body Small Alter 13/20px 700",
+        "borderColor": "var(--status-error-border)",
+        "dot.background": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Status=Błąd",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Dot",
+            "path": "dot",
+            "tag": "div",
+            "style": {
+              "width": "7px",
+              "height": "7px",
+              "background": "var(--status-error-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Błąd",
+            "path": "b-d",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "text": "Błąd",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Listing status of one offer.",
+    "The pill is the status, so its label is baked per variant rather than exposed as a text slot.",
+    "Colour is never the only carrier — the label always reads.",
+    "Входит в состав других компонентов (3 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "dot.width",
+      "value": "7px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "dot"
+      ]
+    },
+    {
+      "prop": "dot.height",
+      "value": "7px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "dot"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

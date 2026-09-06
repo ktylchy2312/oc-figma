@@ -1,0 +1,60 @@
+<!-- @dsCard group="Feedback" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>CountBadge — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">CountBadge</h1>
+  <p class="ds-meta">Feedback · atom · 3 вариантов · Figma 327:3703 · страница Core · Токенов задействовано: 8 · без токена: 2</p>
+  <p class="ds-desc">Счётчик на углу иконки: требует внимания. Не путать с CountChip — тот стоит в заголовке колонки и считает содержимое. Вешается абсолютом, поэтому у родителя должна быть авторазметка.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="Tone=Accent">
+    <div style="width:20px;height:20px;min-width:20px;background:var(--accent-default);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:0;padding:0 var(--space-2) 0 var(--space-2);justify-content:center;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;text-align:center;white-space:nowrap;color:var(--text-on-accent)" data-part="count">3</span>
+    </div>
+    <code class="ds-cell-label">Tone=Accent</code>
+  </div>
+  <div class="ds-cell" data-variant="Tone=Error">
+    <div style="width:20px;height:20px;min-width:20px;background:var(--status-error-solid);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:0;padding:0 var(--space-2) 0 var(--space-2);justify-content:center;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;text-align:center;white-space:nowrap;color:var(--status-error-on-solid)" data-part="count">3</span>
+    </div>
+    <code class="ds-cell-label">Tone=Error</code>
+  </div>
+  <div class="ds-cell" data-variant="Tone=Warning">
+    <div style="width:20px;height:20px;min-width:20px;background:var(--status-warning-solid);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:0;padding:0 var(--space-2) 0 var(--space-2);justify-content:center;align-items:center" data-part="root">
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;text-align:center;white-space:nowrap;color:var(--status-warning-on-solid)" data-part="count">3</span>
+    </div>
+    <code class="ds-cell-label">Tone=Warning</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --radius-full, --space-2, --status-error-on-solid, --status-error-solid, --status-warning-on-solid, --status-warning-solid, --text-on-accent</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 20px, height = 20px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

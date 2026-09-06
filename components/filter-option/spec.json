@@ -1,0 +1,626 @@
+{
+  "name": "FilterOption",
+  "slug": "filter-option",
+  "group": "Forms",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:2659",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#452:21",
+      "default": "Wszystkie"
+    },
+    {
+      "name": "Key",
+      "type": "variant",
+      "figmaKey": "Key",
+      "values": [
+        "All",
+        "Ryzyko",
+        "Wygaslo"
+      ],
+      "default": "All"
+    },
+    {
+      "name": "Selected",
+      "type": "variant",
+      "figmaKey": "Selected",
+      "values": [
+        "False",
+        "True"
+      ],
+      "default": "False"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "FilterOption",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "ellipse",
+      "name": "Ellipse",
+      "element": "div"
+    },
+    {
+      "part": "label",
+      "name": "Wszystkie",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "ellipse.height": "8px",
+    "ellipse.width": "8px",
+    "gap": "var(--space-3)",
+    "justify": "MIN",
+    "label.font": "Type/Body Small Alter 13/20px 700",
+    "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "radius": "var(--radius-md)",
+    "width": "200px"
+  },
+  "variants": [
+    {
+      "key": "Key=All, Selected=False",
+      "match": {
+        "Key": "All",
+        "Selected": "False"
+      },
+      "nodeId": "395:2660",
+      "figmaSize": {
+        "w": 200,
+        "h": 36
+      },
+      "tokens": {
+        "ellipse.background": "var(--text-tertiary)",
+        "label.color": "var(--text-secondary)",
+        "label.width": "156px"
+      },
+      "render": {
+        "part": "Key=All, Selected=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Ellipse",
+            "path": "ellipse",
+            "tag": "div",
+            "style": {
+              "width": "8px",
+              "height": "8px",
+              "background": "var(--text-tertiary)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Wszystkie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "156px",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#452:21"
+            },
+            "text": "Wszystkie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Key=All, Selected=True",
+      "match": {
+        "Key": "All",
+        "Selected": "True"
+      },
+      "nodeId": "395:2664",
+      "figmaSize": {
+        "w": 200,
+        "h": 36
+      },
+      "tokens": {
+        "background": "var(--accent-tint)",
+        "ellipse.background": "var(--text-tertiary)",
+        "icon-check.height": "16px",
+        "icon-check.icon": "Check",
+        "icon-check.iconColor": "var(--accent-default)",
+        "icon-check.width": "16px",
+        "label.color": "var(--accent-default)",
+        "label.width": "128px"
+      },
+      "render": {
+        "part": "Key=All, Selected=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "background": "var(--accent-tint)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Ellipse",
+            "path": "ellipse",
+            "tag": "div",
+            "style": {
+              "width": "8px",
+              "height": "8px",
+              "background": "var(--text-tertiary)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Wszystkie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "128px",
+              "color": "var(--accent-default)"
+            },
+            "propRef": {
+              "characters": "Label#452:21"
+            },
+            "text": "Wszystkie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Icons",
+            "path": "icon-check",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--accent-default)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Check",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 6L9 17L4 12\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Key=Ryzyko, Selected=False",
+      "match": {
+        "Key": "Ryzyko",
+        "Selected": "False"
+      },
+      "nodeId": "395:2668",
+      "figmaSize": {
+        "w": 200,
+        "h": 36
+      },
+      "tokens": {
+        "ellipse.background": "var(--status-warning-text)",
+        "label.color": "var(--text-secondary)",
+        "label.width": "156px"
+      },
+      "render": {
+        "part": "Key=Ryzyko, Selected=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Ellipse",
+            "path": "ellipse",
+            "tag": "div",
+            "style": {
+              "width": "8px",
+              "height": "8px",
+              "background": "var(--status-warning-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Wszystkie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "156px",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#452:21"
+            },
+            "text": "Wszystkie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Key=Ryzyko, Selected=True",
+      "match": {
+        "Key": "Ryzyko",
+        "Selected": "True"
+      },
+      "nodeId": "395:2672",
+      "figmaSize": {
+        "w": 200,
+        "h": 36
+      },
+      "tokens": {
+        "background": "var(--accent-tint)",
+        "ellipse.background": "var(--status-warning-text)",
+        "icon-check.height": "16px",
+        "icon-check.icon": "Check",
+        "icon-check.iconColor": "var(--accent-default)",
+        "icon-check.width": "16px",
+        "label.color": "var(--accent-default)",
+        "label.width": "128px"
+      },
+      "render": {
+        "part": "Key=Ryzyko, Selected=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "background": "var(--accent-tint)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Ellipse",
+            "path": "ellipse",
+            "tag": "div",
+            "style": {
+              "width": "8px",
+              "height": "8px",
+              "background": "var(--status-warning-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Wszystkie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "128px",
+              "color": "var(--accent-default)"
+            },
+            "propRef": {
+              "characters": "Label#452:21"
+            },
+            "text": "Wszystkie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Icons",
+            "path": "icon-check",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--accent-default)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Check",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 6L9 17L4 12\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Key=Wygaslo, Selected=False",
+      "match": {
+        "Key": "Wygaslo",
+        "Selected": "False"
+      },
+      "nodeId": "395:2676",
+      "figmaSize": {
+        "w": 200,
+        "h": 36
+      },
+      "tokens": {
+        "ellipse.background": "var(--status-error-text)",
+        "label.color": "var(--text-secondary)",
+        "label.width": "156px"
+      },
+      "render": {
+        "part": "Key=Wygaslo, Selected=False",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Ellipse",
+            "path": "ellipse",
+            "tag": "div",
+            "style": {
+              "width": "8px",
+              "height": "8px",
+              "background": "var(--status-error-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Wszystkie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "156px",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#452:21"
+            },
+            "text": "Wszystkie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Key=Wygaslo, Selected=True",
+      "match": {
+        "Key": "Wygaslo",
+        "Selected": "True"
+      },
+      "nodeId": "395:2680",
+      "figmaSize": {
+        "w": 200,
+        "h": 36
+      },
+      "tokens": {
+        "background": "var(--accent-tint)",
+        "ellipse.background": "var(--status-error-text)",
+        "icon-check.height": "16px",
+        "icon-check.icon": "Check",
+        "icon-check.iconColor": "var(--accent-default)",
+        "icon-check.width": "16px",
+        "label.color": "var(--accent-default)",
+        "label.width": "128px"
+      },
+      "render": {
+        "part": "Key=Wygaslo, Selected=True",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "200px",
+          "background": "var(--accent-tint)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Ellipse",
+            "path": "ellipse",
+            "tag": "div",
+            "style": {
+              "width": "8px",
+              "height": "8px",
+              "background": "var(--status-error-text)",
+              "border-radius": "50%"
+            }
+          },
+          {
+            "part": "Wszystkie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "128px",
+              "color": "var(--accent-default)"
+            },
+            "propRef": {
+              "characters": "Label#452:21"
+            },
+            "text": "Wszystkie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Icons",
+            "path": "icon-check",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--accent-default)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Check",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20 6L9 17L4 12\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "200px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "ellipse.width",
+      "value": "8px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "ellipse"
+      ]
+    },
+    {
+      "prop": "ellipse.height",
+      "value": "8px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "ellipse"
+      ]
+    },
+    {
+      "prop": "icon-check.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-check"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

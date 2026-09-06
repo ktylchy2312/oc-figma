@@ -1,0 +1,61 @@
+/* PageHeader — сгенерировано из components/page-header/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 900px — нет шкалы размеров: ширина задана числом */
+.oc-page-header {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oc-page-header__titles {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-page-header__title {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+.oc-page-header__subtitle {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — actions.emptyHug = 100×100 — пустой контейнер с HUG: Figma держит прежний размер, CSS схлопывает в ноль — размер зафиксирован числом */
+.oc-page-header__actions {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* ---- варианты ---- */

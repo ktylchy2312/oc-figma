@@ -1,0 +1,429 @@
+/* PartCard — сгенерировано из components/part-card/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 320px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-part-card {
+  width: 320px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — hero.width = 320px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero.height = 168px — нет шкалы размеров: высота задана числом */
+.oc-part-card__hero {
+  width: 320px;
+  height: 168px;
+  background: var(--accent-tint);
+  overflow: hidden;
+  position: relative;
+}
+
+/* TODO: unbound — hero/photo-placeholder.width = 88px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero/photo-placeholder.height = 88px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — hero/photo-placeholder.opacity = 0.3 — непрозрачность без токена */
+.oc-part-card__photo-placeholder {
+  position: absolute;
+  left: 116px;
+  top: 40px;
+  width: 88px;
+  height: 88px;
+  opacity: 0.3;
+  overflow: visible;
+  flex: none;
+}
+
+/* TODO: unbound — hero/part-number.width = 83px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero/part-number.height = 26px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — hero/part-number.borderWidth = 1px — нет токена под толщину обводки */
+.oc-part-card__hero-part-number {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 83px;
+  height: 26px;
+  background: var(--accent-tint);
+  border: 1px solid var(--accent-default);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: var(--space-1) var(--space-2) var(--space-1) var(--space-2);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-part-card__part-number-part-number {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--accent-default);
+}
+
+/* TODO: unbound — hero/status.width = 86px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero/status.height = 26px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — hero/status.borderWidth = 1px — нет токена под толщину обводки */
+.oc-part-card__hero-status {
+  position: absolute;
+  left: 228px;
+  top: 12px;
+  width: 86px;
+  height: 26px;
+  background: var(--status-success-bg);
+  border: 1px solid var(--status-success-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — hero/status/dot.width = 6px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero/status/dot.height = 6px — нет шкалы размеров: высота задана числом */
+.oc-part-card__status-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--status-success-text);
+  border-radius: 50%;
+}
+
+.oc-part-card__status-status {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+/* TODO: unbound — hero/photo-count.width = 39px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero/photo-count.height = 24px — нет шкалы размеров: высота задана числом */
+.oc-part-card__hero-photo-count {
+  position: absolute;
+  left: 275px;
+  top: 138px;
+  width: 39px;
+  height: 24px;
+  background: var(--surface-sunken);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-2) var(--space-1) var(--space-2);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — hero/photo-count/camera.width = 12px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — hero/photo-count/camera.height = 12px — нет шкалы размеров: высота задана числом */
+.oc-part-card__camera {
+  width: 12px;
+  height: 12px;
+  overflow: visible;
+  position: relative;
+  flex: none;
+}
+
+.oc-part-card__photo-count-photo-count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-part-card__body {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-part-card__info {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-part-card__title-block {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-part-card__title {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 286px;
+  flex: none;
+  color: var(--text-primary);
+}
+
+.oc-part-card__title-block-vehicle {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-part-card__vehicle-vehicle {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — body/info/title-block/vehicle/dot.width = 4px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — body/info/title-block/vehicle/dot.height = 4px — нет шкалы размеров: высота задана числом */
+.oc-part-card__vehicle-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--text-secondary);
+  border-radius: 50%;
+}
+
+.oc-part-card__years {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.oc-part-card__meta {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oc-part-card__category-qty {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-part-card__category {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — body/info/meta/category-qty/dot.width = 2px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — body/info/meta/category-qty/dot.height = 2px — нет шкалы размеров: высота задана числом */
+.oc-part-card__category-qty-dot {
+  width: 2px;
+  height: 2px;
+  background: var(--text-tertiary);
+  border-radius: 50%;
+}
+
+.oc-part-card__quantity {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+.oc-part-card__price {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — body/divider.height = 1px — нет шкалы размеров: высота задана числом */
+.oc-part-card__divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-subtle);
+  overflow: hidden;
+}
+
+.oc-part-card__footer {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oc-part-card__condition {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — body/footer/condition/grade-a.borderWidth = 1px — нет токена под толщину обводки */
+.oc-part-card__grade-a {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-part-card__grade-a-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — body/footer/condition/grade-e.borderWidth = 1px — нет токена под толщину обводки */
+.oc-part-card__grade-e {
+  width: 26px;
+  height: 26px;
+  background: var(--status-success-bg);
+  border: 1px solid var(--status-success-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-part-card__grade-e-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+/* TODO: unbound — body/footer/condition/grade-o.borderWidth = 1px — нет токена под толщину обводки */
+.oc-part-card__grade-o {
+  width: 26px;
+  height: 26px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-part-card__grade-o-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-part-card.oc-part-card--state-default {
+  background: var(--surface-default);
+  border: 1px solid var(--border-default);
+}
+
+/* State=Hover */
+.oc-part-card.oc-part-card--state-hover,
+.oc-part-card:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-strong);
+}
+
+/* State=Pressed */
+.oc-part-card.oc-part-card--state-pressed,
+.oc-part-card:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-sunken);
+  border: 1px solid var(--accent-default);
+}
+
+/* State=Focus */
+.oc-part-card.oc-part-card--state-focus,
+.oc-part-card:focus-visible {
+  background: var(--surface-default);
+  border: 1px solid var(--accent-default);
+}

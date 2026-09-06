@@ -1,0 +1,85 @@
+/* AddRow — сгенерировано из components/add-row/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 300px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 36px — нет шкалы размеров: высота задана числом */
+.oc-add-row {
+  width: 300px;
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — input.height = 36px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — input.borderWidth = 1px — нет токена под толщину обводки */
+.oc-add-row__input {
+  flex: 1 1 0%;
+  height: 36px;
+  flex-grow: 1;
+  background: var(--surface-background);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-add-row__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* TODO: unbound — add-button.width = 36px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — add-button.height = 36px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — add-button.borderWidth = 1px — нет токена под толщину обводки */
+.oc-add-row__add-button {
+  width: 36px;
+  height: 36px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — add-button/icon-plus.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-add-row__icon-plus {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */
+
+/* State=Empty */
+.oc-add-row.oc-add-row--state-empty .oc-add-row__label {
+  color: var(--text-disabled);
+}
+
+/* State=Filled */
+.oc-add-row.oc-add-row--state-filled .oc-add-row__label {
+  color: var(--text-primary);
+}

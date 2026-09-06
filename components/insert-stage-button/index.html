@@ -1,0 +1,70 @@
+<!-- @dsCard group="Actions" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>InsertStageButton — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">InsertStageButton</h1>
+  <p class="ds-meta">Actions · molecule · 4 вариантов · Figma 395:3234 · страница Core · Токенов задействовано: 8 · без токена: 3</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Default">
+    <div style="width:40px;height:40px;background:var(--accent-default);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-plus"><path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Hover">
+    <div style="width:40px;height:40px;background:var(--accent-hover);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-plus"><path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Hover</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Pressed">
+    <div style="width:40px;height:40px;background:var(--accent-pressed);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-plus"><path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Pressed</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Disabled">
+    <div style="width:40px;height:40px;background:var(--accent-disabled);border-radius:var(--radius-full);opacity:var(--opacity-disabled);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-plus"><path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Disabled</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --accent-disabled, --accent-hover, --accent-pressed, --opacity-disabled, --radius-full, --space-0, --text-primary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 40px, height = 40px, icon-plus.iconStrokeWidth = 1</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

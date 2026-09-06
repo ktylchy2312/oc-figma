@@ -1,0 +1,215 @@
+/* Button — сгенерировано из components/button/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — height = 44px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-button {
+  width: fit-content;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-5) var(--space-0) var(--space-5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-plus.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-button__icon-plus {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-button__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* Variant=Primary, State=Default */
+.oc-button.oc-button--variant-primary.oc-button--state-default {
+  background: var(--accent-default);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-default .oc-button__icon-plus {
+  color: var(--text-on-accent);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-default .oc-button__label {
+  color: var(--text-on-accent);
+}
+
+/* Variant=Primary, State=Hover */
+.oc-button.oc-button--variant-primary.oc-button--state-hover,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--accent-hover);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-hover .oc-button__icon-plus,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):hover .oc-button__icon-plus {
+  color: var(--text-on-accent);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-hover .oc-button__label,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):hover .oc-button__label {
+  color: var(--text-on-accent);
+}
+
+/* Variant=Primary, State=Pressed */
+.oc-button.oc-button--variant-primary.oc-button--state-pressed,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--accent-pressed);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-pressed .oc-button__icon-plus,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):active .oc-button__icon-plus {
+  color: var(--text-on-accent);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-pressed .oc-button__label,
+.oc-button.oc-button--variant-primary:not(:disabled):not([aria-disabled="true"]):active .oc-button__label {
+  color: var(--text-on-accent);
+}
+
+/* Variant=Primary, State=Disabled */
+.oc-button.oc-button--variant-primary.oc-button--state-disabled,
+.oc-button.oc-button--variant-primary:disabled,
+.oc-button.oc-button--variant-primary[aria-disabled="true"] {
+  background: var(--accent-disabled);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-disabled .oc-button__icon-plus,
+.oc-button.oc-button--variant-primary:disabled .oc-button__icon-plus,
+.oc-button.oc-button--variant-primary[aria-disabled="true"] .oc-button__icon-plus {
+  color: var(--text-disabled);
+}
+.oc-button.oc-button--variant-primary.oc-button--state-disabled .oc-button__label,
+.oc-button.oc-button--variant-primary:disabled .oc-button__label,
+.oc-button.oc-button--variant-primary[aria-disabled="true"] .oc-button__label {
+  color: var(--text-disabled);
+}
+
+/* Variant=Secondary, State=Default */
+.oc-button.oc-button--variant-secondary.oc-button--state-default {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-strong);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-default .oc-button__icon-plus {
+  color: var(--text-primary);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-default .oc-button__label {
+  color: var(--text-secondary);
+}
+
+/* Variant=Secondary, State=Hover */
+.oc-button.oc-button--variant-secondary.oc-button--state-hover,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised-hover);
+  border: 1px solid var(--border-emphasis);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-hover .oc-button__icon-plus,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):hover .oc-button__icon-plus {
+  color: var(--text-primary);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-hover .oc-button__label,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):hover .oc-button__label {
+  color: var(--text-secondary);
+}
+
+/* Variant=Secondary, State=Pressed */
+.oc-button.oc-button--variant-secondary.oc-button--state-pressed,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-raised-pressed);
+  border: 1px solid var(--border-emphasis);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-pressed .oc-button__icon-plus,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):active .oc-button__icon-plus {
+  color: var(--text-primary);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-pressed .oc-button__label,
+.oc-button.oc-button--variant-secondary:not(:disabled):not([aria-disabled="true"]):active .oc-button__label {
+  color: var(--text-secondary);
+}
+
+/* Variant=Secondary, State=Disabled */
+.oc-button.oc-button--variant-secondary.oc-button--state-disabled,
+.oc-button.oc-button--variant-secondary:disabled,
+.oc-button.oc-button--variant-secondary[aria-disabled="true"] {
+  background: var(--accent-disabled);
+  border: 1px solid var(--text-disabled);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-disabled .oc-button__icon-plus,
+.oc-button.oc-button--variant-secondary:disabled .oc-button__icon-plus,
+.oc-button.oc-button--variant-secondary[aria-disabled="true"] .oc-button__icon-plus {
+  color: var(--text-disabled);
+}
+.oc-button.oc-button--variant-secondary.oc-button--state-disabled .oc-button__label,
+.oc-button.oc-button--variant-secondary:disabled .oc-button__label,
+.oc-button.oc-button--variant-secondary[aria-disabled="true"] .oc-button__label {
+  color: var(--text-disabled);
+}
+
+/* Variant=Danger, State=Default */
+.oc-button.oc-button--variant-danger.oc-button--state-default {
+  background: var(--status-error-bg);
+  border: 1px solid var(--status-error-border);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-default .oc-button__icon-plus {
+  color: var(--status-error-text);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-default .oc-button__label {
+  color: var(--status-error-text);
+}
+
+/* Variant=Danger, State=Hover */
+.oc-button.oc-button--variant-danger.oc-button--state-hover,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--status-error-bg-hover);
+  border: 1px solid var(--status-error-border);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-hover .oc-button__icon-plus,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-button__icon-plus {
+  color: var(--status-error-text);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-hover .oc-button__label,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-button__label {
+  color: var(--status-error-text);
+}
+
+/* Variant=Danger, State=Pressed */
+.oc-button.oc-button--variant-danger.oc-button--state-pressed,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--status-error-bg-pressed);
+  border: 1px solid var(--status-error-border);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-pressed .oc-button__icon-plus,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):active .oc-button__icon-plus {
+  color: var(--status-error-text);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-pressed .oc-button__label,
+.oc-button.oc-button--variant-danger:not(:disabled):not([aria-disabled="true"]):active .oc-button__label {
+  color: var(--status-error-text);
+}
+
+/* Variant=Danger, State=Disabled */
+.oc-button.oc-button--variant-danger.oc-button--state-disabled,
+.oc-button.oc-button--variant-danger:disabled,
+.oc-button.oc-button--variant-danger[aria-disabled="true"] {
+  background: var(--accent-disabled);
+  border: 1px solid var(--text-disabled);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-disabled .oc-button__icon-plus,
+.oc-button.oc-button--variant-danger:disabled .oc-button__icon-plus,
+.oc-button.oc-button--variant-danger[aria-disabled="true"] .oc-button__icon-plus {
+  color: var(--text-disabled);
+}
+.oc-button.oc-button--variant-danger.oc-button--state-disabled .oc-button__label,
+.oc-button.oc-button--variant-danger:disabled .oc-button__label,
+.oc-button.oc-button--variant-danger[aria-disabled="true"] .oc-button__label {
+  color: var(--text-disabled);
+}

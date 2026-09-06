@@ -1,0 +1,1397 @@
+/* Icons — сгенерировано из components/icons/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 24px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 24px — нет шкалы размеров: высота задана числом */
+.oc-icons {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+/* TODO: unbound — vector.width = 20px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 20px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.borderWidth = 1.5px — нет токена под толщину обводки */
+/* TODO: unbound — vector.strokeAlign = CENTER — обводка по центру: в CSS точного аналога нет, взят border (INSIDE) */
+/* TODO: unbound — vector.width = 20.02px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 18.01px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 16px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.width = 12px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 6px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 14px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 0px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.height = 12px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 0px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 9px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 2px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 2px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 7px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 7px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.height = 10px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 0.01px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 5px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 17.91px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 19.96px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 4.34px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 4.34px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 3.46px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.height = 19px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 18px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector.height = 18px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — vector.height = 11px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector.width = 6px — нет шкалы размеров: ширина задана числом */
+.oc-icons__vector {
+  position: absolute;
+  flex: none;
+  overflow: visible;
+}
+
+/* TODO: unbound — vector-2.width = 4px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 8px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.borderWidth = 1.5px — нет токена под толщину обводки */
+/* TODO: unbound — vector-2.strokeAlign = CENTER — обводка по центру: в CSS точного аналога нет, взят border (INSIDE) */
+/* TODO: unbound — vector-2.width = 0px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 4px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.width = 6px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 6px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.height = 14px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.width = 12px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 12px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.width = 18px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 7px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.width = 2px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 2px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.width = 7px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.width = 0.01px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 0px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.width = 16px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-2.height = 13px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.height = 16px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.height = 15px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-2.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — vector-3.width = 0.01px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.height = 0px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-3.borderWidth = 1.5px — нет токена под толщину обводки */
+/* TODO: unbound — vector-3.strokeAlign = CENTER — обводка по центру: в CSS точного аналога нет, взят border (INSIDE) */
+/* TODO: unbound — vector-3.width = 2px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.width = 14px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.height = 16px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-3.width = 10px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.height = 5px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-3.width = 12px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.height = 8px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-3.height = 2px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-3.width = 7px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.height = 7px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-3.width = 6px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.width = 4px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-3.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — vector-4.width = 8px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-4.height = 0px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-4.borderWidth = 1.5px — нет токена под толщину обводки */
+/* TODO: unbound — vector-4.strokeAlign = CENTER — обводка по центру: в CSS точного аналога нет, взят border (INSIDE) */
+/* TODO: unbound — vector-4.width = 18px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-4.width = 7px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-4.height = 7px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-4.width = 4px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-4.height = 4px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-4.width = 13px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-4.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — vector-5.width = 8px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-5.height = 0px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-5.borderWidth = 1.5px — нет токена под толщину обводки */
+/* TODO: unbound — vector-5.strokeAlign = CENTER — обводка по центру: в CSS точного аналога нет, взят border (INSIDE) */
+/* TODO: unbound — vector-5.height = 4px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-5.width = 13px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-5.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — vector-6.width = 13px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — vector-6.height = 0px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — vector-6.borderWidth = 1.5px — нет токена под толщину обводки */
+/* TODO: unbound — vector-6.strokeAlign = CENTER — обводка по центру: в CSS точного аналога нет, взят border (INSIDE) */
+/* TODO: unbound — vector-6.borderWidth = 1px — нет токена под толщину обводки */
+
+/* ---- варианты ---- */
+
+/* Icon=Clock, Style=Accent */
+.oc-icons.oc-icons--icon-clock.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-clock.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+.oc-icons.oc-icons--icon-clock.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  width: 4px;
+  height: 8px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Circle, Style=Accent */
+.oc-icons.oc-icons--icon-circle.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-circle.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Icon=Warning, Style=Accent */
+.oc-icons.oc-icons--icon-warning.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-warning.oc-icons--style-accent .oc-icons__vector {
+  left: 1.98px;
+  top: 2.99px;
+  width: 20.02px;
+  height: 18.01px;
+}
+.oc-icons.oc-icons--icon-warning.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  width: 0px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-warning.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 12px;
+  top: 17px;
+  width: 0.01px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=CircleCheck, Style=Accent */
+.oc-icons.oc-icons--icon-circle-check.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-circle-check.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+.oc-icons.oc-icons--icon-circle-check.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 9px;
+  top: 10px;
+  width: 6px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Bolt, Style=Accent */
+.oc-icons.oc-icons--icon-bolt.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-bolt.oc-icons--style-accent .oc-icons__vector {
+  left: 4px;
+  top: 2px;
+  width: 16px;
+  height: 20px;
+}
+
+/* Icon=Document, Style=Accent */
+.oc-icons.oc-icons--icon-document.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-accent .oc-icons__vector {
+  left: 4px;
+  top: 2px;
+  width: 16px;
+  height: 20px;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 14px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 2px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-accent .oc-icons__vector-4 {
+  position: absolute;
+  left: 8px;
+  top: 13px;
+  width: 8px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-accent .oc-icons__vector-5 {
+  position: absolute;
+  left: 8px;
+  top: 17px;
+  width: 8px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=ChevronDown, Style=Accent */
+.oc-icons.oc-icons--icon-chevron-down.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-chevron-down.oc-icons--style-accent .oc-icons__vector {
+  left: 6px;
+  top: 9px;
+  width: 12px;
+  height: 6px;
+}
+
+/* Icon=Plus, Style=Accent */
+.oc-icons.oc-icons--icon-plus.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-plus.oc-icons--style-accent .oc-icons__vector {
+  left: 5px;
+  top: 12px;
+  width: 14px;
+  height: 0px;
+}
+.oc-icons.oc-icons--icon-plus.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 12px;
+  top: 5px;
+  width: 0px;
+  height: 14px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=X, Style=Accent */
+.oc-icons.oc-icons--icon-x.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-x.oc-icons--style-accent .oc-icons__vector {
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+}
+.oc-icons.oc-icons--icon-x.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Edit, Style=Accent */
+.oc-icons.oc-icons--icon-edit.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-edit.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Icon=Trash, Style=Accent */
+.oc-icons.oc-icons--icon-trash.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-accent .oc-icons__vector {
+  left: 10px;
+  top: 11px;
+  width: 0px;
+  height: 6px;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 14px;
+  top: 11px;
+  width: 0px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 14px;
+  height: 16px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-accent .oc-icons__vector-4 {
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 18px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-accent .oc-icons__vector-5 {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 8px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Download, Style=Accent */
+.oc-icons.oc-icons--icon-download.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-download.oc-icons--style-accent .oc-icons__vector {
+  left: 12px;
+  top: 3px;
+  width: 0px;
+  height: 12px;
+}
+.oc-icons.oc-icons--icon-download.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 15px;
+  width: 18px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-download.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  width: 10px;
+  height: 5px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Print, Style=Accent */
+.oc-icons.oc-icons--icon-print.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-print.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 9px;
+  width: 20px;
+  height: 9px;
+}
+.oc-icons.oc-icons--icon-print.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 12px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-print.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  width: 12px;
+  height: 8px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=MoreVertical, Style=Accent */
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-accent .oc-icons__vector {
+  left: 11px;
+  top: 11px;
+  width: 2px;
+  height: 2px;
+}
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 11px;
+  top: 18px;
+  width: 2px;
+  height: 2px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Grid, Style=Accent */
+.oc-icons.oc-icons--icon-grid.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-accent .oc-icons__vector {
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 14px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-accent .oc-icons__vector-4 {
+  position: absolute;
+  left: 3px;
+  top: 14px;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Car, Style=Accent */
+.oc-icons.oc-icons--icon-car.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 7px;
+  width: 20px;
+  height: 10px;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  width: 4px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 9px;
+  top: 17px;
+  width: 6px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-accent .oc-icons__vector-4 {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 4px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=List, Style=Accent */
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent .oc-icons__vector {
+  left: 3px;
+  top: 5px;
+  width: 0.01px;
+  height: 0px;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 12px;
+  width: 0.01px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 3px;
+  top: 19px;
+  width: 0.01px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent .oc-icons__vector-4 {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 13px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent .oc-icons__vector-5 {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  width: 13px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-accent .oc-icons__vector-6 {
+  position: absolute;
+  left: 8px;
+  top: 19px;
+  width: 13px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Shield, Style=Accent */
+.oc-icons.oc-icons--icon-shield.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-shield.oc-icons--style-accent .oc-icons__vector {
+  left: 4px;
+  top: 2px;
+  width: 16px;
+  height: 20px;
+}
+
+/* Icon=Archive, Style=Accent */
+.oc-icons.oc-icons--icon-archive.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-archive.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 3px;
+  width: 20px;
+  height: 5px;
+}
+.oc-icons.oc-icons--icon-archive.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 16px;
+  height: 13px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-archive.oc-icons--style-accent .oc-icons__vector-3 {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  width: 4px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Settings, Style=Accent */
+.oc-icons.oc-icons--icon-settings.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-settings.oc-icons--style-accent .oc-icons__vector {
+  left: 3.04px;
+  top: 2.02px;
+  width: 17.91px;
+  height: 19.96px;
+}
+.oc-icons.oc-icons--icon-settings.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Search, Style=Accent */
+.oc-icons.oc-icons--icon-search.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-search.oc-icons--style-accent .oc-icons__vector {
+  left: 16.66px;
+  top: 16.66px;
+  width: 4.34px;
+  height: 4.34px;
+}
+.oc-icons.oc-icons--icon-search.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Bell, Style=Accent */
+.oc-icons.oc-icons--icon-bell.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-bell.oc-icons--style-accent .oc-icons__vector {
+  left: 10.27px;
+  top: 21px;
+  width: 3.46px;
+  height: 1px;
+}
+.oc-icons.oc-icons--icon-bell.oc-icons--style-accent .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 18px;
+  height: 15px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Filter, Style=Accent */
+.oc-icons.oc-icons--icon-filter.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-filter.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 3px;
+  width: 20px;
+  height: 19px;
+}
+
+/* Icon=Minimize, Style=Accent */
+.oc-icons.oc-icons--icon-minimize.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-minimize.oc-icons--style-accent .oc-icons__vector {
+  left: 5px;
+  top: 12px;
+  width: 14px;
+  height: 0px;
+}
+
+/* Icon=Maximize, Style=Accent */
+.oc-icons.oc-icons--icon-maximize.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-maximize.oc-icons--style-accent .oc-icons__vector {
+  left: 3px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Icon=Clock, Style=Regular */
+.oc-icons.oc-icons--icon-clock.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-clock.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+.oc-icons.oc-icons--icon-clock.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  width: 4px;
+  height: 8px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Circle, Style=Regular */
+.oc-icons.oc-icons--icon-circle.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-circle.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Icon=Warning, Style=Regular */
+.oc-icons.oc-icons--icon-warning.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-warning.oc-icons--style-regular .oc-icons__vector {
+  left: 1.98px;
+  top: 2.99px;
+  width: 20.02px;
+  height: 18.01px;
+}
+.oc-icons.oc-icons--icon-warning.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 12px;
+  top: 9px;
+  width: 0px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-warning.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 12px;
+  top: 17px;
+  width: 0.01px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=CircleCheck, Style=Regular */
+.oc-icons.oc-icons--icon-circle-check.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-circle-check.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+.oc-icons.oc-icons--icon-circle-check.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 9px;
+  top: 10px;
+  width: 6px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Bolt, Style=Regular */
+.oc-icons.oc-icons--icon-bolt.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-bolt.oc-icons--style-regular .oc-icons__vector {
+  left: 4px;
+  top: 2px;
+  width: 16px;
+  height: 20px;
+}
+
+/* Icon=Document, Style=Regular */
+.oc-icons.oc-icons--icon-document.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-regular .oc-icons__vector {
+  left: 4px;
+  top: 2px;
+  width: 16px;
+  height: 20px;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 14px;
+  top: 2px;
+  width: 6px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 2px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-regular .oc-icons__vector-4 {
+  position: absolute;
+  left: 8px;
+  top: 13px;
+  width: 8px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-document.oc-icons--style-regular .oc-icons__vector-5 {
+  position: absolute;
+  left: 8px;
+  top: 17px;
+  width: 8px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=ChevronDown, Style=Regular */
+.oc-icons.oc-icons--icon-chevron-down.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-chevron-down.oc-icons--style-regular .oc-icons__vector {
+  left: 6px;
+  top: 9px;
+  width: 12px;
+  height: 6px;
+}
+
+/* Icon=Plus, Style=Regular */
+.oc-icons.oc-icons--icon-plus.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-plus.oc-icons--style-regular .oc-icons__vector {
+  left: 5px;
+  top: 12px;
+  width: 14px;
+  height: 0px;
+}
+.oc-icons.oc-icons--icon-plus.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 12px;
+  top: 5px;
+  width: 0px;
+  height: 14px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=X, Style=Regular */
+.oc-icons.oc-icons--icon-x.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-x.oc-icons--style-regular .oc-icons__vector {
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+}
+.oc-icons.oc-icons--icon-x.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Edit, Style=Regular */
+.oc-icons.oc-icons--icon-edit.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-edit.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Icon=Trash, Style=Regular */
+.oc-icons.oc-icons--icon-trash.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-regular .oc-icons__vector {
+  left: 10px;
+  top: 11px;
+  width: 0px;
+  height: 6px;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 14px;
+  top: 11px;
+  width: 0px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 14px;
+  height: 16px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-regular .oc-icons__vector-4 {
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 18px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-trash.oc-icons--style-regular .oc-icons__vector-5 {
+  position: absolute;
+  left: 8px;
+  top: 2px;
+  width: 8px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Download, Style=Regular */
+.oc-icons.oc-icons--icon-download.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-download.oc-icons--style-regular .oc-icons__vector {
+  left: 12px;
+  top: 3px;
+  width: 0px;
+  height: 12px;
+}
+.oc-icons.oc-icons--icon-download.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 15px;
+  width: 18px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-download.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 7px;
+  top: 10px;
+  width: 10px;
+  height: 5px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Print, Style=Regular */
+.oc-icons.oc-icons--icon-print.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-print.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 9px;
+  width: 20px;
+  height: 9px;
+}
+.oc-icons.oc-icons--icon-print.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 12px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-print.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  width: 12px;
+  height: 8px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=MoreVertical, Style=Regular */
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-regular .oc-icons__vector {
+  left: 11px;
+  top: 11px;
+  width: 2px;
+  height: 2px;
+}
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  width: 2px;
+  height: 2px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-more-vertical.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 11px;
+  top: 18px;
+  width: 2px;
+  height: 2px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Grid, Style=Regular */
+.oc-icons.oc-icons--icon-grid.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-regular .oc-icons__vector {
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 14px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-grid.oc-icons--style-regular .oc-icons__vector-4 {
+  position: absolute;
+  left: 3px;
+  top: 14px;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Car, Style=Regular */
+.oc-icons.oc-icons--icon-car.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 7px;
+  width: 20px;
+  height: 10px;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  width: 4px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 9px;
+  top: 17px;
+  width: 6px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-car.oc-icons--style-regular .oc-icons__vector-4 {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: 4px;
+  height: 4px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=List, Style=Regular */
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular .oc-icons__vector {
+  left: 3px;
+  top: 5px;
+  width: 0.01px;
+  height: 0px;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 12px;
+  width: 0.01px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 3px;
+  top: 19px;
+  width: 0.01px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular .oc-icons__vector-4 {
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 13px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular .oc-icons__vector-5 {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  width: 13px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-list.oc-icons--style-regular .oc-icons__vector-6 {
+  position: absolute;
+  left: 8px;
+  top: 19px;
+  width: 13px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Shield, Style=Regular */
+.oc-icons.oc-icons--icon-shield.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-shield.oc-icons--style-regular .oc-icons__vector {
+  left: 4px;
+  top: 2px;
+  width: 16px;
+  height: 20px;
+}
+
+/* Icon=Archive, Style=Regular */
+.oc-icons.oc-icons--icon-archive.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-archive.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 3px;
+  width: 20px;
+  height: 5px;
+}
+.oc-icons.oc-icons--icon-archive.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 16px;
+  height: 13px;
+  flex: none;
+  overflow: visible;
+}
+.oc-icons.oc-icons--icon-archive.oc-icons--style-regular .oc-icons__vector-3 {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  width: 4px;
+  height: 0px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Settings, Style=Regular */
+.oc-icons.oc-icons--icon-settings.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-settings.oc-icons--style-regular .oc-icons__vector {
+  left: 3.04px;
+  top: 2.02px;
+  width: 17.91px;
+  height: 19.96px;
+}
+.oc-icons.oc-icons--icon-settings.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Search, Style=Regular */
+.oc-icons.oc-icons--icon-search.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-search.oc-icons--style-regular .oc-icons__vector {
+  left: 16.66px;
+  top: 16.66px;
+  width: 4.34px;
+  height: 4.34px;
+}
+.oc-icons.oc-icons--icon-search.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Bell, Style=Regular */
+.oc-icons.oc-icons--icon-bell.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-bell.oc-icons--style-regular .oc-icons__vector {
+  left: 10.27px;
+  top: 21px;
+  width: 3.46px;
+  height: 1px;
+}
+.oc-icons.oc-icons--icon-bell.oc-icons--style-regular .oc-icons__vector-2 {
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  width: 18px;
+  height: 15px;
+  flex: none;
+  overflow: visible;
+}
+
+/* Icon=Filter, Style=Regular */
+.oc-icons.oc-icons--icon-filter.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-filter.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 3px;
+  width: 20px;
+  height: 19px;
+}
+
+/* Icon=Minimize, Style=Regular */
+.oc-icons.oc-icons--icon-minimize.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-minimize.oc-icons--style-regular .oc-icons__vector {
+  left: 5px;
+  top: 12px;
+  width: 14px;
+  height: 0px;
+}
+
+/* Icon=Maximize, Style=Regular */
+.oc-icons.oc-icons--icon-maximize.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-maximize.oc-icons--style-regular .oc-icons__vector {
+  left: 3px;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Icon=Check, Style=Regular */
+.oc-icons.oc-icons--icon-check.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-check.oc-icons--style-regular .oc-icons__vector {
+  left: 4px;
+  top: 6px;
+  width: 16px;
+  height: 11px;
+}
+
+/* Icon=Check, Style=Accent */
+.oc-icons.oc-icons--icon-check.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-check.oc-icons--style-accent .oc-icons__vector {
+  left: 4px;
+  top: 6px;
+  width: 16px;
+  height: 11px;
+}
+
+/* Icon=ChevronLeft, Style=Regular */
+.oc-icons.oc-icons--icon-chevron-left.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-chevron-left.oc-icons--style-regular .oc-icons__vector {
+  left: 9px;
+  top: 6px;
+  width: 6px;
+  height: 12px;
+}
+
+/* Icon=ChevronLeft, Style=Accent */
+.oc-icons.oc-icons--icon-chevron-left.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-chevron-left.oc-icons--style-accent .oc-icons__vector {
+  left: 9px;
+  top: 6px;
+  width: 6px;
+  height: 12px;
+}
+
+/* Icon=ChevronRight, Style=Regular */
+.oc-icons.oc-icons--icon-chevron-right.oc-icons--style-regular {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-chevron-right.oc-icons--style-regular .oc-icons__vector {
+  left: 9px;
+  top: 6px;
+  width: 6px;
+  height: 12px;
+}
+
+/* Icon=ChevronRight, Style=Accent */
+.oc-icons.oc-icons--icon-chevron-right.oc-icons--style-accent {
+  overflow: hidden;
+}
+.oc-icons.oc-icons--icon-chevron-right.oc-icons--style-accent .oc-icons__vector {
+  left: 9px;
+  top: 6px;
+  width: 6px;
+  height: 12px;
+}
+
+/* Icon=Board, Style=Regular */
+.oc-icons.oc-icons--icon-board.oc-icons--style-regular .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Icon=Board, Style=Accent */
+.oc-icons.oc-icons--icon-board.oc-icons--style-accent .oc-icons__vector {
+  left: 2px;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+}

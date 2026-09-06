@@ -1,0 +1,97 @@
+/* AlertBell — сгенерировано из components/alert-bell/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 34px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 34px — нет шкалы размеров: высота задана числом */
+.oc-alert-bell {
+  width: 34px;
+  height: 34px;
+  position: relative;
+}
+
+/* TODO: unbound — icon-bell.iconStrokeWidth = 1.5 — нет токена под толщину линии иконки */
+.oc-alert-bell__icon-bell {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  stroke-width: 1.5;
+  flex: none;
+}
+
+/* ---- варианты ---- */
+
+/* Tone=Danger */
+.oc-alert-bell.oc-alert-bell--tone-danger .oc-alert-bell__icon-bell {
+  color: var(--status-error-text);
+}
+.oc-alert-bell.oc-alert-bell--tone-danger .oc-alert-bell__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-error-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-bell.oc-alert-bell--tone-danger .oc-alert-bell__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-error-on-solid);
+}
+
+/* Tone=Warning */
+.oc-alert-bell.oc-alert-bell--tone-warning .oc-alert-bell__icon-bell {
+  color: var(--status-warning-text);
+}
+.oc-alert-bell.oc-alert-bell--tone-warning .oc-alert-bell__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-warning-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-bell.oc-alert-bell--tone-warning .oc-alert-bell__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-warning-on-solid);
+}
+
+/* Tone=Neutral */
+.oc-alert-bell.oc-alert-bell--tone-neutral .oc-alert-bell__icon-bell {
+  color: var(--text-tertiary);
+}

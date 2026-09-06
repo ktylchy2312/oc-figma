@@ -1,0 +1,748 @@
+{
+  "name": "TabBar",
+  "slug": "tab-bar",
+  "group": "Navigation",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "44:3315",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Show Tab 3",
+      "type": "boolean",
+      "figmaKey": "Show Tab 3#84:27",
+      "default": true
+    },
+    {
+      "name": "Show Tab 4",
+      "type": "boolean",
+      "figmaKey": "Show Tab 4#84:28",
+      "default": true
+    },
+    {
+      "name": "Show Tab 5",
+      "type": "boolean",
+      "figmaKey": "Show Tab 5#84:29",
+      "default": false
+    },
+    {
+      "name": "Show Tab 6",
+      "type": "boolean",
+      "figmaKey": "Show Tab 6#84:30",
+      "default": false
+    },
+    {
+      "name": "Show Tab 7",
+      "type": "boolean",
+      "figmaKey": "Show Tab 7#84:31",
+      "default": false
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "TabBar",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "tab",
+      "name": "Tab",
+      "element": "div",
+      "component": "Tab",
+      "slug": "tab"
+    },
+    {
+      "part": "tab/inner",
+      "name": "Inner",
+      "element": "div"
+    },
+    {
+      "part": "tab/inner/icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "tab/inner/label",
+      "name": "Lista",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab/spacer",
+      "name": "Spacer",
+      "element": "div"
+    },
+    {
+      "part": "tab/underline",
+      "name": "Underline",
+      "element": "div"
+    },
+    {
+      "part": "tab-2",
+      "name": "Tab",
+      "element": "div",
+      "component": "Tab",
+      "slug": "tab"
+    },
+    {
+      "part": "tab-2/inner",
+      "name": "Inner",
+      "element": "div"
+    },
+    {
+      "part": "tab-2/inner/icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "tab-2/inner/label",
+      "name": "Lista",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab-2/spacer",
+      "name": "Spacer",
+      "element": "div"
+    },
+    {
+      "part": "tab-2/underline",
+      "name": "Underline",
+      "element": "div"
+    },
+    {
+      "part": "tab-3",
+      "name": "Tab",
+      "element": "div",
+      "component": "Tab",
+      "slug": "tab",
+      "optional": true,
+      "controlledBy": "Show Tab 3"
+    },
+    {
+      "part": "tab-3/inner",
+      "name": "Inner",
+      "element": "div"
+    },
+    {
+      "part": "tab-3/inner/icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "tab-3/inner/label",
+      "name": "Lista",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab-3/spacer",
+      "name": "Spacer",
+      "element": "div"
+    },
+    {
+      "part": "tab-3/underline",
+      "name": "Underline",
+      "element": "div"
+    },
+    {
+      "part": "tab-4",
+      "name": "Tab",
+      "element": "div",
+      "component": "Tab",
+      "slug": "tab",
+      "optional": true,
+      "controlledBy": "Show Tab 4"
+    },
+    {
+      "part": "tab-4/inner",
+      "name": "Inner",
+      "element": "div"
+    },
+    {
+      "part": "tab-4/inner/icon-list",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "tab-4/inner/label",
+      "name": "Lista",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab-4/spacer",
+      "name": "Spacer",
+      "element": "div"
+    },
+    {
+      "part": "tab-4/underline",
+      "name": "Underline",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderColor": "var(--text-disabled)",
+    "borderWidth": "bottom 2px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-6)",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "tab-2.align": "CENTER",
+    "tab-2.direction": "VERTICAL",
+    "tab-2.gap": "var(--space-0)",
+    "tab-2.height": "40px",
+    "tab-2.justify": "MIN",
+    "tab-2.padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+    "tab-2/inner.align": "CENTER",
+    "tab-2/inner.direction": "HORIZONTAL",
+    "tab-2/inner.gap": "var(--space-2)",
+    "tab-2/inner.justify": "MIN",
+    "tab-2/inner.padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+    "tab-2/inner/icon-list.height": "16px",
+    "tab-2/inner/icon-list.icon": "List",
+    "tab-2/inner/icon-list.iconColor": "var(--text-secondary)",
+    "tab-2/inner/icon-list.width": "16px",
+    "tab-2/inner/label.color": "var(--text-secondary)",
+    "tab-2/inner/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab-2/underline.background": "var(--text-tertiary)",
+    "tab-2/underline.height": "2px",
+    "tab-2/underline.opacity": "0",
+    "tab-3.align": "CENTER",
+    "tab-3.direction": "VERTICAL",
+    "tab-3.gap": "var(--space-0)",
+    "tab-3.height": "40px",
+    "tab-3.justify": "MIN",
+    "tab-3.padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+    "tab-3/inner.align": "CENTER",
+    "tab-3/inner.direction": "HORIZONTAL",
+    "tab-3/inner.gap": "var(--space-2)",
+    "tab-3/inner.justify": "MIN",
+    "tab-3/inner.padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+    "tab-3/inner/icon-list.height": "16px",
+    "tab-3/inner/icon-list.icon": "List",
+    "tab-3/inner/icon-list.iconColor": "var(--text-secondary)",
+    "tab-3/inner/icon-list.width": "16px",
+    "tab-3/inner/label.color": "var(--text-secondary)",
+    "tab-3/inner/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab-3/underline.background": "var(--text-tertiary)",
+    "tab-3/underline.height": "2px",
+    "tab-3/underline.opacity": "0",
+    "tab-4.align": "CENTER",
+    "tab-4.direction": "VERTICAL",
+    "tab-4.gap": "var(--space-0)",
+    "tab-4.height": "40px",
+    "tab-4.justify": "MIN",
+    "tab-4.padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+    "tab-4/inner.align": "CENTER",
+    "tab-4/inner.direction": "HORIZONTAL",
+    "tab-4/inner.gap": "var(--space-2)",
+    "tab-4/inner.justify": "MIN",
+    "tab-4/inner.padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+    "tab-4/inner/icon-list.height": "16px",
+    "tab-4/inner/icon-list.icon": "List",
+    "tab-4/inner/icon-list.iconColor": "var(--text-secondary)",
+    "tab-4/inner/icon-list.width": "16px",
+    "tab-4/inner/label.color": "var(--text-secondary)",
+    "tab-4/inner/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab-4/underline.background": "var(--text-tertiary)",
+    "tab-4/underline.height": "2px",
+    "tab-4/underline.opacity": "0",
+    "tab.align": "CENTER",
+    "tab.direction": "VERTICAL",
+    "tab.gap": "var(--space-0)",
+    "tab.height": "40px",
+    "tab.justify": "MIN",
+    "tab.padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+    "tab/inner.align": "CENTER",
+    "tab/inner.direction": "HORIZONTAL",
+    "tab/inner.gap": "var(--space-2)",
+    "tab/inner.justify": "MIN",
+    "tab/inner.padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+    "tab/inner/icon-list.height": "16px",
+    "tab/inner/icon-list.icon": "List",
+    "tab/inner/icon-list.iconColor": "var(--text-secondary)",
+    "tab/inner/icon-list.width": "16px",
+    "tab/inner/label.color": "var(--text-secondary)",
+    "tab/inner/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab/underline.background": "var(--text-tertiary)",
+    "tab/underline.height": "2px",
+    "tab/underline.opacity": "0"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "44:3315",
+      "figmaSize": {
+        "w": 304,
+        "h": 42
+      },
+      "tokens": {},
+      "render": {
+        "part": "TabBar",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "border-bottom": "2px solid var(--text-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-6)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Tab",
+            "path": "tab",
+            "tag": "div",
+            "style": {
+              "height": "40px",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Inner",
+                "path": "tab/inner",
+                "tag": "div",
+                "style": {
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Icons",
+                    "path": "tab/inner/icon-list",
+                    "tag": "svg",
+                    "style": {
+                      "width": "16px",
+                      "height": "16px",
+                      "overflow": "hidden",
+                      "color": "var(--text-secondary)",
+                      "stroke-width": "1.5",
+                      "flex": "none"
+                    },
+                    "propRef": {
+                      "mainComponent": "Icon#32:94"
+                    },
+                    "icon": "List",
+                    "iconStyle": "Accent",
+                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                  },
+                  {
+                    "part": "Lista",
+                    "path": "tab/inner/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:87"
+                    },
+                    "text": "Lista",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Spacer",
+                "path": "tab/spacer",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "background": "var(--text-tertiary)",
+                  "opacity": "0",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Tab",
+            "path": "tab-2",
+            "tag": "div",
+            "style": {
+              "height": "40px",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Inner",
+                "path": "tab-2/inner",
+                "tag": "div",
+                "style": {
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Icons",
+                    "path": "tab-2/inner/icon-list",
+                    "tag": "svg",
+                    "style": {
+                      "width": "16px",
+                      "height": "16px",
+                      "overflow": "hidden",
+                      "color": "var(--text-secondary)",
+                      "stroke-width": "1.5",
+                      "flex": "none"
+                    },
+                    "propRef": {
+                      "mainComponent": "Icon#32:94"
+                    },
+                    "icon": "List",
+                    "iconStyle": "Accent",
+                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                  },
+                  {
+                    "part": "Lista",
+                    "path": "tab-2/inner/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:87"
+                    },
+                    "text": "Etapy",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Spacer",
+                "path": "tab-2/spacer",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab-2/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "background": "var(--text-tertiary)",
+                  "opacity": "0",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Tab",
+            "path": "tab-3",
+            "tag": "div",
+            "style": {
+              "height": "40px",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "propRef": {
+              "visible": "Show Tab 3#84:27"
+            },
+            "children": [
+              {
+                "part": "Inner",
+                "path": "tab-3/inner",
+                "tag": "div",
+                "style": {
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Icons",
+                    "path": "tab-3/inner/icon-list",
+                    "tag": "svg",
+                    "style": {
+                      "width": "16px",
+                      "height": "16px",
+                      "overflow": "hidden",
+                      "color": "var(--text-secondary)",
+                      "stroke-width": "1.5",
+                      "flex": "none"
+                    },
+                    "propRef": {
+                      "mainComponent": "Icon#32:94"
+                    },
+                    "icon": "List",
+                    "iconStyle": "Accent",
+                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                  },
+                  {
+                    "part": "Lista",
+                    "path": "tab-3/inner/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:87"
+                    },
+                    "text": "Tab 3",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Spacer",
+                "path": "tab-3/spacer",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab-3/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "background": "var(--text-tertiary)",
+                  "opacity": "0",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Tab",
+            "path": "tab-4",
+            "tag": "div",
+            "style": {
+              "height": "40px",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) 0 var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "propRef": {
+              "visible": "Show Tab 4#84:28"
+            },
+            "children": [
+              {
+                "part": "Inner",
+                "path": "tab-4/inner",
+                "tag": "div",
+                "style": {
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-0) var(--space-0-5) var(--space-0) var(--space-0)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Icons",
+                    "path": "tab-4/inner/icon-list",
+                    "tag": "svg",
+                    "style": {
+                      "width": "16px",
+                      "height": "16px",
+                      "overflow": "hidden",
+                      "color": "var(--text-secondary)",
+                      "stroke-width": "1.5",
+                      "flex": "none"
+                    },
+                    "propRef": {
+                      "mainComponent": "Icon#32:94"
+                    },
+                    "icon": "List",
+                    "iconStyle": "Accent",
+                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                  },
+                  {
+                    "part": "Lista",
+                    "path": "tab-4/inner/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:87"
+                    },
+                    "text": "Tab 4",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Spacer",
+                "path": "tab-4/spacer",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab-4/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "background": "var(--text-tertiary)",
+                  "opacity": "0",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "borderWidth",
+      "value": "2px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

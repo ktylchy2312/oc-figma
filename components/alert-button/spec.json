@@ -1,0 +1,1361 @@
+{
+  "name": "AlertButton",
+  "slug": "alert-button",
+  "group": "Actions",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:2773",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#41:133",
+      "default": "Alerty"
+    },
+    {
+      "name": "Tone",
+      "type": "variant",
+      "figmaKey": "Tone",
+      "values": [
+        "Danger",
+        "Warning",
+        "Neutral"
+      ],
+      "default": "Danger"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "AlertButton",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "alert-bell",
+      "name": "AlertBell",
+      "element": "div",
+      "component": "AlertBell",
+      "slug": "alert-bell"
+    },
+    {
+      "part": "alert-bell/icon-bell",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Bell",
+      "slug": "icons"
+    },
+    {
+      "part": "alert-bell/badge",
+      "name": "Badge",
+      "element": "div",
+      "component": "CountBadge",
+      "slug": "count-badge"
+    },
+    {
+      "part": "alert-bell/badge/count",
+      "name": "3",
+      "element": "span",
+      "textProp": "Count"
+    },
+    {
+      "part": "label",
+      "name": "Alerty",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "alert-bell.height": "34px",
+    "alert-bell.width": "34px",
+    "alert-bell/icon-bell.height": "22px",
+    "alert-bell/icon-bell.icon": "Bell",
+    "alert-bell/icon-bell.width": "22px",
+    "align": "CENTER",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-3)",
+    "height": "44px",
+    "justify": "MIN",
+    "label.font": "Type/Body Small Alter 13/20px 700",
+    "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+    "radius": "var(--radius-lg)"
+  },
+  "variants": [
+    {
+      "key": "Tone=Danger, State=Default",
+      "match": {
+        "Tone": "Danger",
+        "State": "Default"
+      },
+      "nodeId": "395:2774",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/badge.align": "CENTER",
+        "alert-bell/badge.background": "var(--status-error-solid)",
+        "alert-bell/badge.direction": "HORIZONTAL",
+        "alert-bell/badge.gap": "0",
+        "alert-bell/badge.height": "20px",
+        "alert-bell/badge.justify": "CENTER",
+        "alert-bell/badge.padding": "0 var(--space-2) 0 var(--space-2)",
+        "alert-bell/badge.radius": "var(--radius-full)",
+        "alert-bell/badge.width": "20px",
+        "alert-bell/badge/count.color": "var(--status-error-on-solid)",
+        "alert-bell/badge/count.font": "Type/Label 12/16px 700",
+        "alert-bell/icon-bell.iconColor": "var(--status-error-text)",
+        "background": "var(--status-error-bg)",
+        "borderColor": "var(--status-error-border)",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Tone=Danger, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-error-bg)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--status-error-text)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Badge",
+                "path": "alert-bell/badge",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "1px",
+                  "width": "20px",
+                  "height": "20px",
+                  "min-width": "20px",
+                  "background": "var(--status-error-solid)",
+                  "border-radius": "var(--radius-full)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "padding": "0 var(--space-2) 0 var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3",
+                    "path": "alert-bell/badge/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "text-align": "center",
+                      "white-space": "nowrap",
+                      "color": "var(--status-error-on-solid)"
+                    },
+                    "propRef": {
+                      "characters": "Count#327:102"
+                    },
+                    "text": "6",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Danger, State=Hover",
+      "match": {
+        "Tone": "Danger",
+        "State": "Hover"
+      },
+      "nodeId": "395:2777",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/badge.align": "CENTER",
+        "alert-bell/badge.background": "var(--status-error-solid)",
+        "alert-bell/badge.direction": "HORIZONTAL",
+        "alert-bell/badge.gap": "0",
+        "alert-bell/badge.height": "20px",
+        "alert-bell/badge.justify": "CENTER",
+        "alert-bell/badge.padding": "0 var(--space-2) 0 var(--space-2)",
+        "alert-bell/badge.radius": "var(--radius-full)",
+        "alert-bell/badge.width": "20px",
+        "alert-bell/badge/count.color": "var(--status-error-on-solid)",
+        "alert-bell/badge/count.font": "Type/Label 12/16px 700",
+        "alert-bell/icon-bell.iconColor": "var(--status-error-text)",
+        "background": "var(--status-error-bg-hover)",
+        "borderColor": "var(--status-error-border)",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Tone=Danger, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-error-bg-hover)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--status-error-text)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Badge",
+                "path": "alert-bell/badge",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "1px",
+                  "width": "20px",
+                  "height": "20px",
+                  "min-width": "20px",
+                  "background": "var(--status-error-solid)",
+                  "border-radius": "var(--radius-full)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "padding": "0 var(--space-2) 0 var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3",
+                    "path": "alert-bell/badge/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "text-align": "center",
+                      "white-space": "nowrap",
+                      "color": "var(--status-error-on-solid)"
+                    },
+                    "propRef": {
+                      "characters": "Count#327:102"
+                    },
+                    "text": "6",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Danger, State=Pressed",
+      "match": {
+        "Tone": "Danger",
+        "State": "Pressed"
+      },
+      "nodeId": "395:2780",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/badge.align": "CENTER",
+        "alert-bell/badge.background": "var(--status-error-solid)",
+        "alert-bell/badge.direction": "HORIZONTAL",
+        "alert-bell/badge.gap": "0",
+        "alert-bell/badge.height": "20px",
+        "alert-bell/badge.justify": "CENTER",
+        "alert-bell/badge.padding": "0 var(--space-2) 0 var(--space-2)",
+        "alert-bell/badge.radius": "var(--radius-full)",
+        "alert-bell/badge.width": "20px",
+        "alert-bell/badge/count.color": "var(--status-error-on-solid)",
+        "alert-bell/badge/count.font": "Type/Label 12/16px 700",
+        "alert-bell/icon-bell.iconColor": "var(--status-error-text)",
+        "background": "var(--status-error-border)",
+        "borderColor": "var(--status-error-border)",
+        "label.color": "var(--status-error-text)"
+      },
+      "render": {
+        "part": "Tone=Danger, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-error-border)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--status-error-text)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Badge",
+                "path": "alert-bell/badge",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "1px",
+                  "width": "20px",
+                  "height": "20px",
+                  "min-width": "20px",
+                  "background": "var(--status-error-solid)",
+                  "border-radius": "var(--radius-full)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "padding": "0 var(--space-2) 0 var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3",
+                    "path": "alert-bell/badge/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "text-align": "center",
+                      "white-space": "nowrap",
+                      "color": "var(--status-error-on-solid)"
+                    },
+                    "propRef": {
+                      "characters": "Count#327:102"
+                    },
+                    "text": "6",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Warning, State=Default",
+      "match": {
+        "Tone": "Warning",
+        "State": "Default"
+      },
+      "nodeId": "395:2783",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/badge.align": "CENTER",
+        "alert-bell/badge.background": "var(--status-warning-solid)",
+        "alert-bell/badge.direction": "HORIZONTAL",
+        "alert-bell/badge.gap": "0",
+        "alert-bell/badge.height": "20px",
+        "alert-bell/badge.justify": "CENTER",
+        "alert-bell/badge.padding": "0 var(--space-2) 0 var(--space-2)",
+        "alert-bell/badge.radius": "var(--radius-full)",
+        "alert-bell/badge.width": "20px",
+        "alert-bell/badge/count.color": "var(--status-warning-on-solid)",
+        "alert-bell/badge/count.font": "Type/Label 12/16px 700",
+        "alert-bell/icon-bell.iconColor": "var(--status-warning-text)",
+        "background": "var(--status-warning-bg)",
+        "borderColor": "var(--status-warning-border)",
+        "label.color": "var(--status-warning-text)"
+      },
+      "render": {
+        "part": "Tone=Warning, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-warning-bg)",
+          "border": "1px solid var(--status-warning-border)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--status-warning-text)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Badge",
+                "path": "alert-bell/badge",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "1px",
+                  "width": "20px",
+                  "height": "20px",
+                  "min-width": "20px",
+                  "background": "var(--status-warning-solid)",
+                  "border-radius": "var(--radius-full)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "padding": "0 var(--space-2) 0 var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3",
+                    "path": "alert-bell/badge/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "text-align": "center",
+                      "white-space": "nowrap",
+                      "color": "var(--status-warning-on-solid)"
+                    },
+                    "propRef": {
+                      "characters": "Count#327:102"
+                    },
+                    "text": "3",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-warning-text)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Warning, State=Hover",
+      "match": {
+        "Tone": "Warning",
+        "State": "Hover"
+      },
+      "nodeId": "395:2786",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/badge.align": "CENTER",
+        "alert-bell/badge.background": "var(--status-warning-solid)",
+        "alert-bell/badge.direction": "HORIZONTAL",
+        "alert-bell/badge.gap": "0",
+        "alert-bell/badge.height": "20px",
+        "alert-bell/badge.justify": "CENTER",
+        "alert-bell/badge.padding": "0 var(--space-2) 0 var(--space-2)",
+        "alert-bell/badge.radius": "var(--radius-full)",
+        "alert-bell/badge.width": "20px",
+        "alert-bell/badge/count.color": "var(--status-warning-on-solid)",
+        "alert-bell/badge/count.font": "Type/Label 12/16px 700",
+        "alert-bell/icon-bell.iconColor": "var(--status-warning-text)",
+        "background": "var(--status-warning-bg-hover)",
+        "borderColor": "var(--status-warning-border)",
+        "label.color": "var(--status-warning-text)"
+      },
+      "render": {
+        "part": "Tone=Warning, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-warning-bg-hover)",
+          "border": "1px solid var(--status-warning-border)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--status-warning-text)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Badge",
+                "path": "alert-bell/badge",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "1px",
+                  "width": "20px",
+                  "height": "20px",
+                  "min-width": "20px",
+                  "background": "var(--status-warning-solid)",
+                  "border-radius": "var(--radius-full)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "padding": "0 var(--space-2) 0 var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3",
+                    "path": "alert-bell/badge/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "text-align": "center",
+                      "white-space": "nowrap",
+                      "color": "var(--status-warning-on-solid)"
+                    },
+                    "propRef": {
+                      "characters": "Count#327:102"
+                    },
+                    "text": "3",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-warning-text)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Warning, State=Pressed",
+      "match": {
+        "Tone": "Warning",
+        "State": "Pressed"
+      },
+      "nodeId": "395:2789",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/badge.align": "CENTER",
+        "alert-bell/badge.background": "var(--status-warning-solid)",
+        "alert-bell/badge.direction": "HORIZONTAL",
+        "alert-bell/badge.gap": "0",
+        "alert-bell/badge.height": "20px",
+        "alert-bell/badge.justify": "CENTER",
+        "alert-bell/badge.padding": "0 var(--space-2) 0 var(--space-2)",
+        "alert-bell/badge.radius": "var(--radius-full)",
+        "alert-bell/badge.width": "20px",
+        "alert-bell/badge/count.color": "var(--status-warning-on-solid)",
+        "alert-bell/badge/count.font": "Type/Label 12/16px 700",
+        "alert-bell/icon-bell.iconColor": "var(--status-warning-text)",
+        "background": "var(--status-warning-border)",
+        "borderColor": "var(--status-warning-border)",
+        "label.color": "var(--status-warning-text)"
+      },
+      "render": {
+        "part": "Tone=Warning, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--status-warning-border)",
+          "border": "1px solid var(--status-warning-border)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--status-warning-text)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Badge",
+                "path": "alert-bell/badge",
+                "tag": "div",
+                "style": {
+                  "position": "absolute",
+                  "left": "12px",
+                  "top": "1px",
+                  "width": "20px",
+                  "height": "20px",
+                  "min-width": "20px",
+                  "background": "var(--status-warning-solid)",
+                  "border-radius": "var(--radius-full)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "padding": "0 var(--space-2) 0 var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3",
+                    "path": "alert-bell/badge/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "text-align": "center",
+                      "white-space": "nowrap",
+                      "color": "var(--status-warning-on-solid)"
+                    },
+                    "propRef": {
+                      "characters": "Count#327:102"
+                    },
+                    "text": "3",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--status-warning-text)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Neutral, State=Default",
+      "match": {
+        "Tone": "Neutral",
+        "State": "Default"
+      },
+      "nodeId": "395:2792",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/icon-bell.iconColor": "var(--text-tertiary)",
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Tone=Neutral, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--text-tertiary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Neutral, State=Hover",
+      "match": {
+        "Tone": "Neutral",
+        "State": "Hover"
+      },
+      "nodeId": "395:2795",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/icon-bell.iconColor": "var(--text-tertiary)",
+        "background": "var(--surface-raised-hover)",
+        "borderColor": "var(--border-strong)",
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Tone=Neutral, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--border-strong)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--text-tertiary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Tone=Neutral, State=Pressed",
+      "match": {
+        "Tone": "Neutral",
+        "State": "Pressed"
+      },
+      "nodeId": "395:2798",
+      "figmaSize": {
+        "w": 116,
+        "h": 44
+      },
+      "tokens": {
+        "alert-bell/icon-bell.iconColor": "var(--text-tertiary)",
+        "background": "var(--surface-raised-pressed)",
+        "borderColor": "var(--border-default)",
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Tone=Neutral, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "height": "44px",
+          "background": "var(--surface-raised-pressed)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "AlertBell",
+            "path": "alert-bell",
+            "tag": "div",
+            "style": {
+              "width": "34px",
+              "height": "34px",
+              "position": "relative"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "alert-bell/icon-bell",
+                "tag": "svg",
+                "style": {
+                  "position": "absolute",
+                  "left": "6px",
+                  "top": "6px",
+                  "width": "22px",
+                  "height": "22px",
+                  "overflow": "hidden",
+                  "color": "var(--text-tertiary)",
+                  "stroke-width": "1.5",
+                  "flex": "none"
+                },
+                "icon": "Bell",
+                "iconStyle": "Accent",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M10.2681 21C10.4436 21.304 10.6961 21.5565 11.0001 21.732C11.3041 21.9075 11.649 21.9999 12.0001 21.9999C12.3511 21.9999 12.696 21.9075 13 21.732C13.3041 21.5565 13.5565 21.304 13.7321 21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Alerty",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#41:133"
+            },
+            "text": "Alerty",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "height",
+      "value": "44px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

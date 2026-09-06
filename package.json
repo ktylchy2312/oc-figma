@@ -1,0 +1,25 @@
+{
+  "name": "oc-figma",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OC-Kontrol design system: spec-first transfer package from Figma",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node tools/rebuild.mjs",
+    "build:code": "node tools/build-code.mjs --all",
+    "verify:paths": "node tools/check-paths.mjs",
+    "verify:sheets": "node verify.mjs",
+    "verify:code": "node verify-code.mjs",
+    "verify": "npm run verify:paths && npm run verify:sheets && npm run verify:code",
+    "storybook": "storybook dev -p 6006 --no-open",
+    "build:storybook": "storybook build -o storybook-static"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.11.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.6.0",
+    "@storybook/html-vite": "^10.6.0",
+    "storybook": "^10.6.0"
+  }
+}

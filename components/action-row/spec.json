@@ -1,0 +1,572 @@
+{
+  "name": "ActionRow",
+  "slug": "action-row",
+  "group": "Actions",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "25:97",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#25:5",
+      "default": "Wycena pojazdu"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Focus"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "ActionRow",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "icon-bolt",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Bolt",
+      "slug": "icons"
+    },
+    {
+      "part": "label",
+      "name": "Wycena pojazdu",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "status-check",
+      "name": "StatusCheck",
+      "element": "div",
+      "component": "StatusCheck",
+      "slug": "status-check"
+    },
+    {
+      "part": "status-check/icon-circle-check",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "CircleCheck",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "icon-bolt.height": "17px",
+    "icon-bolt.icon": "Bolt",
+    "icon-bolt.iconColor": "var(--text-primary)",
+    "icon-bolt.width": "17px",
+    "justify": "MIN",
+    "label.color": "var(--text-primary)",
+    "label.font": "Type/Body Small 13/20px 400",
+    "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "radius": "var(--radius-md)",
+    "status-check.align": "MIN",
+    "status-check.direction": "HORIZONTAL",
+    "status-check.gap": "var(--space-0)",
+    "status-check.justify": "MIN",
+    "status-check.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "status-check/icon-circle-check.height": "20px",
+    "status-check/icon-circle-check.icon": "CircleCheck",
+    "status-check/icon-circle-check.iconColor": "var(--status-success-text)",
+    "status-check/icon-circle-check.width": "20px",
+    "width": "280px"
+  },
+  "variants": [
+    {
+      "key": "State=Default",
+      "match": {
+        "State": "Default"
+      },
+      "nodeId": "25:65",
+      "figmaSize": {
+        "w": 280,
+        "h": 36
+      },
+      "tokens": {
+        "background": "var(--surface-row)",
+        "label.width": "203px"
+      },
+      "render": {
+        "part": "State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "background": "var(--surface-row)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-bolt",
+            "tag": "svg",
+            "style": {
+              "width": "17px",
+              "height": "17px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Bolt",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Wycena pojazdu",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "203px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#25:5"
+            },
+            "text": "Wycena pojazdu",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "StatusCheck",
+            "path": "status-check",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "status-check/icon-circle-check",
+                "tag": "svg",
+                "style": {
+                  "width": "20px",
+                  "height": "20px",
+                  "overflow": "hidden",
+                  "color": "var(--status-success-text)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "CircleCheck",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Hover",
+      "match": {
+        "State": "Hover"
+      },
+      "nodeId": "25:73",
+      "figmaSize": {
+        "w": 280,
+        "h": 36
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "label.width": "203px"
+      },
+      "render": {
+        "part": "State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "background": "var(--surface-raised)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-bolt",
+            "tag": "svg",
+            "style": {
+              "width": "17px",
+              "height": "17px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Bolt",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Wycena pojazdu",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "203px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#25:5"
+            },
+            "text": "Wycena pojazdu",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "StatusCheck",
+            "path": "status-check",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "status-check/icon-circle-check",
+                "tag": "svg",
+                "style": {
+                  "width": "20px",
+                  "height": "20px",
+                  "overflow": "hidden",
+                  "color": "var(--status-success-text)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "CircleCheck",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Pressed",
+      "match": {
+        "State": "Pressed"
+      },
+      "nodeId": "25:81",
+      "figmaSize": {
+        "w": 280,
+        "h": 36
+      },
+      "tokens": {
+        "background": "var(--surface-sunken)",
+        "label.width": "203px"
+      },
+      "render": {
+        "part": "State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "background": "var(--surface-sunken)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-bolt",
+            "tag": "svg",
+            "style": {
+              "width": "17px",
+              "height": "17px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Bolt",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Wycena pojazdu",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "203px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#25:5"
+            },
+            "text": "Wycena pojazdu",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "StatusCheck",
+            "path": "status-check",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "status-check/icon-circle-check",
+                "tag": "svg",
+                "style": {
+                  "width": "20px",
+                  "height": "20px",
+                  "overflow": "hidden",
+                  "color": "var(--status-success-text)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "CircleCheck",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Focus",
+      "match": {
+        "State": "Focus"
+      },
+      "nodeId": "25:89",
+      "figmaSize": {
+        "w": 280,
+        "h": 38
+      },
+      "tokens": {
+        "background": "var(--surface-row)",
+        "borderColor": "var(--accent-default)",
+        "borderWidth": "1px",
+        "label.width": "201px"
+      },
+      "render": {
+        "part": "State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "background": "var(--surface-row)",
+          "border": "1px solid var(--accent-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-bolt",
+            "tag": "svg",
+            "style": {
+              "width": "17px",
+              "height": "17px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Bolt",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Wycena pojazdu",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "201px",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#25:5"
+            },
+            "text": "Wycena pojazdu",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "StatusCheck",
+            "path": "status-check",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "status-check/icon-circle-check",
+                "tag": "svg",
+                "style": {
+                  "width": "20px",
+                  "height": "20px",
+                  "overflow": "hidden",
+                  "color": "var(--status-success-text)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "CircleCheck",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-bolt.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-bolt"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

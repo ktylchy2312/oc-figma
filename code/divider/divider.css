@@ -1,0 +1,16 @@
+/* Divider — сгенерировано из components/divider/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 369px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 1px — нет шкалы размеров: высота задана числом */
+.oc-divider {
+  width: 369px;
+  height: 1px;
+  align-self: stretch;
+  background: var(--border-default);
+  overflow: hidden;
+}
+
+/* ---- варианты ---- */

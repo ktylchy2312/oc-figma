@@ -1,0 +1,98 @@
+<!-- @dsCard group="Cards" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>DocsHeader — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">DocsHeader</h1>
+  <p class="ds-meta">Cards · molecule · 4 вариантов · Figma 25:268 · страница Core · Токенов задействовано: 12 · без токена: 6</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="Status=Complete, Expanded=False">
+    <div style="width:280px;height:36px;background:var(--surface-row);border:1px solid var(--border-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:18px;height:18px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-document"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:161px;color:var(--text-primary)" data-part="dokumenty">Dokumenty</span>
+      <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="chip">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="chip/label">3/5</span>
+      </div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">Status=Complete, Expanded=False</code>
+  </div>
+  <div class="ds-cell" data-variant="Status=Complete, Expanded=True">
+    <div style="width:280px;height:36px;background:var(--surface-row);border:1px solid var(--border-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:18px;height:18px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-document"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:161px;color:var(--text-primary)" data-part="dokumenty">Dokumenty</span>
+      <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="chip">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="chip/label">3/5</span>
+      </div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;transform:rotate(-180deg);transform-origin:center;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">Status=Complete, Expanded=True</code>
+  </div>
+  <div class="ds-cell" data-variant="Status=Incomplete, Expanded=False">
+    <div style="width:280px;height:36px;background:var(--surface-row);border:1px solid var(--border-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-2) var(--space-3) var(--space-2) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:18px;height:18px;overflow:hidden;color:var(--status-warning-text);stroke-width:1;flex:none" data-part="icon-warning"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:161px;color:var(--text-primary)" data-part="dokumenty">Dokumenty</span>
+      <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="chip">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="chip/label">3/5</span>
+      </div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">Status=Incomplete, Expanded=False</code>
+  </div>
+  <div class="ds-cell" data-variant="Status=Incomplete, Expanded=True">
+    <div style="width:280px;height:36px;background:var(--surface-row);border:1px solid var(--border-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-3) var(--space-0) var(--space-3);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:18px;height:18px;overflow:hidden;color:var(--status-warning-text);stroke-width:1;flex:none" data-part="icon-warning"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:400;line-height:20px;letter-spacing:0px;width:161px;color:var(--text-primary)" data-part="dokumenty">Dokumenty</span>
+      <div style="width:35px;background:var(--surface-raised-hover);border-radius:var(--radius-full);display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-1) var(--space-3) var(--space-1) var(--space-3);justify-content:center;align-items:center" data-part="chip">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:12px;font-weight:700;line-height:16px;letter-spacing:0.6px;text-transform:uppercase;white-space:nowrap;color:var(--text-tertiary)" data-part="chip/label">3/5</span>
+      </div>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;transform:rotate(-180deg);transform-origin:center;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">Status=Incomplete, Expanded=True</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --border-default, --radius-full, --radius-md, --space-0, --space-1, --space-2, --space-3, --status-warning-text, --surface-raised-hover, --surface-row, --text-primary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 280px, height = 36px, borderWidth = 1px, icon-document.iconStrokeWidth = 1, icon-chevron-down.iconStrokeWidth = 1, icon-warning.iconStrokeWidth = 1</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

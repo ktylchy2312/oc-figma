@@ -1,0 +1,67 @@
+/* DocItem — сгенерировано из components/doc-item/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 300px — нет шкалы размеров: ширина задана числом */
+.oc-doc-item {
+  width: 300px;
+  background: var(--surface-background);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-document.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-doc-item__icon-document {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-doc-item__label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 224px;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — icon-button.width = 22px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — icon-button.height = 24px — нет шкалы размеров: высота задана числом */
+.oc-doc-item__icon-button {
+  width: 22px;
+  height: 24px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-button/icon-x.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-doc-item__icon-x {
+  width: 14px;
+  height: 14px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */

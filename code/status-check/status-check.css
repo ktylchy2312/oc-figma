@@ -1,0 +1,50 @@
+/* StatusCheck — сгенерировано из components/status-check/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-status-check {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — icon-circle-check.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+/* TODO: unbound — icon-warning.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+/* TODO: unbound — icon-circle.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+
+/* ---- варианты ---- */
+
+/* State=Done */
+.oc-status-check.oc-status-check--state-done .oc-status-check__icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* State=Warn */
+.oc-status-check.oc-status-check--state-warn .oc-status-check__icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* State=Pending */
+.oc-status-check.oc-status-check--state-pending .oc-status-check__icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}

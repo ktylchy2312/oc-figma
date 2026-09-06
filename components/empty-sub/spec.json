@@ -1,0 +1,117 @@
+{
+  "name": "EmptySub",
+  "slug": "empty-sub",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "33:1543",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#33:104",
+      "default": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj."
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "EmptySub",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "label",
+      "name": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "justify": "MIN",
+    "label.color": "var(--text-disabled)",
+    "label.font": "Type/Caption 12/16px 400",
+    "label.width": "180px",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "33:1543",
+      "figmaSize": {
+        "w": 180,
+        "h": 48
+      },
+      "tokens": {},
+      "render": {
+        "part": "EmptySub",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "width": "180px",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "text-align": "center",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "characters": "Label#33:104"
+            },
+            "text": "Przytrzymaj kartę lewym przyciskiem myszy i upuść ją tutaj.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

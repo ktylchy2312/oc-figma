@@ -1,0 +1,228 @@
+/* OfferTableHeader — сгенерировано из components/offer-table-header/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 1660px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-offer-table-header {
+  width: 1660px;
+  background: var(--surface-raised);
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — zdj-cie.width = 52px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__zdj-cie {
+  width: 52px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__zdj-cie-zdj-cie {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — sygnatura.width = 112px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__sygnatura {
+  width: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__sygnatura-sygnatura {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — nazwa.width = 368px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__nazwa {
+  width: 368px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__nazwa-nazwa {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — pojazd.width = 280px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__pojazd {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__pojazd-pojazd {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — kategoria.width = 280px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__kategoria {
+  width: 280px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__kategoria-kategoria {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — stan-mag.width = 84px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__stan-mag {
+  width: 84px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__stan-mag-stan-mag {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — rynki.width = 108px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__rynki {
+  width: 108px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__rynki-rynki {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — cena.width = 84px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__cena {
+  width: 84px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__cena-cena {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* TODO: unbound — status.width = 132px — нет шкалы размеров: ширина задана числом */
+.oc-offer-table-header__status {
+  width: 132px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-offer-table-header__status-status {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* ---- варианты ---- */

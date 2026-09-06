@@ -1,0 +1,221 @@
+{
+  "name": "GradeBox",
+  "slug": "grade-box",
+  "group": "Cards",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:3224",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#299:0",
+      "default": "A"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Inactive",
+        "Active"
+      ],
+      "default": "Inactive"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "GradeBox",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "label",
+      "name": "A",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "0",
+    "height": "26px",
+    "justify": "CENTER",
+    "label.font": "Type/Label 12/16px 700",
+    "radius": "var(--radius-sm)",
+    "width": "26px"
+  },
+  "variants": [
+    {
+      "key": "State=Inactive",
+      "match": {
+        "State": "Inactive"
+      },
+      "nodeId": "395:3225",
+      "figmaSize": {
+        "w": 26,
+        "h": 26
+      },
+      "tokens": {
+        "borderColor": "var(--border-default)",
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "State=Inactive",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "26px",
+          "height": "26px",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "A",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#299:0"
+            },
+            "text": "A",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Active",
+      "match": {
+        "State": "Active"
+      },
+      "nodeId": "395:3227",
+      "figmaSize": {
+        "w": 26,
+        "h": 26
+      },
+      "tokens": {
+        "background": "var(--status-success-bg)",
+        "borderColor": "var(--status-success-border)",
+        "label.color": "var(--status-success-text)"
+      },
+      "render": {
+        "part": "State=Active",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "26px",
+          "height": "26px",
+          "background": "var(--status-success-bg)",
+          "border": "1px solid var(--status-success-border)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "A",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "white-space": "nowrap",
+              "color": "var(--status-success-text)"
+            },
+            "propRef": {
+              "characters": "Label#299:0"
+            },
+            "text": "A",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "26px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "26px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

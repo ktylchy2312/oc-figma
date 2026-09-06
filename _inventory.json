@@ -1,0 +1,1328 @@
+{
+  "source": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "file": "OC-Kontrol",
+    "index": "figma-dump/components-index.json"
+  },
+  "totals": {
+    "components": 72,
+    "sets": 41,
+    "singles": 31,
+    "byLevel": {
+      "molecule": 29,
+      "organism": 17,
+      "atom": 26
+    },
+    "byGroup": {
+      "Actions": 9,
+      "Feedback": 13,
+      "Cards": 16,
+      "Stage": 6,
+      "Foundations": 3,
+      "Overlays": 3,
+      "Forms": 7,
+      "Navigation": 15
+    },
+    "byPage": {
+      "Core": 66,
+      "MAG-KONTROL": 6
+    },
+    "variantObjectsTotal": 283
+  },
+  "problems": {
+    "duplicateSlugs": [],
+    "ungrouped": []
+  },
+  "components": [
+    {
+      "slug": "action-item",
+      "name": "ActionItem",
+      "group": "Actions",
+      "path": "components/action-item/",
+      "nodeId": "448:9943",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "action-row",
+      "name": "ActionRow",
+      "group": "Actions",
+      "path": "components/action-row/",
+      "nodeId": "25:97",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 4,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons",
+        "StatusCheck"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "add-row",
+      "name": "AddRow",
+      "group": "Actions",
+      "path": "components/add-row/",
+      "nodeId": "395:2738",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "alert-bell",
+      "name": "AlertBell",
+      "group": "Feedback",
+      "path": "components/alert-bell/",
+      "nodeId": "395:2756",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 3,
+      "axes": [
+        "Tone"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons",
+        "CountBadge"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "alert-button",
+      "name": "AlertButton",
+      "group": "Actions",
+      "path": "components/alert-button/",
+      "nodeId": "395:2773",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 9,
+      "axes": [
+        "Tone",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "AlertBell"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "archive-row",
+      "name": "ArchiveRow",
+      "group": "Cards",
+      "path": "components/archive-row/",
+      "nodeId": "395:2815",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Chip",
+        "DocProgress",
+        "StatusPill"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "archive-table",
+      "name": "ArchiveTable",
+      "group": "Cards",
+      "path": "components/archive-table/",
+      "nodeId": "448:9110",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "ArchiveTableHeader",
+        "ArchiveRow"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "archive-table-header",
+      "name": "ArchiveTableHeader",
+      "group": "Cards",
+      "path": "components/archive-table-header/",
+      "nodeId": "448:11242",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "board-column-header",
+      "name": "BoardColumnHeader",
+      "group": "Stage",
+      "path": "components/board-column-header/",
+      "nodeId": "448:8151",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "CountChip"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "brand-mark",
+      "name": "BrandMark",
+      "group": "Foundations",
+      "path": "components/brand-mark/",
+      "nodeId": "448:11207",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "button",
+      "name": "Button",
+      "group": "Actions",
+      "path": "components/button/",
+      "nodeId": "27:1078",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 12,
+      "axes": [
+        "Variant",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "button-group",
+      "name": "ButtonGroup",
+      "group": "Actions",
+      "path": "components/button-group/",
+      "nodeId": "333:3749",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Button"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "car-card",
+      "name": "CarCard",
+      "group": "Cards",
+      "path": "components/car-card/",
+      "nodeId": "395:2871",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 8,
+      "axes": [
+        "Size",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "OcStatus",
+        "ActionRow",
+        "DocsHeader",
+        "DocRow"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "card-drag-overlay",
+      "name": "CardDragOverlay",
+      "group": "Overlays",
+      "path": "components/card-drag-overlay/",
+      "nodeId": "448:8448",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "CarCard"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "cell-two-line",
+      "name": "CellTwoLine",
+      "group": "Cards",
+      "path": "components/cell-two-line/",
+      "nodeId": "333:3746",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "chip",
+      "name": "Chip",
+      "group": "Forms",
+      "path": "components/chip/",
+      "nodeId": "41:1750",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 2,
+      "axes": [
+        "Variant"
+      ],
+      "page": "Core",
+      "usedBy": 4,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "column-header",
+      "name": "ColumnHeader",
+      "group": "Stage",
+      "path": "components/column-header/",
+      "nodeId": "395:2624",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "count-badge",
+      "name": "CountBadge",
+      "group": "Feedback",
+      "path": "components/count-badge/",
+      "nodeId": "327:3703",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 3,
+      "axes": [
+        "Tone"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "count-chip",
+      "name": "CountChip",
+      "group": "Feedback",
+      "path": "components/count-chip/",
+      "nodeId": "41:1751",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "dashboard",
+      "name": "Dashboard",
+      "group": "Navigation",
+      "path": "components/dashboard/",
+      "nodeId": "448:8112",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "DashboardStat"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "dashboard-stat",
+      "name": "DashboardStat",
+      "group": "Cards",
+      "path": "components/dashboard-stat/",
+      "nodeId": "395:3055",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 2,
+      "axes": [
+        "Variant"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "delete-stage-dialog",
+      "name": "DeleteStageDialog",
+      "group": "Overlays",
+      "path": "components/delete-stage-dialog/",
+      "nodeId": "448:9401",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Dialog"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "dialog",
+      "name": "Dialog",
+      "group": "Overlays",
+      "path": "components/dialog/",
+      "nodeId": "334:3770",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "ButtonGroup"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "divider",
+      "name": "Divider",
+      "group": "Foundations",
+      "path": "components/divider/",
+      "nodeId": "62:10311",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "doc-item",
+      "name": "DocItem",
+      "group": "Cards",
+      "path": "components/doc-item/",
+      "nodeId": "448:9905",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "doc-progress",
+      "name": "DocProgress",
+      "group": "Cards",
+      "path": "components/doc-progress/",
+      "nodeId": "299:2127",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 5,
+      "axes": [
+        "Filled"
+      ],
+      "page": "Core",
+      "usedBy": 2,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "doc-row",
+      "name": "DocRow",
+      "group": "Cards",
+      "path": "components/doc-row/",
+      "nodeId": "25:211",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 12,
+      "axes": [
+        "Status",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons",
+        "StatusCheck"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "docs-header",
+      "name": "DocsHeader",
+      "group": "Cards",
+      "path": "components/docs-header/",
+      "nodeId": "25:268",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "Status",
+        "Expanded"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons",
+        "Chip"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "drop-zone",
+      "name": "DropZone",
+      "group": "Forms",
+      "path": "components/drop-zone/",
+      "nodeId": "33:1545",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "empty-art",
+      "name": "EmptyArt",
+      "group": "Feedback",
+      "path": "components/empty-art/",
+      "nodeId": "32:1532",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "empty-state",
+      "name": "EmptyState",
+      "group": "Feedback",
+      "path": "components/empty-state/",
+      "nodeId": "33:1607",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "State",
+        "Density"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "EmptyArt",
+        "EmptyTitle",
+        "EmptySub"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "empty-sub",
+      "name": "EmptySub",
+      "group": "Feedback",
+      "path": "components/empty-sub/",
+      "nodeId": "33:1543",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "empty-title",
+      "name": "EmptyTitle",
+      "group": "Feedback",
+      "path": "components/empty-title/",
+      "nodeId": "33:1541",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "etapy-row",
+      "name": "EtapyRow",
+      "group": "Stage",
+      "path": "components/etapy-row/",
+      "nodeId": "299:3068",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Chip",
+        "StatusPill",
+        "DocProgress"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "etapy-table",
+      "name": "EtapyTable",
+      "group": "Stage",
+      "path": "components/etapy-table/",
+      "nodeId": "448:9575",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "EtapyTableHeader",
+        "EtapyRow"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "etapy-table-header",
+      "name": "EtapyTableHeader",
+      "group": "Stage",
+      "path": "components/etapy-table-header/",
+      "nodeId": "448:11277",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "filter-button",
+      "name": "FilterButton",
+      "group": "Actions",
+      "path": "components/filter-button/",
+      "nodeId": "79:10531",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "MAG-KONTROL",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "filter-option",
+      "name": "FilterOption",
+      "group": "Forms",
+      "path": "components/filter-option/",
+      "nodeId": "395:2659",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 6,
+      "axes": [
+        "Key",
+        "Selected"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "form-field",
+      "name": "FormField",
+      "group": "Forms",
+      "path": "components/form-field/",
+      "nodeId": "41:1838",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 12,
+      "axes": [
+        "Variant",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "grade-box",
+      "name": "GradeBox",
+      "group": "Cards",
+      "path": "components/grade-box/",
+      "nodeId": "395:3224",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "icon-button",
+      "name": "IconButton",
+      "group": "Actions",
+      "path": "components/icon-button/",
+      "nodeId": "27:1141",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 16,
+      "axes": [
+        "Size",
+        "Tone",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "icons",
+      "name": "Icons",
+      "group": "Foundations",
+      "path": "components/icons/",
+      "nodeId": "56:2356",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 58,
+      "axes": [
+        "Icon",
+        "Style"
+      ],
+      "page": "Core",
+      "usedBy": 23,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "inline-note",
+      "name": "InlineNote",
+      "group": "Feedback",
+      "path": "components/inline-note/",
+      "nodeId": "333:3744",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "insert-stage-button",
+      "name": "InsertStageButton",
+      "group": "Actions",
+      "path": "components/insert-stage-button/",
+      "nodeId": "395:3234",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "market-chip",
+      "name": "MarketChip",
+      "group": "Forms",
+      "path": "components/market-chip/",
+      "nodeId": "194:2029",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "MAG-KONTROL",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "nav-item",
+      "name": "NavItem",
+      "group": "Navigation",
+      "path": "components/nav-item/",
+      "nodeId": "32:1311",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 8,
+      "axes": [
+        "State",
+        "Collapsed"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "oc-status",
+      "name": "OcStatus",
+      "group": "Feedback",
+      "path": "components/oc-status/",
+      "nodeId": "395:3297",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "offer-row",
+      "name": "OfferRow",
+      "group": "Cards",
+      "path": "components/offer-row/",
+      "nodeId": "194:2953",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "MAG-KONTROL",
+      "usedBy": 1,
+      "uses": [
+        "Chip",
+        "MarketChip",
+        "StatusPill"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "offer-table",
+      "name": "OfferTable",
+      "group": "Cards",
+      "path": "components/offer-table/",
+      "nodeId": "194:3141",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "MAG-KONTROL",
+      "usedBy": 0,
+      "uses": [
+        "OfferTableHeader",
+        "OfferRow"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "offer-table-header",
+      "name": "OfferTableHeader",
+      "group": "Cards",
+      "path": "components/offer-table-header/",
+      "nodeId": "194:2066",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "MAG-KONTROL",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "page-arrow",
+      "name": "PageArrow",
+      "group": "Navigation",
+      "path": "components/page-arrow/",
+      "nodeId": "31:1204",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 8,
+      "axes": [
+        "Direction",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "page-header",
+      "name": "PageHeader",
+      "group": "Navigation",
+      "path": "components/page-header/",
+      "nodeId": "333:3760",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "page-number",
+      "name": "PageNumber",
+      "group": "Navigation",
+      "path": "components/page-number/",
+      "nodeId": "32:1224",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 3,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "pagination",
+      "name": "Pagination",
+      "group": "Navigation",
+      "path": "components/pagination/",
+      "nodeId": "32:1233",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "PageArrow",
+        "PageNumber"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "part-card",
+      "name": "PartCard",
+      "group": "Cards",
+      "path": "components/part-card/",
+      "nodeId": "395:2449",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "State"
+      ],
+      "page": "MAG-KONTROL",
+      "usedBy": 0,
+      "uses": [
+        "GradeBox"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "search-input",
+      "name": "SearchInput",
+      "group": "Forms",
+      "path": "components/search-input/",
+      "nodeId": "62:10460",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "segment-option",
+      "name": "SegmentOption",
+      "group": "Navigation",
+      "path": "components/segment-option/",
+      "nodeId": "401:7782",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 8,
+      "axes": [
+        "Active",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "select",
+      "name": "Select",
+      "group": "Forms",
+      "path": "components/select/",
+      "nodeId": "333:3738",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 4,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "settings-card",
+      "name": "SettingsCard",
+      "group": "Cards",
+      "path": "components/settings-card/",
+      "nodeId": "333:3765",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "sidebar",
+      "name": "Sidebar",
+      "group": "Navigation",
+      "path": "components/sidebar/",
+      "nodeId": "453:11463",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 2,
+      "axes": [
+        "Collapsed"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "BrandMark",
+        "NavItem"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "sidebar-footer",
+      "name": "SidebarFooter",
+      "group": "Navigation",
+      "path": "components/sidebar-footer/",
+      "nodeId": "448:8087",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Divider"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "stage-body",
+      "name": "StageBody",
+      "group": "Stage",
+      "path": "components/stage-body/",
+      "nodeId": "395:3340",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 2,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "EmptyState"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "status-check",
+      "name": "StatusCheck",
+      "group": "Feedback",
+      "path": "components/status-check/",
+      "nodeId": "24:56",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 3,
+      "axes": [
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 2,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "status-dot",
+      "name": "StatusDot",
+      "group": "Feedback",
+      "path": "components/status-dot/",
+      "nodeId": "323:3670",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 4,
+      "axes": [
+        "Tone"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "status-pill",
+      "name": "StatusPill",
+      "group": "Feedback",
+      "path": "components/status-pill/",
+      "nodeId": "194:2046",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 4,
+      "axes": [
+        "Status"
+      ],
+      "page": "Core",
+      "usedBy": 3,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "tab",
+      "name": "Tab",
+      "group": "Navigation",
+      "path": "components/tab/",
+      "nodeId": "32:1415",
+      "kind": "SET",
+      "level": "molecule",
+      "variantCount": 6,
+      "axes": [
+        "Active",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "tab-bar",
+      "name": "TabBar",
+      "group": "Navigation",
+      "path": "components/tab-bar/",
+      "nodeId": "44:3315",
+      "kind": "ONE",
+      "level": "organism",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Tab"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "tab-icon",
+      "name": "TabIcon",
+      "group": "Navigation",
+      "path": "components/tab-icon/",
+      "nodeId": "32:1495",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "Icons"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "tooltip",
+      "name": "Tooltip",
+      "group": "Feedback",
+      "path": "components/tooltip/",
+      "nodeId": "333:3768",
+      "kind": "ONE",
+      "level": "atom",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "underline-tab",
+      "name": "UnderlineTab",
+      "group": "Navigation",
+      "path": "components/underline-tab/",
+      "nodeId": "335:3834",
+      "kind": "SET",
+      "level": "atom",
+      "variantCount": 6,
+      "axes": [
+        "Active",
+        "State"
+      ],
+      "page": "Core",
+      "usedBy": 1,
+      "uses": [],
+      "role": "source"
+    },
+    {
+      "slug": "underline-tabs",
+      "name": "UnderlineTabs",
+      "group": "Navigation",
+      "path": "components/underline-tabs/",
+      "nodeId": "335:3835",
+      "kind": "ONE",
+      "level": "molecule",
+      "variantCount": 1,
+      "axes": [],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "UnderlineTab"
+      ],
+      "role": "source"
+    },
+    {
+      "slug": "view-toggle",
+      "name": "ViewToggle",
+      "group": "Navigation",
+      "path": "components/view-toggle/",
+      "nodeId": "401:7851",
+      "kind": "SET",
+      "level": "organism",
+      "variantCount": 2,
+      "axes": [
+        "Value"
+      ],
+      "page": "Core",
+      "usedBy": 0,
+      "uses": [
+        "SegmentOption"
+      ],
+      "role": "source"
+    }
+  ]
+}

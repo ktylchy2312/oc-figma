@@ -1,0 +1,73 @@
+<!-- @dsCard group="Feedback" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>OcStatus — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">OcStatus</h1>
+  <p class="ds-meta">Feedback · molecule · 4 вариантов · Figma 395:3297 · страница Core · Токенов задействовано: 6 · без токена: 2</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Active">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-success-text);stroke-width:1.5;flex:none" data-part="icon-clock"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--status-success-text)" data-part="label">OC: 55 dni</span>
+    </div>
+    <code class="ds-cell-label">State=Active</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Soon">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-warning-text);stroke-width:1.5;flex:none" data-part="icon-clock"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--status-warning-text)" data-part="label">OC: 55 dni</span>
+    </div>
+    <code class="ds-cell-label">State=Soon</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Expired">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-error-text);stroke-width:1.5;flex:none" data-part="icon-clock"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--status-error-text)" data-part="label">OC: 55 dni</span>
+    </div>
+    <code class="ds-cell-label">State=Expired</code>
+  </div>
+  <div class="ds-cell" data-variant="State=None">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--text-tertiary);stroke-width:1.5;flex:none" data-part="icon-circle"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="label">OC: 55 dni</span>
+    </div>
+    <code class="ds-cell-label">State=None</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --space-0, --space-2, --status-error-text, --status-success-text, --status-warning-text, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> icon-clock.iconStrokeWidth = 1.5, icon-circle.iconStrokeWidth = 1.5</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

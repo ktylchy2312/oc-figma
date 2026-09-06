@@ -1,0 +1,57 @@
+/* EmptyArt — сгенерировано из components/empty-art/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 64px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 56px — нет шкалы размеров: высота задана числом */
+.oc-empty-art {
+  width: 64px;
+  height: 56px;
+  position: relative;
+}
+
+/* TODO: unbound — doc1.width = 36px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — doc1.height = 28px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — doc1.borderWidth = 1.5px — нет токена под толщину обводки */
+.oc-empty-art__doc1 {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 36px;
+  height: 28px;
+  background: var(--surface-default);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* TODO: unbound — doc2.width = 36px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — doc2.height = 28px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — doc2.borderWidth = 1.5px — нет токена под толщину обводки */
+.oc-empty-art__doc2 {
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  width: 36px;
+  height: 28px;
+  background: var(--surface-column);
+  border: 1.5px solid var(--text-disabled);
+  border-style: dashed;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* TODO: unbound — cursor.width = 32px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — cursor.height = 32px — нет шкалы размеров: высота задана числом */
+.oc-empty-art__cursor {
+  position: absolute;
+  left: 34px;
+  top: 26px;
+  width: 32px;
+  height: 32px;
+  overflow: visible;
+  flex: none;
+}
+
+/* ---- варианты ---- */

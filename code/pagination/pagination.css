@@ -1,0 +1,158 @@
+/* Pagination — сгенерировано из components/pagination/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-pagination {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-pagination__controls {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — controls/page-arrow.borderWidth = 1px — нет токена под толщину обводки */
+.oc-pagination__page-arrow {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-pagination__icon-chevron-left {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-pagination__page-number {
+  height: 32px;
+  background: var(--accent-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-2) var(--space-0) var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-pagination__page-number-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-on-accent);
+}
+
+/* TODO: unbound — controls/page-number-2.borderWidth = 1px — нет токена под толщину обводки */
+.oc-pagination__page-number-2 {
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-2) var(--space-0) var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-pagination__page-number-2-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — controls/page-number-3.borderWidth = 1px — нет токена под толщину обводки */
+.oc-pagination__page-number-3 {
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-2) var(--space-0) var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-pagination__page-number-3-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — controls/page-arrow-2.borderWidth = 1px — нет токена под толщину обводки */
+.oc-pagination__page-arrow-2 {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-pagination__icon-chevron-right {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-pagination__range-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* ---- варианты ---- */

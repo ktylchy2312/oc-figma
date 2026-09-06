@@ -1,0 +1,147 @@
+/* PageArrow — сгенерировано из components/page-arrow/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 32px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 32px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-page-arrow {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-chevron-left.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+/* TODO: unbound — icon-chevron-right.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+
+/* ---- варианты ---- */
+
+/* Direction=Prev, State=Default */
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-default {
+  background: var(--surface-raised);
+}
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-default .oc-page-arrow__icon-chevron-left {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Prev, State=Hover */
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-hover,
+.oc-page-arrow.oc-page-arrow--direction-prev:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised-hover);
+}
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-hover .oc-page-arrow__icon-chevron-left,
+.oc-page-arrow.oc-page-arrow--direction-prev:not(:disabled):not([aria-disabled="true"]):hover .oc-page-arrow__icon-chevron-left {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Prev, State=Pressed */
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-pressed,
+.oc-page-arrow.oc-page-arrow--direction-prev:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-raised-pressed);
+}
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-pressed .oc-page-arrow__icon-chevron-left,
+.oc-page-arrow.oc-page-arrow--direction-prev:not(:disabled):not([aria-disabled="true"]):active .oc-page-arrow__icon-chevron-left {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Prev, State=Disabled */
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-disabled,
+.oc-page-arrow.oc-page-arrow--direction-prev:disabled,
+.oc-page-arrow.oc-page-arrow--direction-prev[aria-disabled="true"] {
+  background: var(--surface-raised);
+  opacity: var(--opacity-disabled);
+}
+.oc-page-arrow.oc-page-arrow--direction-prev.oc-page-arrow--state-disabled .oc-page-arrow__icon-chevron-left,
+.oc-page-arrow.oc-page-arrow--direction-prev:disabled .oc-page-arrow__icon-chevron-left,
+.oc-page-arrow.oc-page-arrow--direction-prev[aria-disabled="true"] .oc-page-arrow__icon-chevron-left {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Next, State=Default */
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-default {
+  background: var(--surface-raised);
+}
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-default .oc-page-arrow__icon-chevron-right {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Next, State=Hover */
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-hover,
+.oc-page-arrow.oc-page-arrow--direction-next:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised-hover);
+}
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-hover .oc-page-arrow__icon-chevron-right,
+.oc-page-arrow.oc-page-arrow--direction-next:not(:disabled):not([aria-disabled="true"]):hover .oc-page-arrow__icon-chevron-right {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Next, State=Pressed */
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-pressed,
+.oc-page-arrow.oc-page-arrow--direction-next:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-raised-pressed);
+}
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-pressed .oc-page-arrow__icon-chevron-right,
+.oc-page-arrow.oc-page-arrow--direction-next:not(:disabled):not([aria-disabled="true"]):active .oc-page-arrow__icon-chevron-right {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Direction=Next, State=Disabled */
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-disabled,
+.oc-page-arrow.oc-page-arrow--direction-next:disabled,
+.oc-page-arrow.oc-page-arrow--direction-next[aria-disabled="true"] {
+  background: var(--surface-raised);
+  opacity: var(--opacity-disabled);
+}
+.oc-page-arrow.oc-page-arrow--direction-next.oc-page-arrow--state-disabled .oc-page-arrow__icon-chevron-right,
+.oc-page-arrow.oc-page-arrow--direction-next:disabled .oc-page-arrow__icon-chevron-right,
+.oc-page-arrow.oc-page-arrow--direction-next[aria-disabled="true"] .oc-page-arrow__icon-chevron-right {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}

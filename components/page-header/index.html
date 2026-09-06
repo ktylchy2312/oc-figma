@@ -1,0 +1,52 @@
+<!-- @dsCard group="Navigation" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>PageHeader — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">PageHeader</h1>
+  <p class="ds-meta">Navigation · atom · 1 вариант · Figma 333:3760 · страница Core · Токенов задействовано: 5 · без токена: 2</p>
+  <p class="ds-desc">Шапка экрана: заголовок, необязательный подзаголовок, слот действий справа. Есть на всех четырёх экранах и до сих пор рисовался заново на каждом.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="PageHeader">
+    <div style="width:900px;display:flex;flex-direction:row;gap:var(--space-4);justify-content:space-between;align-items:center" data-part="root">
+      <div style="flex:1 1 0%;flex-grow:1;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-1);justify-content:flex-start;align-items:flex-start" data-part="titles">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:32px;font-weight:700;line-height:40px;letter-spacing:-0.2px;white-space:nowrap;color:var(--text-primary)" data-part="titles/title">Etapy</span>
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:400;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--text-tertiary)" data-part="titles/subtitle">12 pojazdów w toku</span>
+      </div>
+      <div style="width:100px;height:100px;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);justify-content:flex-start;align-items:flex-start" data-part="actions"></div>
+    </div>
+    <code class="ds-cell-label">PageHeader</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --space-1, --space-2, --space-4, --text-primary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 900px, actions.emptyHug = 100×100</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

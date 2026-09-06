@@ -1,0 +1,84 @@
+{
+  "name": "Divider",
+  "slug": "divider",
+  "group": "Foundations",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "62:10311",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Divider",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    }
+  ],
+  "base": {
+    "background": "var(--border-default)",
+    "height": "1px",
+    "width": "369px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "62:10311",
+      "figmaSize": {
+        "w": 369,
+        "h": 1
+      },
+      "tokens": {},
+      "render": {
+        "part": "Divider",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "369px",
+          "height": "1px",
+          "align-self": "stretch",
+          "background": "var(--border-default)",
+          "overflow": "hidden"
+        }
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "369px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "1px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

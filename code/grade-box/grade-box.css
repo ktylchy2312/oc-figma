@@ -1,0 +1,50 @@
+/* GradeBox — сгенерировано из components/grade-box/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 26px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 26px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-grade-box {
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-grade-box__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* State=Inactive */
+.oc-grade-box.oc-grade-box--state-inactive {
+  border: 1px solid var(--border-default);
+}
+.oc-grade-box.oc-grade-box--state-inactive .oc-grade-box__label {
+  color: var(--text-tertiary);
+}
+
+/* State=Active */
+.oc-grade-box.oc-grade-box--state-active,
+.oc-grade-box:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--status-success-bg);
+  border: 1px solid var(--status-success-border);
+}
+.oc-grade-box.oc-grade-box--state-active .oc-grade-box__label,
+.oc-grade-box:not(:disabled):not([aria-disabled="true"]):active .oc-grade-box__label {
+  color: var(--status-success-text);
+}

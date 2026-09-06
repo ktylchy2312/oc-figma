@@ -1,0 +1,70 @@
+<!-- @dsCard group="Forms" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>Select — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">Select</h1>
+  <p class="ds-meta">Forms · molecule · 4 вариантов · Figma 333:3738 · страница Core · Токенов задействовано: 10 · без токена: 5</p>
+  <p class="ds-desc">Поле выбора. Геометрия общая с SearchInput и FilterButton — одна семья контролов высотой 40. Filled означает выбранное значение против подсказки и различается цветом текста, а не рамкой.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Default">
+    <div style="width:240px;height:40px;background:var(--surface-background);border:1px solid var(--border-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:0 var(--space-3) 0 var(--space-3);justify-content:space-between;align-items:center" data-part="root">
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:400;line-height:24px;letter-spacing:0px;width:190px;color:var(--text-tertiary)" data-part="value">Wybierz</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:24px;height:24px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Filled">
+    <div style="width:240px;height:40px;background:var(--surface-background);border:1px solid var(--border-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:0 var(--space-3) 0 var(--space-3);justify-content:space-between;align-items:center" data-part="root">
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:400;line-height:24px;letter-spacing:0px;width:190px;color:var(--text-primary)" data-part="value">Wybierz</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:24px;height:24px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Filled</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Focus">
+    <div style="width:240px;height:40px;background:var(--surface-background);border:1px solid var(--accent-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:0 var(--space-3) 0 var(--space-3);justify-content:space-between;align-items:center" data-part="root">
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:400;line-height:24px;letter-spacing:0px;width:190px;color:var(--text-primary)" data-part="value">Wybierz</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:24px;height:24px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Focus</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Disabled">
+    <div style="width:240px;height:40px;background:var(--surface-background);border:1px solid var(--border-subtle);border-radius:var(--radius-md);opacity:0.6;display:flex;flex-direction:row;gap:var(--space-2);padding:0 var(--space-3) 0 var(--space-3);justify-content:space-between;align-items:center" data-part="root">
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:400;line-height:24px;letter-spacing:0px;width:190px;color:var(--text-disabled)" data-part="value">Wybierz</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:24px;height:24px;overflow:hidden;color:var(--text-primary);stroke-width:1.5;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Disabled</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --border-default, --border-subtle, --radius-md, --space-2, --space-3, --surface-background, --text-disabled, --text-primary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 240px, height = 40px, borderWidth = 1px, icon-chevron-down.iconStrokeWidth = 1.5, opacity = 0.6</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

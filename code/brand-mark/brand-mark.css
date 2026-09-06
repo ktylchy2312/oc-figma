@@ -1,0 +1,31 @@
+/* BrandMark — сгенерировано из components/brand-mark/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 32px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 32px — нет шкалы размеров: высота задана числом */
+.oc-brand-mark {
+  width: 32px;
+  height: 32px;
+  background: var(--accent-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-car.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-brand-mark__icon-car {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--border-subtle);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */

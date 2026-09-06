@@ -1,0 +1,509 @@
+{
+  "name": "Dashboard",
+  "slug": "dashboard",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "448:8112",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Dashboard",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "dashboard-stat",
+      "name": "DashboardStat",
+      "element": "div",
+      "component": "DashboardStat",
+      "slug": "dashboard-stat"
+    },
+    {
+      "part": "dashboard-stat/cznie-w-toku",
+      "name": "ŁĄCZNIE W TOKU",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat/7",
+      "name": "7",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat-2",
+      "name": "DashboardStat",
+      "element": "div",
+      "component": "DashboardStat",
+      "slug": "dashboard-stat"
+    },
+    {
+      "part": "dashboard-stat-2/ryzyko-oc",
+      "name": "RYZYKO OC",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat-2/6",
+      "name": "6",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat-3",
+      "name": "DashboardStat",
+      "element": "div",
+      "component": "DashboardStat",
+      "slug": "dashboard-stat"
+    },
+    {
+      "part": "dashboard-stat-3/cznie-w-toku",
+      "name": "ŁĄCZNIE W TOKU",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat-3/7",
+      "name": "7",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat-4",
+      "name": "DashboardStat",
+      "element": "div",
+      "component": "DashboardStat",
+      "slug": "dashboard-stat"
+    },
+    {
+      "part": "dashboard-stat-4/cznie-w-toku",
+      "name": "ŁĄCZNIE W TOKU",
+      "element": "span"
+    },
+    {
+      "part": "dashboard-stat-4/7",
+      "name": "7",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "dashboard-stat-2.align": "MIN",
+    "dashboard-stat-2.background": "var(--surface-column)",
+    "dashboard-stat-2.borderColor": "var(--border-default)",
+    "dashboard-stat-2.borderWidth": "1px",
+    "dashboard-stat-2.direction": "VERTICAL",
+    "dashboard-stat-2.gap": "var(--space-3)",
+    "dashboard-stat-2.justify": "MIN",
+    "dashboard-stat-2.padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+    "dashboard-stat-2.radius": "var(--radius-lg)",
+    "dashboard-stat-2/6.color": "var(--status-error-text)",
+    "dashboard-stat-2/6.font": "Type/Heading 1 32/40px 700",
+    "dashboard-stat-2/ryzyko-oc.color": "var(--text-tertiary)",
+    "dashboard-stat-2/ryzyko-oc.font": "Type/Heading 4 17/24px 700",
+    "dashboard-stat-2/ryzyko-oc.width": "184px",
+    "dashboard-stat-3.align": "MIN",
+    "dashboard-stat-3.background": "var(--surface-column)",
+    "dashboard-stat-3.borderColor": "var(--border-default)",
+    "dashboard-stat-3.borderWidth": "1px",
+    "dashboard-stat-3.direction": "VERTICAL",
+    "dashboard-stat-3.gap": "var(--space-3)",
+    "dashboard-stat-3.justify": "MIN",
+    "dashboard-stat-3.padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+    "dashboard-stat-3.radius": "var(--radius-lg)",
+    "dashboard-stat-3/7.color": "var(--text-primary)",
+    "dashboard-stat-3/7.font": "Type/Heading 1 32/40px 700",
+    "dashboard-stat-3/cznie-w-toku.color": "var(--text-tertiary)",
+    "dashboard-stat-3/cznie-w-toku.font": "Type/Heading 4 17/24px 700",
+    "dashboard-stat-3/cznie-w-toku.width": "184px",
+    "dashboard-stat-4.align": "MIN",
+    "dashboard-stat-4.background": "var(--surface-column)",
+    "dashboard-stat-4.borderColor": "var(--border-default)",
+    "dashboard-stat-4.borderWidth": "1px",
+    "dashboard-stat-4.direction": "VERTICAL",
+    "dashboard-stat-4.gap": "var(--space-3)",
+    "dashboard-stat-4.justify": "MIN",
+    "dashboard-stat-4.padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+    "dashboard-stat-4.radius": "var(--radius-lg)",
+    "dashboard-stat-4/7.color": "var(--text-primary)",
+    "dashboard-stat-4/7.font": "Type/Heading 1 32/40px 700",
+    "dashboard-stat-4/cznie-w-toku.color": "var(--text-tertiary)",
+    "dashboard-stat-4/cznie-w-toku.font": "Type/Heading 4 17/24px 700",
+    "dashboard-stat-4/cznie-w-toku.width": "184px",
+    "dashboard-stat.align": "MIN",
+    "dashboard-stat.background": "var(--surface-column)",
+    "dashboard-stat.borderColor": "var(--border-default)",
+    "dashboard-stat.borderWidth": "1px",
+    "dashboard-stat.direction": "VERTICAL",
+    "dashboard-stat.gap": "var(--space-3)",
+    "dashboard-stat.justify": "MIN",
+    "dashboard-stat.padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+    "dashboard-stat.radius": "var(--radius-lg)",
+    "dashboard-stat/7.color": "var(--text-primary)",
+    "dashboard-stat/7.font": "Type/Heading 1 32/40px 700",
+    "dashboard-stat/cznie-w-toku.color": "var(--text-tertiary)",
+    "dashboard-stat/cznie-w-toku.font": "Type/Heading 4 17/24px 700",
+    "dashboard-stat/cznie-w-toku.width": "184px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-3)",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "width": "972px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "448:8112",
+      "figmaSize": {
+        "w": 972,
+        "h": 102
+      },
+      "tokens": {},
+      "render": {
+        "part": "Dashboard",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "972px",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "DashboardStat",
+            "path": "dashboard-stat",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "background": "var(--surface-column)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-lg)",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "ŁĄCZNIE W TOKU",
+                "path": "dashboard-stat/cznie-w-toku",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "17px",
+                  "font-weight": "700",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "184px",
+                  "flex": "none",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "ŁĄCZNIE W TOKU",
+                "font": {
+                  "style": "Type/Heading 4",
+                  "size": 17,
+                  "weight": 700,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "7",
+                "path": "dashboard-stat/7",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "32px",
+                  "font-weight": "700",
+                  "line-height": "40px",
+                  "letter-spacing": "-0.2px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "7",
+                "font": {
+                  "style": "Type/Heading 1",
+                  "size": 32,
+                  "weight": 700,
+                  "lineHeight": "40px",
+                  "letterSpacing": "-0.2px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "DashboardStat",
+            "path": "dashboard-stat-2",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "background": "var(--surface-column)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-lg)",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "RYZYKO OC",
+                "path": "dashboard-stat-2/ryzyko-oc",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "17px",
+                  "font-weight": "700",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "184px",
+                  "flex": "none",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "RYZYKO OC",
+                "font": {
+                  "style": "Type/Heading 4",
+                  "size": 17,
+                  "weight": 700,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "6",
+                "path": "dashboard-stat-2/6",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "32px",
+                  "font-weight": "700",
+                  "line-height": "40px",
+                  "letter-spacing": "-0.2px",
+                  "white-space": "nowrap",
+                  "color": "var(--status-error-text)"
+                },
+                "text": "6",
+                "font": {
+                  "style": "Type/Heading 1",
+                  "size": 32,
+                  "weight": 700,
+                  "lineHeight": "40px",
+                  "letterSpacing": "-0.2px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "DashboardStat",
+            "path": "dashboard-stat-3",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "background": "var(--surface-column)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-lg)",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "ŁĄCZNIE W TOKU",
+                "path": "dashboard-stat-3/cznie-w-toku",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "17px",
+                  "font-weight": "700",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "184px",
+                  "flex": "none",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "ŁĄCZNIE W TOKU",
+                "font": {
+                  "style": "Type/Heading 4",
+                  "size": 17,
+                  "weight": 700,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "7",
+                "path": "dashboard-stat-3/7",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "32px",
+                  "font-weight": "700",
+                  "line-height": "40px",
+                  "letter-spacing": "-0.2px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "7",
+                "font": {
+                  "style": "Type/Heading 1",
+                  "size": 32,
+                  "weight": 700,
+                  "lineHeight": "40px",
+                  "letterSpacing": "-0.2px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "DashboardStat",
+            "path": "dashboard-stat-4",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "background": "var(--surface-column)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-lg)",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "ŁĄCZNIE W TOKU",
+                "path": "dashboard-stat-4/cznie-w-toku",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "17px",
+                  "font-weight": "700",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "184px",
+                  "flex": "none",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "ŁĄCZNIE W TOKU",
+                "font": {
+                  "style": "Type/Heading 4",
+                  "size": 17,
+                  "weight": 700,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "7",
+                "path": "dashboard-stat-4/7",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "32px",
+                  "font-weight": "700",
+                  "line-height": "40px",
+                  "letter-spacing": "-0.2px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "7",
+                "font": {
+                  "style": "Type/Heading 1",
+                  "size": 32,
+                  "weight": 700,
+                  "lineHeight": "40px",
+                  "letterSpacing": "-0.2px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "972px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "dashboard-stat.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "dashboard-stat"
+      ]
+    },
+    {
+      "prop": "dashboard-stat-2.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "dashboard-stat-2"
+      ]
+    },
+    {
+      "prop": "dashboard-stat-3.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "dashboard-stat-3"
+      ]
+    },
+    {
+      "prop": "dashboard-stat-4.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "dashboard-stat-4"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

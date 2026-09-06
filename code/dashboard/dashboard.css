@@ -1,0 +1,173 @@
+/* Dashboard — сгенерировано из components/dashboard/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 972px — нет шкалы размеров: ширина задана числом */
+.oc-dashboard {
+  width: 972px;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — dashboard-stat.borderWidth = 1px — нет токена под толщину обводки */
+.oc-dashboard__dashboard-stat {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  background: var(--surface-column);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-dashboard__dashboard-stat-cznie-w-toku {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 184px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.oc-dashboard__dashboard-stat-7 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* TODO: unbound — dashboard-stat-2.borderWidth = 1px — нет токена под толщину обводки */
+.oc-dashboard__dashboard-stat-2 {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  background: var(--surface-column);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-dashboard__ryzyko-oc {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 184px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.oc-dashboard__6 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--status-error-text);
+}
+
+/* TODO: unbound — dashboard-stat-3.borderWidth = 1px — нет токена под толщину обводки */
+.oc-dashboard__dashboard-stat-3 {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  background: var(--surface-column);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-dashboard__dashboard-stat-3-cznie-w-toku {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 184px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.oc-dashboard__dashboard-stat-3-7 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* TODO: unbound — dashboard-stat-4.borderWidth = 1px — нет токена под толщину обводки */
+.oc-dashboard__dashboard-stat-4 {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  background: var(--surface-column);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-6) var(--space-3) var(--space-6);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-dashboard__dashboard-stat-4-cznie-w-toku {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 184px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+
+.oc-dashboard__dashboard-stat-4-7 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* ---- варианты ---- */

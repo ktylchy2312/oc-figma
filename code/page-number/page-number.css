@@ -1,0 +1,60 @@
+/* PageNumber — сгенерировано из components/page-number/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — height = 32px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-page-number {
+  width: fit-content;
+  height: 32px;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-2) var(--space-0) var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-page-number__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-page-number.oc-page-number--state-default {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+}
+.oc-page-number.oc-page-number--state-default .oc-page-number__label {
+  color: var(--text-secondary);
+}
+
+/* State=Hover */
+.oc-page-number.oc-page-number--state-hover,
+.oc-page-number:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised-hover);
+  border: 1px solid var(--border-default);
+}
+.oc-page-number.oc-page-number--state-hover .oc-page-number__label,
+.oc-page-number:not(:disabled):not([aria-disabled="true"]):hover .oc-page-number__label {
+  color: var(--text-secondary);
+}
+
+/* State=Active */
+.oc-page-number.oc-page-number--state-active,
+.oc-page-number:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--accent-default);
+}
+.oc-page-number.oc-page-number--state-active .oc-page-number__label,
+.oc-page-number:not(:disabled):not([aria-disabled="true"]):active .oc-page-number__label {
+  color: var(--text-on-accent);
+}

@@ -1,0 +1,510 @@
+{
+  "name": "Pagination",
+  "slug": "pagination",
+  "group": "Navigation",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "32:1233",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Range Label",
+      "type": "text",
+      "figmaKey": "Range Label#32:67",
+      "default": "Wyświetlono 1–5 z 13"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Pagination",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "controls",
+      "name": "Controls",
+      "element": "div"
+    },
+    {
+      "part": "controls/page-arrow",
+      "name": "PageArrow",
+      "element": "div",
+      "component": "PageArrow",
+      "slug": "page-arrow"
+    },
+    {
+      "part": "controls/page-arrow/icon-chevron-left",
+      "name": "‹",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "ChevronLeft",
+      "slug": "icons"
+    },
+    {
+      "part": "controls/page-number",
+      "name": "PageNumber",
+      "element": "div",
+      "component": "PageNumber",
+      "slug": "page-number"
+    },
+    {
+      "part": "controls/page-number/label",
+      "name": "2",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "controls/page-number-2",
+      "name": "PageNumber",
+      "element": "div",
+      "component": "PageNumber",
+      "slug": "page-number"
+    },
+    {
+      "part": "controls/page-number-2/label",
+      "name": "2",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "controls/page-number-3",
+      "name": "PageNumber",
+      "element": "div",
+      "component": "PageNumber",
+      "slug": "page-number"
+    },
+    {
+      "part": "controls/page-number-3/label",
+      "name": "2",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "controls/page-arrow-2",
+      "name": "PageArrow",
+      "element": "div",
+      "component": "PageArrow",
+      "slug": "page-arrow"
+    },
+    {
+      "part": "controls/page-arrow-2/icon-chevron-right",
+      "name": "›",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "ChevronRight",
+      "slug": "icons"
+    },
+    {
+      "part": "range-label",
+      "name": "Wyświetlono 1–5 z 13",
+      "element": "span",
+      "textProp": "Range Label"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "controls.align": "CENTER",
+    "controls.direction": "HORIZONTAL",
+    "controls.gap": "var(--space-2)",
+    "controls.justify": "MIN",
+    "controls.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "controls/page-arrow-2.align": "CENTER",
+    "controls/page-arrow-2.background": "var(--surface-raised)",
+    "controls/page-arrow-2.borderColor": "var(--border-default)",
+    "controls/page-arrow-2.borderWidth": "1px",
+    "controls/page-arrow-2.direction": "HORIZONTAL",
+    "controls/page-arrow-2.gap": "var(--space-0)",
+    "controls/page-arrow-2.height": "32px",
+    "controls/page-arrow-2.justify": "CENTER",
+    "controls/page-arrow-2.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "controls/page-arrow-2.radius": "var(--radius-md)",
+    "controls/page-arrow-2.width": "32px",
+    "controls/page-arrow-2/icon-chevron-right.height": "24px",
+    "controls/page-arrow-2/icon-chevron-right.icon": "ChevronRight",
+    "controls/page-arrow-2/icon-chevron-right.iconColor": "var(--text-primary)",
+    "controls/page-arrow-2/icon-chevron-right.width": "24px",
+    "controls/page-arrow.align": "CENTER",
+    "controls/page-arrow.background": "var(--surface-raised)",
+    "controls/page-arrow.borderColor": "var(--border-default)",
+    "controls/page-arrow.borderWidth": "1px",
+    "controls/page-arrow.direction": "HORIZONTAL",
+    "controls/page-arrow.gap": "var(--space-0)",
+    "controls/page-arrow.height": "32px",
+    "controls/page-arrow.justify": "CENTER",
+    "controls/page-arrow.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "controls/page-arrow.radius": "var(--radius-md)",
+    "controls/page-arrow.width": "32px",
+    "controls/page-arrow/icon-chevron-left.height": "24px",
+    "controls/page-arrow/icon-chevron-left.icon": "ChevronLeft",
+    "controls/page-arrow/icon-chevron-left.iconColor": "var(--text-primary)",
+    "controls/page-arrow/icon-chevron-left.width": "24px",
+    "controls/page-number-2.align": "CENTER",
+    "controls/page-number-2.background": "var(--surface-raised)",
+    "controls/page-number-2.borderColor": "var(--border-default)",
+    "controls/page-number-2.borderWidth": "1px",
+    "controls/page-number-2.direction": "HORIZONTAL",
+    "controls/page-number-2.gap": "var(--space-0)",
+    "controls/page-number-2.height": "32px",
+    "controls/page-number-2.justify": "CENTER",
+    "controls/page-number-2.padding": "var(--space-0) var(--space-2) var(--space-0) var(--space-2)",
+    "controls/page-number-2.radius": "var(--radius-md)",
+    "controls/page-number-2/label.color": "var(--text-secondary)",
+    "controls/page-number-2/label.font": "Type/Body Medium Alter 15/24px 700",
+    "controls/page-number-3.align": "CENTER",
+    "controls/page-number-3.background": "var(--surface-raised)",
+    "controls/page-number-3.borderColor": "var(--border-default)",
+    "controls/page-number-3.borderWidth": "1px",
+    "controls/page-number-3.direction": "HORIZONTAL",
+    "controls/page-number-3.gap": "var(--space-0)",
+    "controls/page-number-3.height": "32px",
+    "controls/page-number-3.justify": "CENTER",
+    "controls/page-number-3.padding": "var(--space-0) var(--space-2) var(--space-0) var(--space-2)",
+    "controls/page-number-3.radius": "var(--radius-md)",
+    "controls/page-number-3/label.color": "var(--text-secondary)",
+    "controls/page-number-3/label.font": "Type/Body Medium Alter 15/24px 700",
+    "controls/page-number.align": "CENTER",
+    "controls/page-number.background": "var(--accent-default)",
+    "controls/page-number.direction": "HORIZONTAL",
+    "controls/page-number.gap": "var(--space-0)",
+    "controls/page-number.height": "32px",
+    "controls/page-number.justify": "CENTER",
+    "controls/page-number.padding": "var(--space-0) var(--space-2) var(--space-0) var(--space-2)",
+    "controls/page-number.radius": "var(--radius-md)",
+    "controls/page-number/label.color": "var(--text-on-accent)",
+    "controls/page-number/label.font": "Type/Body Medium Alter 15/24px 700",
+    "direction": "VERTICAL",
+    "gap": "var(--space-3)",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "range-label.color": "var(--text-tertiary)",
+    "range-label.font": "Type/Body Small 13/20px 400"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "32:1233",
+      "figmaSize": {
+        "w": 175,
+        "h": 64
+      },
+      "tokens": {},
+      "render": {
+        "part": "Pagination",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Controls",
+            "path": "controls",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "PageArrow",
+                "path": "controls/page-arrow",
+                "tag": "div",
+                "style": {
+                  "width": "32px",
+                  "height": "32px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "‹",
+                    "path": "controls/page-arrow/icon-chevron-left",
+                    "tag": "svg",
+                    "style": {
+                      "width": "24px",
+                      "height": "24px",
+                      "overflow": "hidden",
+                      "color": "var(--text-primary)",
+                      "stroke-width": "1",
+                      "flex": "none"
+                    },
+                    "icon": "ChevronLeft",
+                    "iconStyle": "Regular",
+                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 18L9 12L15 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                  }
+                ]
+              },
+              {
+                "part": "PageNumber",
+                "path": "controls/page-number",
+                "tag": "div",
+                "style": {
+                  "height": "32px",
+                  "background": "var(--accent-default)",
+                  "border-radius": "var(--radius-md)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-2) var(--space-0) var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "2",
+                    "path": "controls/page-number/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "700",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-on-accent)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:63"
+                    },
+                    "text": "1",
+                    "font": {
+                      "style": "Type/Body Medium Alter",
+                      "size": 15,
+                      "weight": 700,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "PageNumber",
+                "path": "controls/page-number-2",
+                "tag": "div",
+                "style": {
+                  "height": "32px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-2) var(--space-0) var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "2",
+                    "path": "controls/page-number-2/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "700",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:63"
+                    },
+                    "text": "2",
+                    "font": {
+                      "style": "Type/Body Medium Alter",
+                      "size": 15,
+                      "weight": 700,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "PageNumber",
+                "path": "controls/page-number-3",
+                "tag": "div",
+                "style": {
+                  "height": "32px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-2) var(--space-0) var(--space-2)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "2",
+                    "path": "controls/page-number-3/label",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "700",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Label#32:63"
+                    },
+                    "text": "3",
+                    "font": {
+                      "style": "Type/Body Medium Alter",
+                      "size": 15,
+                      "weight": 700,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "PageArrow",
+                "path": "controls/page-arrow-2",
+                "tag": "div",
+                "style": {
+                  "width": "32px",
+                  "height": "32px",
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "›",
+                    "path": "controls/page-arrow-2/icon-chevron-right",
+                    "tag": "svg",
+                    "style": {
+                      "width": "24px",
+                      "height": "24px",
+                      "overflow": "hidden",
+                      "color": "var(--text-primary)",
+                      "stroke-width": "1",
+                      "flex": "none"
+                    },
+                    "icon": "ChevronRight",
+                    "iconStyle": "Regular",
+                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18L15 12L9 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Wyświetlono 1–5 z 13",
+            "path": "range-label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Range Label#32:67"
+            },
+            "text": "Wyświetlono 1–5 z 13",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "controls/page-arrow.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "controls/page-arrow"
+      ]
+    },
+    {
+      "prop": "controls/page-number-2.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "controls/page-number-2"
+      ]
+    },
+    {
+      "prop": "controls/page-number-3.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "controls/page-number-3"
+      ]
+    },
+    {
+      "prop": "controls/page-arrow-2.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "controls/page-arrow-2"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

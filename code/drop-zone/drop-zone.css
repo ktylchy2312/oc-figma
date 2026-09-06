@@ -1,0 +1,17 @@
+/* DropZone — сгенерировано из components/drop-zone/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 220px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 120px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1.5px — нет токена под толщину обводки */
+.oc-drop-zone {
+  width: 220px;
+  height: 120px;
+  border: 1.5px solid var(--border-default);
+  border-style: dashed;
+  border-radius: var(--radius-md);
+}
+
+/* ---- варианты ---- */

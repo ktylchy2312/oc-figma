@@ -1,0 +1,179 @@
+/* IconButton — сгенерировано из components/icon-button/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 40px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 40px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — width = 32px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 32px — нет шкалы размеров: высота задана числом */
+.oc-icon-button {
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-x.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-icon-button__icon-x {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */
+
+/* Size=40, Tone=Neutral, State=Default */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral.oc-icon-button--state-default {
+  width: 40px;
+  height: 40px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=40, Tone=Neutral, State=Hover */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral.oc-icon-button--state-hover,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):hover {
+  width: 40px;
+  height: 40px;
+  background: var(--surface-raised-hover);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=40, Tone=Neutral, State=Pressed */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral.oc-icon-button--state-pressed,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):active {
+  width: 40px;
+  height: 40px;
+  background: var(--surface-raised-pressed);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=40, Tone=Neutral, State=Disabled */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral.oc-icon-button--state-disabled,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral:disabled,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-neutral[aria-disabled="true"] {
+  width: 40px;
+  height: 40px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  opacity: var(--opacity-disabled);
+}
+
+/* Size=40, Tone=Danger, State=Default */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger.oc-icon-button--state-default {
+  width: 40px;
+  height: 40px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=40, Tone=Danger, State=Hover */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger.oc-icon-button--state-hover,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover {
+  width: 40px;
+  height: 40px;
+  background: var(--status-error-bg);
+  border: 1px solid var(--status-error-border);
+}
+
+/* Size=40, Tone=Danger, State=Pressed */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger.oc-icon-button--state-pressed,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active {
+  width: 40px;
+  height: 40px;
+  background: var(--status-error-bg-hover);
+  border: 1px solid var(--status-error-border);
+}
+
+/* Size=40, Tone=Danger, State=Disabled */
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger.oc-icon-button--state-disabled,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger:disabled,
+.oc-icon-button.oc-icon-button--size-40.oc-icon-button--tone-danger[aria-disabled="true"] {
+  width: 40px;
+  height: 40px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  opacity: var(--opacity-disabled);
+}
+
+/* Size=32, Tone=Neutral, State=Default */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral.oc-icon-button--state-default {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=32, Tone=Neutral, State=Hover */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral.oc-icon-button--state-hover,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):hover {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised-hover);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=32, Tone=Neutral, State=Pressed */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral.oc-icon-button--state-pressed,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):active {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised-pressed);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=32, Tone=Neutral, State=Disabled */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral.oc-icon-button--state-disabled,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral:disabled,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-neutral[aria-disabled="true"] {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  opacity: var(--opacity-disabled);
+}
+
+/* Size=32, Tone=Danger, State=Default */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger.oc-icon-button--state-default {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+}
+
+/* Size=32, Tone=Danger, State=Hover */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger.oc-icon-button--state-hover,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover {
+  width: 32px;
+  height: 32px;
+  background: var(--status-error-bg);
+  border: 1px solid var(--status-error-border);
+}
+
+/* Size=32, Tone=Danger, State=Pressed */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger.oc-icon-button--state-pressed,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active {
+  width: 32px;
+  height: 32px;
+  background: var(--status-error-bg-hover);
+  border: 1px solid var(--status-error-border);
+}
+
+/* Size=32, Tone=Danger, State=Disabled */
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger.oc-icon-button--state-disabled,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger:disabled,
+.oc-icon-button.oc-icon-button--size-32.oc-icon-button--tone-danger[aria-disabled="true"] {
+  width: 32px;
+  height: 32px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+  opacity: var(--opacity-disabled);
+}

@@ -1,0 +1,268 @@
+{
+  "name": "DashboardStat",
+  "slug": "dashboard-stat",
+  "group": "Cards",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:3055",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#41:143",
+      "default": "ŁĄCZNIE W TOKU"
+    },
+    {
+      "name": "Value",
+      "type": "text",
+      "figmaKey": "Value#41:146",
+      "default": "7"
+    },
+    {
+      "name": "Variant",
+      "type": "variant",
+      "figmaKey": "Variant",
+      "values": [
+        "Neutral",
+        "Alert"
+      ],
+      "default": "Neutral"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "DashboardStat",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FILL",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "cznie-w-toku",
+      "name": "ŁĄCZNIE W TOKU",
+      "element": "span"
+    },
+    {
+      "part": "7",
+      "name": "7",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "background": "var(--surface-column)",
+    "borderColor": "var(--border-default)",
+    "borderWidth": "1px",
+    "direction": "VERTICAL",
+    "gap": "var(--space-3)",
+    "justify": "MIN",
+    "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+    "radius": "var(--radius-lg)",
+    "width": "240px"
+  },
+  "variants": [
+    {
+      "key": "Variant=Neutral",
+      "match": {
+        "Variant": "Neutral"
+      },
+      "nodeId": "395:3056",
+      "figmaSize": {
+        "w": 240,
+        "h": 102
+      },
+      "tokens": {
+        "7.color": "var(--text-primary)",
+        "7.font": "Type/Heading 1 32/40px 700",
+        "cznie-w-toku.color": "var(--text-tertiary)",
+        "cznie-w-toku.font": "Type/Heading 4 17/24px 700",
+        "cznie-w-toku.width": "190px"
+      },
+      "render": {
+        "part": "Variant=Neutral",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "240px",
+          "align-self": "stretch",
+          "flex-grow": "1",
+          "background": "var(--surface-column)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "ŁĄCZNIE W TOKU",
+            "path": "cznie-w-toku",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "190px",
+              "flex": "none",
+              "color": "var(--text-tertiary)"
+            },
+            "text": "ŁĄCZNIE W TOKU",
+            "font": {
+              "style": "Type/Heading 4",
+              "size": 17,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "7",
+            "path": "7",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "32px",
+              "font-weight": "700",
+              "line-height": "40px",
+              "letter-spacing": "-0.2px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "text": "7",
+            "font": {
+              "style": "Type/Heading 1",
+              "size": 32,
+              "weight": 700,
+              "lineHeight": "40px",
+              "letterSpacing": "-0.2px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Alert",
+      "match": {
+        "Variant": "Alert"
+      },
+      "nodeId": "395:3059",
+      "figmaSize": {
+        "w": 240,
+        "h": 102
+      },
+      "tokens": {
+        "6.color": "var(--status-error-text)",
+        "6.font": "Type/Heading 1 32/40px 700",
+        "ryzyko-oc.color": "var(--text-tertiary)",
+        "ryzyko-oc.font": "Type/Heading 4 17/24px 700",
+        "ryzyko-oc.width": "190px"
+      },
+      "render": {
+        "part": "Variant=Alert",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "240px",
+          "align-self": "stretch",
+          "flex-grow": "1",
+          "background": "var(--surface-column)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-lg)",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "padding": "var(--space-3) var(--space-6) var(--space-3) var(--space-6)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "RYZYKO OC",
+            "path": "ryzyko-oc",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "17px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "width": "190px",
+              "flex": "none",
+              "color": "var(--text-tertiary)"
+            },
+            "text": "RYZYKO OC",
+            "font": {
+              "style": "Type/Heading 4",
+              "size": 17,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "6",
+            "path": "6",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "32px",
+              "font-weight": "700",
+              "line-height": "40px",
+              "letter-spacing": "-0.2px",
+              "white-space": "nowrap",
+              "color": "var(--status-error-text)"
+            },
+            "text": "6",
+            "font": {
+              "style": "Type/Heading 1",
+              "size": 32,
+              "weight": 700,
+              "lineHeight": "40px",
+              "letterSpacing": "-0.2px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

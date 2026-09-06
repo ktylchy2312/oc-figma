@@ -1,0 +1,73 @@
+<!-- @dsCard group="Stage" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>ColumnHeader — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">ColumnHeader</h1>
+  <p class="ds-meta">Stage · molecule · 2 вариантов · Figma 395:2624 · страница Core · Токенов задействовано: 11 · без токена: 11</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Default">
+    <div style="width:300px;background:var(--surface-background);border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="root">
+      <span style="flex:none;flex-grow:1;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;width:198px;color:var(--text-primary)" data-part="label">KUPIONA</span>
+      <div style="width:26px;height:28px;border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="icon-button">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-button/icon-edit"><path d="M21.1739 6.81189C21.7026 6.28332 21.9997 5.56636 21.9998 4.81875C21.9999 4.07113 21.703 3.3541 21.1744 2.82539C20.6459 2.29668 19.9289 1.99961 19.1813 1.99951C18.4337 1.99942 17.7166 2.29632 17.1879 2.82489L3.84193 16.1739C3.60975 16.4054 3.43805 16.6904 3.34193 17.0039L2.02093 21.3559C1.99509 21.4424 1.99314 21.5342 2.01529 21.6217C2.03743 21.7092 2.08285 21.7891 2.14673 21.8529C2.21061 21.9167 2.29055 21.962 2.37809 21.984C2.46563 22.006 2.55749 22.0039 2.64393 21.9779L6.99693 20.6579C7.3101 20.5626 7.59511 20.392 7.82693 20.1609L21.1739 6.81189Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div style="width:26px;height:28px;border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="icon-button-2">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-button-2/icon-trash"><path d="M10 11V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 11V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <code class="ds-cell-label">State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Edit">
+    <div style="width:300px;background:var(--surface-background);border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-4) var(--space-4) var(--space-4) var(--space-4);justify-content:flex-start;align-items:center" data-part="root">
+      <div style="flex:1 1 0%;height:32px;flex-grow:1;background:var(--surface-default);border:1px solid var(--accent-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-3) var(--space-0) var(--space-3);justify-content:flex-start;align-items:center" data-part="input">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="input/label">KUPIONA</span>
+      </div>
+      <div style="width:26px;height:28px;border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:center;align-items:center" data-part="icon-button">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-button/icon-trash"><path d="M10 11V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 11V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 6H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+    <code class="ds-cell-label">State=Edit</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --border-default, --radius-lg, --radius-md, --space-0, --space-2, --space-3, --space-4, --surface-background, --surface-default, --text-primary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 300px, borderWidth = 1px, icon-button.width = 26px, icon-button.height = 28px, icon-button/icon-edit.iconStrokeWidth = 1, icon-button-2.width = 26px, icon-button-2.height = 28px, icon-button-2/icon-trash.iconStrokeWidth = 1, input.height = 32px, input.borderWidth = 1px, icon-button/icon-trash.iconStrokeWidth = 1</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

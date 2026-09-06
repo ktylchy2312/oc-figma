@@ -1,0 +1,665 @@
+// CarCard — сгенерировано из components/car-card/spec.json. Руками не править.
+import "../../foundations/fonts.css";
+import "../../foundations/tokens.css";
+import "../base.css";
+import "./car-card.css";
+
+const VARIANTS = {
+  "Full|Default": `
+    <div class="oc-car-card oc-car-card--size-full oc-car-card--state-default">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-142">
+          <div class="oc-car-card__frame-142-frame-5">
+            <div class="oc-car-card__frame-142-frame-5-header-row">
+              <span class="oc-car-card__frame-142-frame-5-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-142-frame-5-header-row-oc-status">
+                <svg class="oc-car-card__frame-142-frame-5-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-142-frame-5-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-142-frame-5-meta-row">
+              <span class="oc-car-card__frame-142-frame-5-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-142-frame-5-meta-row-bought">Kupiona: 03.08.2026</span>
+            </div>
+            <span class="oc-car-card__frame-142-frame-5-vin">VIN: ZFA1880000451256</span>
+          </div>
+          <div class="oc-car-card__frame-142-divider"></div>
+          <div class="oc-car-card__frame-142-rows">
+            <div class="oc-car-card__frame-142-rows-action-row">
+              <svg class="oc-car-card__frame-142-rows-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__frame-142-rows-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__frame-142-rows-action-row-status-check">
+                <svg class="oc-car-card__frame-142-rows-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-142-rows-list">
+              <div class="oc-car-card__frame-142-rows-list-docs-header">
+                <svg class="oc-car-card__frame-142-rows-list-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-142-rows-list-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__frame-142-rows-list-docs-header-chip">
+                  <span class="oc-car-card__frame-142-rows-list-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__frame-142-rows-list-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__frame-142-rows-list-doc-list">
+                <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row">
+                  <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-142-rows-list-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-2">
+                  <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-142-rows-list-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-3">
+                  <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-142-rows-list-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-4">
+                  <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-142-rows-list-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__frame-142-rows-list-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__frame-142-rows-list-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Full|Hover": `
+    <div class="oc-car-card oc-car-card--size-full oc-car-card--state-hover">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-151">
+          <div class="oc-car-card__frame-151-frame-5">
+            <div class="oc-car-card__frame-151-frame-5-header-row">
+              <span class="oc-car-card__frame-151-frame-5-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-151-frame-5-header-row-oc-status">
+                <svg class="oc-car-card__frame-151-frame-5-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-151-frame-5-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-151-frame-5-meta-row">
+              <span class="oc-car-card__frame-151-frame-5-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-151-frame-5-meta-row-bought">Kupiona: 03.08.2026</span>
+            </div>
+            <span class="oc-car-card__frame-151-frame-5-vin">VIN: ZFA1880000451256</span>
+          </div>
+          <div class="oc-car-card__frame-151-divider"></div>
+          <div class="oc-car-card__frame-151-rows">
+            <div class="oc-car-card__frame-151-rows-action-row">
+              <svg class="oc-car-card__frame-151-rows-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__frame-151-rows-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__frame-151-rows-action-row-status-check">
+                <svg class="oc-car-card__frame-151-rows-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-151-rows-list">
+              <div class="oc-car-card__frame-151-rows-list-docs-header">
+                <svg class="oc-car-card__frame-151-rows-list-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-151-rows-list-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__frame-151-rows-list-docs-header-chip">
+                  <span class="oc-car-card__frame-151-rows-list-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__frame-151-rows-list-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__frame-151-rows-list-doc-list">
+                <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row">
+                  <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-151-rows-list-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-2">
+                  <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-151-rows-list-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-3">
+                  <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-151-rows-list-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-4">
+                  <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-151-rows-list-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__frame-151-rows-list-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__frame-151-rows-list-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Full|Pressed": `
+    <div class="oc-car-card oc-car-card--size-full oc-car-card--state-pressed">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-152">
+          <div class="oc-car-card__frame-152-frame-5">
+            <div class="oc-car-card__frame-152-frame-5-header-row">
+              <span class="oc-car-card__frame-152-frame-5-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-152-frame-5-header-row-oc-status">
+                <svg class="oc-car-card__frame-152-frame-5-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-152-frame-5-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-152-frame-5-meta-row">
+              <span class="oc-car-card__frame-152-frame-5-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-152-frame-5-meta-row-bought">Kupiona: 03.08.2026</span>
+            </div>
+            <span class="oc-car-card__frame-152-frame-5-vin">VIN: ZFA1880000451256</span>
+          </div>
+          <div class="oc-car-card__frame-152-divider"></div>
+          <div class="oc-car-card__frame-152-rows">
+            <div class="oc-car-card__frame-152-rows-action-row">
+              <svg class="oc-car-card__frame-152-rows-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__frame-152-rows-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__frame-152-rows-action-row-status-check">
+                <svg class="oc-car-card__frame-152-rows-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-152-rows-list">
+              <div class="oc-car-card__frame-152-rows-list-docs-header">
+                <svg class="oc-car-card__frame-152-rows-list-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-152-rows-list-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__frame-152-rows-list-docs-header-chip">
+                  <span class="oc-car-card__frame-152-rows-list-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__frame-152-rows-list-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__frame-152-rows-list-doc-list">
+                <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row">
+                  <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-152-rows-list-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-2">
+                  <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-152-rows-list-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-3">
+                  <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-152-rows-list-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-4">
+                  <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-152-rows-list-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__frame-152-rows-list-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__frame-152-rows-list-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Full|Focus": `
+    <div class="oc-car-card oc-car-card--size-full oc-car-card--state-focus">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-153">
+          <div class="oc-car-card__frame-153-frame-5">
+            <div class="oc-car-card__frame-153-frame-5-header-row">
+              <span class="oc-car-card__frame-153-frame-5-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-153-frame-5-header-row-oc-status">
+                <svg class="oc-car-card__frame-153-frame-5-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-153-frame-5-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-153-frame-5-meta-row">
+              <span class="oc-car-card__frame-153-frame-5-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-153-frame-5-meta-row-bought">Kupiona: 03.08.2026</span>
+            </div>
+            <span class="oc-car-card__frame-153-frame-5-vin">VIN: ZFA1880000451256</span>
+          </div>
+          <div class="oc-car-card__frame-153-divider"></div>
+          <div class="oc-car-card__frame-153-rows">
+            <div class="oc-car-card__frame-153-rows-action-row">
+              <svg class="oc-car-card__frame-153-rows-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__frame-153-rows-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__frame-153-rows-action-row-status-check">
+                <svg class="oc-car-card__frame-153-rows-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-153-rows-list">
+              <div class="oc-car-card__frame-153-rows-list-docs-header">
+                <svg class="oc-car-card__frame-153-rows-list-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-153-rows-list-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__frame-153-rows-list-docs-header-chip">
+                  <span class="oc-car-card__frame-153-rows-list-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__frame-153-rows-list-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__frame-153-rows-list-doc-list">
+                <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row">
+                  <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-153-rows-list-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-2">
+                  <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-153-rows-list-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-3">
+                  <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-153-rows-list-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-4">
+                  <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-153-rows-list-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__frame-153-rows-list-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__frame-153-rows-list-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Compact|Default": `
+    <div class="oc-car-card oc-car-card--size-compact oc-car-card--state-default">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-147">
+          <div class="oc-car-card__frame-147-frame-144">
+            <div class="oc-car-card__frame-147-frame-144-header-row">
+              <span class="oc-car-card__frame-147-frame-144-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-147-frame-144-header-row-oc-status">
+                <svg class="oc-car-card__frame-147-frame-144-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-147-frame-144-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-147-frame-144-meta-row">
+              <span class="oc-car-card__frame-147-frame-144-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-147-frame-144-meta-row-bought">Kupiona: 03.08.2026</span>
+              <span class="oc-car-card__frame-147-frame-144-meta-row-vin">VIN: ZFA1880000451256</span>
+            </div>
+          </div>
+          <div class="oc-car-card__frame-147-divider"></div>
+          <div class="oc-car-card__frame-147-frame-146">
+            <div class="oc-car-card__frame-147-frame-146-action-row">
+              <svg class="oc-car-card__frame-147-frame-146-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__frame-147-frame-146-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__frame-147-frame-146-action-row-status-check">
+                <svg class="oc-car-card__frame-147-frame-146-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-147-frame-146-frame-145">
+              <div class="oc-car-card__frame-147-frame-146-frame-145-docs-header">
+                <svg class="oc-car-card__frame-147-frame-146-frame-145-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-147-frame-146-frame-145-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__frame-147-frame-146-frame-145-docs-header-chip">
+                  <span class="oc-car-card__frame-147-frame-146-frame-145-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__frame-147-frame-146-frame-145-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list">
+                <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row">
+                  <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2">
+                  <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3">
+                  <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4">
+                  <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Compact|Hover": `
+    <div class="oc-car-card oc-car-card--size-compact oc-car-card--state-hover">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-154">
+          <div class="oc-car-card__frame-154-frame-144">
+            <div class="oc-car-card__frame-154-frame-144-header-row">
+              <span class="oc-car-card__frame-154-frame-144-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-154-frame-144-header-row-oc-status">
+                <svg class="oc-car-card__frame-154-frame-144-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-154-frame-144-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-154-frame-144-meta-row">
+              <span class="oc-car-card__frame-154-frame-144-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-154-frame-144-meta-row-bought">Kupiona: 03.08.2026</span>
+              <span class="oc-car-card__frame-154-frame-144-meta-row-vin">VIN: ZFA1880000451256</span>
+            </div>
+          </div>
+          <div class="oc-car-card__frame-154-divider"></div>
+          <div class="oc-car-card__frame-154-frame-146">
+            <div class="oc-car-card__frame-154-frame-146-action-row">
+              <svg class="oc-car-card__frame-154-frame-146-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__frame-154-frame-146-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__frame-154-frame-146-action-row-status-check">
+                <svg class="oc-car-card__frame-154-frame-146-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-154-frame-146-frame-145">
+              <div class="oc-car-card__frame-154-frame-146-frame-145-docs-header">
+                <svg class="oc-car-card__frame-154-frame-146-frame-145-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-154-frame-146-frame-145-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__frame-154-frame-146-frame-145-docs-header-chip">
+                  <span class="oc-car-card__frame-154-frame-146-frame-145-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__frame-154-frame-146-frame-145-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list">
+                <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row">
+                  <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2">
+                  <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3">
+                  <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4">
+                  <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Compact|Pressed": `
+    <div class="oc-car-card oc-car-card--size-compact oc-car-card--state-pressed">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__frame-155">
+          <div class="oc-car-card__frame-155-frame-144">
+            <div class="oc-car-card__frame-155-frame-144-header-row">
+              <span class="oc-car-card__frame-155-frame-144-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-155-frame-144-header-row-oc-status">
+                <svg class="oc-car-card__frame-155-frame-144-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-155-frame-144-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-155-frame-144-meta-row">
+              <span class="oc-car-card__frame-155-frame-144-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-155-frame-144-meta-row-bought">Kupiona: 03.08.2026</span>
+              <span class="oc-car-card__frame-155-frame-144-meta-row-vin">VIN: ZFA1880000451256</span>
+            </div>
+          </div>
+          <div class="oc-car-card__frame-155-divider"></div>
+          <div class="oc-car-card__frame-155-frame-156">
+            <div class="oc-car-card__frame-155-frame-156-frame-146">
+              <div class="oc-car-card__frame-155-frame-156-frame-146-action-row">
+                <svg class="oc-car-card__frame-155-frame-156-frame-146-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-155-frame-156-frame-146-action-row-label">Wycena pojazdu</span>
+                <div class="oc-car-card__frame-155-frame-156-frame-146-action-row-status-check">
+                  <svg class="oc-car-card__frame-155-frame-156-frame-146-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+              </div>
+              <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145">
+                <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header">
+                  <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-dokumenty">Dokumenty</span>
+                  <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip">
+                    <span class="oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip-label">3/5</span>
+                  </div>
+                  <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list">
+                  <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row">
+                    <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                    <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-status-check">
+                      <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2">
+                    <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-label">Umowa kupna</span>
+                    <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check">
+                      <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3">
+                    <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-label">Polisa OC</span>
+                    <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check">
+                      <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
+                  <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4">
+                    <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-label">Zaświadczenie</span>
+                    <div class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check">
+                      <svg class="oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  "Compact|Focus": `
+    <div class="oc-car-card oc-car-card--size-compact oc-car-card--state-focus">
+      <div class="oc-car-card__content">
+        <div class="oc-car-card__content-frame-156">
+          <div class="oc-car-card__frame-156-frame-144">
+            <div class="oc-car-card__frame-156-frame-144-header-row">
+              <span class="oc-car-card__frame-156-frame-144-header-row-signature">PO 1145X</span>
+              <div class="oc-car-card__frame-156-frame-144-header-row-oc-status">
+                <svg class="oc-car-card__frame-156-frame-144-header-row-oc-status-icon-clock" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 6V12L16 14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__frame-156-frame-144-header-row-oc-status-label">OC: 55 dni</span>
+              </div>
+            </div>
+            <div class="oc-car-card__frame-156-frame-144-meta-row">
+              <span class="oc-car-card__frame-156-frame-144-meta-row-model">Fiat Punto II, 2003 r.</span>
+              <span class="oc-car-card__frame-156-frame-144-meta-row-bought">Kupiona: 03.08.2026</span>
+              <span class="oc-car-card__frame-156-frame-144-meta-row-vin">VIN: ZFA1880000451256</span>
+            </div>
+          </div>
+          <div class="oc-car-card__frame-156-divider"></div>
+          <div class="oc-car-card__content-frame-156-frame-146">
+            <div class="oc-car-card__content-frame-156-frame-146-action-row">
+              <svg class="oc-car-card__content-frame-156-frame-146-action-row-icon-bolt" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span class="oc-car-card__content-frame-156-frame-146-action-row-label">Wycena pojazdu</span>
+              <div class="oc-car-card__content-frame-156-frame-146-action-row-status-check">
+                <svg class="oc-car-card__content-frame-156-frame-146-action-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+            <div class="oc-car-card__content-frame-156-frame-146-frame-145">
+              <div class="oc-car-card__content-frame-156-frame-146-frame-145-docs-header">
+                <svg class="oc-car-card__content-frame-156-frame-146-frame-145-docs-header-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span class="oc-car-card__content-frame-156-frame-146-frame-145-docs-header-dokumenty">Dokumenty</span>
+                <div class="oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip">
+                  <span class="oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip-label">3/5</span>
+                </div>
+                <svg class="oc-car-card__content-frame-156-frame-146-frame-145-docs-header-icon-chevron-down" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list">
+                <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row">
+                  <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-label">Dowód rejestracyjny</span>
+                  <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-status-check">
+                    <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2">
+                  <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-label">Umowa kupna</span>
+                  <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check">
+                    <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3">
+                  <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-label">Polisa OC</span>
+                  <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check">
+                    <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+                <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4">
+                  <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-icon-document" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 9H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 13H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 17H8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <span class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-label">Zaświadczenie</span>
+                  <div class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check">
+                    <svg class="oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+};
+
+const CAPTIONS = ["Size=Full, State=Default","Size=Full, State=Hover","Size=Full, State=Pressed","Size=Full, State=Focus","Size=Compact, State=Default","Size=Compact, State=Hover","Size=Compact, State=Pressed","Size=Compact, State=Focus"];
+
+// класс части → имя свойства Figma, которое ею управляет
+const TEXT_PARTS = {"oc-car-card__frame-142-frame-5-header-row-signature":"Signature","oc-car-card__frame-142-frame-5-header-row-oc-status-label":"Label","oc-car-card__frame-142-frame-5-meta-row-model":"Model","oc-car-card__frame-142-frame-5-meta-row-bought":"Bought","oc-car-card__frame-142-frame-5-vin":"Vin","oc-car-card__frame-142-rows-action-row-label":"Label","oc-car-card__frame-142-rows-list-docs-header-chip-label":"Label","oc-car-card__frame-142-rows-list-doc-list-doc-row-label":"Label","oc-car-card__frame-142-rows-list-doc-list-doc-row-2-label":"Label","oc-car-card__frame-142-rows-list-doc-list-doc-row-3-label":"Label","oc-car-card__frame-142-rows-list-doc-list-doc-row-4-label":"Label"};
+const OPTIONAL_PARTS = {};
+
+export default {
+  title: "Cards/CarCard",
+  tags: ["autodocs"],
+  parameters: {
+    docs: { description: { component: "Компонент «CarCard»\n\nСобрано из спеки Figma `395:2871` (страница Core).\nКорень `<div>`, базовый класс `.oc-car-card`. Вариантов: 8. Непривязанных значений: 19 — см. маркеры TODO в CSS." } },
+  },
+  argTypes: {
+    "Size": {
+      description: "Свойство варианта Figma «Size»",
+      control: { type: "inline-radio" },
+      options: ["Full","Compact"],
+    },
+    "State": {
+      description: "Свойство варианта Figma «State»",
+      control: { type: "inline-radio" },
+      options: ["Default","Hover","Pressed","Focus"],
+    },
+    "Signature": {
+      description: "Свойство Figma «Signature» (text)",
+      control: { type: "text" },
+    },
+    "Model": {
+      description: "Свойство Figma «Model» (text)",
+      control: { type: "text" },
+    },
+    "Bought": {
+      description: "Свойство Figma «Bought» (text)",
+      control: { type: "text" },
+    },
+    "Vin": {
+      description: "Свойство Figma «Vin» (text)",
+      control: { type: "text" },
+    },
+  },
+  args: {
+    "Size": "Full",
+    "State": "Default",
+    "Signature": "PO 1145X",
+    "Model": "Fiat Punto II, 2003 r.",
+    "Bought": "Kupiona: 03.08.2026",
+    "Vin": "VIN: ZFA1880000451256",
+  },
+};
+
+// Комбинация — это отдельный вариант Figma, поэтому переключатель выбирает разметку, а не
+// навешивает класс: вариант может отличаться строением, а не только оформлением.
+// Текст и переключаемые части накладываются поверх выбранного варианта.
+export const Playground = {
+  render: (args) => {
+    const wrap = document.createElement("div");
+    wrap.innerHTML = VARIANTS[args["Size"] + "|" + args["State"]] ?? "<p>нет такой комбинации</p>";
+    for (const [cls, prop] of Object.entries(TEXT_PARTS)) {
+      if (!(prop in args)) continue;
+      for (const el of wrap.getElementsByClassName(cls)) el.textContent = args[prop];
+    }
+    for (const [cls, prop] of Object.entries(OPTIONAL_PARTS)) {
+      if (args[prop] !== false) continue;
+      for (const el of [...wrap.getElementsByClassName(cls)]) el.remove();
+    }
+    return wrap.firstElementChild ?? wrap;
+  },
+};
+
+// Витрина матрицы прибита к значениям из спеки: она же опора для замера габаритов в
+// verify-code.mjs. Протёк бы сюда пользовательский Label — ширина поехала бы, и сверка с
+// figmaSize начала бы врать.
+export const AllVariants = {
+  parameters: { controls: { disable: true } },
+  render: () => Object.values(VARIANTS)
+    .map((html, i) => `<figure style="margin:0 0 24px">${html}<figcaption style="font:12px/1.6 ui-monospace,monospace;color:#8a8987;margin-top:8px">${CAPTIONS[i]}</figcaption></figure>`)
+    .join(""),
+};

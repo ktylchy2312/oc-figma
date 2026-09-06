@@ -1,0 +1,132 @@
+/* SearchInput — сгенерировано из components/search-input/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 330px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 40px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — opacity = 0.5 — непрозрачность без токена */
+.oc-search-input {
+  width: 330px;
+  height: 40px;
+  background: var(--surface-background);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-search.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-search-input__icon-search {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  stroke-width: 1;
+  flex: none;
+}
+
+/* TODO: unbound — value/caret.width = 1.5px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — value/caret.height = 20px — нет шкалы размеров: высота задана числом */
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-search-input.oc-search-input--state-default {
+  border: 1px solid var(--border-default);
+}
+.oc-search-input.oc-search-input--state-default .oc-search-input__icon-search {
+  color: var(--text-tertiary);
+}
+.oc-search-input.oc-search-input--state-default .oc-search-input__label2 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* State=Filled */
+.oc-search-input.oc-search-input--state-filled {
+  border: 1px solid var(--border-default);
+}
+.oc-search-input.oc-search-input--state-filled .oc-search-input__icon-search {
+  color: var(--text-primary);
+}
+.oc-search-input.oc-search-input--state-filled .oc-search-input__label2 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+
+/* State=Focus */
+.oc-search-input.oc-search-input--state-focus,
+.oc-search-input:focus-visible {
+  border: 1px solid var(--accent-default);
+}
+.oc-search-input.oc-search-input--state-focus .oc-search-input__icon-search,
+.oc-search-input:focus-visible .oc-search-input__icon-search {
+  color: var(--text-primary);
+}
+.oc-search-input.oc-search-input--state-focus .oc-search-input__value,
+.oc-search-input:focus-visible .oc-search-input__value {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0-5);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-search-input.oc-search-input--state-focus .oc-search-input__value-label2,
+.oc-search-input:focus-visible .oc-search-input__value-label2 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-search-input.oc-search-input--state-focus .oc-search-input__caret,
+.oc-search-input:focus-visible .oc-search-input__caret {
+  width: 1.5px;
+  height: 20px;
+  background: var(--accent-default);
+}
+
+/* State=Disabled */
+.oc-search-input.oc-search-input--state-disabled,
+.oc-search-input:disabled,
+.oc-search-input[aria-disabled="true"] {
+  border: 1px solid var(--border-default);
+  opacity: 0.5;
+}
+.oc-search-input.oc-search-input--state-disabled .oc-search-input__icon-search,
+.oc-search-input:disabled .oc-search-input__icon-search,
+.oc-search-input[aria-disabled="true"] .oc-search-input__icon-search {
+  color: var(--text-tertiary);
+}
+.oc-search-input.oc-search-input--state-disabled .oc-search-input__label2,
+.oc-search-input:disabled .oc-search-input__label2,
+.oc-search-input[aria-disabled="true"] .oc-search-input__label2 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}

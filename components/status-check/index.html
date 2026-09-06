@@ -1,0 +1,63 @@
+<!-- @dsCard group="Feedback" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>StatusCheck — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">StatusCheck</h1>
+  <p class="ds-meta">Feedback · molecule · 3 вариантов · Figma 24:56 · страница Core · Токенов задействовано: 4 · без токена: 3</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Done">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-success-text);stroke-width:1;flex:none" data-part="icon-circle-check"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Done</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Warn">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--status-warning-text);stroke-width:1;flex:none" data-part="icon-warning"><path d="M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 9V13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 17H12.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Warn</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Pending">
+    <div style="width:fit-content;display:flex;flex-direction:row;gap:var(--space-0);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:20px;height:20px;overflow:hidden;color:var(--text-tertiary);stroke-width:1;flex:none" data-part="icon-circle"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Pending</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --space-0, --status-success-text, --status-warning-text, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> icon-circle-check.iconStrokeWidth = 1, icon-warning.iconStrokeWidth = 1, icon-circle.iconStrokeWidth = 1</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

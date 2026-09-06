@@ -1,0 +1,3993 @@
+/* CarCard — сгенерировано из components/car-card/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 403px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-car-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — content.width = 250px — нет шкалы размеров: ширина задана числом */
+.oc-car-card__content {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* TODO: unbound — content/frame-142/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-142/rows/list/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-151/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-151/rows/list/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-152/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-152/rows/list/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-153/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-153/rows/list/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-147/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-147/frame-146/frame-145/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-154/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-154/frame-146/frame-145/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-155/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-155/frame-156/frame-146/frame-145/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — content/frame-156/divider.height = 1px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — content/frame-156/frame-146/frame-145/docs-header.borderWidth = 1px — нет токена под толщину обводки */
+
+/* ---- варианты ---- */
+
+/* Size=Full, State=Default */
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default {
+  width: 403px;
+  background: var(--surface-default);
+  border: 1px solid var(--border-default);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__content {
+  align-self: stretch;
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 369px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 250px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Full, State=Hover */
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover {
+  width: 403px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-strong);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__content,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__content {
+  align-self: stretch;
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row-signature,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row-oc-status,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row-oc-status-icon-clock,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row-oc-status-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-meta-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-meta-row-model,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-meta-row-bought,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-vin,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 369px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-divider,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-action-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-action-row-icon-bolt,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-action-row-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-action-row-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-action-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header-icon-warning,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header-dokumenty,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 250px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header-chip,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header-chip-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header-icon-chevron-down,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-status-check-icon-warning,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-status-check-icon-circle,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Full, State=Pressed */
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active {
+  width: 403px;
+  background: var(--surface-sunken);
+  border: 1px solid var(--accent-default);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__content,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__content {
+  align-self: stretch;
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row-signature,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row-oc-status,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row-oc-status-icon-clock,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row-oc-status-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-meta-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-meta-row-model,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-meta-row-bought,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-vin,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 369px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-divider,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-action-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-action-row-icon-bolt,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-action-row-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-action-row-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-action-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header-icon-warning,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header-dokumenty,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 250px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header-chip,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header-chip-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header-icon-chevron-down,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-2,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-3,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-status-check-icon-warning,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-4,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-icon-document,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-label,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-status-check,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-status-check-icon-circle,
+.oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Full, State=Focus */
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus,
+.oc-car-card.oc-car-card--size-full:focus-visible {
+  width: 403px;
+  background: var(--surface-default);
+  border: 1px solid var(--accent-default);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__content,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__content {
+  align-self: stretch;
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row-signature,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row-oc-status,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row-oc-status-icon-clock,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row-oc-status-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-meta-row,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-meta-row-model,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-meta-row-bought,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-vin,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 369px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-divider,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-action-row,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-action-row-icon-bolt,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-action-row-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-action-row-status-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-action-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header-icon-warning,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header-dokumenty,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 250px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header-chip,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header-chip-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header-icon-chevron-down,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-icon-document,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-status-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-2,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-icon-document,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-status-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-3,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-icon-document,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-status-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-status-check-icon-warning,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-4,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-icon-document,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-label,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 292px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-status-check,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-status-check-icon-circle,
+.oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Compact, State=Default */
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default {
+  width: fit-content;
+  background: var(--surface-default);
+  border: 1px solid var(--border-default);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__content {
+  width: 250px;
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 226px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header {
+  align-self: stretch;
+  height: 40px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 107px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Compact, State=Hover */
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover {
+  width: fit-content;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-strong);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__content,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__content {
+  width: 250px;
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row-signature,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row-oc-status,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row-oc-status-icon-clock,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row-oc-status-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-meta-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-meta-row-model,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-meta-row-bought,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-meta-row-vin,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 226px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-divider,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-action-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-action-row-icon-bolt,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-action-row-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-action-row-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-action-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header {
+  align-self: stretch;
+  height: 40px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-icon-warning,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-dokumenty,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 107px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-chip,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-chip-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-icon-chevron-down,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Compact, State=Pressed */
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active {
+  width: fit-content;
+  background: var(--surface-sunken);
+  border: 1px solid var(--accent-default);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__content,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__content {
+  width: 250px;
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row-signature,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row-oc-status,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row-oc-status-icon-clock,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row-oc-status-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-meta-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-meta-row-model,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-meta-row-bought,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-meta-row-vin,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 226px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-divider,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146 {
+  flex: 1 1 0%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-action-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-action-row-icon-bolt,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-action-row-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-action-row-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-action-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header {
+  align-self: stretch;
+  height: 40px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-icon-warning,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-dokumenty,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 107px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-icon-chevron-down,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-icon-document,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-label,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle,
+.oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Size=Compact, State=Focus */
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus,
+.oc-car-card.oc-car-card--size-compact:focus-visible {
+  width: fit-content;
+  background: var(--surface-default);
+  border: 1px solid var(--accent-default);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content {
+  width: 250px;
+  padding: var(--space-3) var(--space-3) var(--space-3) var(--space-3);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: space-between;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row-signature,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row-signature {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row-oc-status,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row-oc-status {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row-oc-status-icon-clock,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row-oc-status-icon-clock {
+  width: 19px;
+  height: 19px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row-oc-status-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row-oc-status-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-meta-row,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-meta-row-model,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row-model {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-meta-row-bought,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row-bought {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-meta-row-vin,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row-vin {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 226px;
+  flex: none;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-divider,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-divider {
+  align-self: stretch;
+  height: 1px;
+  background: var(--border-default);
+  overflow: hidden;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-action-row,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-action-row {
+  align-self: stretch;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-action-row-icon-bolt,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-action-row-icon-bolt {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-action-row-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-action-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-action-row-status-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-action-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-action-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-action-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header {
+  align-self: stretch;
+  height: 40px;
+  background: var(--surface-row);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-icon-warning,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-icon-warning {
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-dokumenty,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-dokumenty {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 107px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-icon-chevron-down,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  transform: rotate(-180deg);
+  transform-origin: center;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-icon-document,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-status-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-icon-document,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-2-status-check-icon-circle-check {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-success-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-icon-document,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-3-status-check-icon-warning {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--status-warning-text);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4 {
+  align-self: stretch;
+  height: 36px;
+  background: var(--surface-row);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3) var(--space-2) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-icon-document,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-icon-document {
+  width: 17px;
+  height: 17px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-label,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 149px;
+  color: var(--text-primary);
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle,
+.oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-doc-list-doc-row-4-status-check-icon-circle {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  stroke-width: 1;
+  flex: none;
+}

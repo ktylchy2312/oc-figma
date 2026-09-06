@@ -1,0 +1,1063 @@
+{
+  "name": "IconButton",
+  "slug": "icon-button",
+  "group": "Actions",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "27:1141",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Size=40 — самостоятельное действие. Size=32 — действие в строке таблицы: строка 64 с паддингом space-4 оставляет внутри ровно 32.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Icon",
+      "type": "instance-swap",
+      "figmaKey": "Icon#27:54",
+      "default": "27:1098",
+      "preferredValues": []
+    },
+    {
+      "name": "Size",
+      "type": "variant",
+      "figmaKey": "Size",
+      "values": [
+        "40",
+        "32"
+      ],
+      "default": "40"
+    },
+    {
+      "name": "Tone",
+      "type": "variant",
+      "figmaKey": "Tone",
+      "values": [
+        "Neutral",
+        "Danger"
+      ],
+      "default": "Neutral"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Disabled"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "IconButton",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "icon-x",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "X",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "icon-x.height": "16px",
+    "icon-x.icon": "X",
+    "icon-x.iconColor": "var(--text-primary)",
+    "icon-x.width": "16px",
+    "justify": "CENTER",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "radius": "var(--radius-md)"
+  },
+  "variants": [
+    {
+      "key": "Size=40, Tone=Neutral, State=Default",
+      "match": {
+        "Size": "40",
+        "Tone": "Neutral",
+        "State": "Default"
+      },
+      "nodeId": "27:1117",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "40px",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Neutral, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Neutral, State=Hover",
+      "match": {
+        "Size": "40",
+        "Tone": "Neutral",
+        "State": "Hover"
+      },
+      "nodeId": "27:1120",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "borderColor": "var(--border-default)",
+        "height": "40px",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Neutral, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Neutral, State=Pressed",
+      "match": {
+        "Size": "40",
+        "Tone": "Neutral",
+        "State": "Pressed"
+      },
+      "nodeId": "27:1123",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised-pressed)",
+        "borderColor": "var(--border-default)",
+        "height": "40px",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Neutral, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--surface-raised-pressed)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Neutral, State=Disabled",
+      "match": {
+        "Size": "40",
+        "Tone": "Neutral",
+        "State": "Disabled"
+      },
+      "nodeId": "27:1126",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "40px",
+        "opacity": "var(--opacity-disabled)",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Neutral, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Danger, State=Default",
+      "match": {
+        "Size": "40",
+        "Tone": "Danger",
+        "State": "Default"
+      },
+      "nodeId": "27:1129",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "40px",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Danger, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Danger, State=Hover",
+      "match": {
+        "Size": "40",
+        "Tone": "Danger",
+        "State": "Hover"
+      },
+      "nodeId": "27:1132",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--status-error-bg)",
+        "borderColor": "var(--status-error-border)",
+        "height": "40px",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Danger, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--status-error-bg)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Danger, State=Pressed",
+      "match": {
+        "Size": "40",
+        "Tone": "Danger",
+        "State": "Pressed"
+      },
+      "nodeId": "27:1135",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--status-error-bg-hover)",
+        "borderColor": "var(--status-error-border)",
+        "height": "40px",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Danger, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--status-error-bg-hover)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=40, Tone=Danger, State=Disabled",
+      "match": {
+        "Size": "40",
+        "Tone": "Danger",
+        "State": "Disabled"
+      },
+      "nodeId": "27:1138",
+      "figmaSize": {
+        "w": 40,
+        "h": 40
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "40px",
+        "opacity": "var(--opacity-disabled)",
+        "width": "40px"
+      },
+      "render": {
+        "part": "Size=40, Tone=Danger, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "40px",
+          "height": "40px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#27:54"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Neutral, State=Default",
+      "match": {
+        "Size": "32",
+        "Tone": "Neutral",
+        "State": "Default"
+      },
+      "nodeId": "322:3634",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "32px",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Neutral, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Neutral, State=Hover",
+      "match": {
+        "Size": "32",
+        "Tone": "Neutral",
+        "State": "Hover"
+      },
+      "nodeId": "322:3636",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "borderColor": "var(--border-default)",
+        "height": "32px",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Neutral, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Neutral, State=Pressed",
+      "match": {
+        "Size": "32",
+        "Tone": "Neutral",
+        "State": "Pressed"
+      },
+      "nodeId": "322:3638",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised-pressed)",
+        "borderColor": "var(--border-default)",
+        "height": "32px",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Neutral, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised-pressed)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Neutral, State=Disabled",
+      "match": {
+        "Size": "32",
+        "Tone": "Neutral",
+        "State": "Disabled"
+      },
+      "nodeId": "322:3640",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "32px",
+        "opacity": "var(--opacity-disabled)",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Neutral, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Danger, State=Default",
+      "match": {
+        "Size": "32",
+        "Tone": "Danger",
+        "State": "Default"
+      },
+      "nodeId": "322:3642",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "32px",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Danger, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Danger, State=Hover",
+      "match": {
+        "Size": "32",
+        "Tone": "Danger",
+        "State": "Hover"
+      },
+      "nodeId": "322:3644",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--status-error-bg)",
+        "borderColor": "var(--status-error-border)",
+        "height": "32px",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Danger, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--status-error-bg)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Danger, State=Pressed",
+      "match": {
+        "Size": "32",
+        "Tone": "Danger",
+        "State": "Pressed"
+      },
+      "nodeId": "322:3646",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--status-error-bg-hover)",
+        "borderColor": "var(--status-error-border)",
+        "height": "32px",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Danger, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--status-error-bg-hover)",
+          "border": "1px solid var(--status-error-border)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Size=32, Tone=Danger, State=Disabled",
+      "match": {
+        "Size": "32",
+        "Tone": "Danger",
+        "State": "Disabled"
+      },
+      "nodeId": "322:3648",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-default)",
+        "height": "32px",
+        "opacity": "var(--opacity-disabled)",
+        "width": "32px"
+      },
+      "render": {
+        "part": "Size=32, Tone=Danger, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-x",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "X",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M18 6L6 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M6 6L18 18\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Size=40 — самостоятельное действие.",
+    "Size=32 — действие в строке таблицы: строка 64 с паддингом space-4 оставляет внутри ровно 32."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "40px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-x.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-x"
+      ]
+    },
+    {
+      "prop": "width",
+      "value": "32px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "32px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

@@ -1,0 +1,150 @@
+/* OC-Kontrol design tokens — сгенерировано build-foundations.mjs из Figma. Руками не править. */
+:root {
+
+  /* Primitives */
+  --neutral-50: #f6f4f1;
+  --neutral-100: #f0eeeb;
+  --neutral-200: #c9c7c4;
+  --neutral-300: #8a8987;
+  --neutral-400: #6d6c6a;
+  --neutral-500: #4a4b54;
+  --neutral-550: #30313a;
+  --neutral-600: #262935;
+  --neutral-700: #181a22;
+  --neutral-750: #15171f;
+  --neutral-800: #13151d;
+  --neutral-850: #0e1016;
+  --neutral-900: #0b0e16;
+  --neutral-950: #070910;
+  --brand-50: #fff2e8;
+  --brand-100: #ffdcc2;
+  --brand-200: #ffc199;
+  --brand-300: #ff9d5c;
+  --brand-400: #ff8038;
+  --brand-500: #fe6d20;
+  --brand-600: #e0530f;
+  --brand-700: #b8410b;
+  --brand-800: #7a2c08;
+  --brand-900: #3d1804;
+  --success-50: #eafaf0;
+  --success-100: #c9f0d8;
+  --success-200: #a3e4bd;
+  --success-300: #7bd8a1;
+  --success-400: #5fd08a;
+  --success-500: #43b972;
+  --success-600: #2f8f57;
+  --success-700: #1f5136;
+  --success-800: #163a27;
+  --success-900: #12291a;
+  --warning-50: #fbf4e3;
+  --warning-100: #f3e3bb;
+  --warning-200: #ecd196;
+  --warning-300: #e6c07a;
+  --warning-400: #d9a94f;
+  --warning-500: #b98a34;
+  --warning-600: #8a6626;
+  --warning-700: #5a4a1f;
+  --warning-800: #3f3316;
+  --warning-900: #2a2211;
+  --error-50: #ffece8;
+  --error-100: #ffcabf;
+  --error-200: #ffa695;
+  --error-300: #ff8571;
+  --error-400: #ff6b57;
+  --error-500: #f0472f;
+  --error-600: #c0341d;
+  --error-700: #6e2a1f;
+  --error-800: #45170f;
+  --error-900: #2a1512;
+  --white: #ffffff;
+  --brand-950: #1a1204;
+  --scale-0: 0px;
+  --scale-1: 4px;
+  --scale-2: 8px;
+  --scale-3: 12px;
+  --scale-4: 16px;
+  --scale-5: 20px;
+  --scale-6: 24px;
+  --scale-8: 32px;
+  --scale-10: 40px;
+  --scale-12: 48px;
+  --scale-0-5: 2px;
+
+  /* Color */
+  --surface-background: #0b0e16;
+  --surface-default: #0e1016;
+  --surface-raised: #181a22;
+  --surface-sunken: #070910;
+  --surface-row: #13151d;
+  --surface-column: #15171f;
+  --border-subtle: #262935;
+  --border-default: #30313a;
+  --border-strong: #4a4b54;
+  --text-primary: #f6f4f1;
+  --text-secondary: #c9c7c4;
+  --text-tertiary: #8a8987;
+  --text-disabled: #6d6c6a;
+  --text-inverse: #0b0e16;
+  --text-on-accent: #1a1204;
+  --accent-default: #fe6d20;
+  --accent-hover: #ff8038;
+  --accent-pressed: #e0530f;
+  --accent-disabled: #30313a;
+  --status-success-text: #5fd08a;
+  --status-success-bg: #12291a;
+  --status-success-border: #1f5136;
+  --status-warning-text: #e6c07a;
+  --status-warning-bg: #2a2211;
+  --status-warning-border: #5a4a1f;
+  --status-error-text: #ff6b57;
+  --status-error-bg: #2a1512;
+  --status-error-border: #6e2a1f;
+  --accent-tint: #1a1204;
+  --surface-raised-hover: #262935;
+  --surface-raised-pressed: #30313a;
+  --status-error-bg-hover: #45170f;
+  --status-warning-bg-hover: #3f3316;
+  --status-error-solid: #f0472f;
+  --status-error-on-solid: #2a1512;
+  --status-warning-solid: #b98a34;
+  --status-warning-on-solid: #2a2211;
+  --status-success-solid: #43b972;
+  --status-success-on-solid: #12291a;
+  --border-emphasis: #8a8987;
+  --status-error-bg-pressed: #6e2a1f;
+
+  /* Radius */
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --gap-board: 16px;
+  --space-tight: 12px;
+  --space-0: 0px;
+  --space-0-5: 2px;
+
+  /* Effects */
+  --opacity-disabled: 0.45;
+
+  /* (effect style) */
+  --shadow-accent: 0px 4px 14px 0px #fe6d204d;
+  --shadow-card: 0px 4px 12px 0px #00000073;
+  --shadow-dialog: 0px 24px 60px 0px #00000099;
+
+  /* (paint style) */
+  --gradient-nav-active-stops: #30313a8f 0%, #8487a000 100%;
+  --gradient-nav-active: linear-gradient(317deg, #30313a8f 0%, #8487a000 100%);
+}

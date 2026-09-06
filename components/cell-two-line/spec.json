@@ -1,0 +1,153 @@
+{
+  "name": "CellTwoLine",
+  "slug": "cell-two-line",
+  "group": "Cards",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "333:3746",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Ячейка таблицы в две строки: главное сверху, уточнение снизу. Одинакова в обеих таблицах — поэтому общий атом, а не по копии на таблицу.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Primary",
+      "type": "text",
+      "figmaKey": "Primary#333:112",
+      "default": "Volkswagen Passat"
+    },
+    {
+      "name": "Secondary",
+      "type": "text",
+      "figmaKey": "Secondary#333:113",
+      "default": "WVWZZZ3CZJE123456"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "CellTwoLine",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "primary",
+      "name": "Primary",
+      "element": "span",
+      "textProp": "Primary"
+    },
+    {
+      "part": "secondary",
+      "name": "Secondary",
+      "element": "span",
+      "textProp": "Secondary"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "VERTICAL",
+    "gap": "var(--space-1)",
+    "justify": "MIN",
+    "primary.color": "var(--text-primary)",
+    "primary.font": "Type/Body Medium Alter 15/24px 700",
+    "secondary.color": "var(--text-tertiary)",
+    "secondary.font": "Type/Body Small 13/20px 400"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "333:3746",
+      "figmaSize": {
+        "w": 137,
+        "h": 48
+      },
+      "tokens": {},
+      "render": {
+        "part": "CellTwoLine",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-1)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Primary",
+            "path": "primary",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "15px",
+              "font-weight": "700",
+              "line-height": "24px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Primary#333:112"
+            },
+            "text": "Volkswagen Passat",
+            "font": {
+              "style": "Type/Body Medium Alter",
+              "size": 15,
+              "weight": 700,
+              "lineHeight": "24px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Secondary",
+            "path": "secondary",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Secondary#333:113"
+            },
+            "text": "WVWZZZ3CZJE123456",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Ячейка таблицы в две строки: главное сверху, уточнение снизу.",
+    "Одинакова в обеих таблицах — поэтому общий атом, а не по копии на таблицу."
+  ],
+  "avoid": [],
+  "unbound": [],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

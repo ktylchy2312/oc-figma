@@ -1,0 +1,553 @@
+/* FormField — сгенерировано из components/form-field/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 280px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — opacity = 0.6 — непрозрачность без токена */
+.oc-form-field {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-form-field__label {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.oc-form-field__rok-produkcji {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* TODO: unbound — spacer.height = 8px — нет шкалы размеров: высота задана числом */
+.oc-form-field__spacer {
+  align-self: stretch;
+  height: 8px;
+  overflow: hidden;
+}
+
+/* TODO: unbound — input.height = 40px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — input.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — input.height = 96px — нет шкалы размеров: высота задана числом */
+.oc-form-field__input {
+  align-self: stretch;
+  background: var(--surface-background);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* TODO: unbound — input/caret.width = 1.5px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — input/caret.height = 20px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — frame.height = 6px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — input/icon-chevron-down.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+/* TODO: unbound — hint-gap.height = 6px — нет шкалы размеров: высота задана числом */
+
+/* ---- варианты ---- */
+
+/* Variant=Text, State=Default */
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-default .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-default .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-default .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+
+/* Variant=Text, State=Focus */
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-focus .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-text:focus-visible .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--accent-default);
+  border-radius: var(--radius-md);
+  gap: var(--space-0-5);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-focus .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-text:focus-visible .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-focus .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-text:focus-visible .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-focus .oc-form-field__caret,
+.oc-form-field.oc-form-field--variant-text:focus-visible .oc-form-field__caret {
+  width: 1.5px;
+  height: 20px;
+  background: var(--accent-default);
+}
+
+/* Variant=Text, State=Disabled */
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-disabled,
+.oc-form-field.oc-form-field--variant-text:disabled,
+.oc-form-field.oc-form-field--variant-text[aria-disabled="true"] {
+  opacity: 0.6;
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-disabled .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-text:disabled .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-text[aria-disabled="true"] .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-disabled .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-text:disabled .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-text[aria-disabled="true"] .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-disabled .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-text:disabled .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-text[aria-disabled="true"] .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+
+/* Variant=Text, State=Error */
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-error .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--status-error-border);
+  border-radius: var(--radius-md);
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-error .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-error .oc-form-field__frame {
+  align-self: stretch;
+  height: 6px;
+  overflow: hidden;
+}
+.oc-form-field.oc-form-field--variant-text.oc-form-field--state-error .oc-form-field__podaj-poprawny-rok-4-cyfry {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--status-error-text);
+}
+
+/* Variant=Select, State=Default */
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-default .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-default .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-default .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-default .oc-form-field__icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Variant=Select, State=Focus */
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-focus .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--accent-default);
+  border-radius: var(--radius-md);
+  gap: var(--space-0-5);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-focus .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-focus .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-focus .oc-form-field__caret,
+.oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__caret {
+  width: 1.5px;
+  height: 20px;
+  background: var(--accent-default);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-focus .oc-form-field__icon-chevron-down,
+.oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Variant=Select, State=Disabled */
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-disabled,
+.oc-form-field.oc-form-field--variant-select:disabled,
+.oc-form-field.oc-form-field--variant-select[aria-disabled="true"] {
+  opacity: 0.6;
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-disabled .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-select:disabled .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-select[aria-disabled="true"] .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-disabled .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-select:disabled .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-select[aria-disabled="true"] .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-disabled .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-select:disabled .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-select[aria-disabled="true"] .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-disabled .oc-form-field__icon-chevron-down,
+.oc-form-field.oc-form-field--variant-select:disabled .oc-form-field__icon-chevron-down,
+.oc-form-field.oc-form-field--variant-select[aria-disabled="true"] .oc-form-field__icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Variant=Select, State=Error */
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__input {
+  height: 40px;
+  border: 1px solid var(--status-error-border);
+  border-radius: var(--radius-md);
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  align-items: center;
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__frame {
+  align-self: stretch;
+  height: 6px;
+  overflow: hidden;
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__podaj-poprawny-rok-4-cyfry {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--status-error-text);
+}
+.oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__icon-chevron-down {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* Variant=Textarea, State=Default */
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-default .oc-form-field__input {
+  height: 96px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-4);
+  align-items: flex-start;
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-default .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-default .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+
+/* Variant=Textarea, State=Focus */
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-focus .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-textarea:focus-visible .oc-form-field__input {
+  height: 96px;
+  border: 1px solid var(--accent-default);
+  border-radius: var(--radius-lg);
+  gap: var(--space-0-5);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-4);
+  align-items: flex-start;
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-focus .oc-form-field__placeholder,
+.oc-form-field.oc-form-field--variant-textarea:focus-visible .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-focus .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-textarea:focus-visible .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-focus .oc-form-field__caret,
+.oc-form-field.oc-form-field--variant-textarea:focus-visible .oc-form-field__caret {
+  width: 1.5px;
+  height: 20px;
+  background: var(--accent-default);
+}
+
+/* Variant=Textarea, State=Disabled */
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-disabled,
+.oc-form-field.oc-form-field--variant-textarea:disabled,
+.oc-form-field.oc-form-field--variant-textarea[aria-disabled="true"] {
+  opacity: 0.6;
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-disabled .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-textarea:disabled .oc-form-field__input,
+.oc-form-field.oc-form-field--variant-textarea[aria-disabled="true"] .oc-form-field__input {
+  height: 96px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-4);
+  align-items: flex-start;
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-disabled .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-textarea:disabled .oc-form-field__hint,
+.oc-form-field.oc-form-field--variant-textarea[aria-disabled="true"] .oc-form-field__hint {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--text-disabled);
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-disabled .oc-form-field__hint-gap,
+.oc-form-field.oc-form-field--variant-textarea:disabled .oc-form-field__hint-gap,
+.oc-form-field.oc-form-field--variant-textarea[aria-disabled="true"] .oc-form-field__hint-gap {
+  align-self: stretch;
+  height: 6px;
+  overflow: hidden;
+}
+
+/* Variant=Textarea, State=Error */
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-error .oc-form-field__input {
+  height: 96px;
+  border: 1px solid var(--status-error-border);
+  border-radius: var(--radius-lg);
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-4) var(--space-1) var(--space-4);
+  align-items: flex-start;
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-error .oc-form-field__placeholder {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-error .oc-form-field__frame {
+  align-self: stretch;
+  height: 6px;
+  overflow: hidden;
+}
+.oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-error .oc-form-field__podaj-poprawny-rok-4-cyfry {
+  align-self: stretch;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  width: 280px;
+  flex: none;
+  color: var(--status-error-text);
+}

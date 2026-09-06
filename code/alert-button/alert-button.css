@@ -1,0 +1,349 @@
+/* AlertButton — сгенерировано из components/alert-button/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — height = 44px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-alert-button {
+  width: fit-content;
+  height: 44px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-3);
+  padding: var(--space-0) var(--space-4) var(--space-0) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-alert-button__alert-bell {
+  width: 34px;
+  height: 34px;
+  position: relative;
+}
+
+.oc-alert-button__icon-bell {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-alert-button__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* Tone=Danger, State=Default */
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-default {
+  background: var(--status-error-bg);
+  border: 1px solid var(--status-error-border);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-default .oc-alert-button__icon-bell {
+  color: var(--status-error-text);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-default .oc-alert-button__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-error-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-default .oc-alert-button__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-error-on-solid);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-default .oc-alert-button__label {
+  color: var(--status-error-text);
+}
+
+/* Tone=Danger, State=Hover */
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-hover,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--status-error-bg-hover);
+  border: 1px solid var(--status-error-border);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-hover .oc-alert-button__icon-bell,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__icon-bell {
+  color: var(--status-error-text);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-hover .oc-alert-button__badge,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-error-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-hover .oc-alert-button__count,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-error-on-solid);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-hover .oc-alert-button__label,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__label {
+  color: var(--status-error-text);
+}
+
+/* Tone=Danger, State=Pressed */
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-pressed,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--status-error-border);
+  border: 1px solid var(--status-error-border);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-pressed .oc-alert-button__icon-bell,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__icon-bell {
+  color: var(--status-error-text);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-pressed .oc-alert-button__badge,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-error-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-pressed .oc-alert-button__count,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-error-on-solid);
+}
+.oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-pressed .oc-alert-button__label,
+.oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__label {
+  color: var(--status-error-text);
+}
+
+/* Tone=Warning, State=Default */
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-default {
+  background: var(--status-warning-bg);
+  border: 1px solid var(--status-warning-border);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-default .oc-alert-button__icon-bell {
+  color: var(--status-warning-text);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-default .oc-alert-button__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-warning-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-default .oc-alert-button__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-warning-on-solid);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-default .oc-alert-button__label {
+  color: var(--status-warning-text);
+}
+
+/* Tone=Warning, State=Hover */
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-hover,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--status-warning-bg-hover);
+  border: 1px solid var(--status-warning-border);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-hover .oc-alert-button__icon-bell,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__icon-bell {
+  color: var(--status-warning-text);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-hover .oc-alert-button__badge,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-warning-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-hover .oc-alert-button__count,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-warning-on-solid);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-hover .oc-alert-button__label,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__label {
+  color: var(--status-warning-text);
+}
+
+/* Tone=Warning, State=Pressed */
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-pressed,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--status-warning-border);
+  border: 1px solid var(--status-warning-border);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-pressed .oc-alert-button__icon-bell,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__icon-bell {
+  color: var(--status-warning-text);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-pressed .oc-alert-button__badge,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__badge {
+  position: absolute;
+  left: 12px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  background: var(--status-warning-solid);
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 var(--space-2) 0 var(--space-2);
+  justify-content: center;
+  align-items: center;
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-pressed .oc-alert-button__count,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__count {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: var(--status-warning-on-solid);
+}
+.oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-pressed .oc-alert-button__label,
+.oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__label {
+  color: var(--status-warning-text);
+}
+
+/* Tone=Neutral, State=Default */
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-default {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-default);
+}
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-default .oc-alert-button__icon-bell {
+  color: var(--text-tertiary);
+}
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-default .oc-alert-button__label {
+  color: var(--text-tertiary);
+}
+
+/* Tone=Neutral, State=Hover */
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-hover,
+.oc-alert-button.oc-alert-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--surface-raised-hover);
+  border: 1px solid var(--border-strong);
+}
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-hover .oc-alert-button__icon-bell,
+.oc-alert-button.oc-alert-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__icon-bell {
+  color: var(--text-tertiary);
+}
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-hover .oc-alert-button__label,
+.oc-alert-button.oc-alert-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__label {
+  color: var(--text-tertiary);
+}
+
+/* Tone=Neutral, State=Pressed */
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-pressed,
+.oc-alert-button.oc-alert-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--surface-raised-pressed);
+  border: 1px solid var(--border-default);
+}
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-pressed .oc-alert-button__icon-bell,
+.oc-alert-button.oc-alert-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__icon-bell {
+  color: var(--text-tertiary);
+}
+.oc-alert-button.oc-alert-button--tone-neutral.oc-alert-button--state-pressed .oc-alert-button__label,
+.oc-alert-button.oc-alert-button--tone-neutral:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__label {
+  color: var(--text-tertiary);
+}

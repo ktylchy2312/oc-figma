@@ -1,0 +1,330 @@
+// OfferTable — сгенерировано из components/offer-table/spec.json. Руками не править.
+import "../../foundations/fonts.css";
+import "../../foundations/tokens.css";
+import "../base.css";
+import "./offer-table.css";
+
+const VARIANTS = {
+  "OfferTable": `
+    <div class="oc-offer-table">
+      <div class="oc-offer-table__offer-table-header">
+        <div class="oc-offer-table__offer-table-header-zdj-cie">
+          <span class="oc-offer-table__zdj-cie-zdj-cie">ZDJĘCIE</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-sygnatura">
+          <span class="oc-offer-table__sygnatura-sygnatura">SYGNATURA</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-nazwa">
+          <span class="oc-offer-table__offer-table-header-nazwa-nazwa">NAZWA</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-pojazd">
+          <span class="oc-offer-table__pojazd-pojazd">POJAZD</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-kategoria">
+          <span class="oc-offer-table__offer-table-header-kategoria-kategoria">KATEGORIA</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-stan-mag">
+          <span class="oc-offer-table__stan-mag-stan-mag">STAN MAG.</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-rynki">
+          <span class="oc-offer-table__rynki-rynki">RYNKI</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-cena">
+          <span class="oc-offer-table__offer-table-header-cena-cena">CENA</span>
+        </div>
+        <div class="oc-offer-table__offer-table-header-status">
+          <span class="oc-offer-table__status-status">STATUS</span>
+        </div>
+      </div>
+      <div class="oc-offer-table__sk00147">
+        <div class="oc-offer-table__sk00147-zdj-cie">
+          <div class="oc-offer-table__sk00147-zdj-cie-thumb">
+            <svg class="oc-offer-table__sk00147-zdj-cie-thumb-glyph" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/><path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="oc-offer-table__sk00147-sygnatura">
+          <div class="oc-offer-table__sk00147-sygnatura-pill">
+            <span class="oc-offer-table__sk00147-sygnatura-pill-3-5">3/5</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__sk00147-nazwa">
+          <span class="oc-offer-table__sk00147-nazwa-nazwa">Drzwi tylne prawe</span>
+        </div>
+        <div class="oc-offer-table__sk00147-pojazd">
+          <span class="oc-offer-table__sk00147-pojazd-marka">Skoda</span>
+          <span class="oc-offer-table__sk00147-pojazd-model">Superb I 2003–2008</span>
+        </div>
+        <div class="oc-offer-table__sk00147-kategoria">
+          <span class="oc-offer-table__sk00147-kategoria-kategoria">Drzwi</span>
+        </div>
+        <div class="oc-offer-table__sk00147-stan">
+          <span class="oc-offer-table__sk00147-stan-stan">1 szt.</span>
+        </div>
+        <div class="oc-offer-table__sk00147-rynki">
+          <div class="oc-offer-table__sk00147-rynki-market-a">
+            <span class="oc-offer-table__sk00147-rynki-market-a-letter">A</span>
+          </div>
+          <div class="oc-offer-table__sk00147-rynki-market-x">
+            <span class="oc-offer-table__sk00147-rynki-market-x-letter">X</span>
+          </div>
+          <div class="oc-offer-table__sk00147-rynki-market-e">
+            <span class="oc-offer-table__sk00147-rynki-market-e-letter">E</span>
+          </div>
+          <div class="oc-offer-table__sk00147-rynki-market-o">
+            <span class="oc-offer-table__sk00147-rynki-market-o-letter">O</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__sk00147-cena">
+          <span class="oc-offer-table__sk00147-cena-cena">480 zł</span>
+        </div>
+        <div class="oc-offer-table__sk00147-status">
+          <div class="oc-offer-table__sk00147-status-status-pill">
+            <div class="oc-offer-table__sk00147-status-status-pill-dot"></div>
+            <span class="oc-offer-table__sk00147-status-status-pill-robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div class="oc-offer-table__vw00312">
+        <div class="oc-offer-table__vw00312-zdj-cie">
+          <div class="oc-offer-table__vw00312-zdj-cie-thumb">
+            <svg class="oc-offer-table__vw00312-zdj-cie-thumb-glyph" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/><path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="oc-offer-table__vw00312-sygnatura">
+          <div class="oc-offer-table__vw00312-sygnatura-pill">
+            <span class="oc-offer-table__vw00312-sygnatura-pill-3-5">3/5</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__vw00312-nazwa">
+          <span class="oc-offer-table__vw00312-nazwa-nazwa">Klamka zewnętrzna przednia lewa</span>
+        </div>
+        <div class="oc-offer-table__vw00312-pojazd">
+          <span class="oc-offer-table__vw00312-pojazd-marka">Volkswagen</span>
+          <span class="oc-offer-table__vw00312-pojazd-model">T4 1996–2003</span>
+        </div>
+        <div class="oc-offer-table__vw00312-kategoria">
+          <span class="oc-offer-table__vw00312-kategoria-kategoria">Klamki zewnętrzne</span>
+        </div>
+        <div class="oc-offer-table__vw00312-stan">
+          <span class="oc-offer-table__vw00312-stan-stan">2 szt.</span>
+        </div>
+        <div class="oc-offer-table__vw00312-rynki">
+          <div class="oc-offer-table__vw00312-rynki-market-a">
+            <span class="oc-offer-table__vw00312-rynki-market-a-letter">A</span>
+          </div>
+          <div class="oc-offer-table__vw00312-rynki-market-x">
+            <span class="oc-offer-table__vw00312-rynki-market-x-letter">X</span>
+          </div>
+          <div class="oc-offer-table__vw00312-rynki-market-e">
+            <span class="oc-offer-table__vw00312-rynki-market-e-letter">E</span>
+          </div>
+          <div class="oc-offer-table__vw00312-rynki-market-o">
+            <span class="oc-offer-table__vw00312-rynki-market-o-letter">O</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__vw00312-cena">
+          <span class="oc-offer-table__vw00312-cena-cena">95 zł</span>
+        </div>
+        <div class="oc-offer-table__vw00312-status">
+          <div class="oc-offer-table__vw00312-status-status-pill">
+            <div class="oc-offer-table__vw00312-status-status-pill-dot"></div>
+            <span class="oc-offer-table__vw00312-status-status-pill-robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div class="oc-offer-table__rn00889">
+        <div class="oc-offer-table__rn00889-zdj-cie">
+          <div class="oc-offer-table__rn00889-zdj-cie-thumb">
+            <svg class="oc-offer-table__rn00889-zdj-cie-thumb-glyph" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/><path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="oc-offer-table__rn00889-sygnatura">
+          <div class="oc-offer-table__rn00889-sygnatura-pill">
+            <span class="oc-offer-table__rn00889-sygnatura-pill-3-5">3/5</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__rn00889-nazwa">
+          <span class="oc-offer-table__rn00889-nazwa-nazwa">Alternator 90A Bosch</span>
+        </div>
+        <div class="oc-offer-table__rn00889-pojazd">
+          <span class="oc-offer-table__rn00889-pojazd-marka">Renault</span>
+          <span class="oc-offer-table__rn00889-pojazd-model">Clio II 1.4 16V</span>
+        </div>
+        <div class="oc-offer-table__rn00889-kategoria">
+          <span class="oc-offer-table__rn00889-kategoria-kategoria">Alternatory kompletne</span>
+        </div>
+        <div class="oc-offer-table__rn00889-stan">
+          <span class="oc-offer-table__rn00889-stan-stan">3 szt.</span>
+        </div>
+        <div class="oc-offer-table__rn00889-rynki">
+          <div class="oc-offer-table__rn00889-rynki-market-a">
+            <span class="oc-offer-table__rn00889-rynki-market-a-letter">A</span>
+          </div>
+          <div class="oc-offer-table__rn00889-rynki-market-x">
+            <span class="oc-offer-table__rn00889-rynki-market-x-letter">X</span>
+          </div>
+          <div class="oc-offer-table__rn00889-rynki-market-e">
+            <span class="oc-offer-table__rn00889-rynki-market-e-letter">E</span>
+          </div>
+          <div class="oc-offer-table__rn00889-rynki-market-o">
+            <span class="oc-offer-table__rn00889-rynki-market-o-letter">O</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__rn00889-cena">
+          <span class="oc-offer-table__rn00889-cena-cena">320 zł</span>
+        </div>
+        <div class="oc-offer-table__rn00889-status">
+          <div class="oc-offer-table__rn00889-status-status-pill">
+            <div class="oc-offer-table__rn00889-status-status-pill-dot"></div>
+            <span class="oc-offer-table__rn00889-status-status-pill-robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div class="oc-offer-table__bm00234">
+        <div class="oc-offer-table__bm00234-zdj-cie">
+          <div class="oc-offer-table__bm00234-zdj-cie-thumb">
+            <svg class="oc-offer-table__bm00234-zdj-cie-thumb-glyph" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/><path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="oc-offer-table__bm00234-sygnatura">
+          <div class="oc-offer-table__bm00234-sygnatura-pill">
+            <span class="oc-offer-table__bm00234-sygnatura-pill-3-5">3/5</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__bm00234-nazwa">
+          <span class="oc-offer-table__bm00234-nazwa-nazwa">Reflektor przedni prawy</span>
+        </div>
+        <div class="oc-offer-table__bm00234-pojazd">
+          <span class="oc-offer-table__bm00234-pojazd-marka">BMW</span>
+          <span class="oc-offer-table__bm00234-pojazd-model">E90 2005–2008</span>
+        </div>
+        <div class="oc-offer-table__bm00234-kategoria">
+          <span class="oc-offer-table__bm00234-kategoria-kategoria">Lampy przednie</span>
+        </div>
+        <div class="oc-offer-table__bm00234-stan">
+          <span class="oc-offer-table__bm00234-stan-stan">1 szt.</span>
+        </div>
+        <div class="oc-offer-table__bm00234-rynki">
+          <div class="oc-offer-table__bm00234-rynki-market-a">
+            <span class="oc-offer-table__bm00234-rynki-market-a-letter">A</span>
+          </div>
+          <div class="oc-offer-table__bm00234-rynki-market-x">
+            <span class="oc-offer-table__bm00234-rynki-market-x-letter">X</span>
+          </div>
+          <div class="oc-offer-table__bm00234-rynki-market-e">
+            <span class="oc-offer-table__bm00234-rynki-market-e-letter">E</span>
+          </div>
+          <div class="oc-offer-table__bm00234-rynki-market-o">
+            <span class="oc-offer-table__bm00234-rynki-market-o-letter">O</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__bm00234-cena">
+          <span class="oc-offer-table__bm00234-cena-cena">560 zł</span>
+        </div>
+        <div class="oc-offer-table__bm00234-status">
+          <div class="oc-offer-table__bm00234-status-status-pill">
+            <div class="oc-offer-table__bm00234-status-status-pill-dot"></div>
+            <span class="oc-offer-table__bm00234-status-status-pill-robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+      <div class="oc-offer-table__ft00056">
+        <div class="oc-offer-table__ft00056-zdj-cie">
+          <div class="oc-offer-table__ft00056-zdj-cie-thumb">
+            <svg class="oc-offer-table__ft00056-zdj-cie-thumb-glyph" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 10.1333C9.17821 10.1333 10.1333 9.17818 10.1333 7.99997C10.1333 6.82176 9.17821 5.86664 8 5.86664C6.82179 5.86664 5.86667 6.82176 5.86667 7.99997C5.86667 9.17818 6.82179 10.1333 8 10.1333Z" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/><path d="M8 2.66669V4.00002M8 12V13.3334M2.66667 8.00002H4M12 8.00002H13.3333" style="stroke:var(--text-tertiary)" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="oc-offer-table__ft00056-sygnatura">
+          <div class="oc-offer-table__ft00056-sygnatura-pill">
+            <span class="oc-offer-table__ft00056-sygnatura-pill-3-5">3/5</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__ft00056-nazwa">
+          <span class="oc-offer-table__ft00056-nazwa-nazwa">Felgi stalowe R14 kpl. 4szt.</span>
+        </div>
+        <div class="oc-offer-table__ft00056-pojazd">
+          <span class="oc-offer-table__ft00056-pojazd-marka">Fiat</span>
+          <span class="oc-offer-table__ft00056-pojazd-model">Seicento 1998–2010</span>
+        </div>
+        <div class="oc-offer-table__ft00056-kategoria">
+          <span class="oc-offer-table__ft00056-kategoria-kategoria">Felgi stalowe R14</span>
+        </div>
+        <div class="oc-offer-table__ft00056-stan">
+          <span class="oc-offer-table__ft00056-stan-stan">1 kpl.</span>
+        </div>
+        <div class="oc-offer-table__ft00056-rynki">
+          <div class="oc-offer-table__ft00056-rynki-market-a">
+            <span class="oc-offer-table__ft00056-rynki-market-a-letter">A</span>
+          </div>
+          <div class="oc-offer-table__ft00056-rynki-market-x">
+            <span class="oc-offer-table__ft00056-rynki-market-x-letter">X</span>
+          </div>
+          <div class="oc-offer-table__ft00056-rynki-market-e">
+            <span class="oc-offer-table__ft00056-rynki-market-e-letter">E</span>
+          </div>
+          <div class="oc-offer-table__ft00056-rynki-market-o">
+            <span class="oc-offer-table__ft00056-rynki-market-o-letter">O</span>
+          </div>
+        </div>
+        <div class="oc-offer-table__ft00056-cena">
+          <span class="oc-offer-table__ft00056-cena-cena">240 zł</span>
+        </div>
+        <div class="oc-offer-table__ft00056-status">
+          <div class="oc-offer-table__ft00056-status-status-pill">
+            <div class="oc-offer-table__ft00056-status-status-pill-dot"></div>
+            <span class="oc-offer-table__ft00056-status-status-pill-robocza">Robocza</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+};
+
+const CAPTIONS = [""];
+
+// класс части → имя свойства Figma, которое ею управляет
+const TEXT_PARTS = {"oc-offer-table__sk00147-nazwa-nazwa":"Nazwa","oc-offer-table__sk00147-pojazd-marka":"Marka","oc-offer-table__sk00147-pojazd-model":"Model","oc-offer-table__sk00147-kategoria-kategoria":"Kategoria","oc-offer-table__sk00147-stan-stan":"Stan","oc-offer-table__sk00147-rynki-market-a-letter":"Letter","oc-offer-table__sk00147-rynki-market-x-letter":"Letter","oc-offer-table__sk00147-rynki-market-e-letter":"Letter","oc-offer-table__sk00147-rynki-market-o-letter":"Letter","oc-offer-table__sk00147-cena-cena":"Cena","oc-offer-table__vw00312-nazwa-nazwa":"Nazwa","oc-offer-table__vw00312-pojazd-marka":"Marka","oc-offer-table__vw00312-pojazd-model":"Model","oc-offer-table__vw00312-kategoria-kategoria":"Kategoria","oc-offer-table__vw00312-stan-stan":"Stan","oc-offer-table__vw00312-rynki-market-a-letter":"Letter","oc-offer-table__vw00312-rynki-market-x-letter":"Letter","oc-offer-table__vw00312-rynki-market-e-letter":"Letter","oc-offer-table__vw00312-rynki-market-o-letter":"Letter","oc-offer-table__vw00312-cena-cena":"Cena","oc-offer-table__rn00889-nazwa-nazwa":"Nazwa","oc-offer-table__rn00889-pojazd-marka":"Marka","oc-offer-table__rn00889-pojazd-model":"Model","oc-offer-table__rn00889-kategoria-kategoria":"Kategoria","oc-offer-table__rn00889-stan-stan":"Stan","oc-offer-table__rn00889-rynki-market-a-letter":"Letter","oc-offer-table__rn00889-rynki-market-x-letter":"Letter","oc-offer-table__rn00889-rynki-market-e-letter":"Letter","oc-offer-table__rn00889-rynki-market-o-letter":"Letter","oc-offer-table__rn00889-cena-cena":"Cena","oc-offer-table__bm00234-nazwa-nazwa":"Nazwa","oc-offer-table__bm00234-pojazd-marka":"Marka","oc-offer-table__bm00234-pojazd-model":"Model","oc-offer-table__bm00234-kategoria-kategoria":"Kategoria","oc-offer-table__bm00234-stan-stan":"Stan","oc-offer-table__bm00234-rynki-market-a-letter":"Letter","oc-offer-table__bm00234-rynki-market-x-letter":"Letter","oc-offer-table__bm00234-rynki-market-e-letter":"Letter","oc-offer-table__bm00234-rynki-market-o-letter":"Letter","oc-offer-table__bm00234-cena-cena":"Cena","oc-offer-table__ft00056-nazwa-nazwa":"Nazwa","oc-offer-table__ft00056-pojazd-marka":"Marka","oc-offer-table__ft00056-pojazd-model":"Model","oc-offer-table__ft00056-kategoria-kategoria":"Kategoria","oc-offer-table__ft00056-stan-stan":"Stan","oc-offer-table__ft00056-rynki-market-a-letter":"Letter","oc-offer-table__ft00056-rynki-market-x-letter":"Letter","oc-offer-table__ft00056-rynki-market-e-letter":"Letter","oc-offer-table__ft00056-rynki-market-o-letter":"Letter","oc-offer-table__ft00056-cena-cena":"Cena"};
+const OPTIONAL_PARTS = {};
+
+export default {
+  title: "Cards/OfferTable",
+  tags: ["autodocs"],
+  parameters: {
+    docs: { description: { component: "Towary → Tabela: the warehouse list of offers. Owns the container fill, border, radius and the column widths; OfferRow and OfferTableHeader read the same track and must never be resized independently.\n\nСобрано из спеки Figma `194:3141` (страница MAG-KONTROL).\nКорень `<div>`, базовый класс `.oc-offer-table`. Вариантов: 1. Непривязанных значений: 8 — см. маркеры TODO в CSS." } },
+  },
+  argTypes: {
+
+  },
+  args: {
+
+  },
+};
+
+// Комбинация — это отдельный вариант Figma, поэтому переключатель выбирает разметку, а не
+// навешивает класс: вариант может отличаться строением, а не только оформлением.
+// Текст и переключаемые части накладываются поверх выбранного варианта.
+export const Playground = {
+  render: (args) => {
+    const wrap = document.createElement("div");
+    wrap.innerHTML = VARIANTS["OfferTable"] ?? "<p>нет такой комбинации</p>";
+    for (const [cls, prop] of Object.entries(TEXT_PARTS)) {
+      if (!(prop in args)) continue;
+      for (const el of wrap.getElementsByClassName(cls)) el.textContent = args[prop];
+    }
+    for (const [cls, prop] of Object.entries(OPTIONAL_PARTS)) {
+      if (args[prop] !== false) continue;
+      for (const el of [...wrap.getElementsByClassName(cls)]) el.remove();
+    }
+    return wrap.firstElementChild ?? wrap;
+  },
+};
+
+// Витрина матрицы прибита к значениям из спеки: она же опора для замера габаритов в
+// verify-code.mjs. Протёк бы сюда пользовательский Label — ширина поехала бы, и сверка с
+// figmaSize начала бы врать.
+export const AllVariants = {
+  parameters: { controls: { disable: true } },
+  render: () => Object.values(VARIANTS)
+    .map((html, i) => `<figure style="margin:0 0 24px">${html}<figcaption style="font:12px/1.6 ui-monospace,monospace;color:#8a8987;margin-top:8px">${CAPTIONS[i]}</figcaption></figure>`)
+    .join(""),
+};

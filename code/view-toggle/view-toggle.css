@@ -1,0 +1,112 @@
+/* ViewToggle — сгенерировано из components/view-toggle/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — height = 40px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-view-toggle {
+  width: fit-content;
+  height: 40px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-1);
+  padding: var(--space-0-5) var(--space-0-5) var(--space-0-5) var(--space-0-5);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.oc-view-toggle__lista {
+  width: 80px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: 0 var(--space-4) 0 var(--space-4);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-view-toggle__icon-list {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+.oc-view-toggle__lista-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+.oc-view-toggle__etapy {
+  width: 80px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: 0 var(--space-4) 0 var(--space-4);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-view-toggle__etapy-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+}
+
+/* ---- варианты ---- */
+
+/* Value=List */
+.oc-view-toggle.oc-view-toggle--value-list .oc-view-toggle__lista {
+  background: var(--surface-raised-hover);
+}
+.oc-view-toggle.oc-view-toggle--value-list .oc-view-toggle__lista-label {
+  color: var(--text-primary);
+}
+.oc-view-toggle.oc-view-toggle--value-list .oc-view-toggle__icon-board {
+  width: 16px;
+  height: 16px;
+  color: var(--text-primary);
+  stroke-width: 1.5;
+  flex: none;
+}
+.oc-view-toggle.oc-view-toggle--value-list .oc-view-toggle__etapy-label {
+  color: var(--text-tertiary);
+}
+
+/* Value=Board */
+.oc-view-toggle.oc-view-toggle--value-board .oc-view-toggle__lista-label {
+  color: var(--text-tertiary);
+}
+.oc-view-toggle.oc-view-toggle--value-board .oc-view-toggle__etapy {
+  background: var(--surface-raised-hover);
+}
+.oc-view-toggle.oc-view-toggle--value-board .oc-view-toggle__etapy-label {
+  color: var(--text-primary);
+}
+.oc-view-toggle.oc-view-toggle--value-board .oc-view-toggle__icon-grid {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}

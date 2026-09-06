@@ -1,0 +1,84 @@
+/* Select — сгенерировано из components/select/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 240px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 40px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — opacity = 0.6 — непрозрачность без токена */
+.oc-select {
+  width: 240px;
+  height: 40px;
+  background: var(--surface-background);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: 0 var(--space-3) 0 var(--space-3);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.oc-select__value {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 190px;
+}
+
+/* TODO: unbound — icon-chevron-down.iconStrokeWidth = 1.5 — нет токена под толщину линии иконки */
+.oc-select__icon-chevron-down {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1.5;
+  flex: none;
+}
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-select.oc-select--state-default {
+  border: 1px solid var(--border-default);
+}
+.oc-select.oc-select--state-default .oc-select__value {
+  color: var(--text-tertiary);
+}
+
+/* State=Filled */
+.oc-select.oc-select--state-filled {
+  border: 1px solid var(--border-default);
+}
+.oc-select.oc-select--state-filled .oc-select__value {
+  color: var(--text-primary);
+}
+
+/* State=Focus */
+.oc-select.oc-select--state-focus,
+.oc-select:focus-visible {
+  border: 1px solid var(--accent-default);
+}
+.oc-select.oc-select--state-focus .oc-select__value,
+.oc-select:focus-visible .oc-select__value {
+  color: var(--text-primary);
+}
+
+/* State=Disabled */
+.oc-select.oc-select--state-disabled,
+.oc-select:disabled,
+.oc-select[aria-disabled="true"] {
+  border: 1px solid var(--border-subtle);
+  opacity: 0.6;
+}
+.oc-select.oc-select--state-disabled .oc-select__value,
+.oc-select:disabled .oc-select__value,
+.oc-select[aria-disabled="true"] .oc-select__value {
+  color: var(--text-disabled);
+}

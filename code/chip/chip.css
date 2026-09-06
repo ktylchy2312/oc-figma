@@ -1,0 +1,50 @@
+/* Chip — сгенерировано из components/chip/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 35px — нет шкалы размеров: ширина задана числом */
+.oc-chip {
+  width: 35px;
+  background: var(--surface-raised-hover);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- варианты ---- */
+
+/* Variant=Neutral */
+.oc-chip.oc-chip--variant-neutral {
+  border-radius: var(--radius-full);
+}
+.oc-chip.oc-chip--variant-neutral .oc-chip__label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}
+
+/* Variant=Code */
+.oc-chip.oc-chip--variant-code {
+  border-radius: var(--radius-sm);
+}
+.oc-chip.oc-chip--variant-code .oc-chip__3-5 {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--text-tertiary);
+}

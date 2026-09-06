@@ -1,0 +1,99 @@
+<!-- @dsCard group="Navigation" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>TabBar — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">TabBar</h1>
+  <p class="ds-meta">Navigation · organism · 1 вариант · Figma 44:3315 · страница Core · Токенов задействовано: 7 · без токена: 1</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="TabBar">
+    <div style="width:fit-content;border-bottom:2px solid var(--text-disabled);display:flex;flex-direction:row;gap:var(--space-6);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="root">
+      <div style="height:40px;display:flex;flex-direction:column;gap:var(--space-0);padding:var(--space-0) var(--space-0) 0 var(--space-0);justify-content:flex-start;align-items:center" data-part="tab">
+        <div style="overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="tab/inner">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-secondary);stroke-width:1.5;flex:none" data-part="tab/inner/icon-list"><path d="M3 5H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 12H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 19H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="tab/inner/label">Lista</span>
+        </div>
+        <div style="align-self:stretch;flex:1 1 0%;flex-grow:1;overflow:hidden" data-part="tab/spacer"></div>
+        <div style="align-self:stretch;height:2px;background:var(--text-tertiary);opacity:0;overflow:hidden" data-part="tab/underline"></div>
+      </div>
+      <div style="height:40px;display:flex;flex-direction:column;gap:var(--space-0);padding:var(--space-0) var(--space-0) 0 var(--space-0);justify-content:flex-start;align-items:center" data-part="tab-2">
+        <div style="overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="tab-2/inner">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-secondary);stroke-width:1.5;flex:none" data-part="tab-2/inner/icon-list"><path d="M3 5H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 12H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 19H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="tab-2/inner/label">Etapy</span>
+        </div>
+        <div style="align-self:stretch;flex:1 1 0%;flex-grow:1;overflow:hidden" data-part="tab-2/spacer"></div>
+        <div style="align-self:stretch;height:2px;background:var(--text-tertiary);opacity:0;overflow:hidden" data-part="tab-2/underline"></div>
+      </div>
+      <div style="height:40px;display:flex;flex-direction:column;gap:var(--space-0);padding:var(--space-0) var(--space-0) 0 var(--space-0);justify-content:flex-start;align-items:center" data-part="tab-3">
+        <div style="overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="tab-3/inner">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-secondary);stroke-width:1.5;flex:none" data-part="tab-3/inner/icon-list"><path d="M3 5H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 12H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 19H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="tab-3/inner/label">Tab 3</span>
+        </div>
+        <div style="align-self:stretch;flex:1 1 0%;flex-grow:1;overflow:hidden" data-part="tab-3/spacer"></div>
+        <div style="align-self:stretch;height:2px;background:var(--text-tertiary);opacity:0;overflow:hidden" data-part="tab-3/underline"></div>
+      </div>
+      <div style="height:40px;display:flex;flex-direction:column;gap:var(--space-0);padding:var(--space-0) var(--space-0) 0 var(--space-0);justify-content:flex-start;align-items:center" data-part="tab-4">
+        <div style="overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-0-5) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="tab-4/inner">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-secondary);stroke-width:1.5;flex:none" data-part="tab-4/inner/icon-list"><path d="M3 5H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 12H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 19H3.01" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 5H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 12H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8 19H21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="tab-4/inner/label">Tab 4</span>
+        </div>
+        <div style="align-self:stretch;flex:1 1 0%;flex-grow:1;overflow:hidden" data-part="tab-4/spacer"></div>
+        <div style="align-self:stretch;height:2px;background:var(--text-tertiary);opacity:0;overflow:hidden" data-part="tab-4/underline"></div>
+      </div>
+    </div>
+    <code class="ds-cell-label">TabBar</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --space-0, --space-0-5, --space-2, --space-6, --text-disabled, --text-secondary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> borderWidth = 2px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

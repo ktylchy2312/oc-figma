@@ -1,0 +1,228 @@
+{
+  "name": "MarketChip",
+  "slug": "market-chip",
+  "group": "Forms",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "194:2029",
+    "page": "MAG-KONTROL",
+    "kind": "SET"
+  },
+  "description": "One marketplace square inside an OfferRow. On = the part is listed there. The four markets (A Allegro, X OLX, E eBay PL, O Ovoko) are fixed — never re-letter them per row.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Letter",
+      "type": "text",
+      "figmaKey": "Letter#194:0",
+      "default": "A"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "On",
+        "Off"
+      ],
+      "default": "On"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "MarketChip",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "letter",
+      "name": "Letter",
+      "element": "span",
+      "textProp": "Letter"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "0",
+    "height": "22px",
+    "justify": "CENTER",
+    "letter.font": "Type/Label 12/16px 700",
+    "radius": "var(--radius-sm)",
+    "width": "22px"
+  },
+  "variants": [
+    {
+      "key": "State=On",
+      "match": {
+        "State": "On"
+      },
+      "nodeId": "194:2025",
+      "figmaSize": {
+        "w": 22,
+        "h": 22
+      },
+      "tokens": {
+        "background": "var(--status-success-bg)",
+        "borderColor": "var(--status-success-border)",
+        "letter.color": "var(--status-success-text)"
+      },
+      "render": {
+        "part": "State=On",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "22px",
+          "height": "22px",
+          "background": "var(--status-success-bg)",
+          "border": "1px solid var(--status-success-border)",
+          "border-radius": "var(--radius-sm)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Letter",
+            "path": "letter",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "white-space": "nowrap",
+              "color": "var(--status-success-text)"
+            },
+            "propRef": {
+              "characters": "Letter#194:0"
+            },
+            "text": "A",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Off",
+      "match": {
+        "State": "Off"
+      },
+      "nodeId": "194:2028",
+      "figmaSize": {
+        "w": 22,
+        "h": 22
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "borderColor": "var(--border-subtle)",
+        "letter.color": "var(--text-disabled)"
+      },
+      "render": {
+        "part": "State=Off",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "22px",
+          "height": "22px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-subtle)",
+          "border-radius": "var(--radius-sm)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "0",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Letter",
+            "path": "letter",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "700",
+              "line-height": "16px",
+              "letter-spacing": "0.6px",
+              "text-transform": "uppercase",
+              "white-space": "nowrap",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "characters": "Letter#194:0"
+            },
+            "text": "A",
+            "font": {
+              "style": "Type/Label",
+              "size": 12,
+              "weight": 700,
+              "lineHeight": "16px",
+              "letterSpacing": "0.6px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "One marketplace square inside an OfferRow.",
+    "On = the part is listed there.",
+    "The four markets (A Allegro, X OLX, E eBay PL, O Ovoko) are fixed — never re-letter them per row.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "22px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "22px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

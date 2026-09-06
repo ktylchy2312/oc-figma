@@ -1,0 +1,92 @@
+{
+  "name": "DropZone",
+  "slug": "drop-zone",
+  "group": "Forms",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "33:1545",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "DropZone",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    }
+  ],
+  "base": {
+    "borderColor": "var(--border-default)",
+    "borderWidth": "1.5px",
+    "height": "120px",
+    "radius": "var(--radius-md)",
+    "width": "220px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "33:1545",
+      "figmaSize": {
+        "w": 220,
+        "h": 120
+      },
+      "tokens": {},
+      "render": {
+        "part": "DropZone",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "220px",
+          "height": "120px",
+          "border": "1.5px solid var(--border-default)",
+          "border-style": "dashed",
+          "border-radius": "var(--radius-md)"
+        }
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "220px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "120px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1.5px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

@@ -1,0 +1,58 @@
+<!-- @dsCard group="Actions" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>FilterButton — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">FilterButton</h1>
+  <p class="ds-meta">Actions · molecule · 2 вариантов · Figma 79:10531 · страница MAG-KONTROL · Токенов задействовано: 9 · без токена: 4</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="State=Default">
+    <div style="width:fit-content;height:40px;background:var(--surface-column);border:1px solid var(--border-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-4) var(--space-0) var(--space-4);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-filter"><path d="M9.99988 20C9.9998 20.1858 10.0515 20.368 10.1492 20.5261C10.2469 20.6842 10.3867 20.8119 10.5529 20.895L12.5529 21.895C12.7054 21.9712 12.8748 22.0072 13.0451 21.9994C13.2154 21.9917 13.3809 21.9406 13.5259 21.8509C13.6709 21.7613 13.7905 21.636 13.8735 21.4871C13.9565 21.3381 14 21.1705 13.9999 21V14C14.0001 13.5044 14.1843 13.0265 14.5169 12.659L21.7399 4.67C21.8693 4.52656 21.9545 4.34868 21.985 4.15788C22.0155 3.96708 21.9901 3.77153 21.9118 3.59487C21.8335 3.41822 21.7057 3.26802 21.5439 3.16245C21.3821 3.05688 21.1931 3.00046 20.9999 3H2.99988C2.80649 3.00007 2.61727 3.05622 2.45513 3.16164C2.293 3.26706 2.16491 3.41723 2.08639 3.59396C2.00786 3.7707 1.98227 3.96641 2.01271 4.15739C2.04315 4.34837 2.12831 4.52643 2.25788 4.67L9.48288 12.659C9.81542 13.0265 9.99966 13.5044 9.99988 14V20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="label">Wszystkie</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Default</code>
+  </div>
+  <div class="ds-cell" data-variant="State=Active">
+    <div style="width:fit-content;height:40px;background:var(--surface-column);border:1px solid var(--accent-default);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-4) var(--space-0) var(--space-4);justify-content:flex-start;align-items:center" data-part="root">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-filter"><path d="M9.99988 20C9.9998 20.1858 10.0515 20.368 10.1492 20.5261C10.2469 20.6842 10.3867 20.8119 10.5529 20.895L12.5529 21.895C12.7054 21.9712 12.8748 22.0072 13.0451 21.9994C13.2154 21.9917 13.3809 21.9406 13.5259 21.8509C13.6709 21.7613 13.7905 21.636 13.8735 21.4871C13.9565 21.3381 14 21.1705 13.9999 21V14C14.0001 13.5044 14.1843 13.0265 14.5169 12.659L21.7399 4.67C21.8693 4.52656 21.9545 4.34868 21.985 4.15788C22.0155 3.96708 21.9901 3.77153 21.9118 3.59487C21.8335 3.41822 21.7057 3.26802 21.5439 3.16245C21.3821 3.05688 21.1931 3.00046 20.9999 3H2.99988C2.80649 3.00007 2.61727 3.05622 2.45513 3.16164C2.293 3.26706 2.16491 3.41723 2.08639 3.59396C2.00786 3.7707 1.98227 3.96641 2.01271 4.15739C2.04315 4.34837 2.12831 4.52643 2.25788 4.67L9.48288 12.659C9.81542 13.0265 9.99966 13.5044 9.99988 14V20Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:13px;font-weight:700;line-height:20px;letter-spacing:0px;white-space:nowrap;color:var(--text-secondary)" data-part="label">Wszystkie</span>
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;transform:rotate(-180deg);transform-origin:center;color:var(--text-primary);stroke-width:1;flex:none" data-part="icon-chevron-down"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <code class="ds-cell-label">State=Active</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --border-default, --radius-md, --space-0, --space-2, --space-4, --surface-column, --text-primary, --text-secondary</p>
+  <p class="ds-foot"><b>Без токена:</b> height = 40px, borderWidth = 1px, icon-filter.iconStrokeWidth = 1, icon-chevron-down.iconStrokeWidth = 1</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

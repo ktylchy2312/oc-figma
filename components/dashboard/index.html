@@ -1,0 +1,63 @@
+<!-- @dsCard group="Navigation" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>Dashboard — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">Dashboard</h1>
+  <p class="ds-meta">Navigation · molecule · 1 вариант · Figma 448:8112 · страница Core · Токенов задействовано: 9 · без токена: 5</p>
+  <p class="ds-desc">Описание компонента в Figma не заполнено — usage и avoid в спеке пусты намеренно, а не пропущены.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="Dashboard">
+    <div style="width:972px;display:flex;flex-direction:row;gap:var(--space-3);padding:var(--space-0) var(--space-0) var(--space-0) var(--space-0);justify-content:flex-start;align-items:center" data-part="root">
+      <div style="flex:1 1 0%;flex-grow:1;background:var(--surface-column);border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-3) var(--space-6) var(--space-3) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="dashboard-stat">
+        <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:17px;font-weight:700;line-height:24px;letter-spacing:0px;width:184px;flex:none;color:var(--text-tertiary)" data-part="dashboard-stat/cznie-w-toku">ŁĄCZNIE W TOKU</span>
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:32px;font-weight:700;line-height:40px;letter-spacing:-0.2px;white-space:nowrap;color:var(--text-primary)" data-part="dashboard-stat/7">7</span>
+      </div>
+      <div style="flex:1 1 0%;flex-grow:1;background:var(--surface-column);border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-3) var(--space-6) var(--space-3) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="dashboard-stat-2">
+        <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:17px;font-weight:700;line-height:24px;letter-spacing:0px;width:184px;flex:none;color:var(--text-tertiary)" data-part="dashboard-stat-2/ryzyko-oc">RYZYKO OC</span>
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:32px;font-weight:700;line-height:40px;letter-spacing:-0.2px;white-space:nowrap;color:var(--status-error-text)" data-part="dashboard-stat-2/6">6</span>
+      </div>
+      <div style="flex:1 1 0%;flex-grow:1;background:var(--surface-column);border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-3) var(--space-6) var(--space-3) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="dashboard-stat-3">
+        <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:17px;font-weight:700;line-height:24px;letter-spacing:0px;width:184px;flex:none;color:var(--text-tertiary)" data-part="dashboard-stat-3/cznie-w-toku">ŁĄCZNIE W TOKU</span>
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:32px;font-weight:700;line-height:40px;letter-spacing:-0.2px;white-space:nowrap;color:var(--text-primary)" data-part="dashboard-stat-3/7">7</span>
+      </div>
+      <div style="flex:1 1 0%;flex-grow:1;background:var(--surface-column);border:1px solid var(--border-default);border-radius:var(--radius-lg);display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-3) var(--space-6) var(--space-3) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="dashboard-stat-4">
+        <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:17px;font-weight:700;line-height:24px;letter-spacing:0px;width:184px;flex:none;color:var(--text-tertiary)" data-part="dashboard-stat-4/cznie-w-toku">ŁĄCZNIE W TOKU</span>
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:32px;font-weight:700;line-height:40px;letter-spacing:-0.2px;white-space:nowrap;color:var(--text-primary)" data-part="dashboard-stat-4/7">7</span>
+      </div>
+    </div>
+    <code class="ds-cell-label">Dashboard</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --border-default, --radius-lg, --space-0, --space-3, --space-6, --status-error-text, --surface-column, --text-primary, --text-tertiary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 972px, dashboard-stat.borderWidth = 1px, dashboard-stat-2.borderWidth = 1px, dashboard-stat-3.borderWidth = 1px, dashboard-stat-4.borderWidth = 1px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

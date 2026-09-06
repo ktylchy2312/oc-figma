@@ -1,0 +1,274 @@
+{
+  "name": "ButtonGroup",
+  "slug": "button-group",
+  "group": "Actions",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "333:3749",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Обойма кнопок: футер диалога, подвал формы. Существует ради того, чтобы порядок кнопок и зазор не решались заново на каждом экране. Главное действие справа.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "ButtonGroup",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "secondary",
+      "name": "Secondary",
+      "element": "div",
+      "component": "Button",
+      "slug": "button"
+    },
+    {
+      "part": "secondary/icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons",
+      "optional": true,
+      "controlledBy": "Show Icon"
+    },
+    {
+      "part": "secondary/label",
+      "name": "Dodaj samochód",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "primary",
+      "name": "Primary",
+      "element": "div",
+      "component": "Button",
+      "slug": "button"
+    },
+    {
+      "part": "primary/icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons",
+      "optional": true,
+      "controlledBy": "Show Icon"
+    },
+    {
+      "part": "primary/label",
+      "name": "Dodaj samochód",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-4)",
+    "justify": "MAX",
+    "primary.align": "CENTER",
+    "primary.background": "var(--accent-default)",
+    "primary.direction": "HORIZONTAL",
+    "primary.gap": "var(--space-2)",
+    "primary.height": "44px",
+    "primary.justify": "CENTER",
+    "primary.padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+    "primary.radius": "var(--radius-md)",
+    "primary/icon-plus.height": "16px",
+    "primary/icon-plus.icon": "Plus",
+    "primary/icon-plus.iconColor": "var(--text-on-accent)",
+    "primary/icon-plus.width": "16px",
+    "primary/label.color": "var(--text-on-accent)",
+    "primary/label.font": "Type/Body Medium Alter 15/24px 700",
+    "secondary.align": "CENTER",
+    "secondary.background": "var(--accent-default)",
+    "secondary.direction": "HORIZONTAL",
+    "secondary.gap": "var(--space-2)",
+    "secondary.height": "44px",
+    "secondary.justify": "CENTER",
+    "secondary.padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+    "secondary.radius": "var(--radius-md)",
+    "secondary/icon-plus.height": "16px",
+    "secondary/icon-plus.icon": "Plus",
+    "secondary/icon-plus.iconColor": "var(--text-on-accent)",
+    "secondary/icon-plus.width": "16px",
+    "secondary/label.color": "var(--text-on-accent)",
+    "secondary/label.font": "Type/Body Medium Alter 15/24px 700"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "333:3749",
+      "figmaSize": {
+        "w": 370,
+        "h": 44
+      },
+      "tokens": {},
+      "render": {
+        "part": "ButtonGroup",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "justify-content": "flex-end",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Secondary",
+            "path": "secondary",
+            "tag": "div",
+            "style": {
+              "height": "44px",
+              "background": "var(--accent-default)",
+              "border-radius": "var(--radius-md)",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "secondary/icon-plus",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-on-accent)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "visible": "Show Icon#27:41"
+                },
+                "icon": "Plus",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Dodaj samochód",
+                "path": "secondary/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "700",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-on-accent)"
+                },
+                "propRef": {
+                  "characters": "Label#27:28"
+                },
+                "text": "Dodaj samochód",
+                "font": {
+                  "style": "Type/Body Medium Alter",
+                  "size": 15,
+                  "weight": 700,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Primary",
+            "path": "primary",
+            "tag": "div",
+            "style": {
+              "height": "44px",
+              "background": "var(--accent-default)",
+              "border-radius": "var(--radius-md)",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-2)",
+              "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "primary/icon-plus",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-on-accent)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "propRef": {
+                  "visible": "Show Icon#27:41"
+                },
+                "icon": "Plus",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              },
+              {
+                "part": "Dodaj samochód",
+                "path": "primary/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "700",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-on-accent)"
+                },
+                "propRef": {
+                  "characters": "Label#27:28"
+                },
+                "text": "Dodaj samochód",
+                "font": {
+                  "style": "Type/Body Medium Alter",
+                  "size": 15,
+                  "weight": 700,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Обойма кнопок: футер диалога, подвал формы.",
+    "Существует ради того, чтобы порядок кнопок и зазор не решались заново на каждом экране.",
+    "Главное действие справа.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

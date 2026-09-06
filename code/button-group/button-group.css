@@ -1,0 +1,79 @@
+/* ButtonGroup — сгенерировано из components/button-group/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+.oc-button-group {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-4);
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.oc-button-group__secondary {
+  height: 44px;
+  background: var(--accent-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-5) var(--space-0) var(--space-5);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-button-group__secondary-icon-plus {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-on-accent);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-button-group__secondary-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-on-accent);
+}
+
+.oc-button-group__primary {
+  height: 44px;
+  background: var(--accent-default);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-0) var(--space-5) var(--space-0) var(--space-5);
+  justify-content: center;
+  align-items: center;
+}
+
+.oc-button-group__primary-icon-plus {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-on-accent);
+  stroke-width: 1;
+  flex: none;
+}
+
+.oc-button-group__primary-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-on-accent);
+}
+
+/* ---- варианты ---- */

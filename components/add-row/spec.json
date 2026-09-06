@@ -1,0 +1,411 @@
+{
+  "name": "AddRow",
+  "slug": "add-row",
+  "group": "Actions",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:2738",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#40:111",
+      "default": "Nazwa dokumentu"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Empty",
+        "Filled"
+      ],
+      "default": "Empty"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "AddRow",
+      "element": "button",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "input",
+      "name": "Input",
+      "element": "div"
+    },
+    {
+      "part": "input/label",
+      "name": "Nazwa dokumentu",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "add-button",
+      "name": "AddButton",
+      "element": "div"
+    },
+    {
+      "part": "add-button/icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "add-button.align": "CENTER",
+    "add-button.background": "var(--surface-raised)",
+    "add-button.borderColor": "var(--border-default)",
+    "add-button.borderWidth": "1px",
+    "add-button.direction": "HORIZONTAL",
+    "add-button.gap": "var(--space-0)",
+    "add-button.height": "36px",
+    "add-button.justify": "CENTER",
+    "add-button.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "add-button.radius": "var(--radius-md)",
+    "add-button.width": "36px",
+    "add-button/icon-plus.height": "16px",
+    "add-button/icon-plus.icon": "Plus",
+    "add-button/icon-plus.iconColor": "var(--text-primary)",
+    "add-button/icon-plus.width": "16px",
+    "align": "MIN",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "height": "36px",
+    "input.align": "CENTER",
+    "input.background": "var(--surface-background)",
+    "input.borderColor": "var(--border-default)",
+    "input.borderWidth": "1px",
+    "input.direction": "HORIZONTAL",
+    "input.gap": "var(--space-0)",
+    "input.height": "36px",
+    "input.justify": "MIN",
+    "input.padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+    "input.radius": "var(--radius-md)",
+    "input/label.font": "Type/Body Small 13/20px 400",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "width": "300px"
+  },
+  "variants": [
+    {
+      "key": "State=Empty",
+      "match": {
+        "State": "Empty"
+      },
+      "nodeId": "395:2739",
+      "figmaSize": {
+        "w": 300,
+        "h": 36
+      },
+      "tokens": {
+        "input/label.color": "var(--text-disabled)"
+      },
+      "render": {
+        "part": "State=Empty",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "300px",
+          "height": "36px",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "height": "36px",
+              "flex-grow": "1",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Nazwa dokumentu",
+                "path": "input/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "propRef": {
+                  "characters": "Label#40:111"
+                },
+                "text": "Nazwa dokumentu",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "AddButton",
+            "path": "add-button",
+            "tag": "div",
+            "style": {
+              "width": "36px",
+              "height": "36px",
+              "background": "var(--surface-raised)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "add-button/icon-plus",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "Plus",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Filled",
+      "match": {
+        "State": "Filled"
+      },
+      "nodeId": "395:2744",
+      "figmaSize": {
+        "w": 300,
+        "h": 36
+      },
+      "tokens": {
+        "input/label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "State=Filled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "300px",
+          "height": "36px",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "height": "36px",
+              "flex-grow": "1",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-3) var(--space-0) var(--space-3)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Nazwa dokumentu",
+                "path": "input/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Label#40:111"
+                },
+                "text": "Nazwa dokumentu",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "AddButton",
+            "path": "add-button",
+            "tag": "div",
+            "style": {
+              "width": "36px",
+              "height": "36px",
+              "background": "var(--surface-raised)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "center",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Icons",
+                "path": "add-button/icon-plus",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "Plus",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "300px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "36px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "input.height",
+      "value": "36px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "input"
+      ]
+    },
+    {
+      "prop": "input.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "input"
+      ]
+    },
+    {
+      "prop": "add-button.width",
+      "value": "36px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "add-button"
+      ]
+    },
+    {
+      "prop": "add-button.height",
+      "value": "36px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "add-button"
+      ]
+    },
+    {
+      "prop": "add-button.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "add-button"
+      ]
+    },
+    {
+      "prop": "add-button/icon-plus.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "add-button/icon-plus"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

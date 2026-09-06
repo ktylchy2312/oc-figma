@@ -1,0 +1,319 @@
+{
+  "name": "UnderlineTabs",
+  "slug": "underline-tabs",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "335:3835",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Обойма подчёркнутых вкладок: экран настроек. Нижняя грань принадлежит обойме, а не вкладке — иначе линия рвётся в зазорах между ними. Зазор 24: прототипные 28 не на шкале.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "UnderlineTabs",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "tab-1",
+      "name": "Tab 1",
+      "element": "div",
+      "component": "UnderlineTab",
+      "slug": "underline-tab"
+    },
+    {
+      "part": "tab-1/label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab-1/underline",
+      "name": "Underline",
+      "element": "div"
+    },
+    {
+      "part": "tab-2",
+      "name": "Tab 2",
+      "element": "div",
+      "component": "UnderlineTab",
+      "slug": "underline-tab"
+    },
+    {
+      "part": "tab-2/label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab-2/underline",
+      "name": "Underline",
+      "element": "div"
+    },
+    {
+      "part": "tab-3",
+      "name": "Tab 3",
+      "element": "div",
+      "component": "UnderlineTab",
+      "slug": "underline-tab"
+    },
+    {
+      "part": "tab-3/label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "tab-3/underline",
+      "name": "Underline",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "bottom 1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-6)",
+    "justify": "MIN",
+    "tab-1.align": "CENTER",
+    "tab-1.direction": "VERTICAL",
+    "tab-1.gap": "var(--space-3)",
+    "tab-1.justify": "MIN",
+    "tab-1/label.color": "var(--text-tertiary)",
+    "tab-1/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab-1/underline.height": "2px",
+    "tab-2.align": "CENTER",
+    "tab-2.direction": "VERTICAL",
+    "tab-2.gap": "var(--space-3)",
+    "tab-2.justify": "MIN",
+    "tab-2/label.color": "var(--text-tertiary)",
+    "tab-2/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab-2/underline.height": "2px",
+    "tab-3.align": "CENTER",
+    "tab-3.direction": "VERTICAL",
+    "tab-3.gap": "var(--space-3)",
+    "tab-3.justify": "MIN",
+    "tab-3/label.color": "var(--text-tertiary)",
+    "tab-3/label.font": "Type/Body Small Alter 13/20px 700",
+    "tab-3/underline.height": "2px",
+    "width": "520px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "335:3835",
+      "figmaSize": {
+        "w": 520,
+        "h": 35
+      },
+      "tokens": {},
+      "render": {
+        "part": "UnderlineTabs",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "520px",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-6)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Tab 1",
+            "path": "tab-1",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Label",
+                "path": "tab-1/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#335:120"
+                },
+                "text": "Ogólne",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab-1/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Tab 2",
+            "path": "tab-2",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Label",
+                "path": "tab-2/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#335:120"
+                },
+                "text": "Ogólne",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab-2/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Tab 3",
+            "path": "tab-3",
+            "tag": "div",
+            "style": {
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Label",
+                "path": "tab-3/label",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Label#335:120"
+                },
+                "text": "Ogólne",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Underline",
+                "path": "tab-3/underline",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "height": "2px",
+                  "overflow": "hidden"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Обойма подчёркнутых вкладок: экран настроек.",
+    "Нижняя грань принадлежит обойме, а не вкладке — иначе линия рвётся в зазорах между ними.",
+    "Зазор 24: прототипные 28 не на шкале."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "520px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

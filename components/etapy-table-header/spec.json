@@ -1,0 +1,573 @@
+{
+  "name": "EtapyTableHeader",
+  "slug": "etapy-table-header",
+  "group": "Stage",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "448:11277",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Wiersz nagłówka dla EtapyTable. 8 kolumn, szerokość 1660. Nie używać samodzielnie.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "EtapyTableHeader",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FILL",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "sygnatura",
+      "name": "SYGNATURA",
+      "element": "div"
+    },
+    {
+      "part": "sygnatura/sygnatura",
+      "name": "SYGNATURA",
+      "element": "span"
+    },
+    {
+      "part": "pojazd",
+      "name": "POJAZD",
+      "element": "div"
+    },
+    {
+      "part": "pojazd/pojazd",
+      "name": "POJAZD",
+      "element": "span"
+    },
+    {
+      "part": "vin",
+      "name": "VIN",
+      "element": "div"
+    },
+    {
+      "part": "vin/vin",
+      "name": "VIN",
+      "element": "span"
+    },
+    {
+      "part": "kupiona",
+      "name": "KUPIONA",
+      "element": "div"
+    },
+    {
+      "part": "kupiona/kupiona",
+      "name": "KUPIONA",
+      "element": "span"
+    },
+    {
+      "part": "status-oc",
+      "name": "STATUS OC",
+      "element": "div"
+    },
+    {
+      "part": "status-oc/status-oc",
+      "name": "STATUS OC",
+      "element": "span"
+    },
+    {
+      "part": "oc-do",
+      "name": "OC DO",
+      "element": "div"
+    },
+    {
+      "part": "oc-do/oc-do",
+      "name": "OC DO",
+      "element": "span"
+    },
+    {
+      "part": "dokumenty",
+      "name": "DOKUMENTY",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/dokumenty",
+      "name": "DOKUMENTY",
+      "element": "span"
+    },
+    {
+      "part": "etapy",
+      "name": "ETAPY",
+      "element": "div"
+    },
+    {
+      "part": "etapy/etapy",
+      "name": "ETAPY",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "background": "var(--surface-raised)",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "bottom 1px",
+    "direction": "HORIZONTAL",
+    "dokumenty.align": "CENTER",
+    "dokumenty.direction": "HORIZONTAL",
+    "dokumenty.gap": "0",
+    "dokumenty.justify": "MIN",
+    "dokumenty/dokumenty.color": "var(--text-tertiary)",
+    "dokumenty/dokumenty.font": "Type/Label 12/16px 700",
+    "etapy.align": "CENTER",
+    "etapy.direction": "HORIZONTAL",
+    "etapy.gap": "0",
+    "etapy.justify": "MIN",
+    "etapy/etapy.color": "var(--text-tertiary)",
+    "etapy/etapy.font": "Type/Label 12/16px 700",
+    "gap": "var(--space-4)",
+    "justify": "MIN",
+    "kupiona.align": "CENTER",
+    "kupiona.direction": "HORIZONTAL",
+    "kupiona.gap": "0",
+    "kupiona.justify": "MIN",
+    "kupiona/kupiona.color": "var(--text-tertiary)",
+    "kupiona/kupiona.font": "Type/Label 12/16px 700",
+    "oc-do.align": "CENTER",
+    "oc-do.direction": "HORIZONTAL",
+    "oc-do.gap": "0",
+    "oc-do.justify": "MIN",
+    "oc-do/oc-do.color": "var(--text-tertiary)",
+    "oc-do/oc-do.font": "Type/Label 12/16px 700",
+    "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+    "pojazd.align": "CENTER",
+    "pojazd.direction": "HORIZONTAL",
+    "pojazd.gap": "0",
+    "pojazd.justify": "MIN",
+    "pojazd.width": "284px",
+    "pojazd/pojazd.color": "var(--text-tertiary)",
+    "pojazd/pojazd.font": "Type/Label 12/16px 700",
+    "status-oc.align": "CENTER",
+    "status-oc.direction": "HORIZONTAL",
+    "status-oc.gap": "0",
+    "status-oc.justify": "MIN",
+    "status-oc/status-oc.color": "var(--text-tertiary)",
+    "status-oc/status-oc.font": "Type/Label 12/16px 700",
+    "sygnatura.align": "CENTER",
+    "sygnatura.direction": "HORIZONTAL",
+    "sygnatura.gap": "0",
+    "sygnatura.justify": "MIN",
+    "sygnatura.width": "112px",
+    "sygnatura/sygnatura.color": "var(--text-tertiary)",
+    "sygnatura/sygnatura.font": "Type/Label 12/16px 700",
+    "vin.align": "CENTER",
+    "vin.direction": "HORIZONTAL",
+    "vin.gap": "0",
+    "vin.justify": "MIN",
+    "vin.width": "280px",
+    "vin/vin.color": "var(--text-tertiary)",
+    "vin/vin.font": "Type/Label 12/16px 700",
+    "width": "1658px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "448:11277",
+      "figmaSize": {
+        "w": 1658,
+        "h": 41
+      },
+      "tokens": {},
+      "render": {
+        "part": "EtapyTableHeader",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1658px",
+          "align-self": "stretch",
+          "background": "var(--surface-raised)",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "SYGNATURA",
+            "path": "sygnatura",
+            "tag": "div",
+            "style": {
+              "width": "112px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "SYGNATURA",
+                "path": "sygnatura/sygnatura",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "SYGNATURA",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "POJAZD",
+            "path": "pojazd",
+            "tag": "div",
+            "style": {
+              "width": "284px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "POJAZD",
+                "path": "pojazd/pojazd",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "POJAZD",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "VIN",
+            "path": "vin",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "VIN",
+                "path": "vin/vin",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "VIN",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "KUPIONA",
+            "path": "kupiona",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "KUPIONA",
+                "path": "kupiona/kupiona",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "KUPIONA",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "STATUS OC",
+            "path": "status-oc",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "STATUS OC",
+                "path": "status-oc/status-oc",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "STATUS OC",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "OC DO",
+            "path": "oc-do",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "OC DO",
+                "path": "oc-do/oc-do",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "OC DO",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "DOKUMENTY",
+            "path": "dokumenty",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "DOKUMENTY",
+                "path": "dokumenty/dokumenty",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "DOKUMENTY",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "ETAPY",
+            "path": "etapy",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "ETAPY",
+                "path": "etapy/etapy",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "12px",
+                  "font-weight": "700",
+                  "line-height": "16px",
+                  "letter-spacing": "0.6px",
+                  "text-transform": "uppercase",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "text": "ETAPY",
+                "font": {
+                  "style": "Type/Label",
+                  "size": 12,
+                  "weight": 700,
+                  "lineHeight": "16px",
+                  "letterSpacing": "0.6px"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Wiersz nagłówka dla EtapyTable.",
+    "8 kolumn, szerokość 1660.",
+    "Nie używać samodzielnie.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "sygnatura.width",
+      "value": "112px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "sygnatura"
+      ]
+    },
+    {
+      "prop": "pojazd.width",
+      "value": "284px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "pojazd"
+      ]
+    },
+    {
+      "prop": "vin.width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "vin"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

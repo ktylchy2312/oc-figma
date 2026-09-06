@@ -1,0 +1,568 @@
+{
+  "name": "PageArrow",
+  "slug": "page-arrow",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "31:1204",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Direction",
+      "type": "variant",
+      "figmaKey": "Direction",
+      "values": [
+        "Prev",
+        "Next"
+      ],
+      "default": "Prev"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Disabled"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "PageArrow",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "icon-chevron-left",
+      "name": "‹",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "ChevronLeft",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderColor": "var(--border-default)",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "height": "32px",
+    "justify": "CENTER",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "radius": "var(--radius-md)",
+    "width": "32px"
+  },
+  "variants": [
+    {
+      "key": "Direction=Prev, State=Default",
+      "match": {
+        "Direction": "Prev",
+        "State": "Default"
+      },
+      "nodeId": "31:1188",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "icon-chevron-left.height": "24px",
+        "icon-chevron-left.icon": "ChevronLeft",
+        "icon-chevron-left.iconColor": "var(--text-primary)",
+        "icon-chevron-left.width": "24px"
+      },
+      "render": {
+        "part": "Direction=Prev, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "‹",
+            "path": "icon-chevron-left",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronLeft",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 18L9 12L15 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Prev, State=Hover",
+      "match": {
+        "Direction": "Prev",
+        "State": "Hover"
+      },
+      "nodeId": "31:1190",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "icon-chevron-left.height": "24px",
+        "icon-chevron-left.icon": "ChevronLeft",
+        "icon-chevron-left.iconColor": "var(--text-primary)",
+        "icon-chevron-left.width": "24px"
+      },
+      "render": {
+        "part": "Direction=Prev, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "‹",
+            "path": "icon-chevron-left",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronLeft",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 18L9 12L15 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Prev, State=Pressed",
+      "match": {
+        "Direction": "Prev",
+        "State": "Pressed"
+      },
+      "nodeId": "31:1192",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised-pressed)",
+        "icon-chevron-left.height": "24px",
+        "icon-chevron-left.icon": "ChevronLeft",
+        "icon-chevron-left.iconColor": "var(--text-primary)",
+        "icon-chevron-left.width": "24px"
+      },
+      "render": {
+        "part": "Direction=Prev, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised-pressed)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "‹",
+            "path": "icon-chevron-left",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronLeft",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 18L9 12L15 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Prev, State=Disabled",
+      "match": {
+        "Direction": "Prev",
+        "State": "Disabled"
+      },
+      "nodeId": "31:1194",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "icon-chevron-left.height": "24px",
+        "icon-chevron-left.icon": "ChevronLeft",
+        "icon-chevron-left.iconColor": "var(--text-primary)",
+        "icon-chevron-left.width": "24px",
+        "opacity": "var(--opacity-disabled)"
+      },
+      "render": {
+        "part": "Direction=Prev, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "‹",
+            "path": "icon-chevron-left",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronLeft",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15 18L9 12L15 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Next, State=Default",
+      "match": {
+        "Direction": "Next",
+        "State": "Default"
+      },
+      "nodeId": "31:1196",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "icon-chevron-right.height": "24px",
+        "icon-chevron-right.icon": "ChevronRight",
+        "icon-chevron-right.iconColor": "var(--text-primary)",
+        "icon-chevron-right.width": "24px"
+      },
+      "render": {
+        "part": "Direction=Next, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "›",
+            "path": "icon-chevron-right",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronRight",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18L15 12L9 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Next, State=Hover",
+      "match": {
+        "Direction": "Next",
+        "State": "Hover"
+      },
+      "nodeId": "31:1198",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "icon-chevron-right.height": "24px",
+        "icon-chevron-right.icon": "ChevronRight",
+        "icon-chevron-right.iconColor": "var(--text-primary)",
+        "icon-chevron-right.width": "24px"
+      },
+      "render": {
+        "part": "Direction=Next, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "›",
+            "path": "icon-chevron-right",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronRight",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18L15 12L9 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Next, State=Pressed",
+      "match": {
+        "Direction": "Next",
+        "State": "Pressed"
+      },
+      "nodeId": "31:1200",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised-pressed)",
+        "icon-chevron-right.height": "24px",
+        "icon-chevron-right.icon": "ChevronRight",
+        "icon-chevron-right.iconColor": "var(--text-primary)",
+        "icon-chevron-right.width": "24px"
+      },
+      "render": {
+        "part": "Direction=Next, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised-pressed)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "›",
+            "path": "icon-chevron-right",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronRight",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18L15 12L9 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "Direction=Next, State=Disabled",
+      "match": {
+        "Direction": "Next",
+        "State": "Disabled"
+      },
+      "nodeId": "31:1202",
+      "figmaSize": {
+        "w": 32,
+        "h": 32
+      },
+      "tokens": {
+        "background": "var(--surface-raised)",
+        "icon-chevron-right.height": "24px",
+        "icon-chevron-right.icon": "ChevronRight",
+        "icon-chevron-right.iconColor": "var(--text-primary)",
+        "icon-chevron-right.width": "24px",
+        "opacity": "var(--opacity-disabled)"
+      },
+      "render": {
+        "part": "Direction=Next, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "32px",
+          "height": "32px",
+          "background": "var(--surface-raised)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-md)",
+          "opacity": "var(--opacity-disabled)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "›",
+            "path": "icon-chevron-right",
+            "tag": "svg",
+            "style": {
+              "width": "24px",
+              "height": "24px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "ChevronRight",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 18L15 12L9 6\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "32px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "32px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-chevron-left.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-chevron-left"
+      ]
+    },
+    {
+      "prop": "icon-chevron-right.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-chevron-right"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

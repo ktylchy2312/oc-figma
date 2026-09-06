@@ -1,0 +1,2304 @@
+{
+  "name": "FormField",
+  "slug": "form-field",
+  "group": "Forms",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "41:1838",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Value",
+      "type": "text",
+      "figmaKey": "Value#41:121",
+      "default": "2004"
+    },
+    {
+      "name": "Filled",
+      "type": "boolean",
+      "figmaKey": "Filled#336:139",
+      "default": false
+    },
+    {
+      "name": "Required",
+      "type": "boolean",
+      "figmaKey": "Required#336:152",
+      "default": false
+    },
+    {
+      "name": "WithHint",
+      "type": "boolean",
+      "figmaKey": "WithHint#336:165",
+      "default": true
+    },
+    {
+      "name": "Variant",
+      "type": "variant",
+      "figmaKey": "Variant",
+      "values": [
+        "Text",
+        "Select",
+        "Textarea"
+      ],
+      "default": "Text"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Focus",
+        "Disabled",
+        "Error"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "FormField",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "label",
+      "name": "Label",
+      "element": "div"
+    },
+    {
+      "part": "label/rok-produkcji",
+      "name": "Rok produkcji",
+      "element": "span"
+    },
+    {
+      "part": "spacer",
+      "name": "Spacer",
+      "element": "div"
+    },
+    {
+      "part": "input",
+      "name": "Input",
+      "element": "div"
+    },
+    {
+      "part": "input/placeholder",
+      "name": "Placeholder",
+      "element": "span"
+    },
+    {
+      "part": "hint",
+      "name": "Hint",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "WithHint"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "VERTICAL",
+    "gap": "var(--space-0)",
+    "input.background": "var(--surface-background)",
+    "input.borderWidth": "1px",
+    "input.direction": "HORIZONTAL",
+    "input.justify": "MIN",
+    "justify": "MIN",
+    "label.align": "MIN",
+    "label.direction": "HORIZONTAL",
+    "label.gap": "var(--space-1)",
+    "label.justify": "MIN",
+    "label.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "label/rok-produkcji.color": "var(--text-secondary)",
+    "label/rok-produkcji.font": "Type/Body Small Alter 13/20px 700",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "spacer.height": "8px",
+    "width": "280px"
+  },
+  "variants": [
+    {
+      "key": "Variant=Text, State=Default",
+      "match": {
+        "Variant": "Text",
+        "State": "Default"
+      },
+      "nodeId": "336:3899",
+      "figmaSize": {
+        "w": 280,
+        "h": 84
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--border-default)",
+        "input.gap": "var(--space-0)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/placeholder.color": "var(--text-disabled)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "Variant=Text, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Text, State=Focus",
+      "match": {
+        "Variant": "Text",
+        "State": "Focus"
+      },
+      "nodeId": "336:3909",
+      "figmaSize": {
+        "w": 280,
+        "h": 84
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--accent-default)",
+        "input.gap": "var(--space-0-5)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/caret.background": "var(--accent-default)",
+        "input/caret.height": "20px",
+        "input/caret.width": "1.5px",
+        "input/placeholder.color": "var(--text-primary)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "Variant=Text, State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--accent-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0-5)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Caret",
+                "path": "input/caret",
+                "tag": "div",
+                "style": {
+                  "width": "1.5px",
+                  "height": "20px",
+                  "background": "var(--accent-default)"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Text, State=Disabled",
+      "match": {
+        "Variant": "Text",
+        "State": "Disabled"
+      },
+      "nodeId": "336:3920",
+      "figmaSize": {
+        "w": 280,
+        "h": 84
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--border-default)",
+        "input.gap": "var(--space-0)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/placeholder.color": "var(--text-disabled)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400",
+        "opacity": "0.6"
+      },
+      "render": {
+        "part": "Variant=Text, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "opacity": "0.6",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Text, State=Error",
+      "match": {
+        "Variant": "Text",
+        "State": "Error"
+      },
+      "nodeId": "336:3930",
+      "figmaSize": {
+        "w": 280,
+        "h": 90
+      },
+      "tokens": {
+        "frame.height": "6px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--status-error-border)",
+        "input.gap": "var(--space-0)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/placeholder.color": "var(--text-primary)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400",
+        "podaj-poprawny-rok-4-cyfry.color": "var(--status-error-text)",
+        "podaj-poprawny-rok-4-cyfry.font": "Type/Caption 12/16px 400",
+        "podaj-poprawny-rok-4-cyfry.width": "280px"
+      },
+      "render": {
+        "part": "Variant=Text, State=Error",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--status-error-border)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Frame",
+            "path": "frame",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "6px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Podaj poprawny rok (4 cyfry).",
+            "path": "podaj-poprawny-rok-4-cyfry",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--status-error-text)"
+            },
+            "text": "Podaj poprawny rok (4 cyfry).",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Select, State=Default",
+      "match": {
+        "Variant": "Select",
+        "State": "Default"
+      },
+      "nodeId": "336:3942",
+      "figmaSize": {
+        "w": 280,
+        "h": 84
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--border-default)",
+        "input.gap": "var(--space-0)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/icon-chevron-down.height": "16px",
+        "input/icon-chevron-down.icon": "ChevronDown",
+        "input/icon-chevron-down.iconColor": "var(--text-primary)",
+        "input/icon-chevron-down.width": "16px",
+        "input/placeholder.color": "var(--text-disabled)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "Variant=Select, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Chevron",
+                "path": "input/icon-chevron-down",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "ChevronDown",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Select, State=Focus",
+      "match": {
+        "Variant": "Select",
+        "State": "Focus"
+      },
+      "nodeId": "336:3954",
+      "figmaSize": {
+        "w": 280,
+        "h": 84
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--accent-default)",
+        "input.gap": "var(--space-0-5)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/caret.background": "var(--accent-default)",
+        "input/caret.height": "20px",
+        "input/caret.width": "1.5px",
+        "input/icon-chevron-down.height": "16px",
+        "input/icon-chevron-down.icon": "ChevronDown",
+        "input/icon-chevron-down.iconColor": "var(--text-primary)",
+        "input/icon-chevron-down.width": "16px",
+        "input/placeholder.color": "var(--text-primary)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "Variant=Select, State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--accent-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0-5)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Caret",
+                "path": "input/caret",
+                "tag": "div",
+                "style": {
+                  "width": "1.5px",
+                  "height": "20px",
+                  "background": "var(--accent-default)"
+                }
+              },
+              {
+                "part": "Chevron",
+                "path": "input/icon-chevron-down",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "ChevronDown",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Select, State=Disabled",
+      "match": {
+        "Variant": "Select",
+        "State": "Disabled"
+      },
+      "nodeId": "336:3967",
+      "figmaSize": {
+        "w": 280,
+        "h": 84
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--border-default)",
+        "input.gap": "var(--space-0)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/icon-chevron-down.height": "16px",
+        "input/icon-chevron-down.icon": "ChevronDown",
+        "input/icon-chevron-down.iconColor": "var(--text-primary)",
+        "input/icon-chevron-down.width": "16px",
+        "input/placeholder.color": "var(--text-disabled)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400",
+        "opacity": "0.6"
+      },
+      "render": {
+        "part": "Variant=Select, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "opacity": "0.6",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Chevron",
+                "path": "input/icon-chevron-down",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "ChevronDown",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Select, State=Error",
+      "match": {
+        "Variant": "Select",
+        "State": "Error"
+      },
+      "nodeId": "336:3979",
+      "figmaSize": {
+        "w": 280,
+        "h": 90
+      },
+      "tokens": {
+        "frame.height": "6px",
+        "input.align": "CENTER",
+        "input.borderColor": "var(--status-error-border)",
+        "input.gap": "var(--space-0)",
+        "input.height": "40px",
+        "input.padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+        "input.radius": "var(--radius-md)",
+        "input/icon-chevron-down.height": "16px",
+        "input/icon-chevron-down.icon": "ChevronDown",
+        "input/icon-chevron-down.iconColor": "var(--text-primary)",
+        "input/icon-chevron-down.width": "16px",
+        "input/placeholder.color": "var(--text-primary)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400",
+        "podaj-poprawny-rok-4-cyfry.color": "var(--status-error-text)",
+        "podaj-poprawny-rok-4-cyfry.font": "Type/Caption 12/16px 400",
+        "podaj-poprawny-rok-4-cyfry.width": "280px"
+      },
+      "render": {
+        "part": "Variant=Select, State=Error",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "40px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--status-error-border)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-0) var(--space-4) var(--space-0) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Chevron",
+                "path": "input/icon-chevron-down",
+                "tag": "svg",
+                "style": {
+                  "width": "16px",
+                  "height": "16px",
+                  "overflow": "hidden",
+                  "color": "var(--text-primary)",
+                  "stroke-width": "1",
+                  "flex": "none"
+                },
+                "icon": "ChevronDown",
+                "iconStyle": "Regular",
+                "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+              }
+            ]
+          },
+          {
+            "part": "Frame",
+            "path": "frame",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "6px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Podaj poprawny rok (4 cyfry).",
+            "path": "podaj-poprawny-rok-4-cyfry",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--status-error-text)"
+            },
+            "text": "Podaj poprawny rok (4 cyfry).",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Textarea, State=Default",
+      "match": {
+        "Variant": "Textarea",
+        "State": "Default"
+      },
+      "nodeId": "336:3993",
+      "figmaSize": {
+        "w": 280,
+        "h": 140
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "MIN",
+        "input.borderColor": "var(--border-default)",
+        "input.gap": "var(--space-0)",
+        "input.height": "96px",
+        "input.padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+        "input.radius": "var(--radius-lg)",
+        "input/placeholder.color": "var(--text-disabled)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "Variant=Textarea, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "96px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-lg)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-disabled)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Textarea, State=Focus",
+      "match": {
+        "Variant": "Textarea",
+        "State": "Focus"
+      },
+      "nodeId": "336:4003",
+      "figmaSize": {
+        "w": 280,
+        "h": 140
+      },
+      "tokens": {
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "MIN",
+        "input.borderColor": "var(--accent-default)",
+        "input.gap": "var(--space-0-5)",
+        "input.height": "96px",
+        "input.padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+        "input.radius": "var(--radius-lg)",
+        "input/caret.background": "var(--accent-default)",
+        "input/caret.height": "20px",
+        "input/caret.width": "1.5px",
+        "input/placeholder.color": "var(--text-primary)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400"
+      },
+      "render": {
+        "part": "Variant=Textarea, State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "96px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--accent-default)",
+              "border-radius": "var(--radius-lg)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0-5)",
+              "padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Caret",
+                "path": "input/caret",
+                "tag": "div",
+                "style": {
+                  "width": "1.5px",
+                  "height": "20px",
+                  "background": "var(--accent-default)"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Textarea, State=Disabled",
+      "match": {
+        "Variant": "Textarea",
+        "State": "Disabled"
+      },
+      "nodeId": "336:4014",
+      "figmaSize": {
+        "w": 280,
+        "h": 146
+      },
+      "tokens": {
+        "hint-gap.height": "6px",
+        "hint.color": "var(--text-disabled)",
+        "hint.font": "Type/Caption 12/16px 400",
+        "hint.width": "280px",
+        "input.align": "MIN",
+        "input.borderColor": "var(--border-default)",
+        "input.gap": "var(--space-0)",
+        "input.height": "96px",
+        "input.padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+        "input.radius": "var(--radius-lg)",
+        "opacity": "0.6"
+      },
+      "render": {
+        "part": "Variant=Textarea, State=Disabled",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "opacity": "0.6",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "96px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--border-default)",
+              "border-radius": "var(--radius-lg)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            }
+          },
+          {
+            "part": "Hint gap",
+            "path": "hint-gap",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "6px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Hint",
+            "path": "hint",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--text-disabled)"
+            },
+            "propRef": {
+              "visible": "WithHint#336:165"
+            },
+            "text": "Rok pierwszej rejestracji pojazdu.",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Variant=Textarea, State=Error",
+      "match": {
+        "Variant": "Textarea",
+        "State": "Error"
+      },
+      "nodeId": "336:4024",
+      "figmaSize": {
+        "w": 280,
+        "h": 146
+      },
+      "tokens": {
+        "frame.height": "6px",
+        "input.align": "MIN",
+        "input.borderColor": "var(--status-error-border)",
+        "input.gap": "var(--space-0)",
+        "input.height": "96px",
+        "input.padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+        "input.radius": "var(--radius-lg)",
+        "input/placeholder.color": "var(--text-primary)",
+        "input/placeholder.font": "Type/Body Medium 15/24px 400",
+        "podaj-poprawny-rok-4-cyfry.color": "var(--status-error-text)",
+        "podaj-poprawny-rok-4-cyfry.font": "Type/Caption 12/16px 400",
+        "podaj-poprawny-rok-4-cyfry.width": "280px"
+      },
+      "render": {
+        "part": "Variant=Textarea, State=Error",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "280px",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "div",
+            "style": {
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Rok produkcji",
+                "path": "label/rok-produkcji",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "700",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "text": "Rok produkcji",
+                "font": {
+                  "style": "Type/Body Small Alter",
+                  "size": 13,
+                  "weight": 700,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Spacer",
+            "path": "spacer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "8px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Input",
+            "path": "input",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "96px",
+              "background": "var(--surface-background)",
+              "border": "1px solid var(--status-error-border)",
+              "border-radius": "var(--radius-lg)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-0)",
+              "padding": "var(--space-1) var(--space-4) var(--space-1) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Placeholder",
+                "path": "input/placeholder",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "text": "2004",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Frame",
+            "path": "frame",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "6px",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "Podaj poprawny rok (4 cyfry).",
+            "path": "podaj-poprawny-rok-4-cyfry",
+            "tag": "span",
+            "style": {
+              "align-self": "stretch",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "12px",
+              "font-weight": "400",
+              "line-height": "16px",
+              "letter-spacing": "0px",
+              "width": "280px",
+              "flex": "none",
+              "color": "var(--status-error-text)"
+            },
+            "text": "Podaj poprawny rok (4 cyfry).",
+            "font": {
+              "style": "Type/Caption",
+              "size": 12,
+              "weight": 400,
+              "lineHeight": "16px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "spacer.height",
+      "value": "8px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "spacer"
+      ]
+    },
+    {
+      "prop": "input.height",
+      "value": "40px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "input"
+      ]
+    },
+    {
+      "prop": "input.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "input"
+      ]
+    },
+    {
+      "prop": "input/caret.width",
+      "value": "1.5px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "input/caret"
+      ]
+    },
+    {
+      "prop": "input/caret.height",
+      "value": "20px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "input/caret"
+      ]
+    },
+    {
+      "prop": "opacity",
+      "value": "0.6",
+      "reason": "непрозрачность без токена",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "frame.height",
+      "value": "6px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "frame"
+      ]
+    },
+    {
+      "prop": "input/icon-chevron-down.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "input/icon-chevron-down"
+      ]
+    },
+    {
+      "prop": "input.height",
+      "value": "96px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "input"
+      ]
+    },
+    {
+      "prop": "hint-gap.height",
+      "value": "6px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "hint-gap"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

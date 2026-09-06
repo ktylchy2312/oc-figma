@@ -1,0 +1,100 @@
+/* StatusPill — сгенерировано из components/status-pill/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-status-pill {
+  width: fit-content;
+  background: var(--surface-raised);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3) var(--space-1) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — dot.width = 7px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — dot.height = 7px — нет шкалы размеров: высота задана числом */
+.oc-status-pill__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+/* ---- варианты ---- */
+
+/* Status=Aktywna */
+.oc-status-pill.oc-status-pill--status-aktywna {
+  border: 1px solid var(--status-success-border);
+}
+.oc-status-pill.oc-status-pill--status-aktywna .oc-status-pill__dot {
+  background: var(--status-success-text);
+}
+.oc-status-pill.oc-status-pill--status-aktywna .oc-status-pill__aktywna {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-success-text);
+}
+
+/* Status=Robocza */
+.oc-status-pill.oc-status-pill--status-robocza {
+  border: 1px solid var(--border-default);
+}
+.oc-status-pill.oc-status-pill--status-robocza .oc-status-pill__dot {
+  background: var(--text-tertiary);
+}
+.oc-status-pill.oc-status-pill--status-robocza .oc-status-pill__robocza {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+/* Status=Zamówiona */
+.oc-status-pill.oc-status-pill--status-zam-wiona {
+  border: 1px solid var(--status-warning-border);
+}
+.oc-status-pill.oc-status-pill--status-zam-wiona .oc-status-pill__dot {
+  background: var(--status-warning-text);
+}
+.oc-status-pill.oc-status-pill--status-zam-wiona .oc-status-pill__zam-wiona {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-warning-text);
+}
+
+/* Status=Błąd */
+.oc-status-pill.oc-status-pill--status-b-d {
+  border: 1px solid var(--status-error-border);
+}
+.oc-status-pill.oc-status-pill--status-b-d .oc-status-pill__dot {
+  background: var(--status-error-text);
+}
+.oc-status-pill.oc-status-pill--status-b-d .oc-status-pill__b-d {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--status-error-text);
+}

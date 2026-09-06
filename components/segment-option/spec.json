@@ -1,0 +1,781 @@
+{
+  "name": "SegmentOption",
+  "slug": "segment-option",
+  "group": "Navigation",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "401:7782",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Сегмент переключателя вида. Active — выбран ли; State — что с ним делает указатель: выбранный сегмент под курсором остаётся выбранным. Hover, Pressed и Focus в источнике не описаны, лестница взята у UnderlineTab, грань фокуса — у FormField. Disabled нет: в источнике его нет. У наведения на невыбранный сегмент нет своей подложки — в палитре нет ступени между Surface/Raised и Surface/Raised Hover, последняя занята выбранным.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#401:0",
+      "default": "Lista"
+    },
+    {
+      "name": "Icon",
+      "type": "instance-swap",
+      "figmaKey": "Icon#401:9",
+      "default": "56:2271",
+      "preferredValues": []
+    },
+    {
+      "name": "Active",
+      "type": "variant",
+      "figmaKey": "Active",
+      "values": [
+        "Idle",
+        "Active"
+      ],
+      "default": "Idle"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed",
+        "Focus"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "SegmentOption",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "icon-list",
+      "name": "Icon",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "List",
+      "slug": "icons"
+    },
+    {
+      "part": "label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "height": "34px",
+    "icon-list.height": "16px",
+    "icon-list.icon": "List",
+    "icon-list.iconColor": "var(--text-primary)",
+    "icon-list.width": "16px",
+    "justify": "CENTER",
+    "label.font": "Type/Body Small Alter 13/20px 700",
+    "padding": "0 var(--space-4) 0 var(--space-4)",
+    "radius": "var(--radius-sm)",
+    "width": "80px"
+  },
+  "variants": [
+    {
+      "key": "Active=Idle, State=Default",
+      "match": {
+        "Active": "Idle",
+        "State": "Default"
+      },
+      "nodeId": "401:7710",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Hover",
+      "match": {
+        "Active": "Idle",
+        "State": "Hover"
+      },
+      "nodeId": "401:7719",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-secondary)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Pressed",
+      "match": {
+        "Active": "Idle",
+        "State": "Pressed"
+      },
+      "nodeId": "401:7728",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Focus",
+      "match": {
+        "Active": "Idle",
+        "State": "Focus"
+      },
+      "nodeId": "401:7737",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "borderColor": "var(--accent-default)",
+        "borderWidth": "1px",
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "border": "1px solid var(--accent-default)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Default",
+      "match": {
+        "Active": "Active",
+        "State": "Default"
+      },
+      "nodeId": "401:7746",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "Active=Active, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "background": "var(--surface-raised-hover)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Hover",
+      "match": {
+        "Active": "Active",
+        "State": "Hover"
+      },
+      "nodeId": "401:7755",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "background": "var(--surface-raised-pressed)",
+        "label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "Active=Active, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "background": "var(--surface-raised-pressed)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Pressed",
+      "match": {
+        "Active": "Active",
+        "State": "Pressed"
+      },
+      "nodeId": "401:7764",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "Active=Active, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "background": "var(--surface-raised-hover)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Focus",
+      "match": {
+        "Active": "Active",
+        "State": "Focus"
+      },
+      "nodeId": "401:7773",
+      "figmaSize": {
+        "w": 80,
+        "h": 34
+      },
+      "tokens": {
+        "background": "var(--surface-raised-hover)",
+        "borderColor": "var(--accent-default)",
+        "borderWidth": "1px",
+        "label.color": "var(--text-primary)"
+      },
+      "render": {
+        "part": "Active=Active, State=Focus",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "80px",
+          "height": "34px",
+          "background": "var(--surface-raised-hover)",
+          "border": "1px solid var(--accent-default)",
+          "border-radius": "var(--radius-sm)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "0 var(--space-4) 0 var(--space-4)",
+          "justify-content": "center",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Icon",
+            "path": "icon-list",
+            "tag": "svg",
+            "style": {
+              "width": "16px",
+              "height": "16px",
+              "overflow": "hidden",
+              "color": "var(--text-primary)",
+              "stroke-width": "1.5",
+              "flex": "none"
+            },
+            "propRef": {
+              "mainComponent": "Icon#401:9"
+            },
+            "icon": "List",
+            "iconStyle": "Accent",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 5H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 12H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M3 19H3.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 5H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 19H21\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          },
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#401:0"
+            },
+            "text": "Lista",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Сегмент переключателя вида.",
+    "Active — выбран ли; State — что с ним делает указатель: выбранный сегмент под курсором остаётся выбранным.",
+    "Hover, Pressed и Focus в источнике не описаны, лестница взята у UnderlineTab, грань фокуса — у FormField.",
+    "Disabled нет: в источнике его нет.",
+    "У наведения на невыбранный сегмент нет своей подложки — в палитре нет ступени между Surface/Raised и Surface/Raised Hover, последняя занята выбранным.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "80px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "34px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "icon-list.iconStrokeWidth",
+      "value": "1.5",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-list"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

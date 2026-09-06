@@ -1,0 +1,67 @@
+<!-- @dsCard group="Overlays" -->
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8">
+<title>Dialog — component sheet</title>
+<link rel="stylesheet" href="../../foundations/fonts.css">
+<link rel="stylesheet" href="../../foundations/tokens.css">
+<style>
+
+
+
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { background: var(--surface-background); color: var(--text-primary); font-family: 'Roboto', system-ui, sans-serif; }
+
+.ds-sheet { width: 1200px; min-height: 640px; padding: 48px 40px; background: var(--surface-background); }
+.ds-head { margin: 0 0 4px; font-size: 32px; line-height: 40px; font-weight: 700; letter-spacing: -0.2px; color: var(--text-primary); }
+.ds-meta { margin: 0 0 8px; font-size: 13px; line-height: 20px; color: var(--text-tertiary); }
+.ds-desc { margin: 0 0 32px; font-size: 15px; line-height: 24px; color: var(--text-secondary); max-width: 760px; }
+.ds-grid { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 32px 24px; }
+.ds-cell { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; background: var(--surface-default); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); }
+/* vector-effect НЕ НАСЛЕДУЕТСЯ (SVG 2: Inherited: no), поэтому на <svg> он не действует и
+   правило нужно на самих контурах. stroke-width наследуется и остаётся инлайном на <svg>.
+   Без этого глиф, нарисованный в 24 и поставленный в 16, приезжает линией 0.67 вместо 1. */
+svg[data-part] * { vector-effect: non-scaling-stroke; }
+.ds-cell-label { font-family: 'Roboto', system-ui, sans-serif; font-size: 12px; line-height: 16px; font-weight: 700; letter-spacing: 0.6px; color: var(--text-tertiary); white-space: nowrap; }
+.ds-foot { margin: 40px 0 0; padding-top: 20px; border-top: 1px solid var(--border-subtle); font-size: 12px; line-height: 16px; color: var(--text-tertiary); }
+.ds-foot b { color: var(--text-secondary); font-weight: 700; }
+</style></head>
+<body>
+<div class="ds-sheet">
+  <h1 class="ds-head">Dialog</h1>
+  <p class="ds-meta">Overlays · organism · 1 вариант · Figma 334:3770 · страница Core · Токенов задействовано: 16 · без токена: 2</p>
+  <p class="ds-desc">Оболочка диалога: шапка, тело, подвал. DeleteStageDialog собран как одна неразбираемая штука — из этого собираются все остальные: подтверждение, отправка, предпросмотр.</p>
+  <div class="ds-grid">
+  <div class="ds-cell" data-variant="Dialog">
+    <div style="width:440px;background:var(--surface-default);border:1px solid var(--border-default);border-radius:var(--radius-xl);box-shadow:var(--shadow-card);display:flex;flex-direction:column;gap:var(--space-0);justify-content:flex-start;align-items:flex-start" data-part="root">
+      <div style="align-self:stretch;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-1);padding:var(--space-6) var(--space-6) var(--space-4) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="header">
+        <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:20px;font-weight:700;line-height:28px;letter-spacing:0px;white-space:nowrap;color:var(--text-primary)" data-part="header/title">Usunąć etap?</span>
+      </div>
+      <div style="align-self:stretch;overflow:hidden;display:flex;flex-direction:column;gap:var(--space-3);padding:var(--space-0) var(--space-6) var(--space-5) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="body">
+        <span style="align-self:stretch;display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:400;line-height:24px;letter-spacing:0px;width:390px;flex:none;color:var(--text-secondary)" data-part="body/text">Tej operacji nie można cofnąć.</span>
+      </div>
+      <div style="align-self:stretch;overflow:hidden;display:flex;flex-direction:row;gap:var(--space-4);padding:var(--space-0) var(--space-6) var(--space-6) var(--space-6);justify-content:flex-start;align-items:flex-start" data-part="footer">
+        <div style="display:flex;flex-direction:row;gap:var(--space-4);justify-content:flex-end;align-items:flex-start" data-part="footer/actions">
+          <div style="height:44px;background:var(--accent-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-5) var(--space-0) var(--space-5);justify-content:center;align-items:center" data-part="footer/actions/secondary">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-on-accent);stroke-width:1;flex:none" data-part="footer/actions/secondary/icon-plus"><path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--text-on-accent)" data-part="footer/actions/secondary/label">Dodaj samochód</span>
+          </div>
+          <div style="height:44px;background:var(--accent-default);border-radius:var(--radius-md);display:flex;flex-direction:row;gap:var(--space-2);padding:var(--space-0) var(--space-5) var(--space-0) var(--space-5);justify-content:center;align-items:center" data-part="footer/actions/primary">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:16px;height:16px;overflow:hidden;color:var(--text-on-accent);stroke-width:1;flex:none" data-part="footer/actions/primary/icon-plus"><path d="M5 12H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 5V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span style="display:block;font-family:'Roboto', system-ui, sans-serif;font-size:15px;font-weight:700;line-height:24px;letter-spacing:0px;white-space:nowrap;color:var(--text-on-accent)" data-part="footer/actions/primary/label">Dodaj samochód</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <code class="ds-cell-label">Dialog</code>
+  </div>
+  </div>
+  <p class="ds-foot"><b>Токены:</b> --accent-default, --border-default, --radius-md, --radius-xl, --shadow-card, --space-0, --space-1, --space-2, --space-3, --space-4, --space-5, --space-6, --surface-default, --text-on-accent, --text-primary, --text-secondary</p>
+  <p class="ds-foot"><b>Без токена:</b> width = 440px, borderWidth = 1px</p>
+  <p class="ds-foot"><b>Анимация:</b> в превью отключена намеренно — в Figma не описана (0 prototype reactions).</p>
+</div>
+</body></html>

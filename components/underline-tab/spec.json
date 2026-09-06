@@ -1,0 +1,505 @@
+{
+  "name": "UnderlineTab",
+  "slug": "underline-tab",
+  "group": "Navigation",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "335:3834",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Вкладка с нижней гранью — экран настроек. Отдельно от Tab: у сегментированной вкладки своя коробка с фоном и радиусом. Подчёркивание есть у всех состояний, у неактивных прозрачное, иначе строка дёргается на 2px при переключении.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#335:120",
+      "default": "Ogólne"
+    },
+    {
+      "name": "Active",
+      "type": "variant",
+      "figmaKey": "Active",
+      "values": [
+        "Idle",
+        "Active"
+      ],
+      "default": "Idle"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover",
+        "Pressed"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "UnderlineTab",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "label",
+      "name": "Label",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "underline",
+      "name": "Underline",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "direction": "VERTICAL",
+    "gap": "var(--space-3)",
+    "justify": "MIN",
+    "label.font": "Type/Body Small Alter 13/20px 700",
+    "underline.height": "2px"
+  },
+  "variants": [
+    {
+      "key": "Active=Idle, State=Default",
+      "match": {
+        "Active": "Idle",
+        "State": "Default"
+      },
+      "nodeId": "335:3816",
+      "figmaSize": {
+        "w": 42,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-tertiary)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#335:120"
+            },
+            "text": "Ogólne",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Hover",
+      "match": {
+        "Active": "Idle",
+        "State": "Hover"
+      },
+      "nodeId": "335:3819",
+      "figmaSize": {
+        "w": 42,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-secondary)",
+        "underline.background": "var(--border-strong)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Label#335:120"
+            },
+            "text": "Ogólne",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--border-strong)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Idle, State=Pressed",
+      "match": {
+        "Active": "Idle",
+        "State": "Pressed"
+      },
+      "nodeId": "335:3822",
+      "figmaSize": {
+        "w": 42,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-primary)",
+        "underline.background": "var(--border-strong)"
+      },
+      "render": {
+        "part": "Active=Idle, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#335:120"
+            },
+            "text": "Ogólne",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--border-strong)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Default",
+      "match": {
+        "Active": "Active",
+        "State": "Default"
+      },
+      "nodeId": "335:3825",
+      "figmaSize": {
+        "w": 42,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-primary)",
+        "underline.background": "var(--accent-default)"
+      },
+      "render": {
+        "part": "Active=Active, State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#335:120"
+            },
+            "text": "Ogólne",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-default)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Hover",
+      "match": {
+        "Active": "Active",
+        "State": "Hover"
+      },
+      "nodeId": "335:3828",
+      "figmaSize": {
+        "w": 42,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-primary)",
+        "underline.background": "var(--accent-hover)"
+      },
+      "render": {
+        "part": "Active=Active, State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#335:120"
+            },
+            "text": "Ogólne",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-hover)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "key": "Active=Active, State=Pressed",
+      "match": {
+        "Active": "Active",
+        "State": "Pressed"
+      },
+      "nodeId": "335:3831",
+      "figmaSize": {
+        "w": 42,
+        "h": 34
+      },
+      "tokens": {
+        "label.color": "var(--text-primary)",
+        "underline.background": "var(--accent-pressed)"
+      },
+      "render": {
+        "part": "Active=Active, State=Pressed",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-3)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Label",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "white-space": "nowrap",
+              "color": "var(--text-primary)"
+            },
+            "propRef": {
+              "characters": "Label#335:120"
+            },
+            "text": "Ogólne",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          },
+          {
+            "part": "Underline",
+            "path": "underline",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "2px",
+              "background": "var(--accent-pressed)",
+              "overflow": "hidden"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Вкладка с нижней гранью — экран настроек.",
+    "Отдельно от Tab: у сегментированной вкладки своя коробка с фоном и радиусом.",
+    "Подчёркивание есть у всех состояний, у неактивных прозрачное, иначе строка дёргается на 2px при переключении.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "underline.height",
+      "value": "2px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "underline"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

@@ -1,0 +1,34 @@
+/* StatusDot — сгенерировано из components/status-dot/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 8px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 8px — нет шкалы размеров: высота задана числом */
+.oc-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-full);
+}
+
+/* ---- варианты ---- */
+
+/* Tone=Success */
+.oc-status-dot.oc-status-dot--tone-success {
+  background: var(--status-success-text);
+}
+
+/* Tone=Warning */
+.oc-status-dot.oc-status-dot--tone-warning {
+  background: var(--status-warning-text);
+}
+
+/* Tone=Error */
+.oc-status-dot.oc-status-dot--tone-error {
+  background: var(--status-error-text);
+}
+
+/* Tone=Neutral */
+.oc-status-dot.oc-status-dot--tone-neutral {
+  background: var(--text-tertiary);
+}

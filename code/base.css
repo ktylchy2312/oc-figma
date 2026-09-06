@@ -1,0 +1,30 @@
+/* Общий сброс под корни компонентов. Сгенерировано build-code.mjs, руками не править. */
+
+/* Размеры в спеке — фигмовские, то есть вместе с рамкой и внутренними отступами. При
+   content-box, который у браузера по умолчанию, рамка в 1px даёт лишние 2px ширины, а
+   padding в 12px — лишние 24px. Лист index.html ставит border-box глобально; здесь то же
+   самое, но только на своих элементах, чтобы не переопределять чужую страницу. */
+:where([class*="oc-"]) {
+  box-sizing: border-box;
+}
+
+:where(button[class*="oc-"], input[class*="oc-"], select[class*="oc-"], textarea[class*="oc-"]) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+:where(a[class*="oc-"]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(button[class*="oc-"]:not(:disabled)) {
+  cursor: pointer;
+}

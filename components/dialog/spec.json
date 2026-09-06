@@ -1,0 +1,490 @@
+{
+  "name": "Dialog",
+  "slug": "dialog",
+  "group": "Overlays",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "334:3770",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Оболочка диалога: шапка, тело, подвал. DeleteStageDialog собран как одна неразбираемая штука — из этого собираются все остальные: подтверждение, отправка, предпросмотр.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Title",
+      "type": "text",
+      "figmaKey": "Title#334:118",
+      "default": "Usunąć etap?"
+    },
+    {
+      "name": "Text",
+      "type": "text",
+      "figmaKey": "Text#334:119",
+      "default": "Tej operacji nie można cofnąć."
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "Dialog",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "header",
+      "name": "Header",
+      "element": "div"
+    },
+    {
+      "part": "header/title",
+      "name": "Title",
+      "element": "span",
+      "textProp": "Title"
+    },
+    {
+      "part": "body",
+      "name": "Body",
+      "element": "div"
+    },
+    {
+      "part": "body/text",
+      "name": "Text",
+      "element": "span",
+      "textProp": "Text"
+    },
+    {
+      "part": "footer",
+      "name": "Footer",
+      "element": "div"
+    },
+    {
+      "part": "footer/actions",
+      "name": "Actions",
+      "element": "div",
+      "component": "ButtonGroup",
+      "slug": "button-group"
+    },
+    {
+      "part": "footer/actions/secondary",
+      "name": "Secondary",
+      "element": "div",
+      "component": "Button",
+      "slug": "button"
+    },
+    {
+      "part": "footer/actions/secondary/icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons",
+      "optional": true,
+      "controlledBy": "Show Icon"
+    },
+    {
+      "part": "footer/actions/secondary/label",
+      "name": "Dodaj samochód",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "footer/actions/primary",
+      "name": "Primary",
+      "element": "div",
+      "component": "Button",
+      "slug": "button"
+    },
+    {
+      "part": "footer/actions/primary/icon-plus",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Plus",
+      "slug": "icons",
+      "optional": true,
+      "controlledBy": "Show Icon"
+    },
+    {
+      "part": "footer/actions/primary/label",
+      "name": "Dodaj samochód",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "background": "var(--surface-default)",
+    "body.align": "MIN",
+    "body.direction": "VERTICAL",
+    "body.gap": "var(--space-3)",
+    "body.justify": "MIN",
+    "body.padding": "var(--space-0) var(--space-6) var(--space-5) var(--space-6)",
+    "body/text.color": "var(--text-secondary)",
+    "body/text.font": "Type/Body Medium 15/24px 400",
+    "body/text.width": "390px",
+    "borderColor": "var(--border-default)",
+    "borderWidth": "1px",
+    "direction": "VERTICAL",
+    "footer.align": "MIN",
+    "footer.direction": "HORIZONTAL",
+    "footer.gap": "var(--space-4)",
+    "footer.justify": "MIN",
+    "footer.padding": "var(--space-0) var(--space-6) var(--space-6) var(--space-6)",
+    "footer/actions.align": "MIN",
+    "footer/actions.direction": "HORIZONTAL",
+    "footer/actions.gap": "var(--space-4)",
+    "footer/actions.justify": "MAX",
+    "footer/actions/primary.align": "CENTER",
+    "footer/actions/primary.background": "var(--accent-default)",
+    "footer/actions/primary.direction": "HORIZONTAL",
+    "footer/actions/primary.gap": "var(--space-2)",
+    "footer/actions/primary.height": "44px",
+    "footer/actions/primary.justify": "CENTER",
+    "footer/actions/primary.padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+    "footer/actions/primary.radius": "var(--radius-md)",
+    "footer/actions/primary/icon-plus.height": "16px",
+    "footer/actions/primary/icon-plus.icon": "Plus",
+    "footer/actions/primary/icon-plus.iconColor": "var(--text-on-accent)",
+    "footer/actions/primary/icon-plus.width": "16px",
+    "footer/actions/primary/label.color": "var(--text-on-accent)",
+    "footer/actions/primary/label.font": "Type/Body Medium Alter 15/24px 700",
+    "footer/actions/secondary.align": "CENTER",
+    "footer/actions/secondary.background": "var(--accent-default)",
+    "footer/actions/secondary.direction": "HORIZONTAL",
+    "footer/actions/secondary.gap": "var(--space-2)",
+    "footer/actions/secondary.height": "44px",
+    "footer/actions/secondary.justify": "CENTER",
+    "footer/actions/secondary.padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+    "footer/actions/secondary.radius": "var(--radius-md)",
+    "footer/actions/secondary/icon-plus.height": "16px",
+    "footer/actions/secondary/icon-plus.icon": "Plus",
+    "footer/actions/secondary/icon-plus.iconColor": "var(--text-on-accent)",
+    "footer/actions/secondary/icon-plus.width": "16px",
+    "footer/actions/secondary/label.color": "var(--text-on-accent)",
+    "footer/actions/secondary/label.font": "Type/Body Medium Alter 15/24px 700",
+    "gap": "var(--space-0)",
+    "header.align": "MIN",
+    "header.direction": "VERTICAL",
+    "header.gap": "var(--space-1)",
+    "header.justify": "MIN",
+    "header.padding": "var(--space-6) var(--space-6) var(--space-4) var(--space-6)",
+    "header/title.color": "var(--text-primary)",
+    "header/title.font": "Type/Heading 3 20/28px 700",
+    "justify": "MIN",
+    "radius": "var(--radius-xl)",
+    "shadow": "var(--shadow-card)",
+    "width": "440px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "334:3770",
+      "figmaSize": {
+        "w": 440,
+        "h": 182
+      },
+      "tokens": {},
+      "render": {
+        "part": "Dialog",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "440px",
+          "background": "var(--surface-default)",
+          "border": "1px solid var(--border-default)",
+          "border-radius": "var(--radius-xl)",
+          "box-shadow": "var(--shadow-card)",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Header",
+            "path": "header",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-1)",
+              "padding": "var(--space-6) var(--space-6) var(--space-4) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Title",
+                "path": "header/title",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "20px",
+                  "font-weight": "700",
+                  "line-height": "28px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-primary)"
+                },
+                "propRef": {
+                  "characters": "Title#334:118"
+                },
+                "text": "Usunąć etap?",
+                "font": {
+                  "style": "Type/Heading 3",
+                  "size": 20,
+                  "weight": 700,
+                  "lineHeight": "28px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Body",
+            "path": "body",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "padding": "var(--space-0) var(--space-6) var(--space-5) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Text",
+                "path": "body/text",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "390px",
+                  "flex": "none",
+                  "color": "var(--text-secondary)"
+                },
+                "propRef": {
+                  "characters": "Text#334:119"
+                },
+                "text": "Tej operacji nie można cofnąć.",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Footer",
+            "path": "footer",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-4)",
+              "padding": "var(--space-0) var(--space-6) var(--space-6) var(--space-6)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Actions",
+                "path": "footer/actions",
+                "tag": "div",
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-4)",
+                  "justify-content": "flex-end",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Secondary",
+                    "path": "footer/actions/secondary",
+                    "tag": "div",
+                    "style": {
+                      "height": "44px",
+                      "background": "var(--accent-default)",
+                      "border-radius": "var(--radius-md)",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+                      "justify-content": "center",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Icons",
+                        "path": "footer/actions/secondary/icon-plus",
+                        "tag": "svg",
+                        "style": {
+                          "width": "16px",
+                          "height": "16px",
+                          "overflow": "hidden",
+                          "color": "var(--text-on-accent)",
+                          "stroke-width": "1",
+                          "flex": "none"
+                        },
+                        "propRef": {
+                          "visible": "Show Icon#27:41"
+                        },
+                        "icon": "Plus",
+                        "iconStyle": "Regular",
+                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                      },
+                      {
+                        "part": "Dodaj samochód",
+                        "path": "footer/actions/secondary/label",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "15px",
+                          "font-weight": "700",
+                          "line-height": "24px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--text-on-accent)"
+                        },
+                        "propRef": {
+                          "characters": "Label#27:28"
+                        },
+                        "text": "Dodaj samochód",
+                        "font": {
+                          "style": "Type/Body Medium Alter",
+                          "size": 15,
+                          "weight": 700,
+                          "lineHeight": "24px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "part": "Primary",
+                    "path": "footer/actions/primary",
+                    "tag": "div",
+                    "style": {
+                      "height": "44px",
+                      "background": "var(--accent-default)",
+                      "border-radius": "var(--radius-md)",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "padding": "var(--space-0) var(--space-5) var(--space-0) var(--space-5)",
+                      "justify-content": "center",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Icons",
+                        "path": "footer/actions/primary/icon-plus",
+                        "tag": "svg",
+                        "style": {
+                          "width": "16px",
+                          "height": "16px",
+                          "overflow": "hidden",
+                          "color": "var(--text-on-accent)",
+                          "stroke-width": "1",
+                          "flex": "none"
+                        },
+                        "propRef": {
+                          "visible": "Show Icon#27:41"
+                        },
+                        "icon": "Plus",
+                        "iconStyle": "Regular",
+                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5 12H19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 5V19\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                      },
+                      {
+                        "part": "Dodaj samochód",
+                        "path": "footer/actions/primary/label",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "15px",
+                          "font-weight": "700",
+                          "line-height": "24px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--text-on-accent)"
+                        },
+                        "propRef": {
+                          "characters": "Label#27:28"
+                        },
+                        "text": "Dodaj samochód",
+                        "font": {
+                          "style": "Type/Body Medium Alter",
+                          "size": 15,
+                          "weight": 700,
+                          "lineHeight": "24px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Оболочка диалога: шапка, тело, подвал.",
+    "DeleteStageDialog собран как одна неразбираемая штука — из этого собираются все остальные: подтверждение, отправка, предпросмотр.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "440px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

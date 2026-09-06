@@ -1,0 +1,1334 @@
+{
+  "name": "ArchiveRow",
+  "slug": "archive-row",
+  "group": "Cards",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "395:2815",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "Wiersz archiwum. Rekordy zamknięte, tylko do odczytu. Używać wyłącznie wewnątrz ArchiveTable.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Marka",
+      "type": "text",
+      "figmaKey": "Marka#300:30",
+      "default": "Skoda"
+    },
+    {
+      "name": "Model",
+      "type": "text",
+      "figmaKey": "Model#300:33",
+      "default": "Superb I 2003–2008"
+    },
+    {
+      "name": "Vin",
+      "type": "text",
+      "figmaKey": "Vin#300:36",
+      "default": "TMBAB41U358123456"
+    },
+    {
+      "name": "Kupiona",
+      "type": "text",
+      "figmaKey": "Kupiona#300:39",
+      "default": "03.08.2026"
+    },
+    {
+      "name": "Utylizowana",
+      "type": "text",
+      "figmaKey": "Utylizowana#300:42",
+      "default": "03.09.2026"
+    },
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Default",
+        "Hover"
+      ],
+      "default": "Default"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "ArchiveRow",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "sygnatura",
+      "name": "Sygnatura",
+      "element": "div"
+    },
+    {
+      "part": "sygnatura/pill",
+      "name": "Pill",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "sygnatura/pill/3-5",
+      "name": "3/5",
+      "element": "span"
+    },
+    {
+      "part": "pojazd",
+      "name": "Pojazd",
+      "element": "div"
+    },
+    {
+      "part": "pojazd/marka",
+      "name": "Marka",
+      "element": "span",
+      "textProp": "Marka"
+    },
+    {
+      "part": "pojazd/model",
+      "name": "Model",
+      "element": "span",
+      "textProp": "Model"
+    },
+    {
+      "part": "vin",
+      "name": "Vin",
+      "element": "div"
+    },
+    {
+      "part": "vin/vin",
+      "name": "Vin",
+      "element": "span",
+      "textProp": "Vin"
+    },
+    {
+      "part": "kupiona",
+      "name": "Kupiona",
+      "element": "div"
+    },
+    {
+      "part": "kupiona/kupiona",
+      "name": "Kupiona",
+      "element": "span",
+      "textProp": "Kupiona"
+    },
+    {
+      "part": "utylizowana",
+      "name": "Utylizowana",
+      "element": "div"
+    },
+    {
+      "part": "utylizowana/utylizowana",
+      "name": "Utylizowana",
+      "element": "span",
+      "textProp": "Utylizowana"
+    },
+    {
+      "part": "dokumenty",
+      "name": "Dokumenty",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/doc-progress",
+      "name": "DocProgress",
+      "element": "div",
+      "component": "DocProgress",
+      "slug": "doc-progress"
+    },
+    {
+      "part": "dokumenty/doc-progress/bar",
+      "name": "Bar",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/doc-progress/bar/segment-1",
+      "name": "Segment 1",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/doc-progress/bar/segment-2",
+      "name": "Segment 2",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/doc-progress/bar/segment-3",
+      "name": "Segment 3",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/doc-progress/bar/segment-4",
+      "name": "Segment 4",
+      "element": "div"
+    },
+    {
+      "part": "dokumenty/doc-progress/count",
+      "name": "Count",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "Show Count"
+    },
+    {
+      "part": "status",
+      "name": "Status",
+      "element": "div"
+    },
+    {
+      "part": "status/status",
+      "name": "Status",
+      "element": "div",
+      "component": "StatusPill",
+      "slug": "status-pill"
+    },
+    {
+      "part": "status/status/robocza",
+      "name": "Robocza",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "CENTER",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "bottom 1px",
+    "direction": "HORIZONTAL",
+    "dokumenty.align": "CENTER",
+    "dokumenty.direction": "HORIZONTAL",
+    "dokumenty.gap": "0",
+    "dokumenty.justify": "MIN",
+    "dokumenty/doc-progress.align": "CENTER",
+    "dokumenty/doc-progress.direction": "HORIZONTAL",
+    "dokumenty/doc-progress.gap": "var(--space-2)",
+    "dokumenty/doc-progress.justify": "MIN",
+    "dokumenty/doc-progress/bar.align": "MIN",
+    "dokumenty/doc-progress/bar.direction": "HORIZONTAL",
+    "dokumenty/doc-progress/bar.gap": "var(--space-1)",
+    "dokumenty/doc-progress/bar.justify": "MIN",
+    "dokumenty/doc-progress/bar/segment-1.background": "var(--status-success-text)",
+    "dokumenty/doc-progress/bar/segment-1.height": "7px",
+    "dokumenty/doc-progress/bar/segment-1.radius": "var(--radius-full)",
+    "dokumenty/doc-progress/bar/segment-1.width": "28px",
+    "dokumenty/doc-progress/bar/segment-2.background": "var(--status-success-text)",
+    "dokumenty/doc-progress/bar/segment-2.height": "7px",
+    "dokumenty/doc-progress/bar/segment-2.radius": "var(--radius-full)",
+    "dokumenty/doc-progress/bar/segment-2.width": "28px",
+    "dokumenty/doc-progress/bar/segment-3.background": "var(--status-success-text)",
+    "dokumenty/doc-progress/bar/segment-3.height": "7px",
+    "dokumenty/doc-progress/bar/segment-3.radius": "var(--radius-full)",
+    "dokumenty/doc-progress/bar/segment-3.width": "28px",
+    "dokumenty/doc-progress/bar/segment-4.background": "var(--status-success-text)",
+    "dokumenty/doc-progress/bar/segment-4.height": "7px",
+    "dokumenty/doc-progress/bar/segment-4.radius": "var(--radius-full)",
+    "dokumenty/doc-progress/bar/segment-4.width": "28px",
+    "dokumenty/doc-progress/count.color": "var(--text-tertiary)",
+    "dokumenty/doc-progress/count.font": "Type/Caption 12/16px 400",
+    "gap": "var(--space-4)",
+    "height": "64px",
+    "justify": "MIN",
+    "kupiona.align": "CENTER",
+    "kupiona.direction": "HORIZONTAL",
+    "kupiona.gap": "0",
+    "kupiona.justify": "MIN",
+    "kupiona/kupiona.color": "var(--text-tertiary)",
+    "kupiona/kupiona.font": "Type/Body Medium 15/24px 400",
+    "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "pojazd.align": "MIN",
+    "pojazd.direction": "VERTICAL",
+    "pojazd.gap": "var(--space-0-5)",
+    "pojazd.justify": "MIN",
+    "pojazd.width": "284px",
+    "pojazd/marka.color": "var(--text-secondary)",
+    "pojazd/marka.font": "Type/Body Medium 15/24px 400",
+    "pojazd/marka.width": "284px",
+    "pojazd/model.color": "var(--text-tertiary)",
+    "pojazd/model.font": "Type/Body Small 13/20px 400",
+    "pojazd/model.width": "284px",
+    "status.align": "CENTER",
+    "status.direction": "HORIZONTAL",
+    "status.gap": "0",
+    "status.justify": "MIN",
+    "status/status.align": "CENTER",
+    "status/status.background": "var(--surface-raised)",
+    "status/status.borderColor": "var(--border-default)",
+    "status/status.borderWidth": "1px",
+    "status/status.direction": "HORIZONTAL",
+    "status/status.gap": "var(--space-2)",
+    "status/status.justify": "MIN",
+    "status/status.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "status/status.radius": "var(--radius-md)",
+    "status/status/robocza.color": "var(--text-secondary)",
+    "status/status/robocza.font": "Type/Body Small Alter 13/20px 700",
+    "sygnatura.align": "CENTER",
+    "sygnatura.direction": "HORIZONTAL",
+    "sygnatura.gap": "0",
+    "sygnatura.justify": "MIN",
+    "sygnatura.width": "112px",
+    "sygnatura/pill.align": "CENTER",
+    "sygnatura/pill.background": "var(--surface-raised-hover)",
+    "sygnatura/pill.direction": "HORIZONTAL",
+    "sygnatura/pill.gap": "var(--space-0)",
+    "sygnatura/pill.justify": "CENTER",
+    "sygnatura/pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "sygnatura/pill.radius": "var(--radius-sm)",
+    "sygnatura/pill.width": "35px",
+    "sygnatura/pill/3-5.color": "var(--text-tertiary)",
+    "sygnatura/pill/3-5.font": "Type/Label 12/16px 700",
+    "utylizowana.align": "CENTER",
+    "utylizowana.direction": "HORIZONTAL",
+    "utylizowana.gap": "0",
+    "utylizowana.justify": "MIN",
+    "utylizowana/utylizowana.color": "var(--text-tertiary)",
+    "utylizowana/utylizowana.font": "Type/Body Medium 15/24px 400",
+    "vin.align": "CENTER",
+    "vin.direction": "HORIZONTAL",
+    "vin.gap": "0",
+    "vin.justify": "MIN",
+    "vin.width": "280px",
+    "vin/vin.color": "var(--text-tertiary)",
+    "vin/vin.font": "Type/Body Medium 15/24px 400",
+    "vin/vin.width": "280px",
+    "width": "1658px"
+  },
+  "variants": [
+    {
+      "key": "State=Default",
+      "match": {
+        "State": "Default"
+      },
+      "nodeId": "395:2816",
+      "figmaSize": {
+        "w": 1658,
+        "h": 64
+      },
+      "tokens": {},
+      "render": {
+        "part": "State=Default",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1658px",
+          "height": "64px",
+          "align-self": "stretch",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Sygnatura",
+            "path": "sygnatura",
+            "tag": "div",
+            "style": {
+              "width": "112px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Pill",
+                "path": "sygnatura/pill",
+                "tag": "div",
+                "style": {
+                  "width": "35px",
+                  "background": "var(--surface-raised-hover)",
+                  "border-radius": "var(--radius-sm)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3/5",
+                    "path": "sygnatura/pill/3-5",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "3/5",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Pojazd",
+            "path": "pojazd",
+            "tag": "div",
+            "style": {
+              "width": "284px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0-5)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Marka",
+                "path": "pojazd/marka",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "284px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "propRef": {
+                  "characters": "Marka#300:30"
+                },
+                "text": "Skoda",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Model",
+                "path": "pojazd/model",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "284px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Model#300:33"
+                },
+                "text": "Superb I 2003–2008",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Vin",
+            "path": "vin",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Vin",
+                "path": "vin/vin",
+                "tag": "span",
+                "style": {
+                  "flex": "none",
+                  "flex-grow": "1",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Vin#300:36"
+                },
+                "text": "TMBAB41U358123456",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Kupiona",
+            "path": "kupiona",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Kupiona",
+                "path": "kupiona/kupiona",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Kupiona#300:39"
+                },
+                "text": "03.08.2026",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Utylizowana",
+            "path": "utylizowana",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Utylizowana",
+                "path": "utylizowana/utylizowana",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Utylizowana#300:42"
+                },
+                "text": "03.09.2026",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Dokumenty",
+            "path": "dokumenty",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "DocProgress",
+                "path": "dokumenty/doc-progress",
+                "tag": "div",
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Bar",
+                    "path": "dokumenty/doc-progress/bar",
+                    "tag": "div",
+                    "style": {
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-1)",
+                      "justify-content": "flex-start",
+                      "align-items": "flex-start"
+                    },
+                    "children": [
+                      {
+                        "part": "Segment 1",
+                        "path": "dokumenty/doc-progress/bar/segment-1",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      },
+                      {
+                        "part": "Segment 2",
+                        "path": "dokumenty/doc-progress/bar/segment-2",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      },
+                      {
+                        "part": "Segment 3",
+                        "path": "dokumenty/doc-progress/bar/segment-3",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      },
+                      {
+                        "part": "Segment 4",
+                        "path": "dokumenty/doc-progress/bar/segment-4",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "part": "Count",
+                    "path": "dokumenty/doc-progress/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "400",
+                      "line-height": "16px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "visible": "Show Count#299:3"
+                    },
+                    "text": "4/4",
+                    "font": {
+                      "style": "Type/Caption",
+                      "size": 12,
+                      "weight": 400,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Status",
+            "path": "status",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Status",
+                "path": "status/status",
+                "tag": "div",
+                "style": {
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Robocza",
+                    "path": "status/status/robocza",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "text": "Zamknenta",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Hover",
+      "match": {
+        "State": "Hover"
+      },
+      "nodeId": "395:2832",
+      "figmaSize": {
+        "w": 1658,
+        "h": 64
+      },
+      "tokens": {
+        "background": "var(--surface-raised)"
+      },
+      "render": {
+        "part": "State=Hover",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1658px",
+          "height": "64px",
+          "align-self": "stretch",
+          "background": "var(--surface-raised)",
+          "border-bottom": "1px solid var(--border-subtle)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-4)",
+          "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "center"
+        },
+        "children": [
+          {
+            "part": "Sygnatura",
+            "path": "sygnatura",
+            "tag": "div",
+            "style": {
+              "width": "112px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Pill",
+                "path": "sygnatura/pill",
+                "tag": "div",
+                "style": {
+                  "width": "35px",
+                  "background": "var(--surface-raised-hover)",
+                  "border-radius": "var(--radius-sm)",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "center",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "3/5",
+                    "path": "sygnatura/pill/3-5",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "3/5",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Pojazd",
+            "path": "pojazd",
+            "tag": "div",
+            "style": {
+              "width": "284px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-0-5)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "Marka",
+                "path": "pojazd/marka",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "284px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-secondary)"
+                },
+                "propRef": {
+                  "characters": "Marka#300:30"
+                },
+                "text": "Skoda",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              },
+              {
+                "part": "Model",
+                "path": "pojazd/model",
+                "tag": "span",
+                "style": {
+                  "align-self": "stretch",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "13px",
+                  "font-weight": "400",
+                  "line-height": "20px",
+                  "letter-spacing": "0px",
+                  "width": "284px",
+                  "flex": "none",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Model#300:33"
+                },
+                "text": "Superb I 2003–2008",
+                "font": {
+                  "style": "Type/Body Small",
+                  "size": 13,
+                  "weight": 400,
+                  "lineHeight": "20px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Vin",
+            "path": "vin",
+            "tag": "div",
+            "style": {
+              "width": "280px",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Vin",
+                "path": "vin/vin",
+                "tag": "span",
+                "style": {
+                  "flex": "none",
+                  "flex-grow": "1",
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "text-overflow": "ellipsis",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Vin#300:36"
+                },
+                "text": "TMBAB41U358123456",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Kupiona",
+            "path": "kupiona",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Kupiona",
+                "path": "kupiona/kupiona",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Kupiona#300:39"
+                },
+                "text": "03.08.2026",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Utylizowana",
+            "path": "utylizowana",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Utylizowana",
+                "path": "utylizowana/utylizowana",
+                "tag": "span",
+                "style": {
+                  "display": "block",
+                  "font-family": "'Roboto', system-ui, sans-serif",
+                  "font-size": "15px",
+                  "font-weight": "400",
+                  "line-height": "24px",
+                  "letter-spacing": "0px",
+                  "white-space": "nowrap",
+                  "color": "var(--text-tertiary)"
+                },
+                "propRef": {
+                  "characters": "Utylizowana#300:42"
+                },
+                "text": "03.09.2026",
+                "font": {
+                  "style": "Type/Body Medium",
+                  "size": 15,
+                  "weight": 400,
+                  "lineHeight": "24px",
+                  "letterSpacing": "0px"
+                }
+              }
+            ]
+          },
+          {
+            "part": "Dokumenty",
+            "path": "dokumenty",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "DocProgress",
+                "path": "dokumenty/doc-progress",
+                "tag": "div",
+                "style": {
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Bar",
+                    "path": "dokumenty/doc-progress/bar",
+                    "tag": "div",
+                    "style": {
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-1)",
+                      "justify-content": "flex-start",
+                      "align-items": "flex-start"
+                    },
+                    "children": [
+                      {
+                        "part": "Segment 1",
+                        "path": "dokumenty/doc-progress/bar/segment-1",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      },
+                      {
+                        "part": "Segment 2",
+                        "path": "dokumenty/doc-progress/bar/segment-2",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      },
+                      {
+                        "part": "Segment 3",
+                        "path": "dokumenty/doc-progress/bar/segment-3",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      },
+                      {
+                        "part": "Segment 4",
+                        "path": "dokumenty/doc-progress/bar/segment-4",
+                        "tag": "div",
+                        "style": {
+                          "width": "28px",
+                          "height": "7px",
+                          "background": "var(--status-success-text)",
+                          "border-radius": "var(--radius-full)",
+                          "overflow": "hidden"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "part": "Count",
+                    "path": "dokumenty/doc-progress/count",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "400",
+                      "line-height": "16px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "visible": "Show Count#299:3"
+                    },
+                    "text": "4/4",
+                    "font": {
+                      "style": "Type/Caption",
+                      "size": 12,
+                      "weight": 400,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "Status",
+            "path": "status",
+            "tag": "div",
+            "style": {
+              "flex": "1 1 0%",
+              "flex-grow": "1",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "0",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Status",
+                "path": "status/status",
+                "tag": "div",
+                "style": {
+                  "background": "var(--surface-raised)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-md)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "var(--space-2)",
+                  "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Robocza",
+                    "path": "status/status/robocza",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "700",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "text": "Zamknenta",
+                    "font": {
+                      "style": "Type/Body Small Alter",
+                      "size": 13,
+                      "weight": 700,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Wiersz archiwum.",
+    "Rekordy zamknięte, tylko do odczytu.",
+    "Używać wyłącznie wewnątrz ArchiveTable.",
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "1658px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "64px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "sygnatura.width",
+      "value": "112px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "sygnatura"
+      ]
+    },
+    {
+      "prop": "pojazd.width",
+      "value": "284px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "pojazd"
+      ]
+    },
+    {
+      "prop": "vin.width",
+      "value": "280px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "vin"
+      ]
+    },
+    {
+      "prop": "status/status.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "status/status"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

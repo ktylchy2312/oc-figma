@@ -1,0 +1,147 @@
+{
+  "source": {
+    "file": "OC-Kontrol",
+    "vars": "figma-dump/vars-full.json"
+  },
+  "collections": [
+    {
+      "name": "Primitives",
+      "modes": [
+        "Value"
+      ],
+      "variables": 67
+    },
+    {
+      "name": "Color",
+      "modes": [
+        "Dark"
+      ],
+      "variables": 41
+    },
+    {
+      "name": "Radius",
+      "modes": [
+        "Value"
+      ],
+      "variables": 6
+    },
+    {
+      "name": "Spacing",
+      "modes": [
+        "Value"
+      ],
+      "variables": 13
+    },
+    {
+      "name": "Effects",
+      "modes": [
+        "Value"
+      ],
+      "variables": 1
+    }
+  ],
+  "totals": {
+    "variables": 128,
+    "tokens": 133,
+    "byType": {
+      "color": 97,
+      "number": 31,
+      "shadow": 3,
+      "gradient-stops": 1,
+      "gradient": 1
+    },
+    "multiModeTokens": 0
+  },
+  "byRole": {
+    "neutral": 14,
+    "brand": 11,
+    "success": 10,
+    "warning": 10,
+    "error": 10,
+    "white": 1,
+    "surface": 8,
+    "border": 4,
+    "text": 6,
+    "accent": 5,
+    "status": 18,
+    "radius": 6,
+    "space": 12,
+    "gap": 1,
+    "opacity": 1,
+    "scale": 11,
+    "shadow": 3,
+    "gradient": 2
+  },
+  "withoutCodeSyntaxWeb": [
+    "Primitives/Brand/950 -> --brand-950",
+    "Primitives/Scale/scale-0 -> --scale-0",
+    "Primitives/Scale/scale-1 -> --scale-1",
+    "Primitives/Scale/scale-2 -> --scale-2",
+    "Primitives/Scale/scale-3 -> --scale-3",
+    "Primitives/Scale/scale-4 -> --scale-4",
+    "Primitives/Scale/scale-5 -> --scale-5",
+    "Primitives/Scale/scale-6 -> --scale-6",
+    "Primitives/Scale/scale-8 -> --scale-8",
+    "Primitives/Scale/scale-10 -> --scale-10",
+    "Primitives/Scale/scale-12 -> --scale-12",
+    "Primitives/Scale/scale-0-5 -> --scale-0-5"
+  ],
+  "rawColorInSemanticLayer": [],
+  "semanticAliasingSemantic": [],
+  "quarantineSkipped": 0,
+  "fonts": [
+    {
+      "subset": "cyrillic-ext",
+      "bytes": 36654,
+      "sharedAcrossWeights": true,
+      "weightsInSource": [
+        "400",
+        "500",
+        "600",
+        "700"
+      ]
+    },
+    {
+      "subset": "cyrillic",
+      "bytes": 23664,
+      "sharedAcrossWeights": true,
+      "weightsInSource": [
+        "400",
+        "500",
+        "600",
+        "700"
+      ]
+    },
+    {
+      "subset": "latin",
+      "bytes": 43137,
+      "sharedAcrossWeights": true,
+      "weightsInSource": [
+        "400",
+        "500",
+        "600",
+        "700"
+      ]
+    }
+  ],
+  "typography": [
+    "Display: Roboto 700 40px/44px ls -0.2px color —",
+    "Heading 1: Roboto 700 32px/40px ls -0.2px color —",
+    "Heading 2: Roboto 700 24px/32px ls 0px color —",
+    "Heading 3: Roboto 700 20px/28px ls 0px color —",
+    "Heading 4: Roboto 700 17px/24px ls 0px color —",
+    "Body Large: Roboto 400 17px/28px ls 0px color —",
+    "Body Medium: Roboto 400 15px/24px ls 0px color —",
+    "Body Medium Alter: Roboto 700 15px/24px ls 0px color —",
+    "Body Small: Roboto 400 13px/20px ls 0px color —",
+    "Body Small Alter: Roboto 700 13px/20px ls 0px color —",
+    "Caption: Roboto 400 12px/16px ls 0px color —",
+    "Label: Roboto 700 12px/16px ls 0.6px color —"
+  ],
+  "files": [
+    "foundations/tokens.json",
+    "foundations/tokens.css",
+    "foundations/fonts.css",
+    "foundations/typography.json"
+  ]
+}

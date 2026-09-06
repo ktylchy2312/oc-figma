@@ -1,0 +1,1760 @@
+{
+  "name": "CardDragOverlay",
+  "slug": "card-drag-overlay",
+  "group": "Overlays",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "448:8448",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "CardDragOverlay",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "frame-164",
+      "name": "Frame 164",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card",
+      "name": "CarCard",
+      "element": "div",
+      "component": "CarCard",
+      "slug": "car-card"
+    },
+    {
+      "part": "frame-164/car-card/content",
+      "name": "Content",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142",
+      "name": "Frame 142",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5",
+      "name": "Frame 5",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/header-row",
+      "name": "HeaderRow",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/header-row/po-1145-x",
+      "name": "PO 1145X",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status",
+      "name": "OcStatus",
+      "element": "div",
+      "component": "OcStatus",
+      "slug": "oc-status"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/icon-clock",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Clock",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/label",
+      "name": "OC: 55 dni",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/meta-row",
+      "name": "MetaRow",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r",
+      "name": "Fiat Punto II, 2003 r.",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/meta-row/kupiona-03-08-2026",
+      "name": "Kupiona: 03.08.2026",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/frame-5/vin-zfa1880000451256",
+      "name": "VIN: ZFA1880000451256",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/divider",
+      "name": "Divider",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows",
+      "name": "Rows",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/action-row",
+      "name": "ActionRow",
+      "element": "div",
+      "component": "ActionRow",
+      "slug": "action-row"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/action-row/icon-bolt",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Bolt",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/action-row/label",
+      "name": "Wycena pojazdu",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/action-row/status-check",
+      "name": "StatusCheck",
+      "element": "div",
+      "component": "StatusCheck",
+      "slug": "status-check"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/action-row/status-check/icon-circle-check",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "CircleCheck",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list",
+      "name": "List",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list/docs-header",
+      "name": "DocsHeader",
+      "element": "div",
+      "component": "DocsHeader",
+      "slug": "docs-header"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-warning",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Warning",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list/docs-header/dokumenty",
+      "name": "Dokumenty",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list/docs-header/chip",
+      "name": "Chip",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list/docs-header/chip/label",
+      "name": "3/5",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-chevron-down",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "ChevronDown",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card-2",
+      "name": "CarCard",
+      "element": "div",
+      "component": "CarCard",
+      "slug": "car-card"
+    },
+    {
+      "part": "frame-164/car-card-2/content",
+      "name": "Content",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142",
+      "name": "Frame 142",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5",
+      "name": "Frame 5",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/header-row",
+      "name": "HeaderRow",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/header-row/po-1145-x",
+      "name": "PO 1145X",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status",
+      "name": "OcStatus",
+      "element": "div",
+      "component": "OcStatus",
+      "slug": "oc-status"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/icon-clock",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Clock",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/label",
+      "name": "OC: 55 dni",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/meta-row",
+      "name": "MetaRow",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r",
+      "name": "Fiat Punto II, 2003 r.",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/meta-row/kupiona-03-08-2026",
+      "name": "Kupiona: 03.08.2026",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/frame-5/vin-zfa1880000451256",
+      "name": "VIN: ZFA1880000451256",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/divider",
+      "name": "Divider",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows",
+      "name": "Rows",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/action-row",
+      "name": "ActionRow",
+      "element": "div",
+      "component": "ActionRow",
+      "slug": "action-row"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/action-row/icon-bolt",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Bolt",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/action-row/label",
+      "name": "Wycena pojazdu",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/action-row/status-check",
+      "name": "StatusCheck",
+      "element": "div",
+      "component": "StatusCheck",
+      "slug": "status-check"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/action-row/status-check/icon-circle-check",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "CircleCheck",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list",
+      "name": "List",
+      "element": "div"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list/docs-header",
+      "name": "DocsHeader",
+      "element": "div",
+      "component": "DocsHeader",
+      "slug": "docs-header"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-document",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "Document",
+      "slug": "icons"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/dokumenty",
+      "name": "Dokumenty",
+      "element": "span"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip",
+      "name": "Chip",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip/label",
+      "name": "3/5",
+      "element": "span",
+      "textProp": "Label"
+    },
+    {
+      "part": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-chevron-down",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "ChevronDown",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "background": "var(--surface-column)",
+    "borderColor": "var(--border-default)",
+    "borderWidth": "1.5px",
+    "frame-164.align": "MIN",
+    "frame-164.direction": "VERTICAL",
+    "frame-164.gap": "var(--space-3)",
+    "frame-164.height": "458px",
+    "frame-164.justify": "MIN",
+    "frame-164.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164.width": "387px",
+    "frame-164/car-card-2.align": "MIN",
+    "frame-164/car-card-2.background": "var(--surface-default)",
+    "frame-164/car-card-2.borderColor": "var(--border-default)",
+    "frame-164/car-card-2.borderWidth": "1px",
+    "frame-164/car-card-2.direction": "VERTICAL",
+    "frame-164/car-card-2.gap": "var(--space-0)",
+    "frame-164/car-card-2.justify": "MIN",
+    "frame-164/car-card-2.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2.radius": "var(--radius-lg)",
+    "frame-164/car-card-2/content.align": "MIN",
+    "frame-164/car-card-2/content.direction": "VERTICAL",
+    "frame-164/car-card-2/content.gap": "var(--space-0)",
+    "frame-164/car-card-2/content.justify": "MIN",
+    "frame-164/car-card-2/content.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "frame-164/car-card-2/content/frame-142.align": "MIN",
+    "frame-164/car-card-2/content/frame-142.direction": "VERTICAL",
+    "frame-164/car-card-2/content/frame-142.gap": "var(--space-3)",
+    "frame-164/car-card-2/content/frame-142.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/divider.background": "var(--border-default)",
+    "frame-164/car-card-2/content/frame-142/divider.height": "1px",
+    "frame-164/car-card-2/content/frame-142/frame-5.align": "MIN",
+    "frame-164/car-card-2/content/frame-142/frame-5.direction": "VERTICAL",
+    "frame-164/car-card-2/content/frame-142/frame-5.gap": "var(--space-1)",
+    "frame-164/car-card-2/content/frame-142/frame-5.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/frame-5.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row.align": "CENTER",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row.gap": "var(--space-2)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row.justify": "SPACE_BETWEEN",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status.align": "CENTER",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status.gap": "var(--space-2)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/icon-clock.height": "19px",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/icon-clock.icon": "Clock",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/icon-clock.iconColor": "var(--status-error-text)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/icon-clock.width": "19px",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/label.color": "var(--status-error-text)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/label.font": "Type/Body Medium Alter 15/24px 700",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/po-1145-x.color": "var(--text-primary)",
+    "frame-164/car-card-2/content/frame-142/frame-5/header-row/po-1145-x.font": "Type/Heading 3 20/28px 700",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row.align": "MIN",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row.gap": "var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row.justify": "SPACE_BETWEEN",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r.color": "var(--text-secondary)",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r.font": "Type/Body Medium 15/24px 400",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row/kupiona-03-08-2026.color": "var(--text-secondary)",
+    "frame-164/car-card-2/content/frame-142/frame-5/meta-row/kupiona-03-08-2026.font": "Type/Body Medium 15/24px 400",
+    "frame-164/car-card-2/content/frame-142/frame-5/vin-zfa1880000451256.color": "var(--text-tertiary)",
+    "frame-164/car-card-2/content/frame-142/frame-5/vin-zfa1880000451256.font": "Type/Body Medium 15/24px 400",
+    "frame-164/car-card-2/content/frame-142/frame-5/vin-zfa1880000451256.width": "353px",
+    "frame-164/car-card-2/content/frame-142/rows.align": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows.direction": "VERTICAL",
+    "frame-164/car-card-2/content/frame-142/rows.gap": "var(--space-2)",
+    "frame-164/car-card-2/content/frame-142/rows.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.align": "CENTER",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.background": "var(--surface-row)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.gap": "var(--space-2)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row.radius": "var(--radius-md)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/icon-bolt.height": "17px",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/icon-bolt.icon": "Bolt",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/icon-bolt.iconColor": "var(--text-primary)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/icon-bolt.width": "17px",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/label.color": "var(--text-primary)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/label.font": "Type/Body Small 13/20px 400",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/label.width": "276px",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check.align": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check.gap": "var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check/icon-circle-check.height": "20px",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check/icon-circle-check.icon": "CircleCheck",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check/icon-circle-check.iconColor": "var(--status-success-text)",
+    "frame-164/car-card-2/content/frame-142/rows/action-row/status-check/icon-circle-check.width": "20px",
+    "frame-164/car-card-2/content/frame-142/rows/list.align": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows/list.direction": "VERTICAL",
+    "frame-164/car-card-2/content/frame-142/rows/list.gap": "var(--space-1)",
+    "frame-164/car-card-2/content/frame-142/rows/list.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows/list.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.align": "CENTER",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.background": "var(--surface-row)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.borderColor": "var(--border-default)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.borderWidth": "1px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.gap": "var(--space-2)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.height": "36px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.justify": "MIN",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header.radius": "var(--radius-md)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.align": "CENTER",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.background": "var(--surface-raised-hover)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.direction": "HORIZONTAL",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.gap": "var(--space-0)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.justify": "CENTER",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.radius": "var(--radius-full)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip.width": "35px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip/label.color": "var(--text-tertiary)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip/label.font": "Type/Label 12/16px 700",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/dokumenty.color": "var(--text-primary)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/dokumenty.font": "Type/Body Small 13/20px 400",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/dokumenty.width": "234px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-chevron-down.height": "16px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-chevron-down.icon": "ChevronDown",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-chevron-down.iconColor": "var(--text-primary)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-chevron-down.width": "16px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-document.height": "18px",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-document.icon": "Document",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-document.iconColor": "var(--text-primary)",
+    "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-document.width": "18px",
+    "frame-164/car-card.align": "MIN",
+    "frame-164/car-card.background": "var(--surface-default)",
+    "frame-164/car-card.borderColor": "var(--border-default)",
+    "frame-164/car-card.borderWidth": "1px",
+    "frame-164/car-card.direction": "VERTICAL",
+    "frame-164/car-card.gap": "var(--space-0)",
+    "frame-164/car-card.justify": "MIN",
+    "frame-164/car-card.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card.radius": "var(--radius-lg)",
+    "frame-164/car-card/content.align": "MIN",
+    "frame-164/car-card/content.direction": "VERTICAL",
+    "frame-164/car-card/content.gap": "var(--space-0)",
+    "frame-164/car-card/content.justify": "MIN",
+    "frame-164/car-card/content.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "frame-164/car-card/content/frame-142.align": "MIN",
+    "frame-164/car-card/content/frame-142.direction": "VERTICAL",
+    "frame-164/car-card/content/frame-142.gap": "var(--space-3)",
+    "frame-164/car-card/content/frame-142.justify": "MIN",
+    "frame-164/car-card/content/frame-142.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/divider.background": "var(--border-default)",
+    "frame-164/car-card/content/frame-142/divider.height": "1px",
+    "frame-164/car-card/content/frame-142/frame-5.align": "MIN",
+    "frame-164/car-card/content/frame-142/frame-5.direction": "VERTICAL",
+    "frame-164/car-card/content/frame-142/frame-5.gap": "var(--space-1)",
+    "frame-164/car-card/content/frame-142/frame-5.justify": "MIN",
+    "frame-164/car-card/content/frame-142/frame-5.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row.align": "CENTER",
+    "frame-164/car-card/content/frame-142/frame-5/header-row.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/frame-5/header-row.gap": "var(--space-2)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row.justify": "SPACE_BETWEEN",
+    "frame-164/car-card/content/frame-142/frame-5/header-row.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status.align": "CENTER",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status.gap": "var(--space-2)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status.justify": "MIN",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/icon-clock.height": "19px",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/icon-clock.icon": "Clock",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/icon-clock.iconColor": "var(--status-success-text)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/icon-clock.width": "19px",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/label.color": "var(--status-success-text)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/label.font": "Type/Body Medium Alter 15/24px 700",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/po-1145-x.color": "var(--text-primary)",
+    "frame-164/car-card/content/frame-142/frame-5/header-row/po-1145-x.font": "Type/Heading 3 20/28px 700",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row.align": "MIN",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row.gap": "var(--space-0)",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row.justify": "SPACE_BETWEEN",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r.color": "var(--text-secondary)",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r.font": "Type/Body Medium 15/24px 400",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row/kupiona-03-08-2026.color": "var(--text-secondary)",
+    "frame-164/car-card/content/frame-142/frame-5/meta-row/kupiona-03-08-2026.font": "Type/Body Medium 15/24px 400",
+    "frame-164/car-card/content/frame-142/frame-5/vin-zfa1880000451256.color": "var(--text-tertiary)",
+    "frame-164/car-card/content/frame-142/frame-5/vin-zfa1880000451256.font": "Type/Body Medium 15/24px 400",
+    "frame-164/car-card/content/frame-142/frame-5/vin-zfa1880000451256.width": "353px",
+    "frame-164/car-card/content/frame-142/rows.align": "MIN",
+    "frame-164/car-card/content/frame-142/rows.direction": "VERTICAL",
+    "frame-164/car-card/content/frame-142/rows.gap": "var(--space-2)",
+    "frame-164/car-card/content/frame-142/rows.justify": "MIN",
+    "frame-164/car-card/content/frame-142/rows.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/rows/action-row.align": "CENTER",
+    "frame-164/car-card/content/frame-142/rows/action-row.background": "var(--surface-row)",
+    "frame-164/car-card/content/frame-142/rows/action-row.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/rows/action-row.gap": "var(--space-2)",
+    "frame-164/car-card/content/frame-142/rows/action-row.justify": "MIN",
+    "frame-164/car-card/content/frame-142/rows/action-row.padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "frame-164/car-card/content/frame-142/rows/action-row.radius": "var(--radius-md)",
+    "frame-164/car-card/content/frame-142/rows/action-row/icon-bolt.height": "17px",
+    "frame-164/car-card/content/frame-142/rows/action-row/icon-bolt.icon": "Bolt",
+    "frame-164/car-card/content/frame-142/rows/action-row/icon-bolt.iconColor": "var(--text-primary)",
+    "frame-164/car-card/content/frame-142/rows/action-row/icon-bolt.width": "17px",
+    "frame-164/car-card/content/frame-142/rows/action-row/label.color": "var(--text-primary)",
+    "frame-164/car-card/content/frame-142/rows/action-row/label.font": "Type/Body Small 13/20px 400",
+    "frame-164/car-card/content/frame-142/rows/action-row/label.width": "276px",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check.align": "MIN",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check.gap": "var(--space-0)",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check.justify": "MIN",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check/icon-circle-check.height": "20px",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check/icon-circle-check.icon": "CircleCheck",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check/icon-circle-check.iconColor": "var(--status-success-text)",
+    "frame-164/car-card/content/frame-142/rows/action-row/status-check/icon-circle-check.width": "20px",
+    "frame-164/car-card/content/frame-142/rows/list.align": "MIN",
+    "frame-164/car-card/content/frame-142/rows/list.direction": "VERTICAL",
+    "frame-164/car-card/content/frame-142/rows/list.gap": "var(--space-1)",
+    "frame-164/car-card/content/frame-142/rows/list.justify": "MIN",
+    "frame-164/car-card/content/frame-142/rows/list.padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.align": "CENTER",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.background": "var(--surface-row)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.borderColor": "var(--border-default)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.borderWidth": "1px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.gap": "var(--space-2)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.height": "36px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.justify": "MIN",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header.radius": "var(--radius-md)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.align": "CENTER",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.background": "var(--surface-raised-hover)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.direction": "HORIZONTAL",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.gap": "var(--space-0)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.justify": "CENTER",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.radius": "var(--radius-full)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip.width": "35px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip/label.color": "var(--text-tertiary)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/chip/label.font": "Type/Label 12/16px 700",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/dokumenty.color": "var(--text-primary)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/dokumenty.font": "Type/Body Small 13/20px 400",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/dokumenty.width": "234px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-chevron-down.height": "16px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-chevron-down.icon": "ChevronDown",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-chevron-down.iconColor": "var(--text-primary)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-chevron-down.width": "16px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-warning.height": "18px",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-warning.icon": "Warning",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-warning.iconColor": "var(--status-warning-text)",
+    "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-warning.width": "18px",
+    "height": "758px",
+    "radius": "var(--radius-lg)",
+    "width": "403px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "448:8448",
+      "figmaSize": {
+        "w": 403,
+        "h": 758
+      },
+      "tokens": {},
+      "render": {
+        "part": "CardDragOverlay",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "403px",
+          "height": "758px",
+          "background": "var(--surface-column)",
+          "border": "1.5px solid var(--border-default)",
+          "border-style": "dashed",
+          "border-radius": "var(--radius-lg)",
+          "overflow": "hidden",
+          "position": "relative"
+        },
+        "children": [
+          {
+            "part": "Frame 164",
+            "path": "frame-164",
+            "tag": "div",
+            "style": {
+              "position": "absolute",
+              "left": "8px",
+              "top": "8px",
+              "width": "387px",
+              "height": "458px",
+              "display": "flex",
+              "flex-direction": "column",
+              "gap": "var(--space-3)",
+              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+              "justify-content": "flex-start",
+              "align-items": "flex-start"
+            },
+            "children": [
+              {
+                "part": "CarCard",
+                "path": "frame-164/car-card",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "background": "var(--surface-default)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-lg)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                  "justify-content": "flex-start",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Content",
+                    "path": "frame-164/car-card/content",
+                    "tag": "div",
+                    "style": {
+                      "align-self": "stretch",
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "column",
+                      "gap": "var(--space-0)",
+                      "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+                      "justify-content": "flex-start",
+                      "align-items": "flex-start"
+                    },
+                    "children": [
+                      {
+                        "part": "Frame 142",
+                        "path": "frame-164/car-card/content/frame-142",
+                        "tag": "div",
+                        "style": {
+                          "align-self": "stretch",
+                          "display": "flex",
+                          "flex-direction": "column",
+                          "gap": "var(--space-3)",
+                          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                          "justify-content": "flex-start",
+                          "align-items": "flex-start"
+                        },
+                        "children": [
+                          {
+                            "part": "Frame 5",
+                            "path": "frame-164/car-card/content/frame-142/frame-5",
+                            "tag": "div",
+                            "style": {
+                              "align-self": "stretch",
+                              "display": "flex",
+                              "flex-direction": "column",
+                              "gap": "var(--space-1)",
+                              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                              "justify-content": "flex-start",
+                              "align-items": "flex-start"
+                            },
+                            "children": [
+                              {
+                                "part": "HeaderRow",
+                                "path": "frame-164/car-card/content/frame-142/frame-5/header-row",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "overflow": "hidden",
+                                  "display": "flex",
+                                  "flex-direction": "row",
+                                  "gap": "var(--space-2)",
+                                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                  "justify-content": "space-between",
+                                  "align-items": "center"
+                                },
+                                "children": [
+                                  {
+                                    "part": "PO 1145X",
+                                    "path": "frame-164/car-card/content/frame-142/frame-5/header-row/po-1145-x",
+                                    "tag": "span",
+                                    "style": {
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "20px",
+                                      "font-weight": "700",
+                                      "line-height": "28px",
+                                      "letter-spacing": "0px",
+                                      "white-space": "nowrap",
+                                      "color": "var(--text-primary)"
+                                    },
+                                    "text": "PO 1145X",
+                                    "font": {
+                                      "style": "Type/Heading 3",
+                                      "size": 20,
+                                      "weight": 700,
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  },
+                                  {
+                                    "part": "OcStatus",
+                                    "path": "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status",
+                                    "tag": "div",
+                                    "style": {
+                                      "display": "flex",
+                                      "flex-direction": "row",
+                                      "gap": "var(--space-2)",
+                                      "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                      "justify-content": "flex-start",
+                                      "align-items": "center"
+                                    },
+                                    "children": [
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/icon-clock",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "19px",
+                                          "height": "19px",
+                                          "overflow": "hidden",
+                                          "color": "var(--status-success-text)",
+                                          "stroke-width": "1.5",
+                                          "flex": "none"
+                                        },
+                                        "icon": "Clock",
+                                        "iconStyle": "Accent",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 6V12L16 14\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      },
+                                      {
+                                        "part": "OC: 55 dni",
+                                        "path": "frame-164/car-card/content/frame-142/frame-5/header-row/oc-status/label",
+                                        "tag": "span",
+                                        "style": {
+                                          "display": "block",
+                                          "font-family": "'Roboto', system-ui, sans-serif",
+                                          "font-size": "15px",
+                                          "font-weight": "700",
+                                          "line-height": "24px",
+                                          "letter-spacing": "0px",
+                                          "white-space": "nowrap",
+                                          "color": "var(--status-success-text)"
+                                        },
+                                        "propRef": {
+                                          "characters": "Label#23:0"
+                                        },
+                                        "text": "OC: 55 dni",
+                                        "font": {
+                                          "style": "Type/Body Medium Alter",
+                                          "size": 15,
+                                          "weight": 700,
+                                          "lineHeight": "24px",
+                                          "letterSpacing": "0px"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "part": "MetaRow",
+                                "path": "frame-164/car-card/content/frame-142/frame-5/meta-row",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "overflow": "hidden",
+                                  "display": "flex",
+                                  "flex-direction": "row",
+                                  "gap": "var(--space-0)",
+                                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                  "justify-content": "space-between",
+                                  "align-items": "flex-start"
+                                },
+                                "children": [
+                                  {
+                                    "part": "Fiat Punto II, 2003 r.",
+                                    "path": "frame-164/car-card/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r",
+                                    "tag": "span",
+                                    "style": {
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "15px",
+                                      "font-weight": "400",
+                                      "line-height": "24px",
+                                      "letter-spacing": "0px",
+                                      "white-space": "nowrap",
+                                      "overflow": "hidden",
+                                      "text-overflow": "ellipsis",
+                                      "color": "var(--text-secondary)"
+                                    },
+                                    "text": "Fiat Punto II, 2003 r.",
+                                    "font": {
+                                      "style": "Type/Body Medium",
+                                      "size": 15,
+                                      "weight": 400,
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  },
+                                  {
+                                    "part": "Kupiona: 03.08.2026",
+                                    "path": "frame-164/car-card/content/frame-142/frame-5/meta-row/kupiona-03-08-2026",
+                                    "tag": "span",
+                                    "style": {
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "15px",
+                                      "font-weight": "400",
+                                      "line-height": "24px",
+                                      "letter-spacing": "0px",
+                                      "white-space": "nowrap",
+                                      "color": "var(--text-secondary)"
+                                    },
+                                    "text": "Kupiona: 03.08.2026",
+                                    "font": {
+                                      "style": "Type/Body Medium",
+                                      "size": 15,
+                                      "weight": 400,
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "part": "VIN: ZFA1880000451256",
+                                "path": "frame-164/car-card/content/frame-142/frame-5/vin-zfa1880000451256",
+                                "tag": "span",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "display": "block",
+                                  "font-family": "'Roboto', system-ui, sans-serif",
+                                  "font-size": "15px",
+                                  "font-weight": "400",
+                                  "line-height": "24px",
+                                  "letter-spacing": "0px",
+                                  "width": "353px",
+                                  "flex": "none",
+                                  "color": "var(--text-tertiary)"
+                                },
+                                "text": "VIN: ZFA1880000451256",
+                                "font": {
+                                  "style": "Type/Body Medium",
+                                  "size": 15,
+                                  "weight": 400,
+                                  "lineHeight": "24px",
+                                  "letterSpacing": "0px"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "part": "Divider",
+                            "path": "frame-164/car-card/content/frame-142/divider",
+                            "tag": "div",
+                            "style": {
+                              "align-self": "stretch",
+                              "height": "1px",
+                              "background": "var(--border-default)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Rows",
+                            "path": "frame-164/car-card/content/frame-142/rows",
+                            "tag": "div",
+                            "style": {
+                              "align-self": "stretch",
+                              "display": "flex",
+                              "flex-direction": "column",
+                              "gap": "var(--space-2)",
+                              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                              "justify-content": "flex-start",
+                              "align-items": "flex-start"
+                            },
+                            "children": [
+                              {
+                                "part": "ActionRow",
+                                "path": "frame-164/car-card/content/frame-142/rows/action-row",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "background": "var(--surface-row)",
+                                  "border-radius": "var(--radius-md)",
+                                  "display": "flex",
+                                  "flex-direction": "row",
+                                  "gap": "var(--space-2)",
+                                  "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+                                  "justify-content": "flex-start",
+                                  "align-items": "center"
+                                },
+                                "children": [
+                                  {
+                                    "part": "Icons",
+                                    "path": "frame-164/car-card/content/frame-142/rows/action-row/icon-bolt",
+                                    "tag": "svg",
+                                    "style": {
+                                      "width": "17px",
+                                      "height": "17px",
+                                      "overflow": "hidden",
+                                      "color": "var(--text-primary)",
+                                      "stroke-width": "1",
+                                      "flex": "none"
+                                    },
+                                    "icon": "Bolt",
+                                    "iconStyle": "Regular",
+                                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                  },
+                                  {
+                                    "part": "Wycena pojazdu",
+                                    "path": "frame-164/car-card/content/frame-142/rows/action-row/label",
+                                    "tag": "span",
+                                    "style": {
+                                      "flex": "none",
+                                      "flex-grow": "1",
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "13px",
+                                      "font-weight": "400",
+                                      "line-height": "20px",
+                                      "letter-spacing": "0px",
+                                      "width": "276px",
+                                      "color": "var(--text-primary)"
+                                    },
+                                    "propRef": {
+                                      "characters": "Label#25:5"
+                                    },
+                                    "text": "Wycena pojazdu",
+                                    "font": {
+                                      "style": "Type/Body Small",
+                                      "size": 13,
+                                      "weight": 400,
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  },
+                                  {
+                                    "part": "StatusCheck",
+                                    "path": "frame-164/car-card/content/frame-142/rows/action-row/status-check",
+                                    "tag": "div",
+                                    "style": {
+                                      "display": "flex",
+                                      "flex-direction": "row",
+                                      "gap": "var(--space-0)",
+                                      "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                      "justify-content": "flex-start",
+                                      "align-items": "flex-start"
+                                    },
+                                    "children": [
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card/content/frame-142/rows/action-row/status-check/icon-circle-check",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "20px",
+                                          "height": "20px",
+                                          "overflow": "hidden",
+                                          "color": "var(--status-success-text)",
+                                          "stroke-width": "1",
+                                          "flex": "none"
+                                        },
+                                        "icon": "CircleCheck",
+                                        "iconStyle": "Regular",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "part": "List",
+                                "path": "frame-164/car-card/content/frame-142/rows/list",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "display": "flex",
+                                  "flex-direction": "column",
+                                  "gap": "var(--space-1)",
+                                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                  "justify-content": "flex-start",
+                                  "align-items": "flex-start"
+                                },
+                                "children": [
+                                  {
+                                    "part": "DocsHeader",
+                                    "path": "frame-164/car-card/content/frame-142/rows/list/docs-header",
+                                    "tag": "div",
+                                    "style": {
+                                      "align-self": "stretch",
+                                      "height": "36px",
+                                      "background": "var(--surface-row)",
+                                      "border": "1px solid var(--border-default)",
+                                      "border-radius": "var(--radius-md)",
+                                      "display": "flex",
+                                      "flex-direction": "row",
+                                      "gap": "var(--space-2)",
+                                      "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+                                      "justify-content": "flex-start",
+                                      "align-items": "center"
+                                    },
+                                    "children": [
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-warning",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "18px",
+                                          "height": "18px",
+                                          "overflow": "hidden",
+                                          "color": "var(--status-warning-text)",
+                                          "stroke-width": "1",
+                                          "flex": "none"
+                                        },
+                                        "icon": "Warning",
+                                        "iconStyle": "Regular",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 9V13\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 17H12.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      },
+                                      {
+                                        "part": "Dokumenty",
+                                        "path": "frame-164/car-card/content/frame-142/rows/list/docs-header/dokumenty",
+                                        "tag": "span",
+                                        "style": {
+                                          "flex": "none",
+                                          "flex-grow": "1",
+                                          "display": "block",
+                                          "font-family": "'Roboto', system-ui, sans-serif",
+                                          "font-size": "13px",
+                                          "font-weight": "400",
+                                          "line-height": "20px",
+                                          "letter-spacing": "0px",
+                                          "width": "234px",
+                                          "color": "var(--text-primary)"
+                                        },
+                                        "text": "Dokumenty",
+                                        "font": {
+                                          "style": "Type/Body Small",
+                                          "size": 13,
+                                          "weight": 400,
+                                          "lineHeight": "20px",
+                                          "letterSpacing": "0px"
+                                        }
+                                      },
+                                      {
+                                        "part": "Chip",
+                                        "path": "frame-164/car-card/content/frame-142/rows/list/docs-header/chip",
+                                        "tag": "div",
+                                        "style": {
+                                          "width": "35px",
+                                          "background": "var(--surface-raised-hover)",
+                                          "border-radius": "var(--radius-full)",
+                                          "display": "flex",
+                                          "flex-direction": "row",
+                                          "gap": "var(--space-0)",
+                                          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                                          "justify-content": "center",
+                                          "align-items": "center"
+                                        },
+                                        "children": [
+                                          {
+                                            "part": "3/5",
+                                            "path": "frame-164/car-card/content/frame-142/rows/list/docs-header/chip/label",
+                                            "tag": "span",
+                                            "style": {
+                                              "display": "block",
+                                              "font-family": "'Roboto', system-ui, sans-serif",
+                                              "font-size": "12px",
+                                              "font-weight": "700",
+                                              "line-height": "16px",
+                                              "letter-spacing": "0.6px",
+                                              "text-transform": "uppercase",
+                                              "white-space": "nowrap",
+                                              "color": "var(--text-tertiary)"
+                                            },
+                                            "propRef": {
+                                              "characters": "Label#41:114"
+                                            },
+                                            "text": "3/5",
+                                            "font": {
+                                              "style": "Type/Label",
+                                              "size": 12,
+                                              "weight": 700,
+                                              "lineHeight": "16px",
+                                              "letterSpacing": "0.6px"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card/content/frame-142/rows/list/docs-header/icon-chevron-down",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "16px",
+                                          "height": "16px",
+                                          "overflow": "hidden",
+                                          "color": "var(--text-primary)",
+                                          "stroke-width": "1",
+                                          "flex": "none"
+                                        },
+                                        "icon": "ChevronDown",
+                                        "iconStyle": "Regular",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "CarCard",
+                "path": "frame-164/car-card-2",
+                "tag": "div",
+                "style": {
+                  "align-self": "stretch",
+                  "background": "var(--surface-default)",
+                  "border": "1px solid var(--border-default)",
+                  "border-radius": "var(--radius-lg)",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "gap": "var(--space-0)",
+                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                  "justify-content": "flex-start",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Content",
+                    "path": "frame-164/car-card-2/content",
+                    "tag": "div",
+                    "style": {
+                      "align-self": "stretch",
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "column",
+                      "gap": "var(--space-0)",
+                      "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+                      "justify-content": "flex-start",
+                      "align-items": "flex-start"
+                    },
+                    "children": [
+                      {
+                        "part": "Frame 142",
+                        "path": "frame-164/car-card-2/content/frame-142",
+                        "tag": "div",
+                        "style": {
+                          "align-self": "stretch",
+                          "display": "flex",
+                          "flex-direction": "column",
+                          "gap": "var(--space-3)",
+                          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                          "justify-content": "flex-start",
+                          "align-items": "flex-start"
+                        },
+                        "children": [
+                          {
+                            "part": "Frame 5",
+                            "path": "frame-164/car-card-2/content/frame-142/frame-5",
+                            "tag": "div",
+                            "style": {
+                              "align-self": "stretch",
+                              "display": "flex",
+                              "flex-direction": "column",
+                              "gap": "var(--space-1)",
+                              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                              "justify-content": "flex-start",
+                              "align-items": "flex-start"
+                            },
+                            "children": [
+                              {
+                                "part": "HeaderRow",
+                                "path": "frame-164/car-card-2/content/frame-142/frame-5/header-row",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "overflow": "hidden",
+                                  "display": "flex",
+                                  "flex-direction": "row",
+                                  "gap": "var(--space-2)",
+                                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                  "justify-content": "space-between",
+                                  "align-items": "center"
+                                },
+                                "children": [
+                                  {
+                                    "part": "PO 1145X",
+                                    "path": "frame-164/car-card-2/content/frame-142/frame-5/header-row/po-1145-x",
+                                    "tag": "span",
+                                    "style": {
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "20px",
+                                      "font-weight": "700",
+                                      "line-height": "28px",
+                                      "letter-spacing": "0px",
+                                      "white-space": "nowrap",
+                                      "color": "var(--text-primary)"
+                                    },
+                                    "text": "PO 1145X",
+                                    "font": {
+                                      "style": "Type/Heading 3",
+                                      "size": 20,
+                                      "weight": 700,
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  },
+                                  {
+                                    "part": "OcStatus",
+                                    "path": "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status",
+                                    "tag": "div",
+                                    "style": {
+                                      "display": "flex",
+                                      "flex-direction": "row",
+                                      "gap": "var(--space-2)",
+                                      "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                      "justify-content": "flex-start",
+                                      "align-items": "center"
+                                    },
+                                    "children": [
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/icon-clock",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "19px",
+                                          "height": "19px",
+                                          "overflow": "hidden",
+                                          "color": "var(--status-error-text)",
+                                          "stroke-width": "1.5",
+                                          "flex": "none"
+                                        },
+                                        "icon": "Clock",
+                                        "iconStyle": "Accent",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 6V12L16 14\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      },
+                                      {
+                                        "part": "OC: 55 dni",
+                                        "path": "frame-164/car-card-2/content/frame-142/frame-5/header-row/oc-status/label",
+                                        "tag": "span",
+                                        "style": {
+                                          "display": "block",
+                                          "font-family": "'Roboto', system-ui, sans-serif",
+                                          "font-size": "15px",
+                                          "font-weight": "700",
+                                          "line-height": "24px",
+                                          "letter-spacing": "0px",
+                                          "white-space": "nowrap",
+                                          "color": "var(--status-error-text)"
+                                        },
+                                        "propRef": {
+                                          "characters": "Label#23:0"
+                                        },
+                                        "text": "OC: 55 dni",
+                                        "font": {
+                                          "style": "Type/Body Medium Alter",
+                                          "size": 15,
+                                          "weight": 700,
+                                          "lineHeight": "24px",
+                                          "letterSpacing": "0px"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "part": "MetaRow",
+                                "path": "frame-164/car-card-2/content/frame-142/frame-5/meta-row",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "overflow": "hidden",
+                                  "display": "flex",
+                                  "flex-direction": "row",
+                                  "gap": "var(--space-0)",
+                                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                  "justify-content": "space-between",
+                                  "align-items": "flex-start"
+                                },
+                                "children": [
+                                  {
+                                    "part": "Fiat Punto II, 2003 r.",
+                                    "path": "frame-164/car-card-2/content/frame-142/frame-5/meta-row/fiat-punto-ii-2003-r",
+                                    "tag": "span",
+                                    "style": {
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "15px",
+                                      "font-weight": "400",
+                                      "line-height": "24px",
+                                      "letter-spacing": "0px",
+                                      "white-space": "nowrap",
+                                      "overflow": "hidden",
+                                      "text-overflow": "ellipsis",
+                                      "color": "var(--text-secondary)"
+                                    },
+                                    "text": "Fiat Punto II, 2003 r.",
+                                    "font": {
+                                      "style": "Type/Body Medium",
+                                      "size": 15,
+                                      "weight": 400,
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  },
+                                  {
+                                    "part": "Kupiona: 03.08.2026",
+                                    "path": "frame-164/car-card-2/content/frame-142/frame-5/meta-row/kupiona-03-08-2026",
+                                    "tag": "span",
+                                    "style": {
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "15px",
+                                      "font-weight": "400",
+                                      "line-height": "24px",
+                                      "letter-spacing": "0px",
+                                      "white-space": "nowrap",
+                                      "color": "var(--text-secondary)"
+                                    },
+                                    "text": "Kupiona: 03.08.2026",
+                                    "font": {
+                                      "style": "Type/Body Medium",
+                                      "size": 15,
+                                      "weight": 400,
+                                      "lineHeight": "24px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  }
+                                ]
+                              },
+                              {
+                                "part": "VIN: ZFA1880000451256",
+                                "path": "frame-164/car-card-2/content/frame-142/frame-5/vin-zfa1880000451256",
+                                "tag": "span",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "display": "block",
+                                  "font-family": "'Roboto', system-ui, sans-serif",
+                                  "font-size": "15px",
+                                  "font-weight": "400",
+                                  "line-height": "24px",
+                                  "letter-spacing": "0px",
+                                  "width": "353px",
+                                  "flex": "none",
+                                  "color": "var(--text-tertiary)"
+                                },
+                                "text": "VIN: ZFA1880000451256",
+                                "font": {
+                                  "style": "Type/Body Medium",
+                                  "size": 15,
+                                  "weight": 400,
+                                  "lineHeight": "24px",
+                                  "letterSpacing": "0px"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "part": "Divider",
+                            "path": "frame-164/car-card-2/content/frame-142/divider",
+                            "tag": "div",
+                            "style": {
+                              "align-self": "stretch",
+                              "height": "1px",
+                              "background": "var(--border-default)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Rows",
+                            "path": "frame-164/car-card-2/content/frame-142/rows",
+                            "tag": "div",
+                            "style": {
+                              "align-self": "stretch",
+                              "display": "flex",
+                              "flex-direction": "column",
+                              "gap": "var(--space-2)",
+                              "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                              "justify-content": "flex-start",
+                              "align-items": "flex-start"
+                            },
+                            "children": [
+                              {
+                                "part": "ActionRow",
+                                "path": "frame-164/car-card-2/content/frame-142/rows/action-row",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "background": "var(--surface-row)",
+                                  "border-radius": "var(--radius-md)",
+                                  "display": "flex",
+                                  "flex-direction": "row",
+                                  "gap": "var(--space-2)",
+                                  "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+                                  "justify-content": "flex-start",
+                                  "align-items": "center"
+                                },
+                                "children": [
+                                  {
+                                    "part": "Icons",
+                                    "path": "frame-164/car-card-2/content/frame-142/rows/action-row/icon-bolt",
+                                    "tag": "svg",
+                                    "style": {
+                                      "width": "17px",
+                                      "height": "17px",
+                                      "overflow": "hidden",
+                                      "color": "var(--text-primary)",
+                                      "stroke-width": "1",
+                                      "flex": "none"
+                                    },
+                                    "icon": "Bolt",
+                                    "iconStyle": "Regular",
+                                    "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.9139 3.99991C16.0271 3.67928 16.0279 3.32971 15.9164 3.00853C15.8048 2.68734 15.5874 2.41359 15.2999 2.23215C15.0123 2.05071 14.6716 1.97235 14.3337 2.00992C13.9958 2.04749 13.6806 2.19875 13.4399 2.43891L4.43992 11.4389C4.23007 11.6486 4.08712 11.9159 4.02915 12.2068C3.97119 12.4978 4.00081 12.7994 4.11427 13.0736C4.22774 13.3477 4.41994 13.582 4.66659 13.7469C4.91324 13.9118 5.20324 13.9998 5.49992 13.9999H9.50192C9.5818 14 9.66049 14.0193 9.7314 14.056C9.80232 14.0928 9.86339 14.146 9.90951 14.2112C9.95564 14.2764 9.98546 14.3517 9.99649 14.4309C10.0075 14.51 9.99944 14.5906 9.97292 14.6659L8.08593 19.9999C7.97273 20.3207 7.97191 20.6704 8.0836 20.9916C8.19529 21.3129 8.41285 21.5867 8.7006 21.768C8.98834 21.9494 9.32919 22.0276 9.66721 21.9898C10.0052 21.952 10.3204 21.8004 10.5609 21.5599L19.5609 12.5599C19.7705 12.3501 19.9132 12.0828 19.9709 11.7919C20.0286 11.501 19.9989 11.1996 19.8853 10.9256C19.7718 10.6516 19.5795 10.4175 19.333 10.2527C19.0864 10.0879 18.7965 9.99997 18.4999 9.99991H14.5029C14.4228 10 14.3439 9.9809 14.2728 9.94415C14.2016 9.9074 14.1403 9.8541 14.0941 9.78873C14.0478 9.72336 14.0179 9.64784 14.0069 9.56852C13.996 9.4892 14.0042 9.40839 14.0309 9.33291L15.9139 3.99991Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                  },
+                                  {
+                                    "part": "Wycena pojazdu",
+                                    "path": "frame-164/car-card-2/content/frame-142/rows/action-row/label",
+                                    "tag": "span",
+                                    "style": {
+                                      "flex": "none",
+                                      "flex-grow": "1",
+                                      "display": "block",
+                                      "font-family": "'Roboto', system-ui, sans-serif",
+                                      "font-size": "13px",
+                                      "font-weight": "400",
+                                      "line-height": "20px",
+                                      "letter-spacing": "0px",
+                                      "width": "276px",
+                                      "color": "var(--text-primary)"
+                                    },
+                                    "propRef": {
+                                      "characters": "Label#25:5"
+                                    },
+                                    "text": "Wycena pojazdu",
+                                    "font": {
+                                      "style": "Type/Body Small",
+                                      "size": 13,
+                                      "weight": 400,
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0px"
+                                    }
+                                  },
+                                  {
+                                    "part": "StatusCheck",
+                                    "path": "frame-164/car-card-2/content/frame-142/rows/action-row/status-check",
+                                    "tag": "div",
+                                    "style": {
+                                      "display": "flex",
+                                      "flex-direction": "row",
+                                      "gap": "var(--space-0)",
+                                      "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                      "justify-content": "flex-start",
+                                      "align-items": "flex-start"
+                                    },
+                                    "children": [
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card-2/content/frame-142/rows/action-row/status-check/icon-circle-check",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "20px",
+                                          "height": "20px",
+                                          "overflow": "hidden",
+                                          "color": "var(--status-success-text)",
+                                          "stroke-width": "1",
+                                          "flex": "none"
+                                        },
+                                        "icon": "CircleCheck",
+                                        "iconStyle": "Regular",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "part": "List",
+                                "path": "frame-164/car-card-2/content/frame-142/rows/list",
+                                "tag": "div",
+                                "style": {
+                                  "align-self": "stretch",
+                                  "display": "flex",
+                                  "flex-direction": "column",
+                                  "gap": "var(--space-1)",
+                                  "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+                                  "justify-content": "flex-start",
+                                  "align-items": "flex-start"
+                                },
+                                "children": [
+                                  {
+                                    "part": "DocsHeader",
+                                    "path": "frame-164/car-card-2/content/frame-142/rows/list/docs-header",
+                                    "tag": "div",
+                                    "style": {
+                                      "align-self": "stretch",
+                                      "height": "36px",
+                                      "background": "var(--surface-row)",
+                                      "border": "1px solid var(--border-default)",
+                                      "border-radius": "var(--radius-md)",
+                                      "display": "flex",
+                                      "flex-direction": "row",
+                                      "gap": "var(--space-2)",
+                                      "padding": "var(--space-2) var(--space-3) var(--space-2) var(--space-3)",
+                                      "justify-content": "flex-start",
+                                      "align-items": "center"
+                                    },
+                                    "children": [
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-document",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "18px",
+                                          "height": "18px",
+                                          "overflow": "hidden",
+                                          "color": "var(--text-primary)",
+                                          "stroke-width": "1",
+                                          "flex": "none"
+                                        },
+                                        "icon": "Document",
+                                        "iconStyle": "Regular",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 22C5.46957 22 4.96086 21.7893 4.58579 21.4142C4.21071 21.0391 4 20.5304 4 20V4C4 3.46957 4.21071 2.96086 4.58579 2.58579C4.96086 2.21072 5.46957 2 6 2H14C14.3166 1.99949 14.6301 2.06161 14.9225 2.18277C15.215 2.30394 15.4806 2.48176 15.704 2.706L19.292 6.294C19.5168 6.51751 19.6952 6.78335 19.8167 7.07616C19.9382 7.36898 20.0005 7.68297 20 8V20C20 20.5304 19.7893 21.0391 19.4142 21.4142C19.0391 21.7893 18.5304 22 18 22H6Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M14 2V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8H20\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M10 9H8\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 13H8\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 17H8\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      },
+                                      {
+                                        "part": "Dokumenty",
+                                        "path": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/dokumenty",
+                                        "tag": "span",
+                                        "style": {
+                                          "flex": "none",
+                                          "flex-grow": "1",
+                                          "display": "block",
+                                          "font-family": "'Roboto', system-ui, sans-serif",
+                                          "font-size": "13px",
+                                          "font-weight": "400",
+                                          "line-height": "20px",
+                                          "letter-spacing": "0px",
+                                          "width": "234px",
+                                          "color": "var(--text-primary)"
+                                        },
+                                        "text": "Dokumenty",
+                                        "font": {
+                                          "style": "Type/Body Small",
+                                          "size": 13,
+                                          "weight": 400,
+                                          "lineHeight": "20px",
+                                          "letterSpacing": "0px"
+                                        }
+                                      },
+                                      {
+                                        "part": "Chip",
+                                        "path": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip",
+                                        "tag": "div",
+                                        "style": {
+                                          "width": "35px",
+                                          "background": "var(--surface-raised-hover)",
+                                          "border-radius": "var(--radius-full)",
+                                          "display": "flex",
+                                          "flex-direction": "row",
+                                          "gap": "var(--space-0)",
+                                          "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                                          "justify-content": "center",
+                                          "align-items": "center"
+                                        },
+                                        "children": [
+                                          {
+                                            "part": "3/5",
+                                            "path": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/chip/label",
+                                            "tag": "span",
+                                            "style": {
+                                              "display": "block",
+                                              "font-family": "'Roboto', system-ui, sans-serif",
+                                              "font-size": "12px",
+                                              "font-weight": "700",
+                                              "line-height": "16px",
+                                              "letter-spacing": "0.6px",
+                                              "text-transform": "uppercase",
+                                              "white-space": "nowrap",
+                                              "color": "var(--text-tertiary)"
+                                            },
+                                            "propRef": {
+                                              "characters": "Label#41:114"
+                                            },
+                                            "text": "5/5",
+                                            "font": {
+                                              "style": "Type/Label",
+                                              "size": 12,
+                                              "weight": 700,
+                                              "lineHeight": "16px",
+                                              "letterSpacing": "0.6px"
+                                            }
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "part": "Icons",
+                                        "path": "frame-164/car-card-2/content/frame-142/rows/list/docs-header/icon-chevron-down",
+                                        "tag": "svg",
+                                        "style": {
+                                          "width": "16px",
+                                          "height": "16px",
+                                          "overflow": "hidden",
+                                          "color": "var(--text-primary)",
+                                          "stroke-width": "1",
+                                          "flex": "none"
+                                        },
+                                        "icon": "ChevronDown",
+                                        "iconStyle": "Regular",
+                                        "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6 9L12 15L18 9\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "403px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "758px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1.5px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "frame-164.width",
+      "value": "387px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "frame-164"
+      ]
+    },
+    {
+      "prop": "frame-164.height",
+      "value": "458px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "frame-164"
+      ]
+    },
+    {
+      "prop": "frame-164/car-card.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "frame-164/car-card"
+      ]
+    },
+    {
+      "prop": "frame-164/car-card-2.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "frame-164/car-card-2"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

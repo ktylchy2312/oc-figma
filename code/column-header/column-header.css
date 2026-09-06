@@ -1,0 +1,121 @@
+/* ColumnHeader — сгенерировано из components/column-header/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 300px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — borderWidth = 1px — нет токена под толщину обводки */
+.oc-column-header {
+  width: 300px;
+  background: var(--surface-background);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-4) var(--space-4) var(--space-4);
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-button.width = 26px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — icon-button.height = 28px — нет шкалы размеров: высота задана числом */
+.oc-column-header__icon-button {
+  width: 26px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-button/icon-edit.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+/* TODO: unbound — icon-button-2.width = 26px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — icon-button-2.height = 28px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — icon-button-2/icon-trash.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+/* TODO: unbound — input.height = 32px — нет шкалы размеров: высота задана числом */
+/* TODO: unbound — input.borderWidth = 1px — нет токена под толщину обводки */
+/* TODO: unbound — icon-button/icon-trash.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-column-header.oc-column-header--state-default .oc-column-header__label {
+  flex: none;
+  flex-grow: 1;
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  width: 198px;
+  color: var(--text-primary);
+}
+.oc-column-header.oc-column-header--state-default .oc-column-header__icon-edit {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+.oc-column-header.oc-column-header--state-default .oc-column-header__icon-button-2 {
+  width: 26px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+.oc-column-header.oc-column-header--state-default .oc-column-header__icon-button-2-icon-trash {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* State=Edit */
+.oc-column-header.oc-column-header--state-edit .oc-column-header__input {
+  flex: 1 1 0%;
+  height: 32px;
+  flex-grow: 1;
+  background: var(--surface-default);
+  border: 1px solid var(--accent-default);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-3) var(--space-0) var(--space-3);
+  justify-content: flex-start;
+  align-items: center;
+}
+.oc-column-header.oc-column-header--state-edit .oc-column-header__input-label {
+  display: block;
+  font-family: 'Roboto', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  white-space: nowrap;
+  color: var(--text-primary);
+}
+.oc-column-header.oc-column-header--state-edit .oc-column-header__icon-button-icon-trash {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}

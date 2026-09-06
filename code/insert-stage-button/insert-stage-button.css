@@ -1,0 +1,55 @@
+/* InsertStageButton — сгенерировано из components/insert-stage-button/spec.json. Руками не править: правку съест
+ * следующая пересборка. Требует ../../foundations/tokens.css и ../base.css.
+ * Значение без привязки к переменной Figma выходит литералом и помечается маркером ниже —
+ * подставить «ближайший» токен значило бы выбрать роль за человека. */
+
+/* TODO: unbound — width = 40px — нет шкалы размеров: ширина задана числом */
+/* TODO: unbound — height = 40px — нет шкалы размеров: высота задана числом */
+.oc-insert-stage-button {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-0);
+  padding: var(--space-0) var(--space-0) var(--space-0) var(--space-0);
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: unbound — icon-plus.iconStrokeWidth = 1 — нет токена под толщину линии иконки */
+.oc-insert-stage-button__icon-plus {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  color: var(--text-primary);
+  stroke-width: 1;
+  flex: none;
+}
+
+/* ---- варианты ---- */
+
+/* State=Default */
+.oc-insert-stage-button.oc-insert-stage-button--state-default {
+  background: var(--accent-default);
+}
+
+/* State=Hover */
+.oc-insert-stage-button.oc-insert-stage-button--state-hover,
+.oc-insert-stage-button:not(:disabled):not([aria-disabled="true"]):hover {
+  background: var(--accent-hover);
+}
+
+/* State=Pressed */
+.oc-insert-stage-button.oc-insert-stage-button--state-pressed,
+.oc-insert-stage-button:not(:disabled):not([aria-disabled="true"]):active {
+  background: var(--accent-pressed);
+}
+
+/* State=Disabled */
+.oc-insert-stage-button.oc-insert-stage-button--state-disabled,
+.oc-insert-stage-button:disabled,
+.oc-insert-stage-button[aria-disabled="true"] {
+  background: var(--accent-disabled);
+  opacity: var(--opacity-disabled);
+}

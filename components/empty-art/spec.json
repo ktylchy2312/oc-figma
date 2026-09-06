@@ -1,0 +1,228 @@
+{
+  "name": "EmptyArt",
+  "slug": "empty-art",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "32:1532",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "EmptyArt",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "FIXED"
+      }
+    },
+    {
+      "part": "doc1",
+      "name": "doc1",
+      "element": "div"
+    },
+    {
+      "part": "doc2",
+      "name": "doc2",
+      "element": "div"
+    },
+    {
+      "part": "cursor",
+      "name": "cursor",
+      "element": "div"
+    }
+  ],
+  "base": {
+    "cursor.height": "32px",
+    "cursor.vectorToken:--accent-default": "var(--accent-default)",
+    "cursor.vectorToken:--surface-default": "var(--surface-default)",
+    "cursor.vectorToken:--text-secondary": "var(--text-secondary)",
+    "cursor.width": "32px",
+    "doc1.background": "var(--surface-default)",
+    "doc1.borderColor": "var(--border-strong)",
+    "doc1.borderWidth": "1.5px",
+    "doc1.height": "28px",
+    "doc1.radius": "var(--radius-md)",
+    "doc1.width": "36px",
+    "doc2.background": "var(--surface-column)",
+    "doc2.borderColor": "var(--text-disabled)",
+    "doc2.borderWidth": "1.5px",
+    "doc2.height": "28px",
+    "doc2.radius": "var(--radius-md)",
+    "doc2.width": "36px",
+    "height": "56px",
+    "width": "64px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "32:1532",
+      "figmaSize": {
+        "w": 64,
+        "h": 56
+      },
+      "tokens": {},
+      "render": {
+        "part": "EmptyArt",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "64px",
+          "height": "56px",
+          "position": "relative"
+        },
+        "children": [
+          {
+            "part": "doc1",
+            "path": "doc1",
+            "tag": "div",
+            "style": {
+              "position": "absolute",
+              "left": "0px",
+              "top": "2px",
+              "width": "36px",
+              "height": "28px",
+              "background": "var(--surface-default)",
+              "border": "1.5px solid var(--border-strong)",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "doc2",
+            "path": "doc2",
+            "tag": "div",
+            "style": {
+              "position": "absolute",
+              "left": "12px",
+              "top": "13px",
+              "width": "36px",
+              "height": "28px",
+              "background": "var(--surface-column)",
+              "border": "1.5px solid var(--text-disabled)",
+              "border-style": "dashed",
+              "border-radius": "var(--radius-md)",
+              "overflow": "hidden"
+            }
+          },
+          {
+            "part": "cursor",
+            "path": "cursor",
+            "tag": "svg",
+            "style": {
+              "position": "absolute",
+              "left": "34px",
+              "top": "26px",
+              "width": "32px",
+              "height": "32px",
+              "overflow": "visible",
+              "flex": "none"
+            },
+            "vector": true,
+            "svg": "<svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M24 11C24 6.58172 20.4183 3 16 3C11.5817 3 8 6.58172 8 11V21C8 25.4183 11.5817 29 16 29C20.4183 29 24 25.4183 24 21V11Z\" style=\"fill:var(--surface-default);stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8 12H24\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M16 3V12\" style=\"stroke:var(--text-secondary)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M8.40002 11.4V9.00002C8.40002 6.98438 9.20074 5.05129 10.626 3.62601C12.0513 2.20074 13.9844 1.40002 16 1.40002\" style=\"fill:var(--accent-default)\"/>\n<path d=\"M8 12V9C8 6.87827 8.84285 4.84344 10.3431 3.34315C11.8434 1.84285 13.8783 1 16 1\" style=\"stroke:var(--accent-default)\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "64px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "height",
+      "value": "56px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "doc1.width",
+      "value": "36px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "doc1"
+      ]
+    },
+    {
+      "prop": "doc1.height",
+      "value": "28px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "doc1"
+      ]
+    },
+    {
+      "prop": "doc1.borderWidth",
+      "value": "1.5px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "doc1"
+      ]
+    },
+    {
+      "prop": "doc2.width",
+      "value": "36px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "doc2"
+      ]
+    },
+    {
+      "prop": "doc2.height",
+      "value": "28px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "doc2"
+      ]
+    },
+    {
+      "prop": "doc2.borderWidth",
+      "value": "1.5px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "doc2"
+      ]
+    },
+    {
+      "prop": "cursor.width",
+      "value": "32px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "cursor"
+      ]
+    },
+    {
+      "prop": "cursor.height",
+      "value": "32px",
+      "reason": "нет шкалы размеров: высота задана числом",
+      "at": [
+        "cursor"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

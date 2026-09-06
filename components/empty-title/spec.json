@@ -1,0 +1,115 @@
+{
+  "name": "EmptyTitle",
+  "slug": "empty-title",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "33:1541",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "Label",
+      "type": "text",
+      "figmaKey": "Label#33:103",
+      "default": "Brak pojazdów na tym etapie"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "EmptyTitle",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "label",
+      "name": "Brak pojazdów na tym etapie",
+      "element": "span",
+      "textProp": "Label"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "justify": "MIN",
+    "label.color": "var(--text-tertiary)",
+    "label.font": "Type/Body Small Alter 13/20px 700",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "33:1541",
+      "figmaSize": {
+        "w": 169,
+        "h": 20
+      },
+      "tokens": {},
+      "render": {
+        "part": "EmptyTitle",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Brak pojazdów na tym etapie",
+            "path": "label",
+            "tag": "span",
+            "style": {
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "700",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "text-align": "center",
+              "white-space": "nowrap",
+              "color": "var(--text-tertiary)"
+            },
+            "propRef": {
+              "characters": "Label#33:103"
+            },
+            "text": "Brak pojazdów na tym etapie",
+            "font": {
+              "style": "Type/Body Small Alter",
+              "size": 13,
+              "weight": 700,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (1 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

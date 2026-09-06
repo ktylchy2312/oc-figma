@@ -1,0 +1,145 @@
+{
+  "name": "InlineNote",
+  "slug": "inline-note",
+  "group": "Feedback",
+  "level": "atom",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "333:3744",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Врезка в диалоге: чего не хватает, что произойдёт. Не для ошибок — у ошибки свой тон и своя иконка. Ширина тянется по родителю.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [
+    {
+      "name": "Text",
+      "type": "text",
+      "figmaKey": "Text#333:111",
+      "default": "Brakuje: 2 dokumentów"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "InlineNote",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "text",
+      "name": "Text",
+      "element": "span",
+      "textProp": "Text"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "background": "var(--surface-sunken)",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "1px",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-2)",
+    "justify": "MIN",
+    "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+    "radius": "var(--radius-md)",
+    "text.color": "var(--text-secondary)",
+    "text.font": "Type/Body Small 13/20px 400",
+    "text.width": "286px",
+    "width": "320px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "333:3744",
+      "figmaSize": {
+        "w": 320,
+        "h": 46
+      },
+      "tokens": {},
+      "render": {
+        "part": "InlineNote",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "320px",
+          "background": "var(--surface-sunken)",
+          "border": "1px solid var(--border-subtle)",
+          "border-radius": "var(--radius-md)",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-2)",
+          "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Text",
+            "path": "text",
+            "tag": "span",
+            "style": {
+              "flex": "none",
+              "flex-grow": "1",
+              "display": "block",
+              "font-family": "'Roboto', system-ui, sans-serif",
+              "font-size": "13px",
+              "font-weight": "400",
+              "line-height": "20px",
+              "letter-spacing": "0px",
+              "width": "286px",
+              "color": "var(--text-secondary)"
+            },
+            "propRef": {
+              "characters": "Text#333:111"
+            },
+            "text": "Brakuje: 2 dokumentów",
+            "font": {
+              "style": "Type/Body Small",
+              "size": 13,
+              "weight": 400,
+              "lineHeight": "20px",
+              "letterSpacing": "0px"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Врезка в диалоге: чего не хватает, что произойдёт.",
+    "Ширина тянется по родителю."
+  ],
+  "avoid": [
+    "Не для ошибок — у ошибки свой тон и своя иконка."
+  ],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "320px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

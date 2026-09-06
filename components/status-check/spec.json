@@ -1,0 +1,239 @@
+{
+  "name": "StatusCheck",
+  "slug": "status-check",
+  "group": "Feedback",
+  "level": "molecule",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "24:56",
+    "page": "Core",
+    "kind": "SET"
+  },
+  "description": "",
+  "documentation": {
+    "source": "figma component description",
+    "present": false
+  },
+  "props": [
+    {
+      "name": "State",
+      "type": "variant",
+      "figmaKey": "State",
+      "values": [
+        "Done",
+        "Warn",
+        "Pending"
+      ],
+      "default": "Done"
+    }
+  ],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "StatusCheck",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "HUG",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "icon-circle-check",
+      "name": "Icons",
+      "element": "svg",
+      "component": "Icons",
+      "glyph": "CircleCheck",
+      "slug": "icons"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "direction": "HORIZONTAL",
+    "gap": "var(--space-0)",
+    "justify": "MIN",
+    "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)"
+  },
+  "variants": [
+    {
+      "key": "State=Done",
+      "match": {
+        "State": "Done"
+      },
+      "nodeId": "24:45",
+      "figmaSize": {
+        "w": 20,
+        "h": 20
+      },
+      "tokens": {
+        "icon-circle-check.height": "20px",
+        "icon-circle-check.icon": "CircleCheck",
+        "icon-circle-check.iconColor": "var(--status-success-text)",
+        "icon-circle-check.width": "20px"
+      },
+      "render": {
+        "part": "State=Done",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-circle-check",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--status-success-text)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "CircleCheck",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M9 12L11 14L15 10\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Warn",
+      "match": {
+        "State": "Warn"
+      },
+      "nodeId": "24:49",
+      "figmaSize": {
+        "w": 20,
+        "h": 20
+      },
+      "tokens": {
+        "icon-warning.height": "20px",
+        "icon-warning.icon": "Warning",
+        "icon-warning.iconColor": "var(--status-warning-text)",
+        "icon-warning.width": "20px"
+      },
+      "render": {
+        "part": "State=Warn",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-warning",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--status-warning-text)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Warning",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M21.7299 18L13.7299 3.99998C13.5555 3.69218 13.3025 3.43617 12.9969 3.25805C12.6912 3.07993 12.3437 2.98608 11.9899 2.98608C11.6361 2.98608 11.2887 3.07993 10.983 3.25805C10.6773 3.43617 10.4244 3.69218 10.2499 3.99998L2.24993 18C2.07361 18.3053 1.98116 18.6519 1.98194 19.0045C1.98272 19.3571 2.07671 19.7032 2.25438 20.0078C2.43204 20.3124 2.68708 20.5646 2.99362 20.7388C3.30017 20.9131 3.64734 21.0032 3.99993 21H19.9999C20.3508 20.9996 20.6955 20.9069 20.9992 20.7313C21.303 20.5556 21.5551 20.3031 21.7304 19.9991C21.9057 19.6951 21.998 19.3504 21.9979 18.9995C21.9978 18.6486 21.9054 18.3039 21.7299 18Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 9V13\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M12 17H12.01\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    },
+    {
+      "key": "State=Pending",
+      "match": {
+        "State": "Pending"
+      },
+      "nodeId": "24:53",
+      "figmaSize": {
+        "w": 20,
+        "h": 20
+      },
+      "tokens": {
+        "icon-circle.height": "20px",
+        "icon-circle.icon": "Circle",
+        "icon-circle.iconColor": "var(--text-tertiary)",
+        "icon-circle.width": "20px"
+      },
+      "render": {
+        "part": "State=Pending",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "fit-content",
+          "display": "flex",
+          "flex-direction": "row",
+          "gap": "var(--space-0)",
+          "padding": "var(--space-0) var(--space-0) var(--space-0) var(--space-0)",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "Icons",
+            "path": "icon-circle",
+            "tag": "svg",
+            "style": {
+              "width": "20px",
+              "height": "20px",
+              "overflow": "hidden",
+              "color": "var(--text-tertiary)",
+              "stroke-width": "1",
+              "flex": "none"
+            },
+            "icon": "Circle",
+            "iconStyle": "Regular",
+            "svg": "<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>"
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Входит в состав других компонентов (2 шт. по графу Figma)."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "icon-circle-check.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-circle-check"
+      ]
+    },
+    {
+      "prop": "icon-warning.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-warning"
+      ]
+    },
+    {
+      "prop": "icon-circle.iconStrokeWidth",
+      "value": "1",
+      "reason": "нет токена под толщину линии иконки",
+      "at": [
+        "icon-circle"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}

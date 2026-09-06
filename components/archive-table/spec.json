@@ -1,0 +1,3375 @@
+{
+  "name": "ArchiveTable",
+  "slug": "archive-table",
+  "group": "Cards",
+  "level": "organism",
+  "role": "source",
+  "figma": {
+    "fileKey": "9NPCCHVqzumBg7rprMCGIE",
+    "nodeId": "448:9110",
+    "page": "Core",
+    "kind": "ONE"
+  },
+  "description": "Archiwum zamkniętych rekordów: nagłówek + N wierszy ArchiveRow. Szerokość stała 1660.",
+  "documentation": {
+    "source": "figma component description",
+    "present": true
+  },
+  "props": [],
+  "anatomy": [
+    {
+      "part": "root",
+      "name": "ArchiveTable",
+      "element": "div",
+      "figmaSizing": {
+        "horizontal": "FIXED",
+        "vertical": "HUG"
+      }
+    },
+    {
+      "part": "archive-table-header",
+      "name": "ArchiveTableHeader",
+      "element": "div",
+      "component": "ArchiveTableHeader",
+      "slug": "archive-table-header"
+    },
+    {
+      "part": "archive-table-header/sygnatura",
+      "name": "SYGNATURA",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/sygnatura/sygnatura",
+      "name": "SYGNATURA",
+      "element": "span"
+    },
+    {
+      "part": "archive-table-header/pojazd",
+      "name": "POJAZD",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/pojazd/pojazd",
+      "name": "POJAZD",
+      "element": "span"
+    },
+    {
+      "part": "archive-table-header/vin",
+      "name": "VIN",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/vin/vin",
+      "name": "VIN",
+      "element": "span"
+    },
+    {
+      "part": "archive-table-header/kupiona",
+      "name": "KUPIONA",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/kupiona/kupiona",
+      "name": "KUPIONA",
+      "element": "span"
+    },
+    {
+      "part": "archive-table-header/utylizowana",
+      "name": "UTYLIZOWANA",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/utylizowana/utylizowana",
+      "name": "UTYLIZOWANA",
+      "element": "span"
+    },
+    {
+      "part": "archive-table-header/dokumenty",
+      "name": "DOKUMENTY",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/dokumenty/dokumenty",
+      "name": "DOKUMENTY",
+      "element": "span"
+    },
+    {
+      "part": "archive-table-header/status",
+      "name": "STATUS",
+      "element": "div"
+    },
+    {
+      "part": "archive-table-header/status/status",
+      "name": "STATUS",
+      "element": "span"
+    },
+    {
+      "part": "sk00147",
+      "name": "SK00147",
+      "element": "div",
+      "component": "ArchiveRow",
+      "slug": "archive-row"
+    },
+    {
+      "part": "sk00147/sygnatura",
+      "name": "Sygnatura",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/sygnatura/pill",
+      "name": "Pill",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "sk00147/sygnatura/pill/3-5",
+      "name": "3/5",
+      "element": "span"
+    },
+    {
+      "part": "sk00147/pojazd",
+      "name": "Pojazd",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/pojazd/marka",
+      "name": "Marka",
+      "element": "span",
+      "textProp": "Marka"
+    },
+    {
+      "part": "sk00147/pojazd/model",
+      "name": "Model",
+      "element": "span",
+      "textProp": "Model"
+    },
+    {
+      "part": "sk00147/vin",
+      "name": "Vin",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/vin/vin",
+      "name": "Vin",
+      "element": "span",
+      "textProp": "Vin"
+    },
+    {
+      "part": "sk00147/kupiona",
+      "name": "Kupiona",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/kupiona/kupiona",
+      "name": "Kupiona",
+      "element": "span",
+      "textProp": "Kupiona"
+    },
+    {
+      "part": "sk00147/utylizowana",
+      "name": "Utylizowana",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/utylizowana/utylizowana",
+      "name": "Utylizowana",
+      "element": "span",
+      "textProp": "Utylizowana"
+    },
+    {
+      "part": "sk00147/dokumenty",
+      "name": "Dokumenty",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress",
+      "name": "DocProgress",
+      "element": "div",
+      "component": "DocProgress",
+      "slug": "doc-progress"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress/bar",
+      "name": "Bar",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress/bar/segment-1",
+      "name": "Segment 1",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress/bar/segment-2",
+      "name": "Segment 2",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress/bar/segment-3",
+      "name": "Segment 3",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress/bar/segment-4",
+      "name": "Segment 4",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/dokumenty/doc-progress/count",
+      "name": "Count",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "Show Count"
+    },
+    {
+      "part": "sk00147/status",
+      "name": "Status",
+      "element": "div"
+    },
+    {
+      "part": "sk00147/status/status",
+      "name": "Status",
+      "element": "div",
+      "component": "StatusPill",
+      "slug": "status-pill"
+    },
+    {
+      "part": "sk00147/status/status/aktywna",
+      "name": "Aktywna",
+      "element": "span"
+    },
+    {
+      "part": "op00521",
+      "name": "OP00521",
+      "element": "div",
+      "component": "ArchiveRow",
+      "slug": "archive-row"
+    },
+    {
+      "part": "op00521/sygnatura",
+      "name": "Sygnatura",
+      "element": "div"
+    },
+    {
+      "part": "op00521/sygnatura/pill",
+      "name": "Pill",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "op00521/sygnatura/pill/3-5",
+      "name": "3/5",
+      "element": "span"
+    },
+    {
+      "part": "op00521/pojazd",
+      "name": "Pojazd",
+      "element": "div"
+    },
+    {
+      "part": "op00521/pojazd/marka",
+      "name": "Marka",
+      "element": "span",
+      "textProp": "Marka"
+    },
+    {
+      "part": "op00521/pojazd/model",
+      "name": "Model",
+      "element": "span",
+      "textProp": "Model"
+    },
+    {
+      "part": "op00521/vin",
+      "name": "Vin",
+      "element": "div"
+    },
+    {
+      "part": "op00521/vin/vin",
+      "name": "Vin",
+      "element": "span",
+      "textProp": "Vin"
+    },
+    {
+      "part": "op00521/kupiona",
+      "name": "Kupiona",
+      "element": "div"
+    },
+    {
+      "part": "op00521/kupiona/kupiona",
+      "name": "Kupiona",
+      "element": "span",
+      "textProp": "Kupiona"
+    },
+    {
+      "part": "op00521/utylizowana",
+      "name": "Utylizowana",
+      "element": "div"
+    },
+    {
+      "part": "op00521/utylizowana/utylizowana",
+      "name": "Utylizowana",
+      "element": "span",
+      "textProp": "Utylizowana"
+    },
+    {
+      "part": "op00521/dokumenty",
+      "name": "Dokumenty",
+      "element": "div"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress",
+      "name": "DocProgress",
+      "element": "div",
+      "component": "DocProgress",
+      "slug": "doc-progress"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress/bar",
+      "name": "Bar",
+      "element": "div"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress/bar/segment-1",
+      "name": "Segment 1",
+      "element": "div"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress/bar/segment-2",
+      "name": "Segment 2",
+      "element": "div"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress/bar/segment-3",
+      "name": "Segment 3",
+      "element": "div"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress/bar/segment-4",
+      "name": "Segment 4",
+      "element": "div"
+    },
+    {
+      "part": "op00521/dokumenty/doc-progress/count",
+      "name": "Count",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "Show Count"
+    },
+    {
+      "part": "op00521/status",
+      "name": "Status",
+      "element": "div"
+    },
+    {
+      "part": "op00521/status/status",
+      "name": "Status",
+      "element": "div",
+      "component": "StatusPill",
+      "slug": "status-pill"
+    },
+    {
+      "part": "op00521/status/status/aktywna",
+      "name": "Aktywna",
+      "element": "span"
+    },
+    {
+      "part": "ft00056",
+      "name": "FT00056",
+      "element": "div",
+      "component": "ArchiveRow",
+      "slug": "archive-row"
+    },
+    {
+      "part": "ft00056/sygnatura",
+      "name": "Sygnatura",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/sygnatura/pill",
+      "name": "Pill",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "ft00056/sygnatura/pill/3-5",
+      "name": "3/5",
+      "element": "span"
+    },
+    {
+      "part": "ft00056/pojazd",
+      "name": "Pojazd",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/pojazd/marka",
+      "name": "Marka",
+      "element": "span",
+      "textProp": "Marka"
+    },
+    {
+      "part": "ft00056/pojazd/model",
+      "name": "Model",
+      "element": "span",
+      "textProp": "Model"
+    },
+    {
+      "part": "ft00056/vin",
+      "name": "Vin",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/vin/vin",
+      "name": "Vin",
+      "element": "span",
+      "textProp": "Vin"
+    },
+    {
+      "part": "ft00056/kupiona",
+      "name": "Kupiona",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/kupiona/kupiona",
+      "name": "Kupiona",
+      "element": "span",
+      "textProp": "Kupiona"
+    },
+    {
+      "part": "ft00056/utylizowana",
+      "name": "Utylizowana",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/utylizowana/utylizowana",
+      "name": "Utylizowana",
+      "element": "span",
+      "textProp": "Utylizowana"
+    },
+    {
+      "part": "ft00056/dokumenty",
+      "name": "Dokumenty",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress",
+      "name": "DocProgress",
+      "element": "div",
+      "component": "DocProgress",
+      "slug": "doc-progress"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress/bar",
+      "name": "Bar",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress/bar/segment-1",
+      "name": "Segment 1",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress/bar/segment-2",
+      "name": "Segment 2",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress/bar/segment-3",
+      "name": "Segment 3",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress/bar/segment-4",
+      "name": "Segment 4",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/dokumenty/doc-progress/count",
+      "name": "Count",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "Show Count"
+    },
+    {
+      "part": "ft00056/status",
+      "name": "Status",
+      "element": "div"
+    },
+    {
+      "part": "ft00056/status/status",
+      "name": "Status",
+      "element": "div",
+      "component": "StatusPill",
+      "slug": "status-pill"
+    },
+    {
+      "part": "ft00056/status/status/zam-wiona",
+      "name": "Zamówiona",
+      "element": "span"
+    },
+    {
+      "part": "rn00889",
+      "name": "RN00889",
+      "element": "div",
+      "component": "ArchiveRow",
+      "slug": "archive-row"
+    },
+    {
+      "part": "rn00889/sygnatura",
+      "name": "Sygnatura",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/sygnatura/pill",
+      "name": "Pill",
+      "element": "div",
+      "component": "Chip",
+      "slug": "chip"
+    },
+    {
+      "part": "rn00889/sygnatura/pill/3-5",
+      "name": "3/5",
+      "element": "span"
+    },
+    {
+      "part": "rn00889/pojazd",
+      "name": "Pojazd",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/pojazd/marka",
+      "name": "Marka",
+      "element": "span",
+      "textProp": "Marka"
+    },
+    {
+      "part": "rn00889/pojazd/model",
+      "name": "Model",
+      "element": "span",
+      "textProp": "Model"
+    },
+    {
+      "part": "rn00889/vin",
+      "name": "Vin",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/vin/vin",
+      "name": "Vin",
+      "element": "span",
+      "textProp": "Vin"
+    },
+    {
+      "part": "rn00889/kupiona",
+      "name": "Kupiona",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/kupiona/kupiona",
+      "name": "Kupiona",
+      "element": "span",
+      "textProp": "Kupiona"
+    },
+    {
+      "part": "rn00889/utylizowana",
+      "name": "Utylizowana",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/utylizowana/utylizowana",
+      "name": "Utylizowana",
+      "element": "span",
+      "textProp": "Utylizowana"
+    },
+    {
+      "part": "rn00889/dokumenty",
+      "name": "Dokumenty",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress",
+      "name": "DocProgress",
+      "element": "div",
+      "component": "DocProgress",
+      "slug": "doc-progress"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress/bar",
+      "name": "Bar",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress/bar/segment-1",
+      "name": "Segment 1",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress/bar/segment-2",
+      "name": "Segment 2",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress/bar/segment-3",
+      "name": "Segment 3",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress/bar/segment-4",
+      "name": "Segment 4",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/dokumenty/doc-progress/count",
+      "name": "Count",
+      "element": "span",
+      "optional": true,
+      "controlledBy": "Show Count"
+    },
+    {
+      "part": "rn00889/status",
+      "name": "Status",
+      "element": "div"
+    },
+    {
+      "part": "rn00889/status/status",
+      "name": "Status",
+      "element": "div",
+      "component": "StatusPill",
+      "slug": "status-pill"
+    },
+    {
+      "part": "rn00889/status/status/b-d",
+      "name": "Błąd",
+      "element": "span"
+    }
+  ],
+  "base": {
+    "align": "MIN",
+    "archive-table-header.align": "CENTER",
+    "archive-table-header.background": "var(--surface-raised)",
+    "archive-table-header.borderColor": "var(--border-subtle)",
+    "archive-table-header.borderWidth": "bottom 1px",
+    "archive-table-header.direction": "HORIZONTAL",
+    "archive-table-header.gap": "var(--space-4)",
+    "archive-table-header.justify": "MIN",
+    "archive-table-header.padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+    "archive-table-header/dokumenty.align": "CENTER",
+    "archive-table-header/dokumenty.direction": "HORIZONTAL",
+    "archive-table-header/dokumenty.gap": "0",
+    "archive-table-header/dokumenty.justify": "MIN",
+    "archive-table-header/dokumenty/dokumenty.color": "var(--text-tertiary)",
+    "archive-table-header/dokumenty/dokumenty.font": "Type/Label 12/16px 700",
+    "archive-table-header/kupiona.align": "CENTER",
+    "archive-table-header/kupiona.direction": "HORIZONTAL",
+    "archive-table-header/kupiona.gap": "0",
+    "archive-table-header/kupiona.justify": "MIN",
+    "archive-table-header/kupiona/kupiona.color": "var(--text-tertiary)",
+    "archive-table-header/kupiona/kupiona.font": "Type/Label 12/16px 700",
+    "archive-table-header/pojazd.align": "CENTER",
+    "archive-table-header/pojazd.direction": "HORIZONTAL",
+    "archive-table-header/pojazd.gap": "0",
+    "archive-table-header/pojazd.justify": "MIN",
+    "archive-table-header/pojazd.width": "284px",
+    "archive-table-header/pojazd/pojazd.color": "var(--text-tertiary)",
+    "archive-table-header/pojazd/pojazd.font": "Type/Label 12/16px 700",
+    "archive-table-header/status.align": "CENTER",
+    "archive-table-header/status.direction": "HORIZONTAL",
+    "archive-table-header/status.gap": "0",
+    "archive-table-header/status.justify": "MIN",
+    "archive-table-header/status/status.color": "var(--text-tertiary)",
+    "archive-table-header/status/status.font": "Type/Label 12/16px 700",
+    "archive-table-header/sygnatura.align": "CENTER",
+    "archive-table-header/sygnatura.direction": "HORIZONTAL",
+    "archive-table-header/sygnatura.gap": "0",
+    "archive-table-header/sygnatura.justify": "MIN",
+    "archive-table-header/sygnatura.width": "112px",
+    "archive-table-header/sygnatura/sygnatura.color": "var(--text-tertiary)",
+    "archive-table-header/sygnatura/sygnatura.font": "Type/Label 12/16px 700",
+    "archive-table-header/utylizowana.align": "CENTER",
+    "archive-table-header/utylizowana.direction": "HORIZONTAL",
+    "archive-table-header/utylizowana.gap": "0",
+    "archive-table-header/utylizowana.justify": "MIN",
+    "archive-table-header/utylizowana/utylizowana.color": "var(--text-tertiary)",
+    "archive-table-header/utylizowana/utylizowana.font": "Type/Label 12/16px 700",
+    "archive-table-header/vin.align": "CENTER",
+    "archive-table-header/vin.direction": "HORIZONTAL",
+    "archive-table-header/vin.gap": "0",
+    "archive-table-header/vin.justify": "MIN",
+    "archive-table-header/vin.width": "280px",
+    "archive-table-header/vin/vin.color": "var(--text-tertiary)",
+    "archive-table-header/vin/vin.font": "Type/Label 12/16px 700",
+    "background": "var(--surface-sunken)",
+    "borderColor": "var(--border-subtle)",
+    "borderWidth": "1px",
+    "direction": "VERTICAL",
+    "ft00056.align": "CENTER",
+    "ft00056.borderColor": "var(--border-subtle)",
+    "ft00056.borderWidth": "bottom 1px",
+    "ft00056.direction": "HORIZONTAL",
+    "ft00056.gap": "var(--space-4)",
+    "ft00056.height": "64px",
+    "ft00056.justify": "MIN",
+    "ft00056.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "ft00056/dokumenty.align": "CENTER",
+    "ft00056/dokumenty.direction": "HORIZONTAL",
+    "ft00056/dokumenty.gap": "0",
+    "ft00056/dokumenty.justify": "MIN",
+    "ft00056/dokumenty/doc-progress.align": "CENTER",
+    "ft00056/dokumenty/doc-progress.direction": "HORIZONTAL",
+    "ft00056/dokumenty/doc-progress.gap": "var(--space-2)",
+    "ft00056/dokumenty/doc-progress.justify": "MIN",
+    "ft00056/dokumenty/doc-progress/bar.align": "MIN",
+    "ft00056/dokumenty/doc-progress/bar.direction": "HORIZONTAL",
+    "ft00056/dokumenty/doc-progress/bar.gap": "var(--space-1)",
+    "ft00056/dokumenty/doc-progress/bar.justify": "MIN",
+    "ft00056/dokumenty/doc-progress/bar/segment-1.background": "var(--status-success-text)",
+    "ft00056/dokumenty/doc-progress/bar/segment-1.height": "7px",
+    "ft00056/dokumenty/doc-progress/bar/segment-1.radius": "var(--radius-full)",
+    "ft00056/dokumenty/doc-progress/bar/segment-1.width": "28px",
+    "ft00056/dokumenty/doc-progress/bar/segment-2.background": "var(--status-success-text)",
+    "ft00056/dokumenty/doc-progress/bar/segment-2.height": "7px",
+    "ft00056/dokumenty/doc-progress/bar/segment-2.radius": "var(--radius-full)",
+    "ft00056/dokumenty/doc-progress/bar/segment-2.width": "28px",
+    "ft00056/dokumenty/doc-progress/bar/segment-3.background": "var(--status-success-text)",
+    "ft00056/dokumenty/doc-progress/bar/segment-3.height": "7px",
+    "ft00056/dokumenty/doc-progress/bar/segment-3.radius": "var(--radius-full)",
+    "ft00056/dokumenty/doc-progress/bar/segment-3.width": "28px",
+    "ft00056/dokumenty/doc-progress/bar/segment-4.background": "var(--border-default)",
+    "ft00056/dokumenty/doc-progress/bar/segment-4.height": "7px",
+    "ft00056/dokumenty/doc-progress/bar/segment-4.radius": "var(--radius-full)",
+    "ft00056/dokumenty/doc-progress/bar/segment-4.width": "28px",
+    "ft00056/dokumenty/doc-progress/count.color": "var(--text-tertiary)",
+    "ft00056/dokumenty/doc-progress/count.font": "Type/Caption 12/16px 400",
+    "ft00056/kupiona.align": "CENTER",
+    "ft00056/kupiona.direction": "HORIZONTAL",
+    "ft00056/kupiona.gap": "0",
+    "ft00056/kupiona.justify": "MIN",
+    "ft00056/kupiona/kupiona.color": "var(--text-tertiary)",
+    "ft00056/kupiona/kupiona.font": "Type/Body Medium 15/24px 400",
+    "ft00056/pojazd.align": "MIN",
+    "ft00056/pojazd.direction": "VERTICAL",
+    "ft00056/pojazd.gap": "var(--space-0-5)",
+    "ft00056/pojazd.justify": "MIN",
+    "ft00056/pojazd.width": "284px",
+    "ft00056/pojazd/marka.color": "var(--text-secondary)",
+    "ft00056/pojazd/marka.font": "Type/Body Medium 15/24px 400",
+    "ft00056/pojazd/marka.width": "284px",
+    "ft00056/pojazd/model.color": "var(--text-tertiary)",
+    "ft00056/pojazd/model.font": "Type/Body Small 13/20px 400",
+    "ft00056/pojazd/model.width": "284px",
+    "ft00056/status.align": "CENTER",
+    "ft00056/status.direction": "HORIZONTAL",
+    "ft00056/status.gap": "0",
+    "ft00056/status.justify": "MIN",
+    "ft00056/status/status.align": "CENTER",
+    "ft00056/status/status.background": "var(--surface-raised)",
+    "ft00056/status/status.borderColor": "var(--status-warning-border)",
+    "ft00056/status/status.borderWidth": "1px",
+    "ft00056/status/status.direction": "HORIZONTAL",
+    "ft00056/status/status.gap": "var(--space-2)",
+    "ft00056/status/status.justify": "MIN",
+    "ft00056/status/status.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "ft00056/status/status.radius": "var(--radius-md)",
+    "ft00056/status/status/zam-wiona.color": "var(--status-warning-text)",
+    "ft00056/status/status/zam-wiona.font": "Type/Body Small Alter 13/20px 700",
+    "ft00056/sygnatura.align": "CENTER",
+    "ft00056/sygnatura.direction": "HORIZONTAL",
+    "ft00056/sygnatura.gap": "0",
+    "ft00056/sygnatura.justify": "MIN",
+    "ft00056/sygnatura.width": "112px",
+    "ft00056/sygnatura/pill.align": "CENTER",
+    "ft00056/sygnatura/pill.background": "var(--surface-raised-hover)",
+    "ft00056/sygnatura/pill.direction": "HORIZONTAL",
+    "ft00056/sygnatura/pill.gap": "var(--space-0)",
+    "ft00056/sygnatura/pill.justify": "CENTER",
+    "ft00056/sygnatura/pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "ft00056/sygnatura/pill.radius": "var(--radius-sm)",
+    "ft00056/sygnatura/pill.width": "35px",
+    "ft00056/sygnatura/pill/3-5.color": "var(--text-tertiary)",
+    "ft00056/sygnatura/pill/3-5.font": "Type/Label 12/16px 700",
+    "ft00056/utylizowana.align": "CENTER",
+    "ft00056/utylizowana.direction": "HORIZONTAL",
+    "ft00056/utylizowana.gap": "0",
+    "ft00056/utylizowana.justify": "MIN",
+    "ft00056/utylizowana/utylizowana.color": "var(--text-tertiary)",
+    "ft00056/utylizowana/utylizowana.font": "Type/Body Medium 15/24px 400",
+    "ft00056/vin.align": "CENTER",
+    "ft00056/vin.direction": "HORIZONTAL",
+    "ft00056/vin.gap": "0",
+    "ft00056/vin.justify": "MIN",
+    "ft00056/vin.width": "280px",
+    "ft00056/vin/vin.color": "var(--text-tertiary)",
+    "ft00056/vin/vin.font": "Type/Body Medium 15/24px 400",
+    "ft00056/vin/vin.width": "280px",
+    "gap": "0",
+    "justify": "MIN",
+    "op00521.align": "CENTER",
+    "op00521.borderColor": "var(--border-subtle)",
+    "op00521.borderWidth": "bottom 1px",
+    "op00521.direction": "HORIZONTAL",
+    "op00521.gap": "var(--space-4)",
+    "op00521.height": "64px",
+    "op00521.justify": "MIN",
+    "op00521.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "op00521/dokumenty.align": "CENTER",
+    "op00521/dokumenty.direction": "HORIZONTAL",
+    "op00521/dokumenty.gap": "0",
+    "op00521/dokumenty.justify": "MIN",
+    "op00521/dokumenty/doc-progress.align": "CENTER",
+    "op00521/dokumenty/doc-progress.direction": "HORIZONTAL",
+    "op00521/dokumenty/doc-progress.gap": "var(--space-2)",
+    "op00521/dokumenty/doc-progress.justify": "MIN",
+    "op00521/dokumenty/doc-progress/bar.align": "MIN",
+    "op00521/dokumenty/doc-progress/bar.direction": "HORIZONTAL",
+    "op00521/dokumenty/doc-progress/bar.gap": "var(--space-1)",
+    "op00521/dokumenty/doc-progress/bar.justify": "MIN",
+    "op00521/dokumenty/doc-progress/bar/segment-1.background": "var(--status-success-text)",
+    "op00521/dokumenty/doc-progress/bar/segment-1.height": "7px",
+    "op00521/dokumenty/doc-progress/bar/segment-1.radius": "var(--radius-full)",
+    "op00521/dokumenty/doc-progress/bar/segment-1.width": "28px",
+    "op00521/dokumenty/doc-progress/bar/segment-2.background": "var(--status-success-text)",
+    "op00521/dokumenty/doc-progress/bar/segment-2.height": "7px",
+    "op00521/dokumenty/doc-progress/bar/segment-2.radius": "var(--radius-full)",
+    "op00521/dokumenty/doc-progress/bar/segment-2.width": "28px",
+    "op00521/dokumenty/doc-progress/bar/segment-3.background": "var(--status-success-text)",
+    "op00521/dokumenty/doc-progress/bar/segment-3.height": "7px",
+    "op00521/dokumenty/doc-progress/bar/segment-3.radius": "var(--radius-full)",
+    "op00521/dokumenty/doc-progress/bar/segment-3.width": "28px",
+    "op00521/dokumenty/doc-progress/bar/segment-4.background": "var(--status-success-text)",
+    "op00521/dokumenty/doc-progress/bar/segment-4.height": "7px",
+    "op00521/dokumenty/doc-progress/bar/segment-4.radius": "var(--radius-full)",
+    "op00521/dokumenty/doc-progress/bar/segment-4.width": "28px",
+    "op00521/dokumenty/doc-progress/count.color": "var(--text-tertiary)",
+    "op00521/dokumenty/doc-progress/count.font": "Type/Caption 12/16px 400",
+    "op00521/kupiona.align": "CENTER",
+    "op00521/kupiona.direction": "HORIZONTAL",
+    "op00521/kupiona.gap": "0",
+    "op00521/kupiona.justify": "MIN",
+    "op00521/kupiona/kupiona.color": "var(--text-tertiary)",
+    "op00521/kupiona/kupiona.font": "Type/Body Medium 15/24px 400",
+    "op00521/pojazd.align": "MIN",
+    "op00521/pojazd.direction": "VERTICAL",
+    "op00521/pojazd.gap": "var(--space-0-5)",
+    "op00521/pojazd.justify": "MIN",
+    "op00521/pojazd.width": "284px",
+    "op00521/pojazd/marka.color": "var(--text-secondary)",
+    "op00521/pojazd/marka.font": "Type/Body Medium 15/24px 400",
+    "op00521/pojazd/marka.width": "284px",
+    "op00521/pojazd/model.color": "var(--text-tertiary)",
+    "op00521/pojazd/model.font": "Type/Body Small 13/20px 400",
+    "op00521/pojazd/model.width": "284px",
+    "op00521/status.align": "CENTER",
+    "op00521/status.direction": "HORIZONTAL",
+    "op00521/status.gap": "0",
+    "op00521/status.justify": "MIN",
+    "op00521/status/status.align": "CENTER",
+    "op00521/status/status.background": "var(--surface-raised)",
+    "op00521/status/status.borderColor": "var(--status-success-border)",
+    "op00521/status/status.borderWidth": "1px",
+    "op00521/status/status.direction": "HORIZONTAL",
+    "op00521/status/status.gap": "var(--space-2)",
+    "op00521/status/status.justify": "MIN",
+    "op00521/status/status.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "op00521/status/status.radius": "var(--radius-md)",
+    "op00521/status/status/aktywna.color": "var(--status-success-text)",
+    "op00521/status/status/aktywna.font": "Type/Body Small Alter 13/20px 700",
+    "op00521/sygnatura.align": "CENTER",
+    "op00521/sygnatura.direction": "HORIZONTAL",
+    "op00521/sygnatura.gap": "0",
+    "op00521/sygnatura.justify": "MIN",
+    "op00521/sygnatura.width": "112px",
+    "op00521/sygnatura/pill.align": "CENTER",
+    "op00521/sygnatura/pill.background": "var(--surface-raised-hover)",
+    "op00521/sygnatura/pill.direction": "HORIZONTAL",
+    "op00521/sygnatura/pill.gap": "var(--space-0)",
+    "op00521/sygnatura/pill.justify": "CENTER",
+    "op00521/sygnatura/pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "op00521/sygnatura/pill.radius": "var(--radius-sm)",
+    "op00521/sygnatura/pill.width": "35px",
+    "op00521/sygnatura/pill/3-5.color": "var(--text-tertiary)",
+    "op00521/sygnatura/pill/3-5.font": "Type/Label 12/16px 700",
+    "op00521/utylizowana.align": "CENTER",
+    "op00521/utylizowana.direction": "HORIZONTAL",
+    "op00521/utylizowana.gap": "0",
+    "op00521/utylizowana.justify": "MIN",
+    "op00521/utylizowana/utylizowana.color": "var(--text-tertiary)",
+    "op00521/utylizowana/utylizowana.font": "Type/Body Medium 15/24px 400",
+    "op00521/vin.align": "CENTER",
+    "op00521/vin.direction": "HORIZONTAL",
+    "op00521/vin.gap": "0",
+    "op00521/vin.justify": "MIN",
+    "op00521/vin.width": "280px",
+    "op00521/vin/vin.color": "var(--text-tertiary)",
+    "op00521/vin/vin.font": "Type/Body Medium 15/24px 400",
+    "op00521/vin/vin.width": "280px",
+    "radius": "var(--radius-lg)",
+    "rn00889.align": "CENTER",
+    "rn00889.borderColor": "var(--border-subtle)",
+    "rn00889.borderWidth": "bottom 1px",
+    "rn00889.direction": "HORIZONTAL",
+    "rn00889.gap": "var(--space-4)",
+    "rn00889.height": "64px",
+    "rn00889.justify": "MIN",
+    "rn00889.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "rn00889/dokumenty.align": "CENTER",
+    "rn00889/dokumenty.direction": "HORIZONTAL",
+    "rn00889/dokumenty.gap": "0",
+    "rn00889/dokumenty.justify": "MIN",
+    "rn00889/dokumenty/doc-progress.align": "CENTER",
+    "rn00889/dokumenty/doc-progress.direction": "HORIZONTAL",
+    "rn00889/dokumenty/doc-progress.gap": "var(--space-2)",
+    "rn00889/dokumenty/doc-progress.justify": "MIN",
+    "rn00889/dokumenty/doc-progress/bar.align": "MIN",
+    "rn00889/dokumenty/doc-progress/bar.direction": "HORIZONTAL",
+    "rn00889/dokumenty/doc-progress/bar.gap": "var(--space-1)",
+    "rn00889/dokumenty/doc-progress/bar.justify": "MIN",
+    "rn00889/dokumenty/doc-progress/bar/segment-1.background": "var(--status-success-text)",
+    "rn00889/dokumenty/doc-progress/bar/segment-1.height": "7px",
+    "rn00889/dokumenty/doc-progress/bar/segment-1.radius": "var(--radius-full)",
+    "rn00889/dokumenty/doc-progress/bar/segment-1.width": "28px",
+    "rn00889/dokumenty/doc-progress/bar/segment-2.background": "var(--status-success-text)",
+    "rn00889/dokumenty/doc-progress/bar/segment-2.height": "7px",
+    "rn00889/dokumenty/doc-progress/bar/segment-2.radius": "var(--radius-full)",
+    "rn00889/dokumenty/doc-progress/bar/segment-2.width": "28px",
+    "rn00889/dokumenty/doc-progress/bar/segment-3.background": "var(--border-default)",
+    "rn00889/dokumenty/doc-progress/bar/segment-3.height": "7px",
+    "rn00889/dokumenty/doc-progress/bar/segment-3.radius": "var(--radius-full)",
+    "rn00889/dokumenty/doc-progress/bar/segment-3.width": "28px",
+    "rn00889/dokumenty/doc-progress/bar/segment-4.background": "var(--border-default)",
+    "rn00889/dokumenty/doc-progress/bar/segment-4.height": "7px",
+    "rn00889/dokumenty/doc-progress/bar/segment-4.radius": "var(--radius-full)",
+    "rn00889/dokumenty/doc-progress/bar/segment-4.width": "28px",
+    "rn00889/dokumenty/doc-progress/count.color": "var(--text-tertiary)",
+    "rn00889/dokumenty/doc-progress/count.font": "Type/Caption 12/16px 400",
+    "rn00889/kupiona.align": "CENTER",
+    "rn00889/kupiona.direction": "HORIZONTAL",
+    "rn00889/kupiona.gap": "0",
+    "rn00889/kupiona.justify": "MIN",
+    "rn00889/kupiona/kupiona.color": "var(--text-tertiary)",
+    "rn00889/kupiona/kupiona.font": "Type/Body Medium 15/24px 400",
+    "rn00889/pojazd.align": "MIN",
+    "rn00889/pojazd.direction": "VERTICAL",
+    "rn00889/pojazd.gap": "var(--space-0-5)",
+    "rn00889/pojazd.justify": "MIN",
+    "rn00889/pojazd.width": "284px",
+    "rn00889/pojazd/marka.color": "var(--text-secondary)",
+    "rn00889/pojazd/marka.font": "Type/Body Medium 15/24px 400",
+    "rn00889/pojazd/marka.width": "284px",
+    "rn00889/pojazd/model.color": "var(--text-tertiary)",
+    "rn00889/pojazd/model.font": "Type/Body Small 13/20px 400",
+    "rn00889/pojazd/model.width": "284px",
+    "rn00889/status.align": "CENTER",
+    "rn00889/status.direction": "HORIZONTAL",
+    "rn00889/status.gap": "0",
+    "rn00889/status.justify": "MIN",
+    "rn00889/status/status.align": "CENTER",
+    "rn00889/status/status.background": "var(--surface-raised)",
+    "rn00889/status/status.borderColor": "var(--status-error-border)",
+    "rn00889/status/status.borderWidth": "1px",
+    "rn00889/status/status.direction": "HORIZONTAL",
+    "rn00889/status/status.gap": "var(--space-2)",
+    "rn00889/status/status.justify": "MIN",
+    "rn00889/status/status.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "rn00889/status/status.radius": "var(--radius-md)",
+    "rn00889/status/status/b-d.color": "var(--status-error-text)",
+    "rn00889/status/status/b-d.font": "Type/Body Small Alter 13/20px 700",
+    "rn00889/sygnatura.align": "CENTER",
+    "rn00889/sygnatura.direction": "HORIZONTAL",
+    "rn00889/sygnatura.gap": "0",
+    "rn00889/sygnatura.justify": "MIN",
+    "rn00889/sygnatura.width": "112px",
+    "rn00889/sygnatura/pill.align": "CENTER",
+    "rn00889/sygnatura/pill.background": "var(--surface-raised-hover)",
+    "rn00889/sygnatura/pill.direction": "HORIZONTAL",
+    "rn00889/sygnatura/pill.gap": "var(--space-0)",
+    "rn00889/sygnatura/pill.justify": "CENTER",
+    "rn00889/sygnatura/pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "rn00889/sygnatura/pill.radius": "var(--radius-sm)",
+    "rn00889/sygnatura/pill.width": "35px",
+    "rn00889/sygnatura/pill/3-5.color": "var(--text-tertiary)",
+    "rn00889/sygnatura/pill/3-5.font": "Type/Label 12/16px 700",
+    "rn00889/utylizowana.align": "CENTER",
+    "rn00889/utylizowana.direction": "HORIZONTAL",
+    "rn00889/utylizowana.gap": "0",
+    "rn00889/utylizowana.justify": "MIN",
+    "rn00889/utylizowana/utylizowana.color": "var(--text-tertiary)",
+    "rn00889/utylizowana/utylizowana.font": "Type/Body Medium 15/24px 400",
+    "rn00889/vin.align": "CENTER",
+    "rn00889/vin.direction": "HORIZONTAL",
+    "rn00889/vin.gap": "0",
+    "rn00889/vin.justify": "MIN",
+    "rn00889/vin.width": "280px",
+    "rn00889/vin/vin.color": "var(--text-tertiary)",
+    "rn00889/vin/vin.font": "Type/Body Medium 15/24px 400",
+    "rn00889/vin/vin.width": "280px",
+    "sk00147.align": "CENTER",
+    "sk00147.borderColor": "var(--border-subtle)",
+    "sk00147.borderWidth": "bottom 1px",
+    "sk00147.direction": "HORIZONTAL",
+    "sk00147.gap": "var(--space-4)",
+    "sk00147.height": "64px",
+    "sk00147.justify": "MIN",
+    "sk00147.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+    "sk00147/dokumenty.align": "CENTER",
+    "sk00147/dokumenty.direction": "HORIZONTAL",
+    "sk00147/dokumenty.gap": "0",
+    "sk00147/dokumenty.justify": "MIN",
+    "sk00147/dokumenty/doc-progress.align": "CENTER",
+    "sk00147/dokumenty/doc-progress.direction": "HORIZONTAL",
+    "sk00147/dokumenty/doc-progress.gap": "var(--space-2)",
+    "sk00147/dokumenty/doc-progress.justify": "MIN",
+    "sk00147/dokumenty/doc-progress/bar.align": "MIN",
+    "sk00147/dokumenty/doc-progress/bar.direction": "HORIZONTAL",
+    "sk00147/dokumenty/doc-progress/bar.gap": "var(--space-1)",
+    "sk00147/dokumenty/doc-progress/bar.justify": "MIN",
+    "sk00147/dokumenty/doc-progress/bar/segment-1.background": "var(--status-success-text)",
+    "sk00147/dokumenty/doc-progress/bar/segment-1.height": "7px",
+    "sk00147/dokumenty/doc-progress/bar/segment-1.radius": "var(--radius-full)",
+    "sk00147/dokumenty/doc-progress/bar/segment-1.width": "28px",
+    "sk00147/dokumenty/doc-progress/bar/segment-2.background": "var(--status-success-text)",
+    "sk00147/dokumenty/doc-progress/bar/segment-2.height": "7px",
+    "sk00147/dokumenty/doc-progress/bar/segment-2.radius": "var(--radius-full)",
+    "sk00147/dokumenty/doc-progress/bar/segment-2.width": "28px",
+    "sk00147/dokumenty/doc-progress/bar/segment-3.background": "var(--status-success-text)",
+    "sk00147/dokumenty/doc-progress/bar/segment-3.height": "7px",
+    "sk00147/dokumenty/doc-progress/bar/segment-3.radius": "var(--radius-full)",
+    "sk00147/dokumenty/doc-progress/bar/segment-3.width": "28px",
+    "sk00147/dokumenty/doc-progress/bar/segment-4.background": "var(--status-success-text)",
+    "sk00147/dokumenty/doc-progress/bar/segment-4.height": "7px",
+    "sk00147/dokumenty/doc-progress/bar/segment-4.radius": "var(--radius-full)",
+    "sk00147/dokumenty/doc-progress/bar/segment-4.width": "28px",
+    "sk00147/dokumenty/doc-progress/count.color": "var(--text-tertiary)",
+    "sk00147/dokumenty/doc-progress/count.font": "Type/Caption 12/16px 400",
+    "sk00147/kupiona.align": "CENTER",
+    "sk00147/kupiona.direction": "HORIZONTAL",
+    "sk00147/kupiona.gap": "0",
+    "sk00147/kupiona.justify": "MIN",
+    "sk00147/kupiona/kupiona.color": "var(--text-tertiary)",
+    "sk00147/kupiona/kupiona.font": "Type/Body Medium 15/24px 400",
+    "sk00147/pojazd.align": "MIN",
+    "sk00147/pojazd.direction": "VERTICAL",
+    "sk00147/pojazd.gap": "var(--space-0-5)",
+    "sk00147/pojazd.justify": "MIN",
+    "sk00147/pojazd.width": "284px",
+    "sk00147/pojazd/marka.color": "var(--text-secondary)",
+    "sk00147/pojazd/marka.font": "Type/Body Medium 15/24px 400",
+    "sk00147/pojazd/marka.width": "284px",
+    "sk00147/pojazd/model.color": "var(--text-tertiary)",
+    "sk00147/pojazd/model.font": "Type/Body Small 13/20px 400",
+    "sk00147/pojazd/model.width": "284px",
+    "sk00147/status.align": "CENTER",
+    "sk00147/status.direction": "HORIZONTAL",
+    "sk00147/status.gap": "0",
+    "sk00147/status.justify": "MIN",
+    "sk00147/status/status.align": "CENTER",
+    "sk00147/status/status.background": "var(--surface-raised)",
+    "sk00147/status/status.borderColor": "var(--status-success-border)",
+    "sk00147/status/status.borderWidth": "1px",
+    "sk00147/status/status.direction": "HORIZONTAL",
+    "sk00147/status/status.gap": "var(--space-2)",
+    "sk00147/status/status.justify": "MIN",
+    "sk00147/status/status.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "sk00147/status/status.radius": "var(--radius-md)",
+    "sk00147/status/status/aktywna.color": "var(--status-success-text)",
+    "sk00147/status/status/aktywna.font": "Type/Body Small Alter 13/20px 700",
+    "sk00147/sygnatura.align": "CENTER",
+    "sk00147/sygnatura.direction": "HORIZONTAL",
+    "sk00147/sygnatura.gap": "0",
+    "sk00147/sygnatura.justify": "MIN",
+    "sk00147/sygnatura.width": "112px",
+    "sk00147/sygnatura/pill.align": "CENTER",
+    "sk00147/sygnatura/pill.background": "var(--surface-raised-hover)",
+    "sk00147/sygnatura/pill.direction": "HORIZONTAL",
+    "sk00147/sygnatura/pill.gap": "var(--space-0)",
+    "sk00147/sygnatura/pill.justify": "CENTER",
+    "sk00147/sygnatura/pill.padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+    "sk00147/sygnatura/pill.radius": "var(--radius-sm)",
+    "sk00147/sygnatura/pill.width": "35px",
+    "sk00147/sygnatura/pill/3-5.color": "var(--text-tertiary)",
+    "sk00147/sygnatura/pill/3-5.font": "Type/Label 12/16px 700",
+    "sk00147/utylizowana.align": "CENTER",
+    "sk00147/utylizowana.direction": "HORIZONTAL",
+    "sk00147/utylizowana.gap": "0",
+    "sk00147/utylizowana.justify": "MIN",
+    "sk00147/utylizowana/utylizowana.color": "var(--text-tertiary)",
+    "sk00147/utylizowana/utylizowana.font": "Type/Body Medium 15/24px 400",
+    "sk00147/vin.align": "CENTER",
+    "sk00147/vin.direction": "HORIZONTAL",
+    "sk00147/vin.gap": "0",
+    "sk00147/vin.justify": "MIN",
+    "sk00147/vin.width": "280px",
+    "sk00147/vin/vin.color": "var(--text-tertiary)",
+    "sk00147/vin/vin.font": "Type/Body Medium 15/24px 400",
+    "sk00147/vin/vin.width": "280px",
+    "width": "1660px"
+  },
+  "variants": [
+    {
+      "key": "",
+      "match": {},
+      "nodeId": "448:9110",
+      "figmaSize": {
+        "w": 1660,
+        "h": 299
+      },
+      "tokens": {},
+      "render": {
+        "part": "ArchiveTable",
+        "path": "root",
+        "tag": "div",
+        "style": {
+          "width": "1660px",
+          "background": "var(--surface-sunken)",
+          "border": "1px solid var(--border-subtle)",
+          "border-radius": "var(--radius-lg)",
+          "overflow": "hidden",
+          "display": "flex",
+          "flex-direction": "column",
+          "gap": "0",
+          "justify-content": "flex-start",
+          "align-items": "flex-start"
+        },
+        "children": [
+          {
+            "part": "ArchiveTableHeader",
+            "path": "archive-table-header",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "background": "var(--surface-raised)",
+              "border-bottom": "1px solid var(--border-subtle)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-4)",
+              "padding": "var(--space-3) var(--space-4) var(--space-3) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "SYGNATURA",
+                "path": "archive-table-header/sygnatura",
+                "tag": "div",
+                "style": {
+                  "width": "112px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "SYGNATURA",
+                    "path": "archive-table-header/sygnatura/sygnatura",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "SYGNATURA",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "POJAZD",
+                "path": "archive-table-header/pojazd",
+                "tag": "div",
+                "style": {
+                  "width": "284px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "POJAZD",
+                    "path": "archive-table-header/pojazd/pojazd",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "POJAZD",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "VIN",
+                "path": "archive-table-header/vin",
+                "tag": "div",
+                "style": {
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "VIN",
+                    "path": "archive-table-header/vin/vin",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "VIN",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "KUPIONA",
+                "path": "archive-table-header/kupiona",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "KUPIONA",
+                    "path": "archive-table-header/kupiona/kupiona",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "KUPIONA",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "UTYLIZOWANA",
+                "path": "archive-table-header/utylizowana",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "UTYLIZOWANA",
+                    "path": "archive-table-header/utylizowana/utylizowana",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "UTYLIZOWANA",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "DOKUMENTY",
+                "path": "archive-table-header/dokumenty",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "DOKUMENTY",
+                    "path": "archive-table-header/dokumenty/dokumenty",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "DOKUMENTY",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "STATUS",
+                "path": "archive-table-header/status",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "STATUS",
+                    "path": "archive-table-header/status/status",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "12px",
+                      "font-weight": "700",
+                      "line-height": "16px",
+                      "letter-spacing": "0.6px",
+                      "text-transform": "uppercase",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "text": "STATUS",
+                    "font": {
+                      "style": "Type/Label",
+                      "size": 12,
+                      "weight": 700,
+                      "lineHeight": "16px",
+                      "letterSpacing": "0.6px"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "SK00147",
+            "path": "sk00147",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "64px",
+              "border-bottom": "1px solid var(--border-subtle)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-4)",
+              "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Sygnatura",
+                "path": "sk00147/sygnatura",
+                "tag": "div",
+                "style": {
+                  "width": "112px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Pill",
+                    "path": "sk00147/sygnatura/pill",
+                    "tag": "div",
+                    "style": {
+                      "width": "35px",
+                      "background": "var(--surface-raised-hover)",
+                      "border-radius": "var(--radius-sm)",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-0)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "center",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "3/5",
+                        "path": "sk00147/sygnatura/pill/3-5",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "700",
+                          "line-height": "16px",
+                          "letter-spacing": "0.6px",
+                          "text-transform": "uppercase",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "text": "3/5",
+                        "font": {
+                          "style": "Type/Label",
+                          "size": 12,
+                          "weight": 700,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0.6px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Pojazd",
+                "path": "sk00147/pojazd",
+                "tag": "div",
+                "style": {
+                  "width": "284px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "gap": "var(--space-0-5)",
+                  "justify-content": "flex-start",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Marka",
+                    "path": "sk00147/pojazd/marka",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Marka#300:30"
+                    },
+                    "text": "Skoda",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  },
+                  {
+                    "part": "Model",
+                    "path": "sk00147/pojazd/model",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "400",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Model#300:33"
+                    },
+                    "text": "Superb I 2003–2008",
+                    "font": {
+                      "style": "Type/Body Small",
+                      "size": 13,
+                      "weight": 400,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Vin",
+                "path": "sk00147/vin",
+                "tag": "div",
+                "style": {
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Vin",
+                    "path": "sk00147/vin/vin",
+                    "tag": "span",
+                    "style": {
+                      "flex": "none",
+                      "flex-grow": "1",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "280px",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Vin#300:36"
+                    },
+                    "text": "TMBAB41U358123456",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Kupiona",
+                "path": "sk00147/kupiona",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Kupiona",
+                    "path": "sk00147/kupiona/kupiona",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Kupiona#300:39"
+                    },
+                    "text": "03.08.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Utylizowana",
+                "path": "sk00147/utylizowana",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Utylizowana",
+                    "path": "sk00147/utylizowana/utylizowana",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Utylizowana#300:42"
+                    },
+                    "text": "03.09.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Dokumenty",
+                "path": "sk00147/dokumenty",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "DocProgress",
+                    "path": "sk00147/dokumenty/doc-progress",
+                    "tag": "div",
+                    "style": {
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Bar",
+                        "path": "sk00147/dokumenty/doc-progress/bar",
+                        "tag": "div",
+                        "style": {
+                          "overflow": "hidden",
+                          "display": "flex",
+                          "flex-direction": "row",
+                          "gap": "var(--space-1)",
+                          "justify-content": "flex-start",
+                          "align-items": "flex-start"
+                        },
+                        "children": [
+                          {
+                            "part": "Segment 1",
+                            "path": "sk00147/dokumenty/doc-progress/bar/segment-1",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 2",
+                            "path": "sk00147/dokumenty/doc-progress/bar/segment-2",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 3",
+                            "path": "sk00147/dokumenty/doc-progress/bar/segment-3",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 4",
+                            "path": "sk00147/dokumenty/doc-progress/bar/segment-4",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "part": "Count",
+                        "path": "sk00147/dokumenty/doc-progress/count",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "400",
+                          "line-height": "16px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "propRef": {
+                          "visible": "Show Count#299:3"
+                        },
+                        "text": "4/4",
+                        "font": {
+                          "style": "Type/Caption",
+                          "size": 12,
+                          "weight": 400,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Status",
+                "path": "sk00147/status",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Status",
+                    "path": "sk00147/status/status",
+                    "tag": "div",
+                    "style": {
+                      "background": "var(--surface-raised)",
+                      "border": "1px solid var(--status-success-border)",
+                      "border-radius": "var(--radius-md)",
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Aktywna",
+                        "path": "sk00147/status/status/aktywna",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "13px",
+                          "font-weight": "700",
+                          "line-height": "20px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--status-success-text)"
+                        },
+                        "text": "Aktywna",
+                        "font": {
+                          "style": "Type/Body Small Alter",
+                          "size": 13,
+                          "weight": 700,
+                          "lineHeight": "20px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "OP00521",
+            "path": "op00521",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "64px",
+              "border-bottom": "1px solid var(--border-subtle)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-4)",
+              "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Sygnatura",
+                "path": "op00521/sygnatura",
+                "tag": "div",
+                "style": {
+                  "width": "112px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Pill",
+                    "path": "op00521/sygnatura/pill",
+                    "tag": "div",
+                    "style": {
+                      "width": "35px",
+                      "background": "var(--surface-raised-hover)",
+                      "border-radius": "var(--radius-sm)",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-0)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "center",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "3/5",
+                        "path": "op00521/sygnatura/pill/3-5",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "700",
+                          "line-height": "16px",
+                          "letter-spacing": "0.6px",
+                          "text-transform": "uppercase",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "text": "3/5",
+                        "font": {
+                          "style": "Type/Label",
+                          "size": 12,
+                          "weight": 700,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0.6px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Pojazd",
+                "path": "op00521/pojazd",
+                "tag": "div",
+                "style": {
+                  "width": "284px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "gap": "var(--space-0-5)",
+                  "justify-content": "flex-start",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Marka",
+                    "path": "op00521/pojazd/marka",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Marka#300:30"
+                    },
+                    "text": "Opel",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  },
+                  {
+                    "part": "Model",
+                    "path": "op00521/pojazd/model",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "400",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Model#300:33"
+                    },
+                    "text": "Astra J 2009–2015",
+                    "font": {
+                      "style": "Type/Body Small",
+                      "size": 13,
+                      "weight": 400,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Vin",
+                "path": "op00521/vin",
+                "tag": "div",
+                "style": {
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Vin",
+                    "path": "op00521/vin/vin",
+                    "tag": "span",
+                    "style": {
+                      "flex": "none",
+                      "flex-grow": "1",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "280px",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Vin#300:36"
+                    },
+                    "text": "W0L0AHL487G123456",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Kupiona",
+                "path": "op00521/kupiona",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Kupiona",
+                    "path": "op00521/kupiona/kupiona",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Kupiona#300:39"
+                    },
+                    "text": "14.06.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Utylizowana",
+                "path": "op00521/utylizowana",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Utylizowana",
+                    "path": "op00521/utylizowana/utylizowana",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Utylizowana#300:42"
+                    },
+                    "text": "02.08.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Dokumenty",
+                "path": "op00521/dokumenty",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "DocProgress",
+                    "path": "op00521/dokumenty/doc-progress",
+                    "tag": "div",
+                    "style": {
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Bar",
+                        "path": "op00521/dokumenty/doc-progress/bar",
+                        "tag": "div",
+                        "style": {
+                          "overflow": "hidden",
+                          "display": "flex",
+                          "flex-direction": "row",
+                          "gap": "var(--space-1)",
+                          "justify-content": "flex-start",
+                          "align-items": "flex-start"
+                        },
+                        "children": [
+                          {
+                            "part": "Segment 1",
+                            "path": "op00521/dokumenty/doc-progress/bar/segment-1",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 2",
+                            "path": "op00521/dokumenty/doc-progress/bar/segment-2",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 3",
+                            "path": "op00521/dokumenty/doc-progress/bar/segment-3",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 4",
+                            "path": "op00521/dokumenty/doc-progress/bar/segment-4",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "part": "Count",
+                        "path": "op00521/dokumenty/doc-progress/count",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "400",
+                          "line-height": "16px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "propRef": {
+                          "visible": "Show Count#299:3"
+                        },
+                        "text": "4/4",
+                        "font": {
+                          "style": "Type/Caption",
+                          "size": 12,
+                          "weight": 400,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Status",
+                "path": "op00521/status",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Status",
+                    "path": "op00521/status/status",
+                    "tag": "div",
+                    "style": {
+                      "background": "var(--surface-raised)",
+                      "border": "1px solid var(--status-success-border)",
+                      "border-radius": "var(--radius-md)",
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Aktywna",
+                        "path": "op00521/status/status/aktywna",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "13px",
+                          "font-weight": "700",
+                          "line-height": "20px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--status-success-text)"
+                        },
+                        "text": "Aktywna",
+                        "font": {
+                          "style": "Type/Body Small Alter",
+                          "size": 13,
+                          "weight": 700,
+                          "lineHeight": "20px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "FT00056",
+            "path": "ft00056",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "64px",
+              "border-bottom": "1px solid var(--border-subtle)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-4)",
+              "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Sygnatura",
+                "path": "ft00056/sygnatura",
+                "tag": "div",
+                "style": {
+                  "width": "112px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Pill",
+                    "path": "ft00056/sygnatura/pill",
+                    "tag": "div",
+                    "style": {
+                      "width": "35px",
+                      "background": "var(--surface-raised-hover)",
+                      "border-radius": "var(--radius-sm)",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-0)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "center",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "3/5",
+                        "path": "ft00056/sygnatura/pill/3-5",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "700",
+                          "line-height": "16px",
+                          "letter-spacing": "0.6px",
+                          "text-transform": "uppercase",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "text": "3/5",
+                        "font": {
+                          "style": "Type/Label",
+                          "size": 12,
+                          "weight": 700,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0.6px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Pojazd",
+                "path": "ft00056/pojazd",
+                "tag": "div",
+                "style": {
+                  "width": "284px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "gap": "var(--space-0-5)",
+                  "justify-content": "flex-start",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Marka",
+                    "path": "ft00056/pojazd/marka",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Marka#300:30"
+                    },
+                    "text": "Fiat",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  },
+                  {
+                    "part": "Model",
+                    "path": "ft00056/pojazd/model",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "400",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Model#300:33"
+                    },
+                    "text": "Punto III 2005–2018",
+                    "font": {
+                      "style": "Type/Body Small",
+                      "size": 13,
+                      "weight": 400,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Vin",
+                "path": "ft00056/vin",
+                "tag": "div",
+                "style": {
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Vin",
+                    "path": "ft00056/vin/vin",
+                    "tag": "span",
+                    "style": {
+                      "flex": "none",
+                      "flex-grow": "1",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "280px",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Vin#300:36"
+                    },
+                    "text": "ZFA19900001234567",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Kupiona",
+                "path": "ft00056/kupiona",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Kupiona",
+                    "path": "ft00056/kupiona/kupiona",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Kupiona#300:39"
+                    },
+                    "text": "21.04.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Utylizowana",
+                "path": "ft00056/utylizowana",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Utylizowana",
+                    "path": "ft00056/utylizowana/utylizowana",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Utylizowana#300:42"
+                    },
+                    "text": "19.07.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Dokumenty",
+                "path": "ft00056/dokumenty",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "DocProgress",
+                    "path": "ft00056/dokumenty/doc-progress",
+                    "tag": "div",
+                    "style": {
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Bar",
+                        "path": "ft00056/dokumenty/doc-progress/bar",
+                        "tag": "div",
+                        "style": {
+                          "overflow": "hidden",
+                          "display": "flex",
+                          "flex-direction": "row",
+                          "gap": "var(--space-1)",
+                          "justify-content": "flex-start",
+                          "align-items": "flex-start"
+                        },
+                        "children": [
+                          {
+                            "part": "Segment 1",
+                            "path": "ft00056/dokumenty/doc-progress/bar/segment-1",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 2",
+                            "path": "ft00056/dokumenty/doc-progress/bar/segment-2",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 3",
+                            "path": "ft00056/dokumenty/doc-progress/bar/segment-3",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 4",
+                            "path": "ft00056/dokumenty/doc-progress/bar/segment-4",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--border-default)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "part": "Count",
+                        "path": "ft00056/dokumenty/doc-progress/count",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "400",
+                          "line-height": "16px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "propRef": {
+                          "visible": "Show Count#299:3"
+                        },
+                        "text": "3/4",
+                        "font": {
+                          "style": "Type/Caption",
+                          "size": 12,
+                          "weight": 400,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Status",
+                "path": "ft00056/status",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Status",
+                    "path": "ft00056/status/status",
+                    "tag": "div",
+                    "style": {
+                      "background": "var(--surface-raised)",
+                      "border": "1px solid var(--status-warning-border)",
+                      "border-radius": "var(--radius-md)",
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Zamówiona",
+                        "path": "ft00056/status/status/zam-wiona",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "13px",
+                          "font-weight": "700",
+                          "line-height": "20px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--status-warning-text)"
+                        },
+                        "text": "Zamówiona",
+                        "font": {
+                          "style": "Type/Body Small Alter",
+                          "size": 13,
+                          "weight": 700,
+                          "lineHeight": "20px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "part": "RN00889",
+            "path": "rn00889",
+            "tag": "div",
+            "style": {
+              "align-self": "stretch",
+              "height": "64px",
+              "border-bottom": "1px solid var(--border-subtle)",
+              "overflow": "hidden",
+              "display": "flex",
+              "flex-direction": "row",
+              "gap": "var(--space-4)",
+              "padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
+              "justify-content": "flex-start",
+              "align-items": "center"
+            },
+            "children": [
+              {
+                "part": "Sygnatura",
+                "path": "rn00889/sygnatura",
+                "tag": "div",
+                "style": {
+                  "width": "112px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Pill",
+                    "path": "rn00889/sygnatura/pill",
+                    "tag": "div",
+                    "style": {
+                      "width": "35px",
+                      "background": "var(--surface-raised-hover)",
+                      "border-radius": "var(--radius-sm)",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-0)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "center",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "3/5",
+                        "path": "rn00889/sygnatura/pill/3-5",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "700",
+                          "line-height": "16px",
+                          "letter-spacing": "0.6px",
+                          "text-transform": "uppercase",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "text": "3/5",
+                        "font": {
+                          "style": "Type/Label",
+                          "size": 12,
+                          "weight": 700,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0.6px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Pojazd",
+                "path": "rn00889/pojazd",
+                "tag": "div",
+                "style": {
+                  "width": "284px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "column",
+                  "gap": "var(--space-0-5)",
+                  "justify-content": "flex-start",
+                  "align-items": "flex-start"
+                },
+                "children": [
+                  {
+                    "part": "Marka",
+                    "path": "rn00889/pojazd/marka",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-secondary)"
+                    },
+                    "propRef": {
+                      "characters": "Marka#300:30"
+                    },
+                    "text": "Renault",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  },
+                  {
+                    "part": "Model",
+                    "path": "rn00889/pojazd/model",
+                    "tag": "span",
+                    "style": {
+                      "align-self": "stretch",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "13px",
+                      "font-weight": "400",
+                      "line-height": "20px",
+                      "letter-spacing": "0px",
+                      "width": "284px",
+                      "flex": "none",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Model#300:33"
+                    },
+                    "text": "Megane III 2008–2016",
+                    "font": {
+                      "style": "Type/Body Small",
+                      "size": 13,
+                      "weight": 400,
+                      "lineHeight": "20px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Vin",
+                "path": "rn00889/vin",
+                "tag": "div",
+                "style": {
+                  "width": "280px",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Vin",
+                    "path": "rn00889/vin/vin",
+                    "tag": "span",
+                    "style": {
+                      "flex": "none",
+                      "flex-grow": "1",
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "width": "280px",
+                      "overflow": "hidden",
+                      "text-overflow": "ellipsis",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Vin#300:36"
+                    },
+                    "text": "VF1BZ0A0H12345678",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Kupiona",
+                "path": "rn00889/kupiona",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Kupiona",
+                    "path": "rn00889/kupiona/kupiona",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Kupiona#300:39"
+                    },
+                    "text": "05.03.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Utylizowana",
+                "path": "rn00889/utylizowana",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Utylizowana",
+                    "path": "rn00889/utylizowana/utylizowana",
+                    "tag": "span",
+                    "style": {
+                      "display": "block",
+                      "font-family": "'Roboto', system-ui, sans-serif",
+                      "font-size": "15px",
+                      "font-weight": "400",
+                      "line-height": "24px",
+                      "letter-spacing": "0px",
+                      "white-space": "nowrap",
+                      "color": "var(--text-tertiary)"
+                    },
+                    "propRef": {
+                      "characters": "Utylizowana#300:42"
+                    },
+                    "text": "30.06.2026",
+                    "font": {
+                      "style": "Type/Body Medium",
+                      "size": 15,
+                      "weight": 400,
+                      "lineHeight": "24px",
+                      "letterSpacing": "0px"
+                    }
+                  }
+                ]
+              },
+              {
+                "part": "Dokumenty",
+                "path": "rn00889/dokumenty",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "DocProgress",
+                    "path": "rn00889/dokumenty/doc-progress",
+                    "tag": "div",
+                    "style": {
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Bar",
+                        "path": "rn00889/dokumenty/doc-progress/bar",
+                        "tag": "div",
+                        "style": {
+                          "overflow": "hidden",
+                          "display": "flex",
+                          "flex-direction": "row",
+                          "gap": "var(--space-1)",
+                          "justify-content": "flex-start",
+                          "align-items": "flex-start"
+                        },
+                        "children": [
+                          {
+                            "part": "Segment 1",
+                            "path": "rn00889/dokumenty/doc-progress/bar/segment-1",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 2",
+                            "path": "rn00889/dokumenty/doc-progress/bar/segment-2",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--status-success-text)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 3",
+                            "path": "rn00889/dokumenty/doc-progress/bar/segment-3",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--border-default)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          },
+                          {
+                            "part": "Segment 4",
+                            "path": "rn00889/dokumenty/doc-progress/bar/segment-4",
+                            "tag": "div",
+                            "style": {
+                              "width": "28px",
+                              "height": "7px",
+                              "background": "var(--border-default)",
+                              "border-radius": "var(--radius-full)",
+                              "overflow": "hidden"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "part": "Count",
+                        "path": "rn00889/dokumenty/doc-progress/count",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "12px",
+                          "font-weight": "400",
+                          "line-height": "16px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--text-tertiary)"
+                        },
+                        "propRef": {
+                          "visible": "Show Count#299:3"
+                        },
+                        "text": "2/4",
+                        "font": {
+                          "style": "Type/Caption",
+                          "size": 12,
+                          "weight": 400,
+                          "lineHeight": "16px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "part": "Status",
+                "path": "rn00889/status",
+                "tag": "div",
+                "style": {
+                  "flex": "1 1 0%",
+                  "flex-grow": "1",
+                  "overflow": "hidden",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "gap": "0",
+                  "justify-content": "flex-start",
+                  "align-items": "center"
+                },
+                "children": [
+                  {
+                    "part": "Status",
+                    "path": "rn00889/status/status",
+                    "tag": "div",
+                    "style": {
+                      "background": "var(--surface-raised)",
+                      "border": "1px solid var(--status-error-border)",
+                      "border-radius": "var(--radius-md)",
+                      "overflow": "hidden",
+                      "display": "flex",
+                      "flex-direction": "row",
+                      "gap": "var(--space-2)",
+                      "padding": "var(--space-1) var(--space-3) var(--space-1) var(--space-3)",
+                      "justify-content": "flex-start",
+                      "align-items": "center"
+                    },
+                    "children": [
+                      {
+                        "part": "Błąd",
+                        "path": "rn00889/status/status/b-d",
+                        "tag": "span",
+                        "style": {
+                          "display": "block",
+                          "font-family": "'Roboto', system-ui, sans-serif",
+                          "font-size": "13px",
+                          "font-weight": "700",
+                          "line-height": "20px",
+                          "letter-spacing": "0px",
+                          "white-space": "nowrap",
+                          "color": "var(--status-error-text)"
+                        },
+                        "text": "Błąd",
+                        "font": {
+                          "style": "Type/Body Small Alter",
+                          "size": 13,
+                          "weight": 700,
+                          "lineHeight": "20px",
+                          "letterSpacing": "0px"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "motion": [],
+  "usage": [
+    "Archiwum zamkniętych rekordów: nagłówek + N wierszy ArchiveRow.",
+    "Szerokość stała 1660."
+  ],
+  "avoid": [],
+  "unbound": [
+    {
+      "prop": "width",
+      "value": "1660px",
+      "reason": "нет шкалы размеров: ширина задана числом",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "root"
+      ]
+    },
+    {
+      "prop": "archive-table-header.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "archive-table-header"
+      ]
+    },
+    {
+      "prop": "sk00147.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "sk00147"
+      ]
+    },
+    {
+      "prop": "op00521.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "op00521"
+      ]
+    },
+    {
+      "prop": "ft00056.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "ft00056"
+      ]
+    },
+    {
+      "prop": "rn00889.borderWidth",
+      "value": "1px",
+      "reason": "нет токена под толщину обводки",
+      "at": [
+        "rn00889"
+      ]
+    }
+  ],
+  "notes": [],
+  "motionSource": "figma reactions: 0"
+}
