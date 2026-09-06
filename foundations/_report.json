@@ -9,7 +9,7 @@
       "modes": [
         "Value"
       ],
-      "variables": 67
+      "variables": 71
     },
     {
       "name": "Color",
@@ -30,7 +30,7 @@
       "modes": [
         "Value"
       ],
-      "variables": 13
+      "variables": 17
     },
     {
       "name": "Effects",
@@ -41,11 +41,11 @@
     }
   ],
   "totals": {
-    "variables": 128,
-    "tokens": 133,
+    "variables": 136,
+    "tokens": 141,
     "byType": {
       "color": 97,
-      "number": 31,
+      "number": 39,
       "shadow": 3,
       "gradient-stops": 1,
       "gradient": 1
@@ -65,10 +65,10 @@
     "accent": 5,
     "status": 18,
     "radius": 6,
-    "space": 12,
+    "space": 16,
     "gap": 1,
     "opacity": 1,
-    "scale": 11,
+    "scale": 15,
     "shadow": 3,
     "gradient": 2
   },
@@ -84,7 +84,11 @@
     "Primitives/Scale/scale-8 -> --scale-8",
     "Primitives/Scale/scale-10 -> --scale-10",
     "Primitives/Scale/scale-12 -> --scale-12",
-    "Primitives/Scale/scale-0-5 -> --scale-0-5"
+    "Primitives/Scale/scale-0-5 -> --scale-0-5",
+    "Primitives/Scale/scale-14 -> --scale-14",
+    "Primitives/Scale/scale-16 -> --scale-16",
+    "Primitives/Scale/scale-18 -> --scale-18",
+    "Primitives/Scale/scale-21 -> --scale-21"
   ],
   "rawColorInSemanticLayer": [],
   "semanticAliasingSemantic": [],

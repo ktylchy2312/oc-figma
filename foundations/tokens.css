@@ -69,6 +69,10 @@
   --scale-10: 40px;
   --scale-12: 48px;
   --scale-0-5: 2px;
+  --scale-14: 56px;
+  --scale-16: 64px;
+  --scale-18: 72px;
+  --scale-21: 84px;
 
   /* Color */
   --surface-background: #0b0e16;
@@ -135,6 +139,10 @@
   --space-tight: 12px;
   --space-0: 0px;
   --space-0-5: 2px;
+  --space-14: 56px;
+  --space-16: 64px;
+  --space-18: 72px;
+  --space-21: 84px;
 
   /* Effects */
   --opacity-disabled: 0.45;
