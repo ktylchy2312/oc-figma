@@ -506,8 +506,8 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover {
   width: 403px;
-  background: var(--surface-raised);
-  border: 1px solid var(--border-strong);
+  background: var(--surface-default);
+  border: 1px solid var(--border-emphasis);
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__content,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__content {

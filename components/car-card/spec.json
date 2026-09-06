@@ -1558,8 +1558,8 @@
         "h": 383
       },
       "tokens": {
-        "background": "var(--surface-raised)",
-        "borderColor": "var(--border-strong)",
+        "background": "var(--surface-default)",
+        "borderColor": "var(--border-emphasis)",
         "content.padding": "var(--space-4) var(--space-4) var(--space-4) var(--space-4)",
         "content/frame-151.align": "MIN",
         "content/frame-151.direction": "VERTICAL",
@@ -1777,8 +1777,8 @@
         "tag": "div",
         "style": {
           "width": "403px",
-          "background": "var(--surface-raised)",
-          "border": "1px solid var(--border-strong)",
+          "background": "var(--surface-default)",
+          "border": "1px solid var(--border-emphasis)",
           "border-radius": "var(--radius-lg)",
           "overflow": "hidden",
           "display": "flex",
