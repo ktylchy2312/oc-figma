@@ -23,7 +23,7 @@
  * дедупликация в три @font-face с `font-weight: 100 900` режет вес листа вчетверо и
  * проверяется в шлюзе замером ширины 400 против 700.
  */
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { record } from "./stamp.mjs";
 
@@ -225,16 +225,66 @@ for (const f of faces) {
 }
 const SUBSET_NAME = (r) => (/U\+0460/.test(r) ? "cyrillic-ext" : /U\+0400/.test(r) ? "cyrillic" : "latin");
 let fontsOut =
-  "/* Roboto (variable), подмножества latin + cyrillic, вшито как data:font/woff2.\n" +
-  "   Один файл на подмножество покрывает весь диапазон весов: в исходнике он был повторён\n" +
-  "   на каждый вес байт в байт. Сети у превью нет — внешняя ссылка молча даёт системный шрифт. */\n";
+  "/* Roboto (variable), вшито как data:font/woff2. Один файл на подмножество покрывает весь\n" +
+  "   диапазон весов: в исходнике он был повторён на каждый вес байт в байт. Сети у превью нет —\n" +
+  "   внешняя ссылка молча дала бы системный шрифт.\n" +
+  "   latin + cyrillic + cyrillic-ext приехали из прошлой сборки, latin-ext и symbols\n" +
+  "   завендорены отдельно: см. foundations/fonts/SOURCE.md. */\n";
+/**
+ * cyrillic-ext снято по отчёту проверки 9, а не на глаз: строка «подмножества в ходу» в
+ * verify.mjs показала для него ноль кодовых точек на всех 72 листах при 2112 у cyrillic.
+ * Возить 48 КБ ради диапазона, которым никто не пользуется, — это те же 48 КБ в каждом
+ * листе, собранном с --inline.
+ *
+ * Обратно оно вернётся ровно тогда, когда понадобится: проверка 9 уронит сборку на первом же
+ * символе из U+0460-052F и назовёт подмножество. Поэтому снимать безопасно — не потому что
+ * «вроде не нужно», а потому что есть кому поймать обратное.
+ */
+const DROP = new Set(["cyrillic-ext"]);
 const fontFacts = [];
 for (const [range, rec] of bySubset) {
+  if (DROP.has(SUBSET_NAME(range))) { fontFacts.push({ subset: SUBSET_NAME(range), dropped: "0 кодовых точек по проверке 9" }); continue; }
   fontsOut +=
     `\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 100 900;\n` +
     `  font-stretch: 100%;\n  font-display: block;\n` +
     `  src: url(data:font/woff2;base64,${rec.b64}) format('woff2');\n  unicode-range: ${range};\n}\n`;
   fontFacts.push({ subset: SUBSET_NAME(range), bytes: Math.round(rec.b64.length * 0.75), sharedAcrossWeights: rec.same, weightsInSource: [...rec.weights].sort() });
+}
+
+/**
+ * ВТОРОЕ ЗАИМСТВОВАНИЕ НЕ ИЗ FIGMA — названо так же, как первое.
+ *
+ * В исходнике прошлой сборки было три подмножества: latin, cyrillic, cyrillic-ext. Latin-ext
+ * там не было, а продукт польский: ł ą ę ż ś ć рисовались тем, что нашлось в системе. На
+ * Windows запасной шрифт случайно укладывался в допуск по ширине, на Linux — нет, и CI
+ * поймал это на первом же прогоне. Symbols добавлено ради «→» в описании OfferTable.
+ *
+ * Файлы завендорены: скачаны один раз, лежат в репозитории, происхождение, версия и sha256
+ * записаны в foundations/fonts/SOURCE.md. Сборка остаётся офлайн.
+ *
+ * Каталог лежит внутри foundations/, но выходом генератора НЕ является: build-foundations
+ * его читает, а не пишет. Поэтому отсутствие файла — остановка с указанием, чем восстановить,
+ * а не молчаливая сборка без половины алфавита.
+ */
+const VENDORED = {
+  "latin-ext": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF",
+  symbols: "U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-21A7, U+21AF, U+21BB, U+21D0-21D5, U+21DE-21E3, U+21E6-21EF, U+2200-2201, U+2203-2204, U+2206, U+2208-2209, U+220B-220D, U+2211-2213, U+2216, U+2219-221A, U+221D-2220, U+2223, U+2225, U+2227-222B, U+222E, U+2234-2237, U+223C-223D, U+2243, U+2245, U+2248, U+224D, U+2260-2261, U+2264-2265, U+226A-226B, U+226E-226F, U+2282-2283, U+2286-2287, U+2295, U+2299, U+22A5, U+22BF, U+2312, U+2394, U+23AF, U+23E8, U+2405, U+2409, U+240C-240D, U+2424, U+247F, U+2500-2502, U+2506-2507, U+250C, U+2510, U+2514, U+2518, U+251C, U+2524, U+252C, U+2534, U+253C, U+2550-2554, U+2560-2564, U+2570, U+2580, U+2584, U+2588, U+258C, U+2590-2593, U+25A0-25A1, U+25A3-25A4, U+25AA-25AB, U+25B2-25B3, U+25B6-25B7, U+25BC-25BD, U+25C0-25C1, U+25C6-25C7, U+25CA-25CB, U+25CF, U+25E6, U+2601, U+2603, U+2605-2606, U+260E, U+2611, U+2615, U+261C, U+261E, U+2622, U+262F, U+2639-263A, U+2660, U+2663, U+2665-2666, U+266A-266B, U+267B, U+2680-2685, U+26A0-26A1, U+2708, U+270C-270D, U+270F, U+2713, U+2717, U+2726-2727, U+2731, U+2739, U+274D, U+2762, U+2764, U+2794, U+279C, U+27A1, U+27F5-27F6, U+2B05-2B0D, U+2B95, U+2BC5-2BC8, U+2BEC-2BEF, U+3001-3002, U+3008-3009, U+300C-300D, U+3010-3011, U+3014-3015, U+30FB, U+4DC0-4DFF, U+FF01-FF0F, U+FF1A-FF20, U+FF3B-FF40, U+FF5B-FF65, U+FFE9-FFEC, U+1F004, U+1F19A",
+};
+const VENDOR = join(OUT, "foundations/fonts");
+for (const [name, range] of Object.entries(VENDORED)) {
+  const file = join(VENDOR, `roboto-${name}.woff2`);
+  if (!existsSync(file)) {
+    console.error(`нет ${file}. Это завендоренный файл шрифта, а не выход генератора — ` +
+      `восстановить по foundations/fonts/SOURCE.md, там URL, версия и sha256. Без него ` +
+      `польские диакритики рисуются запасным шрифтом, и проверка 9 в verify.mjs падает.`);
+    process.exit(2);
+  }
+  const b64 = readFileSync(file).toString("base64");
+  fontsOut +=
+    `\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-weight: 100 900;\n` +
+    `  font-stretch: 100%;\n  font-display: block;\n` +
+    `  src: url(data:font/woff2;base64,${b64}) format('woff2');\n  unicode-range: ${range};\n}\n`;
+  fontFacts.push({ subset: name, bytes: Math.round(b64.length * 0.75), vendored: true });
 }
 
 /* --------------------------------------------------------- typography.json */

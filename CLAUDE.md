@@ -58,13 +58,23 @@ generated output.** "When was this built" goes to `_build.json` via `tools/stamp
 - **`AllVariants` stays pinned to the spec.** It is the showcase and the anchor for the size
   check. Controls belong in `Playground` only — a user-supplied label would move the width and
   the comparison against `figmaSize` would start lying.
+- **The font must cover the text.** Check 9 collects every codepoint a sheet asks to draw and
+  requires it to fall inside a `unicode-range` of an embedded `@font-face`. Check 7 only asks
+  whether the font is variable; it never asked whether the glyphs exist, which is why Polish
+  `ł` silently fell back to a system font and passed on Windows by luck. The same check's
+  usage tally is the only acceptable basis for dropping a subset — `cyrillic-ext` went out on
+  a measured zero, never on a guess.
+- **Two borrowings are not from Figma, both named.** The original three subsets came from a
+  previous build's sheet; `latin-ext` and `symbols` are vendored in `foundations/fonts/` with
+  URL, version and sha256 in `SOURCE.md`. That directory is an INPUT living beside outputs —
+  `build-foundations.mjs` reads it and stops with a pointer to `SOURCE.md` if it is missing.
 - **No absolute paths in scripts.** `tools/check-paths.mjs` fails the build on a drive letter,
   `/Users/`, `/home/` or a UNC path. The one legitimate exception — locating Chrome, which
   lives outside the repository — is marked `abs-ok` line by line.
 
 ## Gates
 
-`verify.mjs` — 8 checks per sheet. `verify-code.mjs` — 5 checks per component in `code/`.
+`verify.mjs` — 9 checks per sheet. `verify-code.mjs` — 5 checks per component in `code/`.
 Both use the **same size tolerances, deliberately**: `0.5px` where the size is written as a
 number, `max(1.5px, 1%)` where it is content-driven. Different tolerances in two gates would
 mean two different ideas of what "matches" means. If you touch one, touch the other.

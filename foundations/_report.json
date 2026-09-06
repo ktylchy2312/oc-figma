@@ -92,14 +92,7 @@
   "fonts": [
     {
       "subset": "cyrillic-ext",
-      "bytes": 36654,
-      "sharedAcrossWeights": true,
-      "weightsInSource": [
-        "400",
-        "500",
-        "600",
-        "700"
-      ]
+      "dropped": "0 кодовых точек по проверке 9"
     },
     {
       "subset": "cyrillic",
@@ -122,6 +115,16 @@
         "600",
         "700"
       ]
+    },
+    {
+      "subset": "latin-ext",
+      "bytes": 29394,
+      "vendored": true
+    },
+    {
+      "subset": "symbols",
+      "bytes": 20556,
+      "vendored": true
     }
   ],
   "typography": [

@@ -58,6 +58,46 @@ const compDir = join(ROOT, "components");
 const slugs = (only.length ? only : readdirSync(compDir).filter((d) => existsSync(join(compDir, d, "spec.json")))).sort();
 if (!slugs.length) { console.error("нечего проверять: в components/ нет ни одной спеки"); process.exit(2); }
 
+/* --------------------------------------------- покрытие шрифта, проверка 9 */
+
+/**
+ * Проверка 7 спрашивает, вариативный ли шрифт: рисуются ли 400 и 700 разной шириной. Она НЕ
+ * спрашивает, есть ли в нём нужные глифы — и польская «ł» провалилась не потому что польская,
+ * а потому что этого вопроса не задавали никому. Следующая такая дыра уже заряжена:
+ * типографская кавычка, длинное тире, №, любая будущая локаль. Каждая прошла бы мимо всех
+ * восьми проверок и вылезла бы так же — на чужой машине, случайно.
+ *
+ * Поэтому: собрать кодовые точки, которые лист просит нарисовать, разобрать unicode-range из
+ * @font-face и потребовать полного включения. Непокрытая точка — провал с указанием символа и
+ * подмножества, которого не хватает.
+ */
+const FONTS_CSS = readFileSync(join(ROOT, "foundations/fonts.css"), "utf8");
+const COVERED = [...FONTS_CSS.matchAll(/unicode-range:\s*([^;}]+)/g)]
+  .flatMap((m) => m[1].split(","))
+  .map((t) => t.trim().replace(/^U\+/i, ""))
+  .filter(Boolean)
+  .map((t) => (t.includes("-") ? t.split("-").map((x) => parseInt(x, 16)) : [parseInt(t, 16), parseInt(t, 16)]));
+const covers = (cp) => COVERED.some(([a, b]) => cp >= a && cp <= b);
+
+// Стандартные подмножества Google Fonts — чтобы отчёт называл не «нет глифа», а какой файл
+// подключить. Список не полный и полным быть не должен: он покрывает то, чем пользуются здесь.
+const SUBSETS = [
+  ["latin", [[0x0000, 0x00ff], [0x0131, 0x0131], [0x0152, 0x0153]]],
+  ["latin-ext", [[0x0100, 0x02ba], [0x02bd, 0x02c5], [0x02c7, 0x02cc], [0x1e00, 0x1eff], [0x2020, 0x2020], [0x20a0, 0x20ab], [0x2113, 0x2113], [0xa720, 0xa7ff]]],
+  ["cyrillic", [[0x0301, 0x0301], [0x0400, 0x045f], [0x0490, 0x0491], [0x04b0, 0x04b1], [0x2116, 0x2116]]],
+  ["cyrillic-ext", [[0x0460, 0x052f], [0x1c80, 0x1c8a], [0x20b4, 0x20b4], [0x2de0, 0x2dff], [0xa640, 0xa69f]]],
+  ["greek", [[0x0370, 0x03ff]]],
+  ["symbols", [[0x2190, 0x21ff], [0x2200, 0x22ff], [0x2500, 0x25ff], [0x2600, 0x27bf], [0x2b00, 0x2bff]]],
+  ["vietnamese", [[0x0102, 0x0103], [0x0110, 0x0111], [0x01a0, 0x01a1], [0x01af, 0x01b0]]],
+  ["general-punctuation", [[0x2000, 0x206f]]],
+];
+const subsetOf = (cp) => (SUBSETS.find(([, rs]) => rs.some(([a, b]) => cp >= a && cp <= b)) || ["неизвестное"])[0];
+const show = (cp) => `${String.fromCodePoint(cp)} U+${cp.toString(16).toUpperCase().padStart(4, "0")}`;
+
+// Что система просит на самом деле — отвечает и на обратный вопрос: не возим ли мы
+// подмножество, которым никто не пользуется.
+const usedSubsets = new Map();
+
 /* ------------------------------------------------------- значения из спеки */
 
 /**
@@ -168,6 +208,9 @@ for (const slug of slugs) {
       w400: Math.round(w400 * 100) / 100,
       w700: Math.round(w700 * 100) / 100,
       overflowX: document.documentElement.scrollWidth > (sheet ? Math.ceil(sheet.getBoundingClientRect().width) : 0),
+      // Проверка 9: что лист реально просит нарисовать. Берём textContent, а не innerText,
+      // потому что скрытый узел тоже требует глифа, если его когда-нибудь покажут.
+      codepoints: [...new Set((document.body.textContent || "").replace(/\s/g, ""))].map((c) => c.codePointAt(0)),
       // Габарит каждой ячейки: то, что браузер реально нарисовал, против того, что в Figma.
       boxes: [...document.querySelectorAll(".ds-cell")].map((c) => {
         const r = c.querySelector('[data-part="root"]');
@@ -211,6 +254,20 @@ for (const slug of slugs) {
 
   if (seen.w400 === seen.w700) fails.push(`7: вес шрифта не работает — 400 и 700 дают одну ширину (${seen.w400}px); вшит статический файл вместо вариативного`);
 
+  /* 9, сверх контракта. ПОКРЫТИЕ: есть ли в шрифте глифы, которые лист просит нарисовать. */
+  const uncovered = seen.codepoints.filter((cp) => !covers(cp));
+  for (const cp of seen.codepoints) usedSubsets.set(subsetOf(cp), (usedSubsets.get(subsetOf(cp)) || 0) + 1);
+  if (uncovered.length) {
+    const bySubset = new Map();
+    for (const cp of uncovered) {
+      const s = subsetOf(cp);
+      if (!bySubset.has(s)) bySubset.set(s, []);
+      bySubset.get(s).push(show(cp));
+    }
+    fails.push(`9: нет глифа × ${uncovered.length}: ` +
+      [...bySubset].map(([s, cs]) => `${cs.join(", ")} — подмножество «${s}»`).join("; "));
+  }
+
   report.push({
     slug, ok: fails.length === 0, fails, warns,
     checks: {
@@ -246,6 +303,10 @@ if (!JSON_ONLY) {
       pad(`${c.weight400}/${c.weight700}`, 14) + pad(c.maxDriftPx + "px", 8) + (r.ok ? "OK" : "ПРОВАЛ"));
   }
   for (const r of bad) { console.log(`\n${r.slug}:`); for (const f of r.fails) console.log("  ✗ " + f); }
-  console.log(`\nпрошло ${report.length - bad.length} из ${report.length}. Отчёт: _verify.json`);
+  // Обратный вопрос к проверке 9: какие подмножества система действительно просит. Ноль
+  // против подмножества, которое мы возим, — основание его снять, но только по этой строке,
+  // а не на глаз.
+  console.log(`\nподмножества в ходу: ${[...usedSubsets].sort((a, b) => b[1] - a[1]).map(([s, n]) => `${s} ${n}`).join(", ")}`);
+  console.log(`прошло ${report.length - bad.length} из ${report.length}. Отчёт: _verify.json`);
 }
 process.exit(bad.length ? 1 : 0);
