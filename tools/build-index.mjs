@@ -68,7 +68,17 @@ writeFileSync(join(OUT, "_index.json"), JSON.stringify(index, null, 2) + "\n");
 
 /* ------------------------------------------------------------------ README */
 
-const verify = existsSync(join(OUT, "_verify.json")) ? JSON.parse(readFileSync(join(OUT, "_verify.json"), "utf8")) : null;
+/**
+ * Строка «последний прогон» берётся из _verify.json — а он остаётся и после проверки ОДНОГО
+ * компонента: `node verify.mjs car-card` перезаписывает отчёт целиком. Собери README сразу
+ * после такого прогона, и он честно скажет «прошло 1 из 1», а закоммитится это как состояние
+ * всей системы. Наступал дважды за одну сессию.
+ *
+ * Поэтому строка пишется, только если отчёт покрывает все компоненты. Частичный прогон —
+ * это не «плохой результат», это НЕ ТОТ ВОПРОС, и печатать его как ответ нельзя.
+ */
+const verifyRaw = existsSync(join(OUT, "_verify.json")) ? JSON.parse(readFileSync(join(OUT, "_verify.json"), "utf8")) : null;
+const verify = verifyRaw && verifyRaw.total === slugs.length ? verifyRaw : null;
 const undoc = items.filter((i) => !i.documented).map((i) => i.name);
 const debt = items.filter((i) => i.unbound).sort((a, b) => b.unbound - a.unbound);
 
