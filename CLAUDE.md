@@ -71,6 +71,11 @@ mean two different ideas of what "matches" means. If you touch one, touch the ot
 
 Both exit non-zero on failure. A gate that cannot fail is decoration.
 
+CI (`.github/workflows/ci.yml`) rebuilds from `figma-dump/`, requires `git status --porcelain`
+to be empty, then runs all three gates. `git status`, not `git diff`: a generator that starts
+creating extra files drifts exactly as badly as one that starts changing them. Chrome comes
+from `PUPPETEER_EXECUTABLE_PATH`, which both gates check before their built-in path list.
+
 ## Where the bridge lives
 
 Not here. Producing a dump needs the Figma bridge, which lives in the `claude-design`

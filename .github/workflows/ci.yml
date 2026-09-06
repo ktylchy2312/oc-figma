@@ -1,0 +1,77 @@
+# Смысл этого файла — один: генератор больше не может разъехаться молча.
+#
+# Проверяется не «собирается ли», а «даёт ли то же самое». Пересборка из figma-dump/ с
+# последующим `git diff --exit-code` ловит недетерминированность — метку времени, случайный
+# порядок ключей, зависимость от локали, — то есть ровно тот класс дефектов, который
+# обнаруживается через полгода и объясняется словами «а раньше работало».
+#
+# Шлюзы гоняются ПОСЛЕ пересборки, а не вместо неё: проверять надо то, что генератор выдаёт
+# сегодня, а не то, что лежало в коммите.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  rebuild-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # puppeteer-core браузер не приносит — он и не должен. Ставим системный Chrome.
+      - uses: browser-actions/setup-chrome@v1
+        id: chrome
+        with:
+          chrome-version: stable
+
+      - run: npm ci --omit=dev
+
+      - name: Пересборка из figma-dump
+        run: npm run build
+
+      # status --porcelain, а не diff --exit-code: diff не видит НОВЫХ файлов, а генератор,
+      # научившийся создавать лишнее, разъезжается ровно так же, как научившийся менять.
+      - name: Дерево после пересборки обязано быть чистым
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::пересборка изменила дерево — генератор недетерминирован"
+            git status --porcelain
+            git --no-pager diff --stat
+            exit 1
+          fi
+
+      - name: Три шлюза
+        env:
+          PUPPETEER_EXECUTABLE_PATH: ${{ steps.chrome.outputs.chrome-path }}
+        run: npm run verify
+
+      - name: Отчёты шлюзов
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verify-reports
+          path: |
+            _verify.json
+            _verify-code.json
+          if-no-files-found: ignore
+
+  storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Витрина собирается
+        run: npm run build:storybook

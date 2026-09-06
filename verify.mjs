@@ -36,11 +36,18 @@ const JSON_ONLY = argv.includes("--json");
 const only = argv.filter((a) => !a.startsWith("--"));
 
 const GROUPS = ["Foundations", "Actions", "Forms", "Navigation", "Cards", "Feedback", "Stage", "Overlays", "Overview"];
-const CHROME = [ // браузер живёт вне репозитория
+// Браузер живёт вне репозитория. PUPPETEER_EXECUTABLE_PATH первым: на чужой машине и в CI
+// путь знает окружение, а не этот список. Список — удобство для трёх известных случаев.
+const CHROME = [
+  process.env.PUPPETEER_EXECUTABLE_PATH,
   "C:/Program Files/Google/Chrome/Application/chrome.exe", // abs-ok
   "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe", // abs-ok
   "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", // abs-ok
-].find((p) => existsSync(p));
+  "/usr/bin/google-chrome",
+  "/usr/bin/chromium-browser",
+  "/usr/bin/chromium",
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+].find((p) => p && existsSync(p));
 
 let puppeteer;
 try { puppeteer = require("puppeteer-core"); }
