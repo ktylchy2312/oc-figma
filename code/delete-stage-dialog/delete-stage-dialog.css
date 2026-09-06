@@ -45,11 +45,11 @@
 
 .oc-delete-stage-dialog__title {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -68,11 +68,11 @@
 .oc-delete-stage-dialog__text {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 370px;
   flex: none;
   color: var(--text-secondary);
@@ -120,11 +120,11 @@
 
 .oc-delete-stage-dialog__secondary-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-on-accent);
 }
@@ -152,11 +152,11 @@
 
 .oc-delete-stage-dialog__primary-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-on-accent);
 }

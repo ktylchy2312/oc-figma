@@ -59,11 +59,11 @@
 
 .oc-doc-progress__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }

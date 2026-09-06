@@ -27,11 +27,11 @@
 
 .oc-form-field__rok-produkcji {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -74,22 +74,22 @@
 }
 .oc-form-field.oc-form-field--variant-text.oc-form-field--state-default .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-disabled);
 }
 .oc-form-field.oc-form-field--variant-text.oc-form-field--state-default .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -108,11 +108,11 @@
 .oc-form-field.oc-form-field--variant-text.oc-form-field--state-focus .oc-form-field__placeholder,
 .oc-form-field.oc-form-field--variant-text:focus-visible .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -120,11 +120,11 @@
 .oc-form-field.oc-form-field--variant-text:focus-visible .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -156,11 +156,11 @@
 .oc-form-field.oc-form-field--variant-text:disabled .oc-form-field__placeholder,
 .oc-form-field.oc-form-field--variant-text[aria-disabled="true"] .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-disabled);
 }
@@ -169,11 +169,11 @@
 .oc-form-field.oc-form-field--variant-text[aria-disabled="true"] .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -190,11 +190,11 @@
 }
 .oc-form-field.oc-form-field--variant-text.oc-form-field--state-error .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -206,11 +206,11 @@
 .oc-form-field.oc-form-field--variant-text.oc-form-field--state-error .oc-form-field__podaj-poprawny-rok-4-cyfry {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--status-error-text);
@@ -227,22 +227,22 @@
 }
 .oc-form-field.oc-form-field--variant-select.oc-form-field--state-default .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-disabled);
 }
 .oc-form-field.oc-form-field--variant-select.oc-form-field--state-default .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -269,11 +269,11 @@
 .oc-form-field.oc-form-field--variant-select.oc-form-field--state-focus .oc-form-field__placeholder,
 .oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -281,11 +281,11 @@
 .oc-form-field.oc-form-field--variant-select:focus-visible .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -326,11 +326,11 @@
 .oc-form-field.oc-form-field--variant-select:disabled .oc-form-field__placeholder,
 .oc-form-field.oc-form-field--variant-select[aria-disabled="true"] .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-disabled);
 }
@@ -339,11 +339,11 @@
 .oc-form-field.oc-form-field--variant-select[aria-disabled="true"] .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -370,11 +370,11 @@
 }
 .oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -386,11 +386,11 @@
 .oc-form-field.oc-form-field--variant-select.oc-form-field--state-error .oc-form-field__podaj-poprawny-rok-4-cyfry {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--status-error-text);
@@ -415,22 +415,22 @@
 }
 .oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-default .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-disabled);
 }
 .oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-default .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -449,11 +449,11 @@
 .oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-focus .oc-form-field__placeholder,
 .oc-form-field.oc-form-field--variant-textarea:focus-visible .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -461,11 +461,11 @@
 .oc-form-field.oc-form-field--variant-textarea:focus-visible .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -498,11 +498,11 @@
 .oc-form-field.oc-form-field--variant-textarea[aria-disabled="true"] .oc-form-field__hint {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--text-disabled);
@@ -526,11 +526,11 @@
 }
 .oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-error .oc-form-field__placeholder {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -542,11 +542,11 @@
 .oc-form-field.oc-form-field--variant-textarea.oc-form-field--state-error .oc-form-field__podaj-poprawny-rok-4-cyfry {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   width: 280px;
   flex: none;
   color: var(--status-error-text);

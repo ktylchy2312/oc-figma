@@ -63,11 +63,11 @@
 
 .oc-part-card__part-number-part-number {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--accent-default);
@@ -105,11 +105,11 @@
 
 .oc-part-card__status-status {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  line-height: var(--type-caption-line-height);
+  letter-spacing: var(--type-caption-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -145,11 +145,11 @@
 
 .oc-part-card__photo-count-photo-count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-secondary);
@@ -188,11 +188,11 @@
 .oc-part-card__title {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   width: 286px;
   flex: none;
   color: var(--text-primary);
@@ -208,11 +208,11 @@
 
 .oc-part-card__vehicle-vehicle {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -228,11 +228,11 @@
 
 .oc-part-card__years {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -256,11 +256,11 @@
 
 .oc-part-card__category {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -276,22 +276,22 @@
 
 .oc-part-card__quantity {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
 
 .oc-part-card__price {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -338,11 +338,11 @@
 
 .oc-part-card__grade-a-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -364,11 +364,11 @@
 
 .oc-part-card__grade-e-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -389,11 +389,11 @@
 
 .oc-part-card__grade-o-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);

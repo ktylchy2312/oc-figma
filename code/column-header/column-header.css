@@ -48,11 +48,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   width: 198px;
   color: var(--text-primary);
 }
@@ -103,11 +103,11 @@
 }
 .oc-column-header.oc-column-header--state-edit .oc-column-header__input-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }

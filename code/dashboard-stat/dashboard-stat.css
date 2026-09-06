@@ -25,22 +25,22 @@
 .oc-dashboard-stat.oc-dashboard-stat--variant-neutral .oc-dashboard-stat__cznie-w-toku {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   width: 190px;
   flex: none;
   color: var(--text-tertiary);
 }
 .oc-dashboard-stat.oc-dashboard-stat--variant-neutral .oc-dashboard-stat__7 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.2px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-1-size);
+  font-weight: var(--type-heading-1-weight);
+  line-height: var(--type-heading-1-line-height);
+  letter-spacing: var(--type-heading-1-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -49,22 +49,22 @@
 .oc-dashboard-stat.oc-dashboard-stat--variant-alert .oc-dashboard-stat__ryzyko-oc {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   width: 190px;
   flex: none;
   color: var(--text-tertiary);
 }
 .oc-dashboard-stat.oc-dashboard-stat--variant-alert .oc-dashboard-stat__6 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.2px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-1-size);
+  font-weight: var(--type-heading-1-weight);
+  line-height: var(--type-heading-1-line-height);
+  letter-spacing: var(--type-heading-1-letter-spacing);
   white-space: nowrap;
   color: var(--status-error-text);
 }

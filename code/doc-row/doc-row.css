@@ -31,11 +31,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   color: var(--text-primary);
 }
 

@@ -61,11 +61,11 @@
 
 .oc-pagination__page-number-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-on-accent);
 }
@@ -86,11 +86,11 @@
 
 .oc-pagination__page-number-2-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -111,11 +111,11 @@
 
 .oc-pagination__page-number-3-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -146,11 +146,11 @@
 
 .oc-pagination__range-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }

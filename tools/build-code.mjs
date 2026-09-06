@@ -106,6 +106,56 @@ const escTpl = (s) => String(s).replace(/\\/g, "\\\\").replace(/`/g, "\\`").repl
 
 /* ---------- разбор спеки ---------- */
 
+/* ---------- типографика ---------- */
+
+/**
+ * Текстовый узел в Figma несёт СТИЛЬ, а не набор чисел: спека пишет его в `font.style`, и все
+ * 431 текстовых узла системы им покрыты — без стиля нет ни одного. Экспорт стиля не сохраняет,
+ * поэтому в разметку числа приезжали литералами: `font-size: 15px` вместо роли.
+ *
+ * Здесь четыре свойства шрифта заменяются на переменные роли из foundations/typography.css.
+ * Сопоставление идёт ПО ИМЕНИ СТИЛЯ (`figmaName`), а не по кеглю: 15px принадлежит и
+ * `Body Medium`, и `Body Medium Alter`, и выбор по числу склеил бы две разные роли в одну.
+ *
+ * ПОДСТАНОВКА ТОЛЬКО ПРИ ПОЛНОМ СОВПАДЕНИИ значений узла с ролью. Стиль в Figma можно
+ * переопределить локально — кегль руками поверх стиля; такой узел остаётся с литералом и
+ * попадает в отчёт. Подставить роль поверх переопределения значило бы молча изменить макет.
+ */
+const TYPO = JSON.parse(readFileSync(join(ROOT, "foundations/typography.json"), "utf8"));
+const roleBySyle = new Map(TYPO.map((r) => [r.figmaName, r]));
+const roleSlug = (r) =>
+  String(r.role).trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+const typoOverrides = [];
+function applyTypography(node, slug) {
+  const f = node.font;
+  if (!f || !f.style) return;
+  const role = roleBySyle.get(f.style);
+  if (!role) { typoOverrides.push({ slug, path: node.path, why: `стиль «${f.style}» не найден в typography.json` }); return; }
+  const st = node.style || {};
+  const same =
+    st["font-size"] === `${role.fontSize}px` &&
+    st["font-weight"] === String(role.weight) &&
+    st["line-height"] === String(role.lineHeight) &&
+    st["letter-spacing"] === String(role.letterSpacing);
+  if (!same) {
+    typoOverrides.push({
+      slug, path: node.path, style: f.style,
+      node: `${st["font-size"]}/${st["line-height"]} ${st["font-weight"]} ${st["letter-spacing"]}`,
+      role: `${role.fontSize}px/${role.lineHeight} ${role.weight} ${role.letterSpacing}`,
+    });
+    return;
+  }
+  const id = roleSlug(role);
+  st["font-family"] = "var(--font-family)";
+  st["font-size"] = `var(--type-${id}-size)`;
+  st["font-weight"] = `var(--type-${id}-weight)`;
+  if (role.lineHeight && String(role.lineHeight).toUpperCase() !== "AUTO") st["line-height"] = `var(--type-${id}-line-height)`;
+  st["letter-spacing"] = `var(--type-${id}-letter-spacing)`;
+}
+
+/* ---------- разбор спеки ---------- */
+
 function walk(node, fn) { fn(node); for (const c of node.children || []) walk(c, fn); }
 
 function collect(spec) {
@@ -114,6 +164,7 @@ function collect(spec) {
   const shapes = new Map();
   spec.variants.forEach((v, i) => {
     walk(v.render, (n) => {
+      applyTypography(n, spec.slug);
       if (!paths.includes(n.path)) paths.push(n.path);
       if (!shapes.has(n.path)) shapes.set(n.path, n);
       styles[i].set(n.path, n.style || {});
@@ -279,6 +330,7 @@ function buildHtml(spec, ctx) {
     `<!-- ${ctx.name} — все варианты, сгенерировано из spec.json. -->`,
     `<link rel="stylesheet" href="../../foundations/fonts.css">`,
     `<link rel="stylesheet" href="../../foundations/tokens.css">`,
+    `<link rel="stylesheet" href="../../foundations/typography.css">`,
     `<link rel="stylesheet" href="../base.css">`,
     `<link rel="stylesheet" href="./${ctx.slug}.css">`,
     "",
@@ -325,6 +377,7 @@ function buildStories(spec, ctx) {
   return `// ${name} — сгенерировано из components/${slug}/spec.json. Руками не править.
 import "../../foundations/fonts.css";
 import "../../foundations/tokens.css";
+import "../../foundations/typography.css";
 import "../base.css";
 import "./${slug}.css";
 
@@ -493,6 +546,7 @@ writeFileSync(join(OUT, "base.css"), BASE_CSS);
 const report = slugs.map((s) => build(s, names));
 writeFileSync(NAMES, JSON.stringify(Object.fromEntries(Object.keys(names).sort().map((k) => [k, names[k]])), null, 2) + "\n");
 
+for (const o of typoOverrides) console.error(`ТИПОГРАФИКА ${o.slug} ${o.path}: ${o.why || `стиль «${o.style}» переопределён на узле — ${o.node} против роли ${o.role}`}`);
 const bad = report.filter((r) => !r.ok);
 const drifted = report.filter((r) => r.drift.length);
 for (const r of drifted) console.error(`ПРЕДУПРЕЖДЕНИЕ ${r.slug}: ${r.drift.join("; ")}`);

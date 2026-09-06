@@ -85,11 +85,11 @@
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -111,11 +111,11 @@
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -131,11 +131,11 @@
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -143,22 +143,22 @@
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-frame-5-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 369px;
   flex: none;
   color: var(--text-tertiary);
@@ -201,11 +201,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -259,11 +259,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 250px;
   color: var(--text-primary);
 }
@@ -280,11 +280,11 @@
 }
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-default .oc-car-card__frame-142-rows-list-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -333,11 +333,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -381,11 +381,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -429,11 +429,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -477,11 +477,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -548,11 +548,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row-signature,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -577,11 +577,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-header-row-oc-status-label,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -599,11 +599,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-meta-row-model,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -612,11 +612,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-frame-5-meta-row-bought,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -624,11 +624,11 @@
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-frame-5-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 369px;
   flex: none;
   color: var(--text-tertiary);
@@ -676,11 +676,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -740,11 +740,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 250px;
   color: var(--text-primary);
 }
@@ -763,11 +763,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-hover .oc-car-card__frame-151-rows-list-docs-header-chip-label,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-151-rows-list-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -821,11 +821,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -874,11 +874,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -927,11 +927,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -980,11 +980,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1053,11 +1053,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row-signature,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -1082,11 +1082,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-header-row-oc-status-label,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -1104,11 +1104,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-meta-row-model,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1117,11 +1117,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-frame-5-meta-row-bought,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -1129,11 +1129,11 @@
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-frame-5-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 369px;
   flex: none;
   color: var(--text-tertiary);
@@ -1181,11 +1181,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1245,11 +1245,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 250px;
   color: var(--text-primary);
 }
@@ -1268,11 +1268,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-pressed .oc-car-card__frame-152-rows-list-docs-header-chip-label,
 .oc-car-card.oc-car-card--size-full:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-152-rows-list-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -1326,11 +1326,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1379,11 +1379,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1432,11 +1432,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1485,11 +1485,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1558,11 +1558,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row-signature,
 .oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -1587,11 +1587,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-header-row-oc-status-label,
 .oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -1609,11 +1609,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-meta-row-model,
 .oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1622,11 +1622,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-frame-5-meta-row-bought,
 .oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -1634,11 +1634,11 @@
 .oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-frame-5-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 369px;
   flex: none;
   color: var(--text-tertiary);
@@ -1686,11 +1686,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1750,11 +1750,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 250px;
   color: var(--text-primary);
 }
@@ -1773,11 +1773,11 @@
 .oc-car-card.oc-car-card--size-full.oc-car-card--state-focus .oc-car-card__frame-153-rows-list-docs-header-chip-label,
 .oc-car-card.oc-car-card--size-full:focus-visible .oc-car-card__frame-153-rows-list-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -1831,11 +1831,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1884,11 +1884,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1937,11 +1937,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -1990,11 +1990,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 292px;
   color: var(--text-primary);
 }
@@ -2057,11 +2057,11 @@
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -2083,11 +2083,11 @@
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -2103,32 +2103,32 @@
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-144-meta-row-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 226px;
   flex: none;
   color: var(--text-tertiary);
@@ -2171,11 +2171,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2229,11 +2229,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 107px;
   color: var(--text-primary);
 }
@@ -2250,11 +2250,11 @@
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-default .oc-car-card__frame-147-frame-146-frame-145-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -2303,11 +2303,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2351,11 +2351,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2399,11 +2399,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2447,11 +2447,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2518,11 +2518,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row-signature,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -2547,11 +2547,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-header-row-oc-status-label,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -2569,22 +2569,22 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-meta-row-model,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-144-meta-row-bought,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -2592,11 +2592,11 @@
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-144-meta-row-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 226px;
   flex: none;
   color: var(--text-tertiary);
@@ -2644,11 +2644,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2708,11 +2708,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 107px;
   color: var(--text-primary);
 }
@@ -2731,11 +2731,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-chip-label,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):hover .oc-car-card__frame-154-frame-146-frame-145-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -2789,11 +2789,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2842,11 +2842,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2895,11 +2895,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -2948,11 +2948,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3021,11 +3021,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row-signature,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -3050,11 +3050,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-header-row-oc-status-label,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -3072,22 +3072,22 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-meta-row-model,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-144-meta-row-bought,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -3095,11 +3095,11 @@
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-144-meta-row-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 226px;
   flex: none;
   color: var(--text-tertiary);
@@ -3158,11 +3158,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3222,11 +3222,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 107px;
   color: var(--text-primary);
 }
@@ -3245,11 +3245,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-pressed .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip-label,
 .oc-car-card.oc-car-card--size-compact:not(:disabled):not([aria-disabled="true"]):active .oc-car-card__frame-155-frame-156-frame-146-frame-145-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -3303,11 +3303,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3356,11 +3356,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3409,11 +3409,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3462,11 +3462,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3535,11 +3535,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row-signature,
 .oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row-signature {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-4-size);
+  font-weight: var(--type-heading-4-weight);
+  line-height: var(--type-heading-4-line-height);
+  letter-spacing: var(--type-heading-4-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -3564,11 +3564,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-header-row-oc-status-label,
 .oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -3586,22 +3586,22 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-meta-row-model,
 .oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row-model {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__frame-156-frame-144-meta-row-bought,
 .oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row-bought {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -3609,11 +3609,11 @@
 .oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__frame-156-frame-144-meta-row-vin {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 226px;
   flex: none;
   color: var(--text-tertiary);
@@ -3661,11 +3661,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3725,11 +3725,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 107px;
   color: var(--text-primary);
 }
@@ -3748,11 +3748,11 @@
 .oc-car-card.oc-car-card--size-compact.oc-car-card--state-focus .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip-label,
 .oc-car-card.oc-car-card--size-compact:focus-visible .oc-car-card__content-frame-156-frame-146-frame-145-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -3806,11 +3806,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3859,11 +3859,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3912,11 +3912,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }
@@ -3965,11 +3965,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 149px;
   color: var(--text-primary);
 }

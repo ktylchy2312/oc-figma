@@ -82,11 +82,11 @@
 
 .oc-offer-row__3-5 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -107,11 +107,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   width: 368px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -133,11 +133,11 @@
 .oc-offer-row__marka {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -149,11 +149,11 @@
 .oc-offer-row__model {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -177,11 +177,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -202,11 +202,11 @@
 
 .oc-offer-row__stan-stan {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -239,11 +239,11 @@
 
 .oc-offer-row__market-a-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -266,11 +266,11 @@
 
 .oc-offer-row__market-x-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -293,11 +293,11 @@
 
 .oc-offer-row__market-e-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -320,11 +320,11 @@
 
 .oc-offer-row__market-o-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -343,11 +343,11 @@
 
 .oc-offer-row__cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -386,11 +386,11 @@
 
 .oc-offer-row__robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }

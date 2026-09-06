@@ -43,11 +43,11 @@
 }
 .oc-search-input.oc-search-input--state-default .oc-search-input__label2 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -61,11 +61,11 @@
 }
 .oc-search-input.oc-search-input--state-filled .oc-search-input__label2 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -91,11 +91,11 @@
 .oc-search-input.oc-search-input--state-focus .oc-search-input__value-label2,
 .oc-search-input:focus-visible .oc-search-input__value-label2 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -122,11 +122,11 @@
 .oc-search-input:disabled .oc-search-input__label2,
 .oc-search-input[aria-disabled="true"] .oc-search-input__label2 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }

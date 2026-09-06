@@ -92,11 +92,11 @@
 
 .oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row-po-1145-x {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -121,11 +121,11 @@
 
 .oc-card-drag-overlay__car-card-content-frame-142-frame-5-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -143,11 +143,11 @@
 
 .oc-card-drag-overlay__car-card-content-frame-142-frame-5-meta-row-fiat-punto-ii-2003-r {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -156,11 +156,11 @@
 
 .oc-card-drag-overlay__car-card-content-frame-142-frame-5-meta-row-kupiona-03-08-2026 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -168,11 +168,11 @@
 .oc-card-drag-overlay__car-card-content-frame-142-frame-5-vin-zfa1880000451256 {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 353px;
   flex: none;
   color: var(--text-tertiary);
@@ -220,11 +220,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 276px;
   color: var(--text-primary);
 }
@@ -284,11 +284,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 234px;
   color: var(--text-primary);
 }
@@ -307,11 +307,11 @@
 
 .oc-card-drag-overlay__car-card-content-frame-142-rows-list-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -385,11 +385,11 @@
 
 .oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row-po-1145-x {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-3-size);
+  font-weight: var(--type-heading-3-weight);
+  line-height: var(--type-heading-3-line-height);
+  letter-spacing: var(--type-heading-3-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -414,11 +414,11 @@
 
 .oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-header-row-oc-status-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-alter-size);
+  font-weight: var(--type-body-medium-alter-weight);
+  line-height: var(--type-body-medium-alter-line-height);
+  letter-spacing: var(--type-body-medium-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-error-text);
 }
@@ -436,11 +436,11 @@
 
 .oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-meta-row-fiat-punto-ii-2003-r {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -449,11 +449,11 @@
 
 .oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-meta-row-kupiona-03-08-2026 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -461,11 +461,11 @@
 .oc-card-drag-overlay__car-card-2-content-frame-142-frame-5-vin-zfa1880000451256 {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   width: 353px;
   flex: none;
   color: var(--text-tertiary);
@@ -513,11 +513,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 276px;
   color: var(--text-primary);
 }
@@ -577,11 +577,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 234px;
   color: var(--text-primary);
 }
@@ -600,11 +600,11 @@
 
 .oc-card-drag-overlay__car-card-2-content-frame-142-rows-list-docs-header-chip-label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);

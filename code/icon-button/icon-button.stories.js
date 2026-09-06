@@ -1,6 +1,7 @@
 // IconButton — сгенерировано из components/icon-button/spec.json. Руками не править.
 import "../../foundations/fonts.css";
 import "../../foundations/tokens.css";
+import "../../foundations/typography.css";
 import "../base.css";
 import "./icon-button.css";
 

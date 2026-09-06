@@ -36,11 +36,11 @@
 }
 .oc-status-pill.oc-status-pill--status-aktywna .oc-status-pill__aktywna {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-success-text);
 }
@@ -54,11 +54,11 @@
 }
 .oc-status-pill.oc-status-pill--status-robocza .oc-status-pill__robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -72,11 +72,11 @@
 }
 .oc-status-pill.oc-status-pill--status-zam-wiona .oc-status-pill__zam-wiona {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-warning-text);
 }
@@ -90,11 +90,11 @@
 }
 .oc-status-pill.oc-status-pill--status-b-d .oc-status-pill__b-d {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--status-error-text);
 }

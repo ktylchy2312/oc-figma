@@ -26,22 +26,22 @@
 
 .oc-page-header__title {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-  letter-spacing: -0.2px;
+  font-family: var(--font-family);
+  font-size: var(--type-heading-1-size);
+  font-weight: var(--type-heading-1-weight);
+  line-height: var(--type-heading-1-line-height);
+  letter-spacing: var(--type-heading-1-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
 
 .oc-page-header__subtitle {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-medium-size);
+  font-weight: var(--type-body-medium-weight);
+  line-height: var(--type-body-medium-line-height);
+  letter-spacing: var(--type-body-medium-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }

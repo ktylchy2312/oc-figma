@@ -44,11 +44,11 @@
 
 .oc-offer-table__zdj-cie-zdj-cie {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -66,11 +66,11 @@
 
 .oc-offer-table__sygnatura-sygnatura {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -88,11 +88,11 @@
 
 .oc-offer-table__offer-table-header-nazwa-nazwa {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -110,11 +110,11 @@
 
 .oc-offer-table__pojazd-pojazd {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -132,11 +132,11 @@
 
 .oc-offer-table__offer-table-header-kategoria-kategoria {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -154,11 +154,11 @@
 
 .oc-offer-table__stan-mag-stan-mag {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -176,11 +176,11 @@
 
 .oc-offer-table__rynki-rynki {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -198,11 +198,11 @@
 
 .oc-offer-table__offer-table-header-cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -220,11 +220,11 @@
 
 .oc-offer-table__status-status {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -300,11 +300,11 @@
 
 .oc-offer-table__sk00147-sygnatura-pill-3-5 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -324,11 +324,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   width: 368px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -349,11 +349,11 @@
 .oc-offer-table__sk00147-pojazd-marka {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -365,11 +365,11 @@
 .oc-offer-table__sk00147-pojazd-model {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -392,11 +392,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -416,11 +416,11 @@
 
 .oc-offer-table__sk00147-stan-stan {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -451,11 +451,11 @@
 
 .oc-offer-table__sk00147-rynki-market-a-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -477,11 +477,11 @@
 
 .oc-offer-table__sk00147-rynki-market-x-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -503,11 +503,11 @@
 
 .oc-offer-table__sk00147-rynki-market-e-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -529,11 +529,11 @@
 
 .oc-offer-table__sk00147-rynki-market-o-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -551,11 +551,11 @@
 
 .oc-offer-table__sk00147-cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -592,11 +592,11 @@
 
 .oc-offer-table__sk00147-status-status-pill-robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -671,11 +671,11 @@
 
 .oc-offer-table__vw00312-sygnatura-pill-3-5 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -695,11 +695,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   width: 368px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -720,11 +720,11 @@
 .oc-offer-table__vw00312-pojazd-marka {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -736,11 +736,11 @@
 .oc-offer-table__vw00312-pojazd-model {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -763,11 +763,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -787,11 +787,11 @@
 
 .oc-offer-table__vw00312-stan-stan {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -822,11 +822,11 @@
 
 .oc-offer-table__vw00312-rynki-market-a-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -848,11 +848,11 @@
 
 .oc-offer-table__vw00312-rynki-market-x-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -874,11 +874,11 @@
 
 .oc-offer-table__vw00312-rynki-market-e-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -900,11 +900,11 @@
 
 .oc-offer-table__vw00312-rynki-market-o-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -922,11 +922,11 @@
 
 .oc-offer-table__vw00312-cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -963,11 +963,11 @@
 
 .oc-offer-table__vw00312-status-status-pill-robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -1042,11 +1042,11 @@
 
 .oc-offer-table__rn00889-sygnatura-pill-3-5 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -1066,11 +1066,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   width: 368px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1091,11 +1091,11 @@
 .oc-offer-table__rn00889-pojazd-marka {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -1107,11 +1107,11 @@
 .oc-offer-table__rn00889-pojazd-model {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -1134,11 +1134,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1158,11 +1158,11 @@
 
 .oc-offer-table__rn00889-stan-stan {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -1193,11 +1193,11 @@
 
 .oc-offer-table__rn00889-rynki-market-a-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -1219,11 +1219,11 @@
 
 .oc-offer-table__rn00889-rynki-market-x-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -1245,11 +1245,11 @@
 
 .oc-offer-table__rn00889-rynki-market-e-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -1271,11 +1271,11 @@
 
 .oc-offer-table__rn00889-rynki-market-o-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -1293,11 +1293,11 @@
 
 .oc-offer-table__rn00889-cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -1334,11 +1334,11 @@
 
 .oc-offer-table__rn00889-status-status-pill-robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -1413,11 +1413,11 @@
 
 .oc-offer-table__bm00234-sygnatura-pill-3-5 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -1437,11 +1437,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   width: 368px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1462,11 +1462,11 @@
 .oc-offer-table__bm00234-pojazd-marka {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -1478,11 +1478,11 @@
 .oc-offer-table__bm00234-pojazd-model {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -1505,11 +1505,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1529,11 +1529,11 @@
 
 .oc-offer-table__bm00234-stan-stan {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -1564,11 +1564,11 @@
 
 .oc-offer-table__bm00234-rynki-market-a-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -1590,11 +1590,11 @@
 
 .oc-offer-table__bm00234-rynki-market-x-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -1616,11 +1616,11 @@
 
 .oc-offer-table__bm00234-rynki-market-e-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -1642,11 +1642,11 @@
 
 .oc-offer-table__bm00234-rynki-market-o-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -1664,11 +1664,11 @@
 
 .oc-offer-table__bm00234-cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -1705,11 +1705,11 @@
 
 .oc-offer-table__bm00234-status-status-pill-robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }
@@ -1784,11 +1784,11 @@
 
 .oc-offer-table__ft00056-sygnatura-pill-3-5 {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-tertiary);
@@ -1808,11 +1808,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   width: 368px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1833,11 +1833,11 @@
 .oc-offer-table__ft00056-pojazd-marka {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -1849,11 +1849,11 @@
 .oc-offer-table__ft00056-pojazd-model {
   align-self: stretch;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   flex: none;
   overflow: hidden;
@@ -1876,11 +1876,11 @@
   flex: none;
   flex-grow: 1;
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1900,11 +1900,11 @@
 
 .oc-offer-table__ft00056-stan-stan {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-size);
+  font-weight: var(--type-body-small-weight);
+  line-height: var(--type-body-small-line-height);
+  letter-spacing: var(--type-body-small-letter-spacing);
   white-space: nowrap;
   color: var(--text-tertiary);
 }
@@ -1935,11 +1935,11 @@
 
 .oc-offer-table__ft00056-rynki-market-a-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -1961,11 +1961,11 @@
 
 .oc-offer-table__ft00056-rynki-market-x-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--status-success-text);
@@ -1987,11 +1987,11 @@
 
 .oc-offer-table__ft00056-rynki-market-e-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -2013,11 +2013,11 @@
 
 .oc-offer-table__ft00056-rynki-market-o-letter {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--text-disabled);
@@ -2035,11 +2035,11 @@
 
 .oc-offer-table__ft00056-cena-cena {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-primary);
 }
@@ -2076,11 +2076,11 @@
 
 .oc-offer-table__ft00056-status-status-pill-robocza {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
   color: var(--text-secondary);
 }

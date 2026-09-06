@@ -1,6 +1,7 @@
 // OfferTable — сгенерировано из components/offer-table/spec.json. Руками не править.
 import "../../foundations/fonts.css";
 import "../../foundations/tokens.css";
+import "../../foundations/typography.css";
 import "../base.css";
 import "./offer-table.css";
 

@@ -36,11 +36,11 @@
 
 .oc-alert-button__label {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0px;
+  font-family: var(--font-family);
+  font-size: var(--type-body-small-alter-size);
+  font-weight: var(--type-body-small-alter-weight);
+  line-height: var(--type-body-small-alter-line-height);
+  letter-spacing: var(--type-body-small-alter-letter-spacing);
   white-space: nowrap;
 }
 
@@ -72,11 +72,11 @@
 }
 .oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-default .oc-alert-button__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -116,11 +116,11 @@
 .oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-hover .oc-alert-button__count,
 .oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -161,11 +161,11 @@
 .oc-alert-button.oc-alert-button--tone-danger.oc-alert-button--state-pressed .oc-alert-button__count,
 .oc-alert-button.oc-alert-button--tone-danger:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -202,11 +202,11 @@
 }
 .oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-default .oc-alert-button__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -246,11 +246,11 @@
 .oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-hover .oc-alert-button__count,
 .oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):hover .oc-alert-button__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -291,11 +291,11 @@
 .oc-alert-button.oc-alert-button--tone-warning.oc-alert-button--state-pressed .oc-alert-button__count,
 .oc-alert-button.oc-alert-button--tone-warning:not(:disabled):not([aria-disabled="true"]):active .oc-alert-button__count {
   display: block;
-  font-family: 'Roboto', system-ui, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0.6px;
+  font-family: var(--font-family);
+  font-size: var(--type-label-size);
+  font-weight: var(--type-label-weight);
+  line-height: var(--type-label-line-height);
+  letter-spacing: var(--type-label-letter-spacing);
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;

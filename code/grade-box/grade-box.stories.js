@@ -1,6 +1,7 @@
 // GradeBox — сгенерировано из components/grade-box/spec.json. Руками не править.
 import "../../foundations/fonts.css";
 import "../../foundations/tokens.css";
+import "../../foundations/typography.css";
 import "../base.css";
 import "./grade-box.css";
 
