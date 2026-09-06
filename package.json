@@ -7,6 +7,7 @@
   "scripts": {
     "build": "node tools/rebuild.mjs",
     "build:code": "node tools/build-code.mjs --all",
+    "build:typography": "node tools/build-typography.mjs --bundle",
     "verify:paths": "node tools/check-paths.mjs",
     "verify:sheets": "node verify.mjs",
     "verify:code": "node verify-code.mjs",

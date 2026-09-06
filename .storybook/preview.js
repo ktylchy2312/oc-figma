@@ -5,6 +5,9 @@
  */
 import "../foundations/fonts.css";
 import "../foundations/tokens.css";
+// Двенадцать текстовых стилей Figma — переменные --type-* и классы .oc-type-*. Без этого
+// импорта классы в витрине не подхватятся, и роль будет выглядеть как «шрифт по умолчанию».
+import "../foundations/typography.css";
 import "../code/base.css";
 
 export default {

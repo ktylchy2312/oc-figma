@@ -3,9 +3,10 @@
  * rebuild.mjs — пересборка всего пакета из figma-dump/. Ни Figma, ни моста: всё, что нужно,
  * лежит в репозитории.
  *
- *   figma-dump  ->  foundations  ->  _inventory.json  ->  спека и лист каждого компонента
- *                                                    ->  _index.json + README.md
- *                                                    ->  code
+ *   figma-dump  ->  foundations  ->  typography.css + oc-ds.css
+ *                              ->  _inventory.json  ->  спека и лист каждого компонента
+ *                                                   ->  _index.json + README.md
+ *                                                   ->  code
  *
  * Смысл этого файла — не удобство, а проверяемость: пока пересборка выполняется одной
  * командой, `git diff --exit-code` после неё что-то значит. Пока она рассыпана по пяти
@@ -24,16 +25,22 @@ const ROOT = process.cwd();
 const run = (script, args) =>
   execFileSync("node", [join("tools", script), ...args], { cwd: ROOT, encoding: "utf8", maxBuffer: 64 * 1024 * 1024 });
 
-console.log("1/5 foundations");
+console.log("1/6 foundations");
 run("build-foundations.mjs", []);
 
-console.log("2/5 _inventory.json");
+// Сразу после оснований и до спек: двенадцать текстовых стилей живут в Figma стилями, а не
+// переменными, поэтому в tokens.css им взяться неоткуда. Слой выпускается из того же
+// typography.json, который собрал предыдущий шаг, — иначе он пропадёт при ре-синке.
+console.log("2/6 typography.css + oc-ds.css");
+run("build-typography.mjs", ["--bundle"]);
+
+console.log("3/6 _inventory.json");
 run("build-inventory.mjs", []);
 
 const inventory = JSON.parse(readFileSync(join(ROOT, "_inventory.json"), "utf8"));
 const sheets = !argv.includes("--skip-sheets");
 
-console.log(`3/5 спеки${sheets ? " и листы" : ""}: ${inventory.components.length}`);
+console.log(`4/6 спеки${sheets ? " и листы" : ""}: ${inventory.components.length}`);
 const failed = [];
 for (const inv of inventory.components) {
   const dump = join("figma-dump", "nodes", inv.name + ".json");
@@ -46,10 +53,10 @@ for (const inv of inventory.components) {
   }
 }
 
-console.log("4/5 _index.json + README.md");
+console.log("5/6 _index.json + README.md");
 run("build-index.mjs", []);
 
-console.log("5/5 code/");
+console.log("6/6 code/");
 run("build-code.mjs", ["--all"]);
 
 if (failed.length) {
