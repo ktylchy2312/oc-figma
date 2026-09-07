@@ -72,6 +72,38 @@ generated output.** "When was this built" goes to `_build.json` via `tools/stamp
   `/Users/`, `/home/` or a UNC path. The one legitimate exception — locating Chrome, which
   lives outside the repository — is marked `abs-ok` line by line.
 
+## Icons
+
+Sprite reference only:
+
+```html
+<svg class="oc-icon oc-icon--md"><use href="foundations/icons.svg#<id>"/></svg>
+```
+
+Never inline a `<path>` into markup — the prototype had 291 inlined copies of 24 glyphs, and an
+outline pasted in place cannot be restyled or fixed centrally. Never write a stroke width as a
+number: `oc-icon--thin` / `--accent`, regular is the default. A glyph that does not exist gets
+added in Figma and the set rebuilt, not drawn in place.
+
+Glyphs: `foundations/icons.index.json`. Details: `foundations/ICONS.md`.
+
+`foundations/icons.*` are hand-authored **inputs living beside outputs**, like
+`foundations/fonts/`: no generator writes them, `npm run build` leaves them alone, and the
+"nothing under `foundations/` is hand-written" rule does not cover them.
+
+## Typography
+
+Never write size, line-height, weight or letter-spacing as a number. The role is a class from
+`foundations/typography.css`: `oc-type-display`, `-heading-1` … `-heading-4`, `-body-large`,
+`-body-medium`, `-body-small`, `-label`, `-caption`, plus the `-alter` variants.
+
+**Take the role from `spec.json` — `font.style` — never by matching a size.** `Type/Body Small`
+→ `.oc-type-body-small`. All 626 text nodes across the 72 specs carry `font.style`, so there is
+never a reason to guess, and guessing is wrong half the time: 17px is both `heading-4` and
+`body-large`, 12px both `caption` and `label`, 15px and 13px each two roles.
+
+Details: `foundations/TYPOGRAPHY.md`.
+
 ## Gates
 
 `verify.mjs` — 9 checks per sheet. `verify-code.mjs` — 5 checks per component in `code/`.
