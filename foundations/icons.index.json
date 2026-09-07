@@ -1,0 +1,122 @@
+[
+ {
+  "glyph": "Archive",
+  "id": "archive",
+  "lucide": "archive"
+ },
+ {
+  "glyph": "Bell",
+  "id": "bell",
+  "lucide": "bell"
+ },
+ {
+  "glyph": "Board",
+  "id": "board",
+  "lucide": "kanban"
+ },
+ {
+  "glyph": "Bolt",
+  "id": "bolt",
+  "lucide": "zap"
+ },
+ {
+  "glyph": "Car",
+  "id": "car",
+  "lucide": "car"
+ },
+ {
+  "glyph": "Check",
+  "id": "check",
+  "lucide": "check"
+ },
+ {
+  "glyph": "ChevronDown",
+  "id": "chevron-down",
+  "lucide": "chevron-down"
+ },
+ {
+  "glyph": "ChevronLeft",
+  "id": "chevron-left",
+  "lucide": "chevron-left"
+ },
+ {
+  "glyph": "ChevronRight",
+  "id": "chevron-right",
+  "lucide": "chevron-right"
+ },
+ {
+  "glyph": "Circle",
+  "id": "circle",
+  "lucide": "circle"
+ },
+ {
+  "glyph": "CircleCheck",
+  "id": "circle-check",
+  "lucide": "circle-check-big"
+ },
+ {
+  "glyph": "Clock",
+  "id": "clock",
+  "lucide": "clock"
+ },
+ {
+  "glyph": "Document",
+  "id": "document",
+  "lucide": "file-text"
+ },
+ {
+  "glyph": "Edit",
+  "id": "edit",
+  "lucide": "square-pen"
+ },
+ {
+  "glyph": "Filter",
+  "id": "filter",
+  "lucide": "funnel"
+ },
+ {
+  "glyph": "Grid",
+  "id": "grid",
+  "lucide": "layout-grid"
+ },
+ {
+  "glyph": "List",
+  "id": "list",
+  "lucide": "list"
+ },
+ {
+  "glyph": "Plus",
+  "id": "plus",
+  "lucide": "plus"
+ },
+ {
+  "glyph": "Search",
+  "id": "search",
+  "lucide": "search"
+ },
+ {
+  "glyph": "Settings",
+  "id": "settings",
+  "lucide": "settings"
+ },
+ {
+  "glyph": "Shield",
+  "id": "shield",
+  "lucide": "shield"
+ },
+ {
+  "glyph": "Trash",
+  "id": "trash",
+  "lucide": "trash-2"
+ },
+ {
+  "glyph": "Warning",
+  "id": "warning",
+  "lucide": "triangle-alert"
+ },
+ {
+  "glyph": "X",
+  "id": "x",
+  "lucide": "x"
+ }
+]

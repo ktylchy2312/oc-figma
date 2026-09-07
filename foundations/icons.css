@@ -1,0 +1,33 @@
+/* OC-Kontrol — иконки. Сгенерировано из Lucide, имена глифов из Figma.
+ * Толщина штриха задаётся токеном, а не запечена в контур: одна геометрия,
+ * три веса. Размер — из шкалы, цвет — currentColor.  */
+
+:root {
+  /* предложение; привязать в Figma и пересобрать */
+  --icon-stroke-thin:    1.5;
+  --icon-stroke-regular: 1.8;   /* столько стоит в прототипе сегодня */
+  --icon-stroke-accent:  2.25;
+
+  --icon-size-sm: 16px;
+  --icon-size-md: 20px;
+  --icon-size-lg: 24px;
+}
+
+.oc-icon {
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+  flex: none;
+  stroke-width: var(--icon-stroke-regular);
+  color: inherit;
+}
+
+.oc-icon--sm { width: var(--icon-size-sm); height: var(--icon-size-sm); }
+.oc-icon--md { width: var(--icon-size-md); height: var(--icon-size-md); }
+.oc-icon--lg { width: var(--icon-size-lg); height: var(--icon-size-lg); }
+
+.oc-icon--thin   { stroke-width: var(--icon-stroke-thin); }
+.oc-icon--accent { stroke-width: var(--icon-stroke-accent); }
+
+/* Мелкий размер при тонком штрихе теряет форму — компенсируем на шаг вверх.
+   Правило одно и осознанное, а не подгонка на каждом месте. */
+.oc-icon--sm.oc-icon--thin { stroke-width: var(--icon-stroke-regular); }
